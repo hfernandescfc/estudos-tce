@@ -1039,8 +1039,10 @@ async function syncApi(method,path,body,token){
   if(!r.ok) throw new Error("GitHub "+r.status);
   return r.json();
 }
+function syncTemDados(s){ return !!(s && ((s.sessions&&s.sessions.length) || Object.keys(s.revFeitas||{}).length)); }
 async function syncPush(){
   const c=syncCfg(); if(!c.token||!c.gist) return;
+  if(!state.updatedAt){ state.updatedAt=new Date().toISOString(); localStorage.setItem(LS_KEY,JSON.stringify(state)); }
   syncSetStatus("sincronizando");
   try{
     await syncApi("PATCH","/gists/"+c.gist,{files:{[SYNC_FILE]:{content:JSON.stringify(state)}}},c.token);
@@ -1062,7 +1064,10 @@ async function syncPull(){
       try{ remoto=JSON.parse(f.truncated ? await (await fetch(f.raw_url)).text() : f.content); }catch(_){}
       if(remoto&&remoto.sessions){
         const rU=remoto.updatedAt||"", lU=state.updatedAt||"";
-        if(rU>lU){
+        // Proteções: estado vazio nunca sobrescreve dados reais, em nenhuma direção.
+        if(syncTemDados(state)&&!syncTemDados(remoto)) return syncPush();
+        const adotarRemoto = (syncTemDados(remoto)&&!syncTemDados(state)) || rU>lU;
+        if(adotarRemoto){
           state=Object.assign(defaultState(),remoto);
           localStorage.setItem(LS_KEY,JSON.stringify(state));
           const ab=document.querySelector("#tabs button.active"); render(ab?ab.dataset.tab:"dash");
