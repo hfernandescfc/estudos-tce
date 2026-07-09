@@ -509,9 +509,11 @@ function render(tab){
 
 /* ============================================================
    REVISÕES PROGRAMADAS (curva de esquecimento — D+1/6/14/28)
-   A cadeia de um assunto nasce na PRIMEIRA sessão registrada para ele.
-   As folhas de revisão diárias (skill tec-revisao) trazem o conteúdo de
-   cada etapa; aqui fica a fila/checklist do que vence em cada dia.
+   Fonte preferida: revisoes_estado.json (cadeias reais da skill tec-revisao,
+   exportado pelo gerar_fila.py). Fallback quando o fetch falha (file://):
+   estimativa pela PRIMEIRA sessão registrada de cada assunto do plano.
+   As folhas diárias em 07_TEC/Revisao/ trazem o conteúdo de cada etapa;
+   aqui fica a fila/checklist do que vence em cada dia.
    ============================================================ */
 const REV_CUTOFF="2026-08-16"; // depois disso a reta final (S7-S8) já é toda revisão
 const REV_ETAPAS=[ // [chave, dias, rótulo, escopo]
@@ -524,6 +526,70 @@ const REV_COR={d1:"#4cc2ff",d6:"#e3b341",d14:"#7c5cff",d28:"#56d364"};
 // Cadeia completa só onde o método é resolver questões; nas matérias mantidas via
 // Anki a curva de esquecimento já é feita pelos cards — fica só o D+14 (lei seca P1).
 const REV_FULL=["DFin","CG","CASP","Estat","AUD"];
+
+/* --- Fila REAL: revisoes_estado.json exportado pelo gerar_fila.py (skill tec-revisao).
+   Quando o fetch funciona (Pages/servidor), a fila exibida é a das cadeias reais do TEC;
+   sem o arquivo (ex.: aberto via file://), cai no cálculo estimado pelas sessões abaixo. --- */
+let REV_ESTADO=null;
+const REV_INFO=Object.fromEntries(REV_ETAPAS.map(e=>[e[0],{rot:e[2],dica:e[3]}]));
+function revGrupoTec(mat){ // matéria do TEC -> grupo do plano (só p/ cor)
+  const m=(mat||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
+  if(m.includes("auditoria")) return "AUD";
+  if(m.includes("constitucional")) return "DCON";
+  if(m.includes("administrativo")) return "DAD";
+  if(m.includes("estatistica")) return "Estat";
+  if(m.includes("ciencia de dados")||m.startsWith("ti ")||m.startsWith("ti-")||m.startsWith("ti –")) return "TI";
+  if(m.includes("contabilidade geral")||m.includes("demonstracoes contabeis")) return "CG";
+  if(m.includes("financeiro")||m.includes("orcament")||m.includes("afo")) return "DFin";
+  return "DFin";
+}
+function revListaReal(){ // espelha a montar_fila do gerar_fila.py sobre o estado exportado
+  const hoje=todayStr(), dh=new Date(hoje+"T12:00:00");
+  const sb=new Date(dh); sb.setDate(sb.getDate()+((6-sb.getDay())%7));
+  const sabado=sb.toISOString().slice(0,10);
+  const out=[];
+  const push=(chave,cad,et,e,due,atraso)=>{
+    if(state.revFeitas["real|"+chave+"|"+et]) return;
+    out.push({chave,et,rot:REV_INFO[et].rot,dica:REV_INFO[et].dica,prev:e.prevista,
+      atraso,due,materia:cad.materia,assunto:cad.assunto,alvos:(cad.alvos_origem||[]).length});
+  };
+  Object.entries(REV_ESTADO.cadeias||{}).forEach(([chave,cad])=>{
+    // etapa emitida HOJE = está na folha de hoje → pendência do dia (checklist)
+    Object.entries(cad.etapas||{}).forEach(([et,e])=>{
+      if(e.emitida===hoje) push(chave,cad,et,e,true,0);
+    });
+    if(cad.status!=="ativa") return;
+    for(const [et] of REV_ETAPAS){
+      const e=cad.etapas[et];
+      if(!e) continue;
+      if(e.emitida) continue; // já emitida em folha (ou expirada)
+      const atraso=Math.round((dh-new Date(e.prevista+"T12:00:00"))/86400000);
+      if(et==="d1"&&atraso>3) continue; // consolidação tardia expira; o D+6 cobre
+      const limite=(et==="d28")?sabado:hoje; // D+28 antecipa p/ o simulado da semana
+      push(chave,cad,et,e,e.prevista<=limite,Math.max(0,atraso));
+      break; // 1 etapa por cadeia; as seguintes esperam
+    }
+  });
+  out.sort((a,b)=> (b.due?1:0)-(a.due?1:0) || b.atraso-a.atraso || a.prev.localeCompare(b.prev) || a.assunto.localeCompare(b.assunto));
+  return out;
+}
+function revMarcarReal(chaveEnc,et,pular){
+  state.revFeitas["real|"+decodeURIComponent(chaveEnc)+"|"+et]=pular?"pulada":todayStr(); save();
+  const ab=document.querySelector("#tabs button.active"); render(ab?ab.dataset.tab:"dash");
+  toast(pular?"Revisão pulada":"Revisão concluída ✓");
+}
+function revLinhaReal(p,comBotoes){
+  const cor=REV_COR[p.et];
+  const atr=p.atraso>0?` <span style="color:var(--bad);font-weight:600">⚠ ${p.atraso}d atrasada</span>`:"";
+  const alv=p.alvos?` <span class="muted">· ${p.alvos} alvo${p.alvos>1?"s":""}</span>`:"";
+  const k=encodeURIComponent(p.chave);
+  const acao=comBotoes
+    ?`<span style="white-space:nowrap"><button class="btn sm" onclick="revMarcarReal('${k}','${p.et}',false)">✓ feita</button> <button class="btn sm" onclick="revMarcarReal('${k}','${p.et}',true)">pular</button></span>`
+    :`<span class="muted" style="white-space:nowrap">${fmtData(p.prev)}</span>`;
+  return `<div class="sched-item"><span class="min" style="color:${cor};font-weight:600">${p.rot}</span>
+    <span class="mt"><span class="dot" style="background:${matCor(revGrupoTec(p.materia))}"></span> ${escapeHtml(p.assunto==="(sem assunto)"?p.materia+" — geral":p.assunto)}${atr}${alv}</span>
+    <span class="ds">${p.dica}</span>${acao}</div>`;
+}
 
 function revBases(){ // topicId -> data da 1ª sessão registrada
   const m={};
@@ -570,9 +636,23 @@ function revLinha(p,comBotoes){
     <span class="mt"><span class="dot" style="background:${matCor(p.t.mat)}"></span> ${escapeHtml(p.t.assunto)}${atr}</span>
     <span class="ds">${p.dica}</span>${acao}</div>`;
 }
+function revPillFonte(){
+  return REV_ESTADO
+    ?`fila real · tec-revisao (estado de ${fmtData((REV_ESTADO.ultima_fila&&REV_ESTADO.ultima_fila.data)||todayStr())})`
+    :`estimada pelas sessões — fila real indisponível`;
+}
 function revSecaoDash(){
+  let h=`<h2 class="sec">🔁 Revisões de hoje <span class="pill">${revPillFonte()}</span></h2><div class="card">`;
+  if(REV_ESTADO){
+    const due=revListaReal().filter(p=>p.due);
+    if(due.length===0) h+=`<div class="empty">Nenhuma etapa vencida na fila real (cadeias do TEC). O conteúdo de cada etapa está na folha do dia em <code>07_TEC/Revisao/</code>.</div>`;
+    else{
+      due.forEach(p=>h+=revLinhaReal(p,true));
+      h+=`<div class="muted" style="margin-top:8px;font-size:.85em">Conteúdo (questões, conceitos-chave, recall) na folha do dia · ✓ aqui é só checklist — o estado real avança via <code>gerar_fila.py --confirmar</code>.</div>`;
+    }
+    return h+`</div>`;
+  }
   const hoje=todayStr(); const due=revLista().filter(p=>p.prev<=hoje);
-  let h=`<h2 class="sec">🔁 Revisões de hoje <span class="pill">curva de esquecimento · agendadas na 1ª sessão de cada assunto</span></h2><div class="card">`;
   if(due.length===0) h+=`<div class="empty">Nenhuma revisão vencida. Cada assunto ganha revisões automáticas em D+1, D+6, D+14 e D+28 a partir da primeira sessão registrada.</div>`;
   else due.forEach(p=>h+=revLinha(p,true));
   return h+`</div>`;
@@ -580,12 +660,18 @@ function revSecaoDash(){
 function revSecaoCrono(){
   const hoje=todayStr();
   const d=new Date(hoje+"T12:00:00"); d.setDate(d.getDate()+7); const lim=d.toISOString().slice(0,10);
-  const l=revLista();
-  const due=l.filter(p=>p.prev<=hoje), prox=l.filter(p=>p.prev>hoje&&p.prev<=lim);
-  let h=`<h2 class="sec">🔁 Fila de revisões <span class="pill">D+1 consolidação · D+6 resgate · D+14 integração · D+28 simulado</span></h2><div class="card">`;
+  let due,prox,linha;
+  if(REV_ESTADO){
+    const l=revListaReal();
+    due=l.filter(p=>p.due); prox=l.filter(p=>!p.due&&p.prev<=lim); linha=revLinhaReal;
+  }else{
+    const l=revLista();
+    due=l.filter(p=>p.prev<=hoje); prox=l.filter(p=>p.prev>hoje&&p.prev<=lim); linha=revLinha;
+  }
+  let h=`<h2 class="sec">🔁 Fila de revisões <span class="pill">D+1 consolidação · D+6 resgate · D+14 integração · D+28 simulado · ${revPillFonte()}</span></h2><div class="card">`;
   if(due.length===0&&prox.length===0) return h+`<div class="empty">Nada agendado para os próximos 7 dias.</div></div>`;
-  if(due.length){ h+=`<div style="margin-bottom:6px"><b>Hoje${due.some(p=>p.atraso>0)?" + atrasadas":""}</b></div>`; due.forEach(p=>h+=revLinha(p,true)); }
-  if(prox.length){ h+=`<div style="margin:10px 0 6px"><b>Próximos 7 dias</b></div>`; prox.forEach(p=>h+=revLinha(p,false)); }
+  if(due.length){ h+=`<div style="margin-bottom:6px"><b>Hoje${due.some(p=>p.atraso>0)?" + atrasadas":""}</b></div>`; due.forEach(p=>h+=linha(p,true)); }
+  if(prox.length){ h+=`<div style="margin:10px 0 6px"><b>Próximos 7 dias</b></div>`; prox.forEach(p=>h+=linha(p,false)); }
   return h+`</div>`;
 }
 
@@ -1133,6 +1219,12 @@ function importData(ev){
    INIT
    ============================================================ */
 render("dash");
+// Fila real de revisões (exportada pelo gerar_fila.py junto do estado das cadeias)
+fetch("revisoes_estado.json",{cache:"no-store"})
+  .then(r=>r.ok?r.json():null)
+  .then(j=>{ if(!j||!j.cadeias) return; REV_ESTADO=j;
+    const ab=document.querySelector("#tabs button.active"); render(ab?ab.dataset.tab:"dash"); })
+  .catch(()=>{});
 </script>
 </body>
 </html>
