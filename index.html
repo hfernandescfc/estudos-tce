@@ -145,6 +145,7 @@ th.wk-now,td.wk-now{background:rgba(76,194,255,.12)}
     <button data-tab="dash" class="active">Dashboard</button>
     <button data-tab="sessao">Sessão de Estudo</button>
     <button data-tab="assuntos">Assuntos por Matéria</button>
+    <button data-tab="disciplina">Disciplina</button>
     <button data-tab="cronograma">Cronograma</button>
     <button data-tab="historico">Histórico</button>
   </nav>
@@ -152,6 +153,7 @@ th.wk-now,td.wk-now{background:rgba(76,194,255,.12)}
   <section id="tab-dash"></section>
   <section id="tab-sessao" class="hide"></section>
   <section id="tab-assuntos" class="hide"></section>
+  <section id="tab-disciplina" class="hide"></section>
   <section id="tab-cronograma" class="hide"></section>
   <section id="tab-historico" class="hide"></section>
 </div>
@@ -488,7 +490,7 @@ function streak(){
 /* ============================================================
    NAVEGAÇÃO
    ============================================================ */
-const TABS=["dash","sessao","assuntos","cronograma","historico"];
+const TABS=["dash","sessao","assuntos","disciplina","cronograma","historico"];
 document.querySelectorAll("#tabs button").forEach(b=>{
   b.onclick=()=>{
     document.querySelectorAll("#tabs button").forEach(x=>x.classList.remove("active"));
@@ -503,6 +505,7 @@ function render(tab){
   if(tab==="dash") renderDash();
   else if(tab==="sessao") renderSessao();
   else if(tab==="assuntos") renderAssuntos();
+  else if(tab==="disciplina") renderDisciplina();
   else if(tab==="cronograma") renderCronograma();
   else if(tab==="historico") renderHistorico();
 }
@@ -972,6 +975,132 @@ function addCustomTopic(){
   const mat=prompt("Matéria (código):\n"+codes.join(", "), "DFin"); if(!mat||!MAT_INFO[mat]){ alert("Código inválido."); return; }
   const t={id:"c"+(state.nextTid++), assunto:nome.trim(), mat, prio:3, c25:0, custom:true};
   state.customTopics.push(t); state.topicStatus[t.id]="nao"; save(); drawAssuntos(); toast("Assunto adicionado");
+}
+
+/* ============================================================
+   DISCIPLINA — evolução no tempo (questões resolvidas e taxa de acerto),
+   total, por matéria e por assunto. Fonte: state.sessions.
+   ============================================================ */
+let discFilt={mat:"",ass:"",gran:"dia"};
+function sessKeyAssunto(s){ return s.topicId?("t"+s.topicId):("l"+(s.assuntoLivre||"—")); }
+function sessNomeAssunto(s){ const t=s.topicId?topicById(s.topicId):null; return t?t.assunto:(s.assuntoLivre||"—"); }
+function keyEnc(k){ return encodeURIComponent(k).replace(/'/g,"%27"); }
+function discSetMat(v){ discFilt.mat=v; discFilt.ass=""; renderDisciplina(); }
+function discSetAss(v){ const k=decodeURIComponent(v); discFilt.ass=(k&&discFilt.ass===k)?"":k; renderDisciplina(); }
+function discSetGran(v){ discFilt.gran=v; renderDisciplina(); }
+
+function serieTemporal(sess){ // agrega por dia ou semana -> [{per,qr,qa}] em ordem cronológica
+  const porSem=discFilt.gran==="sem", m={};
+  sess.forEach(s=>{
+    const per=porSem?startOfWeek(new Date(s.data+"T12:00:00")).toISOString().slice(0,10):s.data;
+    if(!m[per]) m[per]={qr:0,qa:0};
+    m[per].qr+=s.qResolvidas||0; m[per].qa+=s.qAcertadas||0;
+  });
+  return Object.keys(m).sort().map(per=>({per,qr:m[per].qr,qa:m[per].qa}));
+}
+function tendencia(sess){ // 1ª metade vs 2ª metade das questões, em ordem cronológica
+  const recs=[...sess].sort((a,b)=>a.data.localeCompare(b.data)||a.id-b.id);
+  const tot=recs.reduce((a,s)=>a+(s.qResolvidas||0),0);
+  if(tot<8) return null; // amostra pequena demais para tendência
+  let acc=0; const h1={qr:0,qa:0}, h2={qr:0,qa:0};
+  recs.forEach(s=>{ const h=acc<tot/2?h1:h2; h.qr+=s.qResolvidas||0; h.qa+=s.qAcertadas||0; acc+=s.qResolvidas||0; });
+  if(!h1.qr||!h2.qr) return null;
+  const p1=pct(h1.qa,h1.qr), p2=pct(h2.qa,h2.qr);
+  return {d:p2-p1,p1,p2};
+}
+function tendTag(t){
+  if(!t) return '<span class="muted" style="font-size:12px">amostra pequena</span>';
+  const cor=t.d>=3?"var(--ok)":t.d<=-3?"var(--bad)":"var(--muted)";
+  const sym=t.d>=3?"▲":t.d<=-3?"▼":"▬";
+  return `<span style="color:${cor};font-weight:600">${sym} ${t.d>0?"+":""}${t.d}pp</span> <span class="muted" style="font-size:11.5px">${t.p1}%→${t.p2}%</span>`;
+}
+function sparkline(serie){ // mini-gráfico da % de acerto por período
+  if(serie.length<2) return '<span class="muted">—</span>';
+  const W=110,H=26,p=4;
+  const xy=serie.map((s,i)=>[p+(W-2*p)*i/(serie.length-1), p+(H-2*p)*(1-pct(s.qa,s.qr)/100)]);
+  const last=pct(serie[serie.length-1].qa,serie[serie.length-1].qr);
+  const cor=last>=70?"var(--ok)":last>=50?"var(--warn)":"var(--bad)";
+  return `<svg width="${W}" height="${H}" style="vertical-align:middle"><polyline points="${xy.map(c=>c.map(v=>v.toFixed(1)).join(",")).join(" ")}" fill="none" stroke="${cor}" stroke-width="1.5"/><circle cx="${xy[xy.length-1][0].toFixed(1)}" cy="${xy[xy.length-1][1].toFixed(1)}" r="2.5" fill="${cor}"/></svg>`;
+}
+function chartEvolucao(serie){
+  if(!serie.length) return `<div class="empty">Nenhuma questão registrada com esses filtros. Registre na aba <b>Sessão de Estudo</b>.</div>`;
+  const n=serie.length,W=Math.max(620,n*56+96),H=252,pL=42,pR=46,pT=20,pB=34;
+  const iw=W-pL-pR,ih=H-pT-pB;
+  const maxQ=Math.max(...serie.map(p=>p.qr),1);
+  const x=i=>pL+iw*((i+0.5)/n), yQ=v=>pT+ih-(v/maxQ)*ih, yP=v=>pT+ih-(v/100)*ih;
+  const bw=Math.min(30,(iw/n)*0.5);
+  let aq=0,aa=0; const cum=serie.map(p=>{aq+=p.qr;aa+=p.qa;return pct(aa,aq);});
+  let g=`<svg viewBox="0 0 ${W} ${H}" style="width:100%;min-width:${Math.min(W,860)}px;display:block">`;
+  [0,25,50,75,100].forEach(v=>{ g+=`<line x1="${pL}" x2="${W-pR}" y1="${yP(v)}" y2="${yP(v)}" stroke="var(--line)" stroke-width="1"${v?' stroke-dasharray="3 4"':''}/><text x="${W-pR+6}" y="${yP(v)+3.5}" fill="var(--muted)" font-size="10">${v}%</text>`; });
+  g+=`<text x="${pL-6}" y="${yQ(maxQ)+4}" fill="var(--muted)" font-size="10" text-anchor="end">${maxQ}q</text><text x="${pL-6}" y="${pT+ih+4}" fill="var(--muted)" font-size="10" text-anchor="end">0</text>`;
+  serie.forEach((p,i)=>{
+    g+=`<rect x="${(x(i)-bw/2).toFixed(1)}" y="${yQ(p.qr).toFixed(1)}" width="${bw.toFixed(1)}" height="${(pT+ih-yQ(p.qr)).toFixed(1)}" rx="3" fill="#4cc2ff44"/>`;
+    g+=`<text x="${x(i).toFixed(1)}" y="${(yQ(p.qr)-4).toFixed(1)}" fill="var(--muted)" font-size="10" text-anchor="middle">${p.qr}</text>`;
+    if(n<=24||i%Math.ceil(n/24)===0) g+=`<text x="${x(i).toFixed(1)}" y="${H-8}" fill="var(--muted)" font-size="10" text-anchor="middle">${fmtData(p.per)}</text>`;
+  });
+  g+=`<polyline points="${serie.map((p,i)=>x(i).toFixed(1)+","+yP(cum[i]).toFixed(1)).join(" ")}" fill="none" stroke="var(--accent2)" stroke-width="2" stroke-dasharray="5 4" opacity=".9"/>`;
+  g+=`<polyline points="${serie.map((p,i)=>x(i).toFixed(1)+","+yP(pct(p.qa,p.qr)).toFixed(1)).join(" ")}" fill="none" stroke="var(--ok)" stroke-width="2"/>`;
+  serie.forEach((p,i)=>{ const v=pct(p.qa,p.qr);
+    g+=`<circle cx="${x(i).toFixed(1)}" cy="${yP(v).toFixed(1)}" r="3.5" fill="var(--ok)"/><text x="${x(i).toFixed(1)}" y="${(yP(v)-7).toFixed(1)}" fill="var(--ok)" font-size="10" font-weight="600" text-anchor="middle">${v}%</text>`; });
+  g+=`</svg>`;
+  return `<div style="overflow-x:auto">${g}</div>
+  <div class="legend" style="margin:8px 0 0">
+    <span><span class="dot" style="background:#4cc2ff77;border-radius:3px;width:12px"></span>questões resolvidas</span>
+    <span><span class="dot" style="background:var(--ok)"></span>% acerto do período</span>
+    <span><span style="border-top:2px dashed var(--accent2);width:16px;display:inline-block"></span>% acerto acumulado</span>
+  </div>`;
+}
+function renderDisciplina(){
+  const base=state.sessions.filter(s=>(s.qResolvidas||0)>0);
+  const mats=[...new Set(base.map(s=>grupo(s.mat)))].sort((a,b)=>matNome(a).localeCompare(matNome(b)));
+  if(discFilt.mat&&!mats.includes(discFilt.mat)) discFilt.mat="";
+  const matSess=discFilt.mat?base.filter(s=>grupo(s.mat)===discFilt.mat):base;
+  // agregação por assunto no recorte da matéria
+  const assMap={};
+  matSess.forEach(s=>{ const k=sessKeyAssunto(s);
+    if(!assMap[k]) assMap[k]={k,nome:sessNomeAssunto(s),mat:grupo(s.mat),qr:0,qa:0,sess:[]};
+    assMap[k].qr+=s.qResolvidas||0; assMap[k].qa+=s.qAcertadas||0; assMap[k].sess.push(s); });
+  if(discFilt.ass&&!assMap[discFilt.ass]) discFilt.ass="";
+  const sel=discFilt.ass?matSess.filter(s=>sessKeyAssunto(s)===discFilt.ass):matSess;
+
+  const tot=sumBy(sel), wk=sumBy(sel.filter(s=>inThisWeek(s.data)));
+  const d7=new Date(); d7.setDate(d7.getDate()-6); const lim7=d7.toISOString().slice(0,10);
+  const u7=sumBy(sel.filter(s=>s.data>=lim7));
+  const assuntos=Object.values(assMap).sort((a,b)=>b.qr-a.qr);
+
+  let html=`
+  <div class="filters">
+    <select onchange="discSetMat(this.value)"><option value="">Todas as matérias</option>${mats.map(g=>`<option value="${g}" ${g===discFilt.mat?"selected":""}>${matNome(g)}</option>`).join("")}</select>
+    <select onchange="discSetAss(this.value)" style="max-width:340px"><option value="">Todos os assuntos</option>${assuntos.map(a=>`<option value="${keyEnc(a.k)}" ${a.k===discFilt.ass?"selected":""}>${escapeHtml(a.nome)}</option>`).join("")}</select>
+    <select onchange="discSetGran(this.value)"><option value="dia" ${discFilt.gran==="dia"?"selected":""}>Por dia</option><option value="sem" ${discFilt.gran==="sem"?"selected":""}>Por semana</option></select>
+    ${discFilt.ass?`<button class="btn sm" onclick="discSetAss('')">✕ limpar assunto</button>`:""}
+  </div>
+  <div class="grid cards">
+    <div class="card kpi"><div class="label">✍️ Questões resolvidas</div><div class="val">${tot.qr}</div><div class="foot">${wk.qr} esta semana</div></div>
+    <div class="card kpi"><div class="label">🎯 Acerto acumulado</div><div class="val">${tot.qr>0?pct(tot.qa,tot.qr):"—"}<small>${tot.qr>0?"%":""}</small></div><div class="foot">${tot.qa}/${tot.qr} acertos</div></div>
+    <div class="card kpi"><div class="label">📅 Últimos 7 dias</div><div class="val">${u7.qr>0?pct(u7.qa,u7.qr)+"%":"—"}</div><div class="foot">${u7.qr} questões no período</div></div>
+    <div class="card kpi"><div class="label">📈 Tendência</div><div class="val" style="font-size:20px;line-height:28px">${tendTag(tendencia(sel))}</div><div class="foot">1ª metade × 2ª metade das questões</div></div>
+  </div>
+  <h2 class="sec">📈 Evolução no tempo <span class="pill">${discFilt.mat?matNome(discFilt.mat):"todas as matérias"}${discFilt.ass?" · "+escapeHtml((assMap[discFilt.ass]||{}).nome||""):""} · ${discFilt.gran==="sem"?"por semana":"por dia"}</span></h2>
+  <div class="card">${chartEvolucao(serieTemporal(sel))}</div>`;
+
+  html+=`<h2 class="sec">📚 Por assunto <span class="pill">clique numa linha para filtrar o gráfico</span></h2><div class="card">`;
+  if(assuntos.length===0) html+=`<div class="empty">Nenhuma questão registrada ainda.</div>`;
+  else{
+    html+=`<table><thead><tr><th>Assunto</th><th class="right">Questões</th><th class="right">Acerto</th><th>Tendência</th><th>Evolução</th></tr></thead><tbody>`;
+    assuntos.forEach(a=>{
+      const p=pct(a.qa,a.qr), cor=p>=70?"var(--ok)":p>=50?"var(--warn)":"var(--bad)";
+      html+=`<tr style="cursor:pointer${a.k===discFilt.ass?";background:#4cc2ff14":""}" onclick="discSetAss('${keyEnc(a.k)}')">
+        <td><span class="dot" style="background:${matCor(a.mat)}"></span> ${escapeHtml(a.nome)}${discFilt.mat?"":` <span class="qstat">${matNome(a.mat)}</span>`}</td>
+        <td class="right">${a.qr}</td>
+        <td class="right" style="color:${cor};font-weight:600">${p}%</td>
+        <td>${tendTag(tendencia(a.sess))}</td>
+        <td>${sparkline(serieTemporal(a.sess))}</td></tr>`;
+    });
+    html+=`</tbody></table>`;
+  }
+  html+=`</div>`;
+  document.getElementById("tab-disciplina").innerHTML=html;
 }
 
 /* ============================================================
