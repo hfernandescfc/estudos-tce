@@ -9,7 +9,9 @@
     "tec_registros_2026-07-06.json",
     "tec_registros_2026-07-07.json",
     "tec_registros_2026-07-08.json",
-    "tec_registros_2026-07-09.json"
+    "tec_registros_2026-07-09.json",
+    "tec_registros_2026-07-10(1).json",
+    "tec_registros_2026-07-10.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -40,7 +42,7 @@
         },
         "d14": {
           "prevista": "2026-07-10",
-          "emitida": null
+          "emitida": "2026-07-10"
         },
         "d28": {
           "prevista": "2026-07-24",
@@ -103,7 +105,13 @@
         "d6": {
           "prevista": "2026-07-07",
           "emitida": "2026-07-07",
-          "resultado": null
+          "resultado": {
+            "pct": 86,
+            "questoes": 7,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-07-10"
+          }
         },
         "d14": {
           "prevista": "2026-07-15",
@@ -177,30 +185,30 @@
     "Contabilidade Geral||(sem assunto)": {
       "materia": "Contabilidade Geral",
       "assunto": "(sem assunto)",
-      "data_base": "2026-07-02",
+      "data_base": "2026-07-10",
       "cadeia_completa": true,
       "alvos_origem": [
         "3231468",
         "3231477"
       ],
-      "reinicios": 0,
+      "reinicios": 1,
       "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-03",
-          "emitida": "expirada"
+          "prevista": "2026-07-10",
+          "emitida": "2026-07-10"
         },
         "d6": {
-          "prevista": "2026-07-08",
-          "emitida": "2026-07-08",
+          "prevista": "2026-07-16",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-16",
+          "prevista": "2026-07-24",
           "emitida": null
         },
         "d28": {
-          "prevista": "2026-07-30",
+          "prevista": "2026-08-07",
           "emitida": null
         }
       }
@@ -1161,20 +1169,257 @@
           "emitida": null
         }
       }
+    },
+    "Estatística||Intervalo de Confiança para a Média": {
+      "materia": "Estatística",
+      "assunto": "Intervalo de Confiança para a Média",
+      "data_base": "2026-07-10",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3167167",
+        "3167199",
+        "3645762"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-10",
+          "emitida": "2026-07-10"
+        },
+        "d6": {
+          "prevista": "2026-07-16",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-24",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        }
+      }
+    },
+    "Auditoria Governamental e Controle||Auditoria Operacional": {
+      "materia": "Auditoria Governamental e Controle",
+      "assunto": "Auditoria Operacional",
+      "data_base": "2026-07-10",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3604810"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-10",
+          "emitida": "2026-07-10"
+        },
+        "d6": {
+          "prevista": "2026-07-16",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-24",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        }
+      }
+    },
+    "Auditoria Governamental e Controle||Outras Questões e Tópicos Mesclados de Auditoria Governamental": {
+      "materia": "Auditoria Governamental e Controle",
+      "assunto": "Outras Questões e Tópicos Mesclados de Auditoria Governamental",
+      "data_base": "2026-07-10",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3252015",
+        "3258507",
+        "3601873",
+        "3604806",
+        "3043666"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-10",
+          "emitida": "2026-07-10"
+        },
+        "d6": {
+          "prevista": "2026-07-16",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-24",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||Conceito, Objeto, Finalidade, Técnicas Contábeis, Equação Patrimonial": {
+      "materia": "Contabilidade Geral",
+      "assunto": "Conceito, Objeto, Finalidade, Técnicas Contábeis, Equação Patrimonial",
+      "data_base": "2026-07-10",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-10",
+          "emitida": "2026-07-10"
+        },
+        "d6": {
+          "prevista": "2026-07-16",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-24",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||Estrutura Conceitual Básica da Contabilidade (CPC 00)": {
+      "materia": "Contabilidade Geral",
+      "assunto": "Estrutura Conceitual Básica da Contabilidade (CPC 00)",
+      "data_base": "2026-07-10",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-10",
+          "emitida": "2026-07-10"
+        },
+        "d6": {
+          "prevista": "2026-07-16",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-24",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Formas de Extinção (Serviços Públicos - Lei nº 8.987/1995)": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Formas de Extinção (Serviços Públicos - Lei nº 8.987/1995)",
+      "data_base": "2026-07-10",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-24",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Intervenção (Serviços Públicos - Lei nº 8.987/1995)": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Intervenção (Serviços Públicos - Lei nº 8.987/1995)",
+      "data_base": "2026-07-10",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3607549"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-24",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo Estadual e do DF||Dos Direitos e Vantagens (arts. 85 a 189 da Lei Estadual nº 6.123/1968)": {
+      "materia": "Direito Administrativo Estadual e do DF",
+      "assunto": "Dos Direitos e Vantagens (arts. 85 a 189 da Lei Estadual nº 6.123/1968)",
+      "data_base": "2026-07-10",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-24",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Dos Orçamentos (Finanças Públicas, arts. 165 a 169 da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Dos Orçamentos (Finanças Públicas, arts. 165 a 169 da CF/1988)",
+      "data_base": "2026-07-10",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3176590",
+        "2346708"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-24",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-09",
+    "data": "2026-07-10",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Créditos Adicionais",
+        "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários",
+        "d14"
+      ],
+      [
+        "Auditoria Governamental e Controle||Auditoria Operacional",
         "d1"
       ],
       [
-        "Auditoria Governamental e Controle||Classificação dos Tipos de Auditoria",
-        "d6"
+        "Auditoria Governamental e Controle||Outras Questões e Tópicos Mesclados de Auditoria Governamental",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||(sem assunto)",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||Conceito, Objeto, Finalidade, Técnicas Contábeis, Equação Patrimonial",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||Estrutura Conceitual Básica da Contabilidade (CPC 00)",
+        "d1"
+      ],
+      [
+        "Estatística||Intervalo de Confiança para a Média",
+        "d1"
       ]
     ],
-    "confirmada": "2026-07-09"
+    "confirmada": "2026-07-10"
   }
 }
