@@ -11,7 +11,8 @@
     "tec_registros_2026-07-08.json",
     "tec_registros_2026-07-09.json",
     "tec_registros_2026-07-10(1).json",
-    "tec_registros_2026-07-10.json"
+    "tec_registros_2026-07-10.json",
+    "tec_registros_2026-07-13.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -74,7 +75,7 @@
         },
         "d14": {
           "prevista": "2026-07-13",
-          "emitida": null
+          "emitida": "2026-07-13"
         },
         "d28": {
           "prevista": "2026-07-27",
@@ -583,7 +584,7 @@
         },
         "d6": {
           "prevista": "2026-07-11",
-          "emitida": null,
+          "emitida": "2026-07-13",
           "resultado": null
         },
         "d14": {
@@ -621,7 +622,7 @@
         },
         "d6": {
           "prevista": "2026-07-13",
-          "emitida": null,
+          "emitida": "2026-07-13",
           "resultado": null
         },
         "d14": {
@@ -655,7 +656,7 @@
         },
         "d6": {
           "prevista": "2026-07-13",
-          "emitida": null,
+          "emitida": "2026-07-13",
           "resultado": null
         },
         "d14": {
@@ -685,7 +686,7 @@
         },
         "d6": {
           "prevista": "2026-07-13",
-          "emitida": null,
+          "emitida": "2026-07-13",
           "resultado": null
         },
         "d14": {
@@ -1386,40 +1387,256 @@
           "emitida": null
         }
       }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||(sem assunto)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "(sem assunto)",
+      "data_base": "2026-07-13",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-13",
+          "emitida": "2026-07-13"
+        },
+        "d6": {
+          "prevista": "2026-07-18",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-27",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-10",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Demonstração das Variações Patrimoniais (DVP)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Demonstração das Variações Patrimoniais (DVP)",
+      "data_base": "2026-07-13",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2369046",
+        "1924667"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-13",
+          "emitida": "2026-07-13"
+        },
+        "d6": {
+          "prevista": "2026-07-18",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-27",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-10",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Demonstração de Fluxo de Caixa (MCASP e NBC TSP 12)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Demonstração de Fluxo de Caixa (MCASP e NBC TSP 12)",
+      "data_base": "2026-07-13",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3824186",
+        "3994401",
+        "3735152",
+        "3735636"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-13",
+          "emitida": "2026-07-13"
+        },
+        "d6": {
+          "prevista": "2026-07-18",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-27",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-10",
+          "emitida": null
+        }
+      }
+    },
+    "Auditoria Governamental e Controle||(sem assunto)": {
+      "materia": "Auditoria Governamental e Controle",
+      "assunto": "(sem assunto)",
+      "data_base": "2026-07-13",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3601873"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-13",
+          "emitida": "2026-07-13"
+        },
+        "d6": {
+          "prevista": "2026-07-18",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-27",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-10",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||(sem assunto)": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "(sem assunto)",
+      "data_base": "2026-07-13",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3608273"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-27",
+          "emitida": null
+        }
+      }
+    },
+    "Língua Portuguesa (Português)||(sem assunto)": {
+      "materia": "Língua Portuguesa (Português)",
+      "assunto": "(sem assunto)",
+      "data_base": "2026-07-13",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3232054",
+        "3232057"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-27",
+          "emitida": null
+        }
+      }
+    },
+    "TI - Banco de Dados||Conceitos e Fases de Projeto e Modelagem de Dados": {
+      "materia": "TI - Banco de Dados",
+      "assunto": "Conceitos e Fases de Projeto e Modelagem de Dados",
+      "data_base": "2026-07-13",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3195677"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-27",
+          "emitida": null
+        }
+      }
+    },
+    "TI - Banco de Dados||Conceitos e Fundamentos de Modelo Relacional": {
+      "materia": "TI - Banco de Dados",
+      "assunto": "Conceitos e Fundamentos de Modelo Relacional",
+      "data_base": "2026-07-13",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-27",
+          "emitida": null
+        }
+      }
+    },
+    "TI - Banco de Dados||Consultas e Comandos em SQL": {
+      "materia": "TI - Banco de Dados",
+      "assunto": "Consultas e Comandos em SQL",
+      "data_base": "2026-07-13",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3401337",
+        "2902880",
+        "2346704"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-27",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-10",
+    "data": "2026-07-13",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários",
+        "AFO, Direito Financeiro e Contabilidade Pública||(sem assunto)",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Demonstração das Variações Patrimoniais (DVP)",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Demonstração de Fluxo de Caixa (MCASP e NBC TSP 12)",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Estoques (MCASP e NBC TSP 04)",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||LOA - Lei Orçamentária Anual (CF/1988 e Lei nº 4.320/1964)",
+        "d6"
+      ],
+      [
+        "Análise das Demonstrações Contábeis||Análise Vertical e Horizontal das Demonstrações Contábeis",
+        "d6"
+      ],
+      [
+        "Análise das Demonstrações Contábeis||Índices de Liquidez. Capital Circulante Líquido",
+        "d6"
+      ],
+      [
+        "Auditoria Governamental e Controle||(sem assunto)",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||Depreciação, Amortização e Exaustão",
         "d14"
-      ],
-      [
-        "Auditoria Governamental e Controle||Auditoria Operacional",
-        "d1"
-      ],
-      [
-        "Auditoria Governamental e Controle||Outras Questões e Tópicos Mesclados de Auditoria Governamental",
-        "d1"
-      ],
-      [
-        "Contabilidade Geral||(sem assunto)",
-        "d1"
-      ],
-      [
-        "Contabilidade Geral||Conceito, Objeto, Finalidade, Técnicas Contábeis, Equação Patrimonial",
-        "d1"
-      ],
-      [
-        "Contabilidade Geral||Estrutura Conceitual Básica da Contabilidade (CPC 00)",
-        "d1"
-      ],
-      [
-        "Estatística||Intervalo de Confiança para a Média",
-        "d1"
       ]
     ],
-    "confirmada": "2026-07-10"
+    "confirmada": "2026-07-13"
   }
 }
