@@ -12,7 +12,8 @@
     "tec_registros_2026-07-09.json",
     "tec_registros_2026-07-10(1).json",
     "tec_registros_2026-07-10.json",
-    "tec_registros_2026-07-13.json"
+    "tec_registros_2026-07-13.json",
+    "tec_registros_2026-07-14.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -382,7 +383,13 @@
         "d6": {
           "prevista": "2026-07-09",
           "emitida": "2026-07-09",
-          "resultado": null
+          "resultado": {
+            "pct": 100,
+            "questoes": 4,
+            "limiar": 60,
+            "aprovada": true,
+            "data": "2026-07-14"
+          }
         },
         "d14": {
           "prevista": "2026-07-17",
@@ -600,37 +607,30 @@
     "AFO, Direito Financeiro e Contabilidade Pública||LOA - Lei Orçamentária Anual (CF/1988 e Lei nº 4.320/1964)": {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "LOA - Lei Orçamentária Anual (CF/1988 e Lei nº 4.320/1964)",
-      "data_base": "2026-07-07",
+      "data_base": "2026-07-14",
       "cadeia_completa": true,
       "alvos_origem": [
-        "3822934",
-        "3822942",
-        "3903547",
-        "3400985",
-        "2791893",
-        "2888071",
-        "3045607",
-        "3048393",
-        "2369069"
+        "3645741",
+        "3707722"
       ],
-      "reinicios": 0,
+      "reinicios": 1,
       "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-07",
-          "emitida": "2026-07-07"
+          "prevista": "2026-07-14",
+          "emitida": "2026-07-14"
         },
         "d6": {
-          "prevista": "2026-07-13",
-          "emitida": "2026-07-13",
+          "prevista": "2026-07-20",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-21",
+          "prevista": "2026-07-28",
           "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-04",
+          "prevista": "2026-08-11",
           "emitida": null
         }
       }
@@ -795,7 +795,7 @@
         },
         "d6": {
           "prevista": "2026-07-14",
-          "emitida": null,
+          "emitida": "2026-07-14",
           "resultado": null
         },
         "d14": {
@@ -823,7 +823,7 @@
         },
         "d6": {
           "prevista": "2026-07-14",
-          "emitida": null,
+          "emitida": "2026-07-14",
           "resultado": null
         },
         "d14": {
@@ -857,7 +857,7 @@
         },
         "d6": {
           "prevista": "2026-07-14",
-          "emitida": null,
+          "emitida": "2026-07-14",
           "resultado": null
         },
         "d14": {
@@ -887,7 +887,7 @@
         },
         "d6": {
           "prevista": "2026-07-14",
-          "emitida": null,
+          "emitida": "2026-07-14",
           "resultado": null
         },
         "d14": {
@@ -918,7 +918,7 @@
         },
         "d6": {
           "prevista": "2026-07-14",
-          "emitida": null,
+          "emitida": "2026-07-14",
           "resultado": null
         },
         "d14": {
@@ -946,7 +946,7 @@
         },
         "d6": {
           "prevista": "2026-07-14",
-          "emitida": null,
+          "emitida": "2026-07-14",
           "resultado": null
         },
         "d14": {
@@ -976,7 +976,7 @@
         },
         "d6": {
           "prevista": "2026-07-14",
-          "emitida": null,
+          "emitida": "2026-07-14",
           "resultado": null
         },
         "d14": {
@@ -1004,7 +1004,7 @@
         },
         "d6": {
           "prevista": "2026-07-14",
-          "emitida": null,
+          "emitida": "2026-07-14",
           "resultado": null
         },
         "d14": {
@@ -1038,7 +1038,7 @@
         },
         "d6": {
           "prevista": "2026-07-14",
-          "emitida": null,
+          "emitida": "2026-07-14",
           "resultado": null
         },
         "d14": {
@@ -1595,48 +1595,262 @@
           "emitida": null
         }
       }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Dívida Ativa": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Dívida Ativa",
+      "data_base": "2026-07-14",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-14",
+          "emitida": "2026-07-14"
+        },
+        "d6": {
+          "prevista": "2026-07-20",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-28",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-11",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Funções de Governo": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Funções de Governo",
+      "data_base": "2026-07-14",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-14",
+          "emitida": "2026-07-14"
+        },
+        "d6": {
+          "prevista": "2026-07-20",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-28",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-11",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||PPA - Plano Plurianual (CF/1988 e Lei nº 4.320/1964)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "PPA - Plano Plurianual (CF/1988 e Lei nº 4.320/1964)",
+      "data_base": "2026-07-14",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-14",
+          "emitida": "2026-07-14"
+        },
+        "d6": {
+          "prevista": "2026-07-20",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-28",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-11",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)",
+      "data_base": "2026-07-14",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3231345",
+        "2888068",
+        "2292645",
+        "2336568",
+        "2709721",
+        "2709723"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-14",
+          "emitida": "2026-07-14"
+        },
+        "d6": {
+          "prevista": "2026-07-20",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-28",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-11",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Vedações Constitucionais em Matéria Orçamentária (Art. 167 da CF/1988)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Vedações Constitucionais em Matéria Orçamentária (Art. 167 da CF/1988)",
+      "data_base": "2026-07-14",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3735392",
+        "2848665"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-14",
+          "emitida": "2026-07-14"
+        },
+        "d6": {
+          "prevista": "2026-07-20",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-28",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-11",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||Ativo Imobilizado (Conceito, Classificação, Mensuração Inicial, Reavaliação)": {
+      "materia": "Contabilidade Geral",
+      "assunto": "Ativo Imobilizado (Conceito, Classificação, Mensuração Inicial, Reavaliação)",
+      "data_base": "2026-07-14",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3823679",
+        "3869494",
+        "2771907",
+        "2780985",
+        "2903830",
+        "3093075",
+        "3105773"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-14",
+          "emitida": "2026-07-14"
+        },
+        "d6": {
+          "prevista": "2026-07-20",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-28",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-11",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-13",
+    "data": "2026-07-14",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||(sem assunto)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Demonstração das Variações Patrimoniais (DVP)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Demonstração de Fluxo de Caixa (MCASP e NBC TSP 12)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Estoques (MCASP e NBC TSP 04)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Intangível (MCASP e NBC TSP 08)",
         "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Natureza da Receita",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Depreciação, Amortização e Exaustão (NBC TSP 07, MCASP, etc.)",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Dívida Ativa",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Funções de Governo",
+        "d1"
       ],
       [
         "AFO, Direito Financeiro e Contabilidade Pública||LOA - Lei Orçamentária Anual (CF/1988 e Lei nº 4.320/1964)",
-        "d6"
-      ],
-      [
-        "Análise das Demonstrações Contábeis||Análise Vertical e Horizontal das Demonstrações Contábeis",
-        "d6"
-      ],
-      [
-        "Análise das Demonstrações Contábeis||Índices de Liquidez. Capital Circulante Líquido",
-        "d6"
-      ],
-      [
-        "Auditoria Governamental e Controle||(sem assunto)",
         "d1"
       ],
       [
-        "Contabilidade Geral||Depreciação, Amortização e Exaustão",
-        "d14"
+        "AFO, Direito Financeiro e Contabilidade Pública||PPA - Plano Plurianual (CF/1988 e Lei nº 4.320/1964)",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Vedações Constitucionais em Matéria Orçamentária (Art. 167 da CF/1988)",
+        "d1"
+      ],
+      [
+        "Auditoria Governamental e Controle||Auditoria de Regularidade: Propósito, Características, Contexto",
+        "d6"
+      ],
+      [
+        "Auditoria Governamental e Controle||Controle de Qualidade da Auditoria Governamental",
+        "d6"
+      ],
+      [
+        "Auditoria Governamental e Controle||Execução de Auditoria de Regularidade",
+        "d6"
+      ],
+      [
+        "Auditoria Governamental e Controle||Planejamento de Auditoria de Regularidade",
+        "d6"
+      ],
+      [
+        "Auditoria Governamental e Controle||Relatório, Certificado, Parecer e Nota (Auditoria Governamental)",
+        "d6"
+      ],
+      [
+        "Auditoria Governamental e Controle||Risco de Auditoria. Confiança e Asseguração em Auditoria",
+        "d6"
+      ],
+      [
+        "Contabilidade Geral||Ativo Imobilizado (Conceito, Classificação, Mensuração Inicial, Reavaliação)",
+        "d1"
       ]
     ],
-    "confirmada": "2026-07-13"
+    "confirmada": "2026-07-14"
   }
 }
