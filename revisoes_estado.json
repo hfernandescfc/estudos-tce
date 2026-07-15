@@ -13,7 +13,9 @@
     "tec_registros_2026-07-10(1).json",
     "tec_registros_2026-07-10.json",
     "tec_registros_2026-07-13.json",
-    "tec_registros_2026-07-14.json"
+    "tec_registros_2026-07-14.json",
+    "tec_registros_2026-07-14(1).json",
+    "tec_registros_2026-07-15.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -117,7 +119,7 @@
         },
         "d14": {
           "prevista": "2026-07-15",
-          "emitida": null
+          "emitida": "2026-07-15"
         },
         "d28": {
           "prevista": "2026-07-29",
@@ -155,7 +157,7 @@
         },
         "d14": {
           "prevista": "2026-07-15",
-          "emitida": null
+          "emitida": "2026-07-15"
         },
         "d28": {
           "prevista": "2026-07-29",
@@ -176,11 +178,11 @@
         "2687856"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-15",
-          "emitida": null
+          "emitida": "2026-07-15"
         }
       }
     },
@@ -777,33 +779,31 @@
     "AFO, Direito Financeiro e Contabilidade Pública||Ativo Intangível (MCASP e NBC TSP 08)": {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Ativo Intangível (MCASP e NBC TSP 08)",
-      "data_base": "2026-07-08",
+      "data_base": "2026-07-15",
       "cadeia_completa": true,
       "alvos_origem": [
-        "3824181",
-        "3257493",
-        "2887858",
-        "2620980",
-        "2709671"
+        "3026008",
+        "2794072",
+        "3094029"
       ],
-      "reinicios": 0,
+      "reinicios": 1,
       "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-08",
-          "emitida": "2026-07-08"
+          "prevista": "2026-07-15",
+          "emitida": "2026-07-15"
         },
         "d6": {
-          "prevista": "2026-07-14",
-          "emitida": "2026-07-14",
+          "prevista": "2026-07-21",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-22",
+          "prevista": "2026-07-29",
           "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-05",
+          "prevista": "2026-08-12",
           "emitida": null
         }
       }
@@ -1071,7 +1071,7 @@
         },
         "d6": {
           "prevista": "2026-07-15",
-          "emitida": null,
+          "emitida": "2026-07-15",
           "resultado": null
         },
         "d14": {
@@ -1781,76 +1781,291 @@
           "emitida": null
         }
       }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Balanço Orçamentário (MCASP e NBC TSP 13)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Balanço Orçamentário (MCASP e NBC TSP 13)",
+      "data_base": "2026-07-14",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3822975",
+        "3823726",
+        "3737955",
+        "2890953",
+        "2909103",
+        "3179001"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-14",
+          "emitida": "2026-07-15"
+        },
+        "d6": {
+          "prevista": "2026-07-20",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-28",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-11",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||Reservas de Lucros": {
+      "materia": "Contabilidade Geral",
+      "assunto": "Reservas de Lucros",
+      "data_base": "2026-07-15",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3737511",
+        "2890600",
+        "3195200",
+        "2709576"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-15",
+          "emitida": "2026-07-15"
+        },
+        "d6": {
+          "prevista": "2026-07-21",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-12",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Administração Direta (Órgãos Públicos)": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Administração Direta (Órgãos Públicos)",
+      "data_base": "2026-07-15",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2909140"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Administração Indireta": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Administração Indireta",
+      "data_base": "2026-07-15",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Agências Reguladoras e Executivas": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Agências Reguladoras e Executivas",
+      "data_base": "2026-07-15",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2886973"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Características dos Bens Públicos": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Características dos Bens Públicos",
+      "data_base": "2026-07-15",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Conceitos Iniciais e Teorias da Responsabilidade": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Conceitos Iniciais e Teorias da Responsabilidade",
+      "data_base": "2026-07-15",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2773569"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Formas de Utilização de Bens Públicos": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Formas de Utilização de Bens Públicos",
+      "data_base": "2026-07-15",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2771866"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Responsabilidade dos Agentes Públicos e Direito de Regresso": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Responsabilidade dos Agentes Públicos e Direito de Regresso",
+      "data_base": "2026-07-15",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados de Bens Públicos (Direito Administrativo)": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Tópicos Mesclados de Bens Públicos (Direito Administrativo)",
+      "data_base": "2026-07-15",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3747995"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados de Responsabilidade Civil do Estado": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Tópicos Mesclados de Responsabilidade Civil do Estado",
+      "data_base": "2026-07-15",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3748021"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Eficácia das Normas Constitucionais": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Eficácia das Normas Constitucionais",
+      "data_base": "2026-07-15",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3232396",
+        "3610234"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||União: Bens e Competências Exclusivas, Privativas, Comuns e Concorrentes (arts. 20 a 24 da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "União: Bens e Competências Exclusivas, Privativas, Comuns e Concorrentes (arts. 20 a 24 da CF/1988)",
+      "data_base": "2026-07-15",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3093336",
+        "2687858"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-29",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-14",
+    "data": "2026-07-15",
     "itens": [
       [
         "AFO, Direito Financeiro e Contabilidade Pública||Ativo Intangível (MCASP e NBC TSP 08)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Natureza da Receita",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Depreciação, Amortização e Exaustão (NBC TSP 07, MCASP, etc.)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Dívida Ativa",
         "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Funções de Governo",
+        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Orçamentário (MCASP e NBC TSP 13)",
         "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||LOA - Lei Orçamentária Anual (CF/1988 e Lei nº 4.320/1964)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Conceitos, Objeto, Objetivos e Campo de Aplicação (Estrutura Conceitual - Prefácio e caps. 1 a 4)",
+        "d14"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Créditos Adicionais",
+        "d6"
+      ],
+      [
+        "Auditoria Governamental e Controle||Princípios, Propósitos e Abrangência da Auditoria Governamental",
+        "d14"
+      ],
+      [
+        "Contabilidade Geral||Reservas de Lucros",
         "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||PPA - Plano Plurianual (CF/1988 e Lei nº 4.320/1964)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Vedações Constitucionais em Matéria Orçamentária (Art. 167 da CF/1988)",
-        "d1"
-      ],
-      [
-        "Auditoria Governamental e Controle||Auditoria de Regularidade: Propósito, Características, Contexto",
-        "d6"
-      ],
-      [
-        "Auditoria Governamental e Controle||Controle de Qualidade da Auditoria Governamental",
-        "d6"
-      ],
-      [
-        "Auditoria Governamental e Controle||Execução de Auditoria de Regularidade",
-        "d6"
-      ],
-      [
-        "Auditoria Governamental e Controle||Planejamento de Auditoria de Regularidade",
-        "d6"
-      ],
-      [
-        "Auditoria Governamental e Controle||Relatório, Certificado, Parecer e Nota (Auditoria Governamental)",
-        "d6"
-      ],
-      [
-        "Auditoria Governamental e Controle||Risco de Auditoria. Confiança e Asseguração em Auditoria",
-        "d6"
-      ],
-      [
-        "Contabilidade Geral||Ativo Imobilizado (Conceito, Classificação, Mensuração Inicial, Reavaliação)",
-        "d1"
+        "Direito Constitucional (CF/1988 e Doutrina)||Métodos e Princípios de Interpretação das Normas Constitucionais",
+        "d14"
       ]
     ],
-    "confirmada": "2026-07-14"
+    "confirmada": "2026-07-15"
   }
 }
