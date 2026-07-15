@@ -117,7 +117,25 @@ th.wk-now,td.wk-now{background:rgba(76,194,255,.12)}
 .flex{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .qstat{font-size:12.5px;color:var(--muted)}
 .right{text-align:right}
+/* Gantt */
+.gantt-wrap{overflow-x:auto}
+.gantt{--glab:270px;position:relative;min-width:820px}
+.g-row{display:flex;align-items:center;min-height:25px}
+.g-row.ghead{margin-top:12px;background:var(--panel2);border-radius:8px;padding:5px 0}
+.g-lab{width:var(--glab);flex-shrink:0;font-size:12.5px;padding:0 10px 0 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.g-lab .q{color:var(--muted);font-size:11.5px}
+.g-track{flex:1;position:relative;height:24px}
+.g-bar{position:absolute;border-radius:4px;box-sizing:border-box}
+.g-plan{top:4px;height:16px;border:1.5px dashed #8b9bb088}
+.g-eff{top:4px;height:16px;opacity:.4}
+.g-real{top:13px;height:3px;border-radius:2px;opacity:.85}
+.g-dot{position:absolute;top:8px;height:8px;border-radius:2px;min-width:3px}
+.g-sep{position:absolute;width:1px;background:var(--line);z-index:0}
+.g-today{position:absolute;width:2px;background:var(--bad);z-index:3;opacity:.85}
+.g-wlab{position:absolute;top:2px;font-size:11px;color:var(--muted)}
+.mov-chip{color:var(--warn);font-size:11px;font-weight:700}
 @media(max-width:680px){
+  .gantt{--glab:150px}
   .bar-row .name{width:130px}.bar-row .num{width:90px}
   .sched-item .mt{width:auto}.timer{font-size:48px}
   .row2,.row3{grid-template-columns:1fr}
@@ -147,6 +165,7 @@ th.wk-now,td.wk-now{background:rgba(76,194,255,.12)}
     <button data-tab="assuntos">Assuntos por Matéria</button>
     <button data-tab="disciplina">Disciplina</button>
     <button data-tab="cronograma">Cronograma</button>
+    <button data-tab="gantt">Gantt</button>
     <button data-tab="historico">Histórico</button>
   </nav>
 
@@ -155,6 +174,7 @@ th.wk-now,td.wk-now{background:rgba(76,194,255,.12)}
   <section id="tab-assuntos" class="hide"></section>
   <section id="tab-disciplina" class="hide"></section>
   <section id="tab-cronograma" class="hide"></section>
+  <section id="tab-gantt" class="hide"></section>
   <section id="tab-historico" class="hide"></section>
 </div>
 <div class="toast" id="toast"></div>
@@ -490,7 +510,7 @@ function streak(){
 /* ============================================================
    NAVEGAÇÃO
    ============================================================ */
-const TABS=["dash","sessao","assuntos","disciplina","cronograma","historico"];
+const TABS=["dash","sessao","assuntos","disciplina","cronograma","gantt","historico"];
 document.querySelectorAll("#tabs button").forEach(b=>{
   b.onclick=()=>{
     document.querySelectorAll("#tabs button").forEach(x=>x.classList.remove("active"));
@@ -507,6 +527,7 @@ function render(tab){
   else if(tab==="assuntos") renderAssuntos();
   else if(tab==="disciplina") renderDisciplina();
   else if(tab==="cronograma") renderCronograma();
+  else if(tab==="gantt") renderGantt();
   else if(tab==="historico") renderHistorico();
 }
 
@@ -1104,44 +1125,121 @@ function renderDisciplina(){
 }
 
 /* ============================================================
+   REPLANEJAMENTO DINÂMICO — o cronograma segue a execução real.
+   planExec(): consolida as sessões por assunto (questões, datas, dias).
+   replanejar(): assuntos com meta cumprida ficam na semana em que foram
+   concluídos; o que falta é realocado da semana atual em diante (nunca
+   antes da semana original), empurrando para a frente quando a capacidade
+   semanal da matéria (maior carga semanal do próprio plano) estoura.
+   ============================================================ */
+function planExec(){
+  const m={};
+  [...state.sessions].sort((a,b)=>a.data.localeCompare(b.data)||(a.id||0)-(b.id||0)).forEach(s=>{
+    if(!s.topicId) return; const k=String(s.topicId);
+    if(!m[k]) m[k]={qr:0,qa:0,min:0,d0:null,d1:null,dMeta:null,dias:[]};
+    const e=m[k];
+    e.qr+=s.qResolvidas||0; e.qa+=s.qAcertadas||0; e.min+=s.minutos||0;
+    if((s.minutos||0)>0||(s.qResolvidas||0)>0){
+      if(!e.d0) e.d0=s.data; if(!e.d1||s.data>e.d1) e.d1=s.data;
+      if(!e.dias.includes(s.data)) e.dias.push(s.data);
+    }
+    const meta=topicMeta(s.topicId);
+    if(!e.dMeta&&meta>0&&e.qr>=meta) e.dMeta=s.data;
+  });
+  return m;
+}
+function replanejar(){
+  const exec=planExec();
+  const cwReal=semanaDoDia(new Date());
+  const wNow=Math.min(8,Math.max(1,cwReal));
+  const topics=SEED_TOPICS.filter(t=>topicMeta(t.id)>0&&topicSemana(t.id)>0);
+  // capacidade semanal por matéria = maior carga semanal do plano original
+  const load={};
+  topics.forEach(t=>{ const g=grupo(t.mat), w=topicSemana(t.id);
+    (load[g]=load[g]||{})[w]=(load[g][w]||0)+topicMeta(t.id); });
+  const cap={}; Object.keys(load).forEach(g=>cap[g]=Math.max(...Object.values(load[g])));
+  const info={}, uso={}, pend=[]; let overflow=0;
+  topics.forEach(t=>{
+    const e=exec[String(t.id)]||{qr:0,qa:0,min:0,dias:[]};
+    const meta=topicMeta(t.id), semOrig=topicSemana(t.id);
+    const resto=Math.max(0,meta-e.qr);
+    const ok=resto===0||state.topicStatus[t.id]==="concluido";
+    if(ok){
+      const dRef=e.dMeta||e.d1;
+      const semEff=dRef?Math.min(8,Math.max(1,semanaDoDia(new Date(dRef+"T12:00:00")))):semOrig;
+      info[t.id]={t,semOrig,semEff,meta,qr:e.qr,qa:e.qa,resto:0,ok:true,movido:false,exec:e};
+    } else pend.push({t,g:grupo(t.mat),semOrig,meta,resto,e});
+  });
+  pend.sort((a,b)=>a.semOrig-b.semOrig||prioSort(a.t,b.t));
+  pend.forEach(p=>{
+    let w=Math.max(wNow,Math.min(p.semOrig,8));
+    while(w<8){
+      const usado=(uso[p.g]&&uso[p.g][w])||0;
+      if(usado===0||usado+p.resto<=cap[p.g]) break;
+      w++;
+    }
+    (uso[p.g]=uso[p.g]||{})[w]=(((uso[p.g]||{})[w])||0)+p.resto;
+    if(w>6) overflow+=p.resto;
+    info[p.t.id]={t:p.t,semOrig:p.semOrig,semEff:w,meta:p.meta,qr:p.e.qr,qa:p.e.qa,resto:p.resto,ok:false,movido:w>p.semOrig,exec:p.e};
+  });
+  return {info,cap,wNow,cwReal,overflow};
+}
+
+/* ============================================================
    CRONOGRAMA
    ============================================================ */
-function tabelaQuestoesSemana(hl){
-  const weeks=[1,2,3,4,5,6];
-  const mats=Object.keys(MAT_INFO).filter(g=>SEED_TOPICS.some(t=>grupo(t.mat)===g && topicMeta(t.id)>0));
-  // soma metas por matéria/semana
-  const cell={}, totMat={}, totSem={}, timeSem={};
-  mats.forEach(g=>{ cell[g]={}; totMat[g]=0; weeks.forEach(w=>cell[g][w]=0); });
-  SEED_TOPICS.forEach(t=>{ const g=grupo(t.mat), m=topicMeta(t.id), s=topicSemana(t.id);
-    if(m>0 && s>0 && cell[g]){ cell[g][s]=(cell[g][s]||0)+m; totMat[g]+=m; totSem[s]=(totSem[s]||0)+m; } });
+let cronoModo="efetivo"; // "efetivo" = replanejado conforme execução · "original" = plano fixo
+function cronoModoSet(m){ cronoModo=m; renderCronograma(); }
+
+function tabelaQuestoesSemana(hl,plano){
+  const efet=cronoModo==="efetivo";
+  const infos=Object.values(plano.info);
+  let maxW=6;
+  if(efet) infos.forEach(i=>{ if(!i.ok&&i.semEff>maxW) maxW=i.semEff; });
+  const weeks=[]; for(let w=1;w<=maxW;w++) weeks.push(w);
+  const mats=Object.keys(MAT_INFO).filter(g=>infos.some(i=>grupo(i.t.mat)===g));
+  const cell={}, pendCell={}, totMat={}, totSem={}, timeSem={};
+  mats.forEach(g=>{ cell[g]={}; pendCell[g]={}; totMat[g]=0; });
+  infos.forEach(i=>{
+    const g=grupo(i.t.mat), w=efet?i.semEff:i.semOrig, v=efet?(i.ok?i.meta:i.resto):i.meta;
+    cell[g][w]=(cell[g][w]||0)+v; totMat[g]+=v; totSem[w]=(totSem[w]||0)+v;
+    if(!i.ok) pendCell[g][w]=true;
+  });
   weeks.forEach(w=>{ let min=0; mats.forEach(g=>{ min+=(cell[g][w]||0)/ritmo(g)*60; }); timeSem[w]=min; });
   const wc=w=>w===hl?" wk-now":"";
   let h=`<table><thead><tr><th>Matéria</th>`+weeks.map(w=>`<th class="right${wc(w)}">S${w}</th>`).join("")+`<th class="right">Total</th></tr></thead><tbody>`;
   mats.forEach(g=>{
     h+=`<tr><td><span class="dot" style="background:${MAT_INFO[g].cor}"></span> ${MAT_INFO[g].nome} <span class="qstat">(${RITMO[g]}q/h)</span></td>`;
-    weeks.forEach(w=>{ const v=cell[g][w]||0; h+=`<td class="right${wc(w)}">${v||'<span class="muted">·</span>'}</td>`; });
+    weeks.forEach(w=>{ const v=cell[g][w]||0;
+      let s=v?String(v):'<span class="muted">·</span>';
+      if(efet&&v&&!pendCell[g][w]) s=`<span style="color:var(--ok);font-weight:600">${v}✓</span>`;
+      h+=`<td class="right${wc(w)}">${s}</td>`; });
     h+=`<td class="right"><b>${totMat[g]}</b></td></tr>`;
   });
   const totGeral=Object.values(totMat).reduce((a,b)=>a+b,0);
   h+=`<tr><td><b>Total questões</b></td>`+weeks.map(w=>`<td class="right${wc(w)}"><b>${totSem[w]||0}</b></td>`).join("")+`<td class="right"><b>${totGeral}</b></td></tr>`;
   h+=`<tr><td class="muted">Tempo só de questões</td>`+weeks.map(w=>`<td class="right muted${wc(w)}">${fmtMin(timeSem[w]||0)}</td>`).join("")+`<td class="right muted">—</td></tr>`;
-  h+=`</tbody></table><div class="muted" style="font-size:12.5px;margin-top:8px">DFin/DAdm/AUD/DCon/TI cobrem o banco cedo → semanas seguintes viram simulados. CASP (banco V2 de 373 q.) tem metas de assunto até S6: P1 ✅ em S1–S3, P2 em S3–S5, P3 em S5–S6. Cont.Geral e Estatística (15 q/h) também seguem até S6. O tempo acima é só resolução; o restante do bloco de 15h/sem é teoria, lei seca, Anki e refazer erros.</div>`;
+  h+=`</tbody></table><div class="muted" style="font-size:12.5px;margin-top:8px">${efet
+    ?`Modo <b>replanejado</b>: células <span style="color:var(--ok)">verdes ✓</span> = metas cumpridas (na semana em que foram concluídas); demais células = questões que <b>faltam</b>, realocadas da semana atual em diante conforme a capacidade semanal de cada matéria. Colunas S7/S8 só aparecem quando o backlog estoura a S6.`
+    :`Plano original fixo. Alterne para “Replanejado” para ver o cronograma ajustado à execução real.`} O tempo acima é só resolução; o restante do bloco de 15h/sem é teoria, lei seca, Anki e refazer erros.</div>`;
   return h;
 }
 
-// Assuntos de uma matéria agendados para a semana (ordenados P1 → P2…, ✅2025 primeiro).
-function topicosSemana(matGroup, week){
-  return SEED_TOPICS.filter(t=> grupo(t.mat)===matGroup && topicSemana(t.id)===week && topicMeta(t.id)>0).sort(prioSort);
+// Assuntos PENDENTES de uma matéria replanejados para a semana (P1 → P2…, ✅2025 primeiro).
+function topicosSemana(matGroup, week, plano){
+  return Object.values(plano.info)
+    .filter(i=>!i.ok&&grupo(i.t.mat)===matGroup&&i.semEff===week)
+    .sort((a,b)=>prioSort(a.t,b.t));
 }
 // Conteúdo (HTML) de um bloco da grade para a semana corrente.
-function blocoConteudo(matGroup, week){
+function blocoConteudo(matGroup, week, plano){
   if(matGroup==="CEX") return `<span class="bloco-note muted">Simulado/reforço misto — refazer os piores da semana (caderno de erros)</span>`;
-  const tops=topicosSemana(matGroup, week);
+  const tops=topicosSemana(matGroup, week, plano);
   if(tops.length){
-    return tops.map(t=>`<span class="topchip${t.c25?' c25':''}">${t.c25?'✅ ':''}${escapeHtml(t.assunto)} <span class="qn">${topicMeta(t.id)}q</span></span>`).join("");
+    return tops.map(i=>`<span class="topchip${i.t.c25?' c25':''}">${i.t.c25?'✅ ':''}${escapeHtml(i.t.assunto)} <span class="qn">${i.qr>0?i.qr+"/":""}${i.meta}q</span>${i.movido?` <span class="mov-chip" title="movido da S${i.semOrig}">↪S${i.semOrig}</span>`:''}</span>`).join("");
   }
-  // Sem assuntos novos: matérias rápidas (50 q/h) já fecharam o banco → viram simulado.
-  if(ritmo(matGroup)>=50) return `<span class="bloco-note">🎯 Banco coberto — simulado por bloco cronometrado (14 q) + refazer as erradas</span>`;
+  // Sem pendências na semana: matérias rápidas (50 q/h) viram simulado.
+  if(ritmo(matGroup)>=50) return `<span class="bloco-note">🎯 Sem pendências — simulado por bloco cronometrado (14 q) + refazer as erradas</span>`;
   return `<span class="bloco-note muted">Revisão / lei seca / Anki</span>`;
 }
 
@@ -1154,6 +1252,7 @@ function cronoNav(d){
 function cronoHoje(){ cronoWeek=null; renderCronograma(); }
 
 function renderCronograma(){
+  const plano=replanejar();
   const now=new Date();
   const cwReal=semanaDoDia(now);                          // semana real (pode ser <1 ou >8)
   const cw = cronoWeek || Math.min(8, Math.max(1, cwReal)); // semana exibida
@@ -1163,11 +1262,27 @@ function renderCronograma(){
   let html=`<div class="card"><b>Período:</b> 25/06/2026 → 21/08/2026 · Segunda a sexta · 3h/dia direcionadas + ~45min de Anki à parte. Provas: 23/08 e 30/08.<br>
   <span class="muted">Em cada bloco ataque primeiro os tópicos <b>✅/P1</b> (caíram no TCE-PE 2025). Cont.Geral: 1 discursiva de DFC por semana (~25 linhas). Sáb: ~30-45min de Português; manutenção das demais via Anki diário.</span></div>`;
 
+  // Resumo do replanejamento (execução real × plano)
+  const infosP=Object.values(plano.info);
+  const conclP=infosP.filter(i=>i.ok).length;
+  const movP=infosP.filter(i=>!i.ok&&i.movido);
+  const movQ=movP.reduce((a,i)=>a+i.resto,0);
+  html+=`<div class="card" style="border-color:${movP.length?'var(--warn)':'var(--ok)'}">
+    <b>🔄 Cronograma dinâmico:</b> ${conclP}/${infosP.length} assuntos com meta cumprida · ${movP.length
+      ?`<span style="color:var(--warn)"><b>${movP.length} re-agendados</b> (${movQ}q pendentes movidas p/ frente${plano.overflow?`; <b>${plano.overflow}q estourando p/ S7–S8</b>`:""})</span>`
+      :`<span style="color:var(--ok)">nenhum atraso — plano em dia</span>`}
+    <span class="muted">· o que não é cumprido migra sozinho para as semanas seguintes — detalhe na aba <b>Gantt</b></span></div>`;
+
   // Avisos de fase fora do ciclo normal
   if(cwReal<1) html+=`<div class="card" style="border-color:var(--accent)"><b>🚀 Fase de arranque (25–26/jun)</b><br><span class="muted">Não monte a grade inteira. Só o de maior ROI + reative o Anki:<br>• 25/jun: DFin — Princípios Orçamentários (30q) · CG — Depreciação (15q)<br>• 26/jun: DFin — Classificação da Receita (30q) · CG — Depreciação (15q, fecha 30). Abaixo, já a grade da Semana 1.</span></div>`;
   if(cwReal>8) html+=`<div class="card" style="border-color:var(--ok)"><b>📝 Período de provas / entre provas</b><br><span class="muted">23/08 (1º dia) e 30/08 (2º dia). 24–28/ago: revisão dirigida ao bloco do 2º dia — só P1 + caderno de erros, sem conteúdo novo.</span></div>`;
 
-  html += `<h2 class="sec">🎯 Metas de questões por semana</h2><div class="card" style="overflow-x:auto">` + tabelaQuestoesSemana(cwReal>=1&&cwReal<=6?cwReal:0) + `</div>`;
+  html += `<h2 class="sec">🎯 Metas de questões por semana <span class="pill">${cronoModo==="efetivo"?"ajustado à execução real":"plano original fixo"}</span></h2>
+  <div class="filters">
+    <button class="btn sm${cronoModo==='efetivo'?' primary':''}" onclick="cronoModoSet('efetivo')">🔄 Replanejado</button>
+    <button class="btn sm${cronoModo==='original'?' primary':''}" onclick="cronoModoSet('original')">📋 Plano original</button>
+  </div>
+  <div class="card" style="overflow-x:auto">` + tabelaQuestoesSemana(cwReal>=1&&cwReal<=8?cwReal:0,plano) + `</div>`;
 
   // Navegador de semana
   html += `<div class="card crono-nav">
@@ -1184,6 +1299,12 @@ function renderCronograma(){
       <div class="sched-item"><span class="min">resto</span><span class="mt">Reforço cirúrgico</span><span class="ds">Só P1 das piores (DFin, Cont.Geral, DCon) + caderno de erros · releitura de 1 página-resumo/matéria</span></div>
       <div class="sched-item"><span class="min">Anki</span><span class="mt">Só revisão</span><span class="ds">Pare de introduzir cards novos a partir de 14/08</span></div>
     </div>`;
+    // Backlog que o replanejamento empurrou p/ dentro da reta final
+    const backlog=Object.values(plano.info).filter(i=>!i.ok&&i.semEff===cw).sort((a,b)=>prioSort(a.t,b.t));
+    if(backlog.length){
+      html+=`<div class="card" style="border-color:var(--warn)"><b>⚠ Backlog re-agendado para esta semana</b> <span class="muted">— liquidar antes/entre os simulados (${backlog.reduce((a,i)=>a+i.resto,0)}q)</span><br><div style="margin-top:8px">`+
+        backlog.map(i=>`<span class="topchip${i.t.c25?' c25':''}">${i.t.c25?'✅ ':''}${escapeHtml(i.t.assunto)} <span class="qn">${i.qr>0?i.qr+"/":""}${i.meta}q</span> <span class="mov-chip">↪S${i.semOrig}</span></span>`).join(" ")+`</div></div>`;
+    }
   } else {
     const hojeDia = isNow ? DIA_SEMANA[now.getDay()] : null;
     Object.entries(GRADE).forEach(([dia,items])=>{
@@ -1191,7 +1312,7 @@ function renderCronograma(){
       const cls = dia===hojeDia ? " today" : "";
       html+=`<div class="sched-day${cls}"><h3><span>${dia} <span class="tot">${fmtMin(tot)} direcionadas</span></span></h3>`;
       items.forEach(([min,mat])=>{
-        html+=`<div class="sched-item"><span class="min">${min}min</span><span class="mt"><span class="dot" style="background:${matCor(mat)}"></span> ${matNome(mat)}</span><span class="ds">${blocoConteudo(mat,cw)}</span></div>`;
+        html+=`<div class="sched-item"><span class="min">${min}min</span><span class="mt"><span class="dot" style="background:${matCor(mat)}"></span> ${matNome(mat)}</span><span class="ds">${blocoConteudo(mat,cw,plano)}</span></div>`;
       });
       html+=`</div>`;
     });
@@ -1203,6 +1324,103 @@ function renderCronograma(){
   FASES.forEach(f=>{ html+=`<div class="phase"><h4>${f.sem} (${f.per}) — ${f.tit}</h4><p>${f.txt}</p></div>`; });
   html+=`<div class="phase" style="border-color:var(--ok)"><h4>Provas — 23/08 (1º dia) e 30/08 (2º dia)</h4><p>23/08: 1º dia. 24-28/ago: revisão dirigida ao bloco do 2º dia, sem conteúdo novo — só P1 + caderno de erros. 30/08: 2º dia.</p></div></div>`;
   document.getElementById("tab-cronograma").innerHTML=html;
+}
+
+/* ============================================================
+   GANTT — previsto (plano original) × replanejado × realizado
+   Linha do tempo diária de 25/06 a 21/08; um assunto por linha.
+   ============================================================ */
+const GANTT_DIAS=Math.round((new Date(PERIODO_FIM+"T12:00:00")-new Date(PERIODO_INI+"T12:00:00"))/86400000)+1;
+function dayIdx(ds){
+  const i=Math.round((new Date(ds+"T12:00:00")-new Date(PERIODO_INI+"T12:00:00"))/86400000);
+  return Math.max(0,Math.min(GANTT_DIAS-1,i));
+}
+function gPos(d0,d1){ const a=dayIdx(d0), b=dayIdx(d1);
+  return `left:${(a/GANTT_DIAS*100).toFixed(3)}%;width:${((b-a+1)/GANTT_DIAS*100).toFixed(3)}%`; }
+function semDatas(w){ // [segunda, sexta] da semana w do ciclo
+  const d=new Date(S1_SEGUNDA+"T12:00:00"); d.setDate(d.getDate()+(w-1)*7);
+  const a=d.toISOString().slice(0,10); d.setDate(d.getDate()+4);
+  return [a,d.toISOString().slice(0,10)];
+}
+let ganttFilt={mat:"",view:""}; // view: ""=todos | pend | mov | conc
+function ganttSet(k,v){ ganttFilt[k]=v; renderGantt(); }
+function renderGantt(){
+  const plano=replanejar();
+  const infos=Object.values(plano.info);
+  const match=i=>{
+    if(ganttFilt.mat&&grupo(i.t.mat)!==ganttFilt.mat) return false;
+    if(ganttFilt.view==="pend") return !i.ok;
+    if(ganttFilt.view==="mov") return !i.ok&&i.movido;
+    if(ganttFilt.view==="conc") return i.ok;
+    return true;
+  };
+  const mats=Object.keys(MAT_INFO).filter(g=>infos.some(i=>grupo(i.t.mat)===g));
+  const concl=infos.filter(i=>i.ok).length, mov=infos.filter(i=>!i.ok&&i.movido).length;
+  const hoje=todayStr();
+
+  let html=`<div class="filters">
+    <select onchange="ganttSet('mat',this.value)"><option value="">Todas as matérias</option>${mats.map(g=>`<option value="${g}" ${g===ganttFilt.mat?"selected":""}>${MAT_INFO[g].nome}</option>`).join("")}</select>
+    <select onchange="ganttSet('view',this.value)">
+      <option value="">Todos os assuntos</option>
+      <option value="pend" ${ganttFilt.view==="pend"?"selected":""}>Só pendentes</option>
+      <option value="mov" ${ganttFilt.view==="mov"?"selected":""}>Só re-agendados</option>
+      <option value="conc" ${ganttFilt.view==="conc"?"selected":""}>Só concluídos</option>
+    </select>
+    <span class="qstat">${concl}/${infos.length} concluídos · ${mov} re-agendados${plano.overflow?` · ${plano.overflow}q estourando p/ S7–S8`:""}</span>
+  </div>
+  <div class="legend">
+    <span><span style="width:18px;height:10px;border:1.5px dashed #8b9bb0;border-radius:3px;display:inline-block"></span> semana planejada (original)</span>
+    <span><span style="width:18px;height:10px;background:#4cc2ff66;border-radius:3px;display:inline-block"></span> semana replanejada (pendente)</span>
+    <span><span class="dot" style="background:var(--ok);border-radius:2px"></span> realizado — meta cumprida</span>
+    <span><span class="dot" style="background:var(--warn);border-radius:2px"></span> realizado parcial</span>
+    <span><span style="width:2px;height:12px;background:var(--bad);display:inline-block"></span> hoje</span>
+  </div>
+  <div class="card gantt-wrap"><div class="gantt">`;
+
+  // overlay: separadores das semanas + linha de hoje (atravessam todas as linhas)
+  let overlay="";
+  for(let w=1;w<=8;w++){ const [a]=semDatas(w);
+    overlay+=`<div class="g-sep" style="top:24px;bottom:0;left:calc(var(--glab) + (100% - var(--glab))*${(dayIdx(a)/GANTT_DIAS).toFixed(4)})"></div>`; }
+  if(hoje>=PERIODO_INI&&hoje<=PERIODO_FIM)
+    overlay+=`<div class="g-today" style="top:0;bottom:0;left:calc(var(--glab) + (100% - var(--glab))*${((dayIdx(hoje)+0.5)/GANTT_DIAS).toFixed(4)})" title="hoje"></div>`;
+
+  // cabeçalho S1..S8
+  html+=`<div class="g-row" style="min-height:24px"><div class="g-lab muted" style="font-size:11px">assunto · feitas/meta</div><div class="g-track">`;
+  for(let w=1;w<=8;w++){ const [a,b]=semDatas(w);
+    html+=`<div class="g-wlab" style="${gPos(a,b)};text-align:center" title="${fmtData(a)}–${fmtData(b)}">S${w}</div>`; }
+  html+=`</div></div>`;
+
+  let temLinha=false;
+  mats.forEach(g=>{
+    const items=infos.filter(i=>grupo(i.t.mat)===g&&match(i))
+      .sort((a,b)=>a.semEff-b.semEff||prioSort(a.t,b.t));
+    if(!items.length) return;
+    temLinha=true;
+    const doneG=infos.filter(i=>grupo(i.t.mat)===g&&i.ok).length, totG=infos.filter(i=>grupo(i.t.mat)===g).length;
+    html+=`<div class="g-row ghead"><div class="g-lab"><span class="dot" style="background:${MAT_INFO[g].cor}"></span> <b>${MAT_INFO[g].nome}</b> <span class="q">${doneG}/${totG} concl.</span></div><div class="g-track"></div></div>`;
+    items.forEach(i=>{
+      const cor=MAT_INFO[g].cor;
+      const st=i.ok
+        ?`<span style="color:var(--ok)">${i.qr}/${i.meta}q ✓</span>`
+        :`<span class="q">${i.qr}/${i.meta}q</span>${i.movido?` <span class="mov-chip">↪S${i.semOrig}→S${i.semEff}</span>`:""}`;
+      html+=`<div class="g-row"><div class="g-lab" title="${escapeHtml(i.t.assunto)}"><span class="prio p${i.t.prio||3}" style="font-size:10px">${PRIO_LABEL[i.t.prio||3]}</span> ${i.t.c25?"✅ ":""}${escapeHtml(i.t.assunto)} ${st}</div><div class="g-track">`;
+      const [p0,p1]=semDatas(Math.min(8,i.semOrig));
+      html+=`<div class="g-bar g-plan" style="${gPos(p0,p1)}" title="planejado: S${i.semOrig} (${fmtData(p0)}–${fmtData(p1)})"></div>`;
+      if(!i.ok){ const [e0,e1]=semDatas(i.semEff);
+        html+=`<div class="g-bar g-eff" style="${gPos(e0,e1)};background:${cor}" title="replanejado: S${i.semEff} — faltam ${i.resto}q"></div>`; }
+      const e=i.exec;
+      if(e&&e.d0){
+        const corR=i.ok?"var(--ok)":"var(--warn)";
+        html+=`<div class="g-bar g-real" style="${gPos(e.d0,e.d1)};background:${corR}"></div>`;
+        (e.dias||[]).forEach(ds=>html+=`<div class="g-dot" style="left:${(dayIdx(ds)/GANTT_DIAS*100).toFixed(3)}%;width:${(100/GANTT_DIAS).toFixed(3)}%;background:${corR}" title="sessão em ${fmtData(ds)}"></div>`);
+      }
+      html+=`</div></div>`;
+    });
+  });
+  if(!temLinha) html+=`<div class="empty">Nenhum assunto com esses filtros.</div>`;
+  html+=overlay+`</div></div>
+  <div class="muted" style="font-size:12.5px;margin-top:10px">Somente assuntos com meta de questões no plano (os mantidos só via Anki ficam de fora). Barra tracejada = semana do plano original; barra colorida translúcida = para onde o pendente foi <b>replanejado</b> conforme a execução (o que não é feito anda para a frente, respeitando a capacidade semanal da matéria). Quadradinhos = dias com sessão registrada no assunto.</div>`;
+  document.getElementById("tab-gantt").innerHTML=html;
 }
 
 /* ============================================================
