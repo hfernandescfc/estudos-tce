@@ -406,12 +406,12 @@ function topicCodigos(id){ return CODIGOS[id]||[]; }
 // no DOM: verCods age sobre o irmão .cods-list. Retorna "" se não houver código.
 function codigosUI(id){
   const c=topicCodigos(id); if(!c.length) return "";
-  return `<span class="cods"><button class="btn xs" title="Copiar ${c.length} códigos p/ colar no TEC" onclick="copiarCods(event,${id})">📋 ${c.length}</button><span class="cods-ver" onclick="verCods(event)">ver</span><span class="cods-list hide">${c.join(", ")}</span></span>`;
+  return `<span class="cods"><button class="btn xs" title="Copiar ${c.length} códigos p/ colar no TEC" onclick="copiarCods(event,${id})">📋 ${c.length}</button><span class="cods-ver" onclick="verCods(event)">ver</span><span class="cods-list hide">${c.join(" ")}</span></span>`;
 }
 function copiarCods(ev,id){
   ev.stopPropagation();
   const c=topicCodigos(id); if(!c.length){ toast("Sem códigos p/ este assunto"); return; }
-  const txt=c.join(", "), ok=()=>toast(c.length+" códigos copiados ✓");
+  const txt=c.join(" "), ok=()=>toast(c.length+" códigos copiados ✓");
   if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(ok).catch(()=>fallbackCopy(txt,ok));
   else fallbackCopy(txt,ok);
 }
