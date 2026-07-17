@@ -15,7 +15,9 @@
     "tec_registros_2026-07-13.json",
     "tec_registros_2026-07-14.json",
     "tec_registros_2026-07-14(1).json",
-    "tec_registros_2026-07-15.json"
+    "tec_registros_2026-07-15.json",
+    "tec_registros_2026-07-16 (1).json",
+    "tec_registros_2026-07-17.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -204,7 +206,7 @@
         },
         "d6": {
           "prevista": "2026-07-16",
-          "emitida": null,
+          "emitida": "2026-07-17",
           "resultado": null
         },
         "d14": {
@@ -245,7 +247,7 @@
         },
         "d14": {
           "prevista": "2026-07-16",
-          "emitida": null
+          "emitida": "2026-07-17"
         },
         "d28": {
           "prevista": "2026-07-30",
@@ -277,7 +279,7 @@
         },
         "d14": {
           "prevista": "2026-07-16",
-          "emitida": null
+          "emitida": "2026-07-17"
         },
         "d28": {
           "prevista": "2026-07-30",
@@ -295,11 +297,11 @@
         "3822442"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-16",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -312,11 +314,11 @@
         "3235138"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-16",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -327,11 +329,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-16",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -342,11 +344,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-16",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -357,11 +359,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-16",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -395,7 +397,7 @@
         },
         "d14": {
           "prevista": "2026-07-17",
-          "emitida": null
+          "emitida": "2026-07-17"
         },
         "d28": {
           "prevista": "2026-07-31",
@@ -413,11 +415,11 @@
         "2849400"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-17",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -428,11 +430,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-17",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -446,11 +448,11 @@
         "3105640"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-17",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -463,11 +465,11 @@
         "3905399"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-17",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -481,11 +483,11 @@
         "3610242"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-17",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -502,11 +504,11 @@
         "3736718"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-17",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -517,11 +519,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-17",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -532,11 +534,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-17",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -547,11 +549,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-17",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -564,11 +566,11 @@
         "2687845"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-17",
-          "emitida": null
+          "emitida": "2026-07-17"
         }
       }
     },
@@ -1190,7 +1192,7 @@
         },
         "d6": {
           "prevista": "2026-07-16",
-          "emitida": null,
+          "emitida": "2026-07-17",
           "resultado": null
         },
         "d14": {
@@ -1220,7 +1222,7 @@
         },
         "d6": {
           "prevista": "2026-07-16",
-          "emitida": null,
+          "emitida": "2026-07-17",
           "resultado": null
         },
         "d14": {
@@ -1254,7 +1256,7 @@
         },
         "d6": {
           "prevista": "2026-07-16",
-          "emitida": null,
+          "emitida": "2026-07-17",
           "resultado": null
         },
         "d14": {
@@ -1282,7 +1284,7 @@
         },
         "d6": {
           "prevista": "2026-07-16",
-          "emitida": null,
+          "emitida": "2026-07-17",
           "resultado": null
         },
         "d14": {
@@ -1310,7 +1312,7 @@
         },
         "d6": {
           "prevista": "2026-07-16",
-          "emitida": null,
+          "emitida": "2026-07-17",
           "resultado": null
         },
         "d14": {
@@ -2032,40 +2034,512 @@
           "emitida": null
         }
       }
+    },
+    "Auditoria Privada||Testes e Procedimentos em Auditoria": {
+      "materia": "Auditoria Privada",
+      "assunto": "Testes e Procedimentos em Auditoria",
+      "data_base": "2026-07-16",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3734564",
+        "3736946",
+        "2771970",
+        "2793108",
+        "3043665",
+        "2346850"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-16",
+          "emitida": "2026-07-17"
+        },
+        "d6": {
+          "prevista": "2026-07-22",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-30",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-13",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Das Responsabilidades (arts. 32 a 34 da Lei nº 12.527/2011)": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Das Responsabilidades (arts. 32 a 34 da Lei nº 12.527/2011)",
+      "data_base": "2026-07-16",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2368981"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-30",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Das Restrições de Acesso à Informação (arts. 21 a 31 da Lei nº 12.527/2011)": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Das Restrições de Acesso à Informação (arts. 21 a 31 da Lei nº 12.527/2011)",
+      "data_base": "2026-07-16",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3608260",
+        "3043583",
+        "2695267"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-30",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Do Acesso a Informações e da sua Divulgação (arts. 6º a 9º da Lei nº 12.527/2011)": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Do Acesso a Informações e da sua Divulgação (arts. 6º a 9º da Lei nº 12.527/2011)",
+      "data_base": "2026-07-16",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-30",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Do Procedimento de Acesso à Informação (arts. 10 a 20 da Lei nº 12.527/2011)": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Do Procedimento de Acesso à Informação (arts. 10 a 20 da Lei nº 12.527/2011)",
+      "data_base": "2026-07-16",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3822874",
+        "3610236",
+        "2369725"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-30",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados da Lei nº 12.527/2011": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Tópicos Mesclados da Lei nº 12.527/2011",
+      "data_base": "2026-07-16",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3135579"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-30",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Estados Federados - Organização, Competências, Bens (arts. 25 a 28 da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Estados Federados - Organização, Competências, Bens (arts. 25 a 28 da CF/1988)",
+      "data_base": "2026-07-16",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-30",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Organização, Competências e Bens dos Entes Federativos": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Jurisprudência dos Tribunais Superiores sobre Organização, Competências e Bens dos Entes Federativos",
+      "data_base": "2026-07-16",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3257566",
+        "3400982",
+        "2791812",
+        "2369763"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-30",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Despesas de Exercícios Anteriores (DEA)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Despesas de Exercícios Anteriores (DEA)",
+      "data_base": "2026-07-17",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-17",
+          "emitida": "2026-07-17"
+        },
+        "d6": {
+          "prevista": "2026-07-23",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-31",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Despesa Pública": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Estágios da Despesa Pública",
+      "data_base": "2026-07-17",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3604748",
+        "3735403",
+        "2558498",
+        "2709746"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-17",
+          "emitida": "2026-07-17"
+        },
+        "d6": {
+          "prevista": "2026-07-23",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-31",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Programação e Descentralização Orçamentária e Financeira": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Programação e Descentralização Orçamentária e Financeira",
+      "data_base": "2026-07-17",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3823045",
+        "3601475",
+        "3157591",
+        "2558516"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-17",
+          "emitida": "2026-07-17"
+        },
+        "d6": {
+          "prevista": "2026-07-23",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-31",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Restos a Pagar (RAP)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Restos a Pagar (RAP)",
+      "data_base": "2026-07-17",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3900980",
+        "3735133"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-17",
+          "emitida": "2026-07-17"
+        },
+        "d6": {
+          "prevista": "2026-07-23",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-31",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        }
+      }
+    },
+    "Estatística||Teste de Hipóteses: Introdução (Nível de Significância, Erros Tipo I e II, Poder do Teste)": {
+      "materia": "Estatística",
+      "assunto": "Teste de Hipóteses: Introdução (Nível de Significância, Erros Tipo I e II, Poder do Teste)",
+      "data_base": "2026-07-17",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3746639",
+        "3098671",
+        "3178867"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-17",
+          "emitida": "2026-07-17"
+        },
+        "d6": {
+          "prevista": "2026-07-23",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-07-31",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        }
+      }
+    },
+    "TI - Ciência de Dados e Inteligência Artificial||Conceitos Gerais de Machine Learning": {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "assunto": "Conceitos Gerais de Machine Learning",
+      "data_base": "2026-07-17",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3401316",
+        "3605673",
+        "3195655"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-31",
+          "emitida": null
+        }
+      }
+    },
+    "TI - Ciência de Dados e Inteligência Artificial||Conceitos Iniciais e Gerais de Inteligência Artificial": {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "assunto": "Conceitos Iniciais e Gerais de Inteligência Artificial",
+      "data_base": "2026-07-17",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-31",
+          "emitida": null
+        }
+      }
+    },
+    "TI - Ciência de Dados e Inteligência Artificial||LLM (Large Language Models)": {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "assunto": "LLM (Large Language Models)",
+      "data_base": "2026-07-17",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3603144"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-31",
+          "emitida": null
+        }
+      }
+    },
+    "TI - Ciência de Dados e Inteligência Artificial||Redes Neurais": {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "assunto": "Redes Neurais",
+      "data_base": "2026-07-17",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-07-31",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-15",
+    "data": "2026-07-17",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Intangível (MCASP e NBC TSP 08)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Orçamentário (MCASP e NBC TSP 13)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Conceitos, Objeto, Objetivos e Campo de Aplicação (Estrutura Conceitual - Prefácio e caps. 1 a 4)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Classificação da Despesa Orçamentária",
         "d14"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Créditos Adicionais",
+        "AFO, Direito Financeiro e Contabilidade Pública||Despesas de Exercícios Anteriores (DEA)",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Despesa Pública",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Programação e Descentralização Orçamentária e Financeira",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Restos a Pagar (RAP)",
+        "d1"
+      ],
+      [
+        "Auditoria Governamental e Controle||Auditoria Operacional",
         "d6"
       ],
       [
-        "Auditoria Governamental e Controle||Princípios, Propósitos e Abrangência da Auditoria Governamental",
+        "Auditoria Governamental e Controle||Classificação dos Tipos de Auditoria",
         "d14"
       ],
       [
-        "Contabilidade Geral||Reservas de Lucros",
+        "Auditoria Governamental e Controle||Outras Questões e Tópicos Mesclados de Auditoria Governamental",
+        "d6"
+      ],
+      [
+        "Auditoria Privada||Testes e Procedimentos em Auditoria",
         "d1"
       ],
       [
-        "Direito Constitucional (CF/1988 e Doutrina)||Métodos e Princípios de Interpretação das Normas Constitucionais",
+        "Contabilidade Geral||(sem assunto)",
+        "d6"
+      ],
+      [
+        "Contabilidade Geral||Conceito, Objeto, Finalidade, Técnicas Contábeis, Equação Patrimonial",
+        "d6"
+      ],
+      [
+        "Contabilidade Geral||Estrutura Conceitual Básica da Contabilidade (CPC 00)",
+        "d6"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Contratação Direta, Inexigibilidade e Dispensa (arts. 72 a 75 da Lei nº 14.133/2021)",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Da Prescrição (arts. 23 a 23-C da Lei nº 8.429/1992)",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Das Disposições Gerais (arts. 1º a 8º-A da Lei nº 8.429/1992)",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Das Penas (art. 12 da Lei nº 8.429/1992)",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Do Procedimento Administrativo e do Processo Judicial (arts. 14 a 18-A da Lei nº 8.429/1992)",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Dos Atos de Improbidade (arts. 9º a 11 da Lei nº 8.429/1992)",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Instrumentos Auxiliares (arts. 78 a 88 da Lei nº 14.133/2021)",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados da Lei nº 14.133/2021",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados de Improbidade Administrativa (Lei nº 8.429/1992)",
+        "d14"
+      ],
+      [
+        "Direito Constitucional (CF/1988 e Doutrina)||Competências para Fiscalização e Tribunal de Contas da União (arts. 70 a 73 da CF/1988)",
+        "d14"
+      ],
+      [
+        "Estatística||Distribuição Binomial",
+        "d14"
+      ],
+      [
+        "Estatística||Intervalo de Confiança para a Média",
+        "d6"
+      ],
+      [
+        "Estatística||Teste de Hipóteses: Introdução (Nível de Significância, Erros Tipo I e II, Poder do Teste)",
+        "d1"
+      ],
+      [
+        "TI - Ciência de Dados e Inteligência Artificial||Algoritmos de Machine Learning (Classificação, Regressão e Clusterização)",
+        "d14"
+      ],
+      [
+        "TI - Ciência de Dados e Inteligência Artificial||Data Mining (Mineração de Dados): Etapas, Algoritmos e Modelos (KDD, CRISP-DM, etc.)",
+        "d14"
+      ],
+      [
+        "TI - Ciência de Dados e Inteligência Artificial||OLAP e suas diferenças com OLTP",
+        "d14"
+      ],
+      [
+        "TI - Ciência de Dados e Inteligência Artificial||Processamento de Linguagem Natural (IA)",
+        "d14"
+      ],
+      [
+        "TI - Ciência de Dados e Inteligência Artificial||Treinamento e Avaliação de Modelos",
         "d14"
       ]
     ],
-    "confirmada": "2026-07-15"
+    "confirmada": "2026-07-17"
   }
 }
