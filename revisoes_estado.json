@@ -17,7 +17,8 @@
     "tec_registros_2026-07-14(1).json",
     "tec_registros_2026-07-15.json",
     "tec_registros_2026-07-16 (1).json",
-    "tec_registros_2026-07-17.json"
+    "tec_registros_2026-07-17.json",
+    "tec_registros_2026-07-20.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -29,7 +30,7 @@
         "2709715"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-06-27",
@@ -52,7 +53,7 @@
         },
         "d28": {
           "prevista": "2026-07-24",
-          "emitida": null
+          "emitida": "2026-07-20"
         }
       }
     },
@@ -290,18 +291,15 @@
     "TI - Ciência de Dados e Inteligência Artificial||Algoritmos de Machine Learning (Classificação, Regressão e Clusterização)": {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
       "assunto": "Algoritmos de Machine Learning (Classificação, Regressão e Clusterização)",
-      "data_base": "2026-07-02",
+      "data_base": "2026-07-20",
       "cadeia_completa": false,
-      "alvos_origem": [
-        "3871420",
-        "3822442"
-      ],
+      "alvos_origem": [],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-07-16",
-          "emitida": "2026-07-17"
+          "prevista": "2026-08-03",
+          "emitida": null
         }
       }
     },
@@ -355,15 +353,17 @@
     "TI - Ciência de Dados e Inteligência Artificial||Treinamento e Avaliação de Modelos": {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
       "assunto": "Treinamento e Avaliação de Modelos",
-      "data_base": "2026-07-02",
+      "data_base": "2026-07-20",
       "cadeia_completa": false,
-      "alvos_origem": [],
+      "alvos_origem": [
+        "3177836"
+      ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-07-16",
-          "emitida": "2026-07-17"
+          "prevista": "2026-08-03",
+          "emitida": null
         }
       }
     },
@@ -600,7 +600,7 @@
         },
         "d14": {
           "prevista": "2026-07-20",
-          "emitida": null
+          "emitida": "2026-07-20"
         },
         "d28": {
           "prevista": "2026-08-03",
@@ -626,7 +626,7 @@
         },
         "d6": {
           "prevista": "2026-07-20",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -1405,7 +1405,7 @@
         },
         "d6": {
           "prevista": "2026-07-18",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -1436,7 +1436,7 @@
         },
         "d6": {
           "prevista": "2026-07-18",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -1469,7 +1469,7 @@
         },
         "d6": {
           "prevista": "2026-07-18",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -1499,7 +1499,7 @@
         },
         "d6": {
           "prevista": "2026-07-18",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -1613,7 +1613,7 @@
         },
         "d6": {
           "prevista": "2026-07-20",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -1641,7 +1641,7 @@
         },
         "d6": {
           "prevista": "2026-07-20",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -1669,7 +1669,7 @@
         },
         "d6": {
           "prevista": "2026-07-20",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -1704,7 +1704,7 @@
         },
         "d6": {
           "prevista": "2026-07-20",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -1735,7 +1735,7 @@
         },
         "d6": {
           "prevista": "2026-07-20",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -1771,7 +1771,7 @@
         },
         "d6": {
           "prevista": "2026-07-20",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -1806,7 +1806,7 @@
         },
         "d6": {
           "prevista": "2026-07-20",
-          "emitida": null,
+          "emitida": "2026-07-20",
           "resultado": null
         },
         "d14": {
@@ -2414,132 +2414,209 @@
           "emitida": null
         }
       }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Balanço Patrimonial (AFO e CPU)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Balanço Patrimonial (AFO e CPU)",
+      "data_base": "2026-07-20",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3228065",
+        "3105795",
+        "2620969"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-20",
+          "emitida": "2026-07-20"
+        },
+        "d6": {
+          "prevista": "2026-07-25",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-03",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Consolidação das Demonstrações Contábeis": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Consolidação das Demonstrações Contábeis",
+      "data_base": "2026-07-20",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3822805"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-20",
+          "emitida": "2026-07-20"
+        },
+        "d6": {
+          "prevista": "2026-07-25",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-03",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Lei Complementar nº 159/2017 (Regime de Recuperação Fiscal)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Lei Complementar nº 159/2017 (Regime de Recuperação Fiscal)",
+      "data_base": "2026-07-20",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-20",
+          "emitida": "2026-07-20"
+        },
+        "d6": {
+          "prevista": "2026-07-25",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-03",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Manual de Demonstrativos Fiscais": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Manual de Demonstrativos Fiscais",
+      "data_base": "2026-07-20",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3232120",
+        "3257548",
+        "3257552",
+        "3048278",
+        "2336670",
+        "2337075"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-20",
+          "emitida": "2026-07-20"
+        },
+        "d6": {
+          "prevista": "2026-07-25",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-03",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-17",
+    "data": "2026-07-20",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Classificação da Despesa Orçamentária",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Despesas de Exercícios Anteriores (DEA)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Despesa Pública",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Programação e Descentralização Orçamentária e Financeira",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Restos a Pagar (RAP)",
-        "d1"
-      ],
-      [
-        "Auditoria Governamental e Controle||Auditoria Operacional",
+        "AFO, Direito Financeiro e Contabilidade Pública||(sem assunto)",
         "d6"
       ],
       [
-        "Auditoria Governamental e Controle||Classificação dos Tipos de Auditoria",
-        "d14"
-      ],
-      [
-        "Auditoria Governamental e Controle||Outras Questões e Tópicos Mesclados de Auditoria Governamental",
+        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Orçamentário (MCASP e NBC TSP 13)",
         "d6"
       ],
       [
-        "Auditoria Privada||Testes e Procedimentos em Auditoria",
+        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Patrimonial (AFO e CPU)",
         "d1"
       ],
       [
-        "Contabilidade Geral||(sem assunto)",
-        "d6"
-      ],
-      [
-        "Contabilidade Geral||Conceito, Objeto, Finalidade, Técnicas Contábeis, Equação Patrimonial",
-        "d6"
-      ],
-      [
-        "Contabilidade Geral||Estrutura Conceitual Básica da Contabilidade (CPC 00)",
-        "d6"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Contratação Direta, Inexigibilidade e Dispensa (arts. 72 a 75 da Lei nº 14.133/2021)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Da Prescrição (arts. 23 a 23-C da Lei nº 8.429/1992)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Das Disposições Gerais (arts. 1º a 8º-A da Lei nº 8.429/1992)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Das Penas (art. 12 da Lei nº 8.429/1992)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Do Procedimento Administrativo e do Processo Judicial (arts. 14 a 18-A da Lei nº 8.429/1992)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Dos Atos de Improbidade (arts. 9º a 11 da Lei nº 8.429/1992)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Instrumentos Auxiliares (arts. 78 a 88 da Lei nº 14.133/2021)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados da Lei nº 14.133/2021",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados de Improbidade Administrativa (Lei nº 8.429/1992)",
-        "d14"
-      ],
-      [
-        "Direito Constitucional (CF/1988 e Doutrina)||Competências para Fiscalização e Tribunal de Contas da União (arts. 70 a 73 da CF/1988)",
-        "d14"
-      ],
-      [
-        "Estatística||Distribuição Binomial",
-        "d14"
-      ],
-      [
-        "Estatística||Intervalo de Confiança para a Média",
-        "d6"
-      ],
-      [
-        "Estatística||Teste de Hipóteses: Introdução (Nível de Significância, Erros Tipo I e II, Poder do Teste)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Consolidação das Demonstrações Contábeis",
         "d1"
       ],
       [
-        "TI - Ciência de Dados e Inteligência Artificial||Algoritmos de Machine Learning (Classificação, Regressão e Clusterização)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Demonstração das Variações Patrimoniais (DVP)",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Demonstração de Fluxo de Caixa (MCASP e NBC TSP 12)",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Dívida Ativa",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Estoques (MCASP e NBC TSP 04)",
         "d14"
       ],
       [
-        "TI - Ciência de Dados e Inteligência Artificial||Data Mining (Mineração de Dados): Etapas, Algoritmos e Modelos (KDD, CRISP-DM, etc.)",
-        "d14"
+        "AFO, Direito Financeiro e Contabilidade Pública||Funções de Governo",
+        "d6"
       ],
       [
-        "TI - Ciência de Dados e Inteligência Artificial||OLAP e suas diferenças com OLTP",
-        "d14"
+        "AFO, Direito Financeiro e Contabilidade Pública||LOA - Lei Orçamentária Anual (CF/1988 e Lei nº 4.320/1964)",
+        "d6"
       ],
       [
-        "TI - Ciência de Dados e Inteligência Artificial||Processamento de Linguagem Natural (IA)",
-        "d14"
+        "AFO, Direito Financeiro e Contabilidade Pública||Lei Complementar nº 159/2017 (Regime de Recuperação Fiscal)",
+        "d1"
       ],
       [
-        "TI - Ciência de Dados e Inteligência Artificial||Treinamento e Avaliação de Modelos",
-        "d14"
+        "AFO, Direito Financeiro e Contabilidade Pública||Manual de Demonstrativos Fiscais",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||PPA - Plano Plurianual (CF/1988 e Lei nº 4.320/1964)",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários",
+        "d28"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Vedações Constitucionais em Matéria Orçamentária (Art. 167 da CF/1988)",
+        "d6"
+      ],
+      [
+        "Auditoria Governamental e Controle||(sem assunto)",
+        "d6"
+      ],
+      [
+        "Contabilidade Geral||Ativo Imobilizado (Conceito, Classificação, Mensuração Inicial, Reavaliação)",
+        "d6"
       ]
     ],
-    "confirmada": "2026-07-17"
+    "confirmada": "2026-07-20"
   }
 }
