@@ -594,6 +594,41 @@ const REV_FULL=["DFin","CG","CASP","Estat","AUD"];
    Quando o fetch funciona (Pages/servidor), a fila exibida é a das cadeias reais do TEC;
    sem o arquivo (ex.: aberto via file://), cai no cálculo estimado pelas sessões abaixo. --- */
 let REV_ESTADO=null;
+/* Desempenho REAL por assunto — consolidado de TODAS as questões registradas no
+   TEC (04_Scripts/desempenho_assuntos.py grava Estudos/desempenho_assuntos.json).
+   Independe do lançamento manual de sessões, que costuma ficar incompleto. */
+let DESEMP_TEC=null;
+function corPct(p){ return p>=80?"var(--ok)":(p>=70?"var(--warn)":"var(--bad)"); }
+function drawDesempTec(){
+  const box=document.getElementById("desempTecBox"); if(!box) return;
+  if(!DESEMP_TEC){
+    box.innerHTML=`<div class="card" style="border-left:3px solid var(--accent2)"><b>Desempenho real por assunto</b> — rode <code>python 06_Scripts/desempenho_assuntos.py</code> e faça commit de <code>Estudos/desempenho_assuntos.json</code> para ver aqui o consolidado de todas as questões do TEC (não só as sessões lançadas à mão).</div>`;
+    return;
+  }
+  const R=DESEMP_TEC.resumo, mats=DESEMP_TEC.materias||[], ass=DESEMP_TEC.assuntos||[];
+  const crit=ass.filter(a=>a.unicas>=4 && a.pct_unicas<70 && a.assunto!=="Sem assunto")
+                .sort((a,b)=>a.pct_unicas-b.pct_unicas);
+  const barMat=mats.filter(m=>m.materia!=="Sem materia").map(m=>`
+    <div style="display:flex;align-items:center;gap:8px;margin:3px 0">
+      <div style="flex:0 0 46px;text-align:right;font-weight:600;color:${corPct(m.pct_unicas)}">${m.pct_unicas}%</div>
+      <div style="flex:1;background:#0003;border-radius:4px;height:14px;overflow:hidden">
+        <div style="width:${m.pct_unicas}%;height:100%;background:${corPct(m.pct_unicas)}"></div></div>
+      <div style="flex:0 0 54px;font-size:11px;color:var(--muted)">${m.acertos_unicas}/${m.unicas}</div>
+      <div style="flex:2;font-size:12px">${escapeHtml(m.materia)}</div>
+    </div>`).join("");
+  box.innerHTML=`
+  <details class="card" open style="border-left:3px solid var(--accent)">
+    <summary style="cursor:pointer;font-weight:600">🎯 Desempenho real por assunto — todas as questões do TEC
+      <span style="color:var(--muted);font-weight:400">(${R.unicas} questões · ${R.pct_unicas}% · gerado ${(DESEMP_TEC.gerado_em||"").slice(0,10)})</span></summary>
+    <div style="font-size:12px;color:var(--muted);margin:6px 0">Consolida <b>${R.tentativas}</b> respostas registradas (${R.unicas} questões únicas; % pela tentativa mais recente). Fonte independente do lançamento manual de sessões.</div>
+    <div style="margin:10px 0">${barMat}</div>
+    <details style="margin-top:8px"><summary style="cursor:pointer;font-weight:600;color:var(--bad)">⚠️ ${crit.length} assuntos críticos (&lt;70%, ≥4 questões)</summary>
+      <table style="margin-top:6px"><tbody>${crit.map(a=>`
+        <tr><td style="color:${corPct(a.pct_unicas)};font-weight:600;white-space:nowrap">${a.pct_unicas}%</td>
+        <td style="color:var(--muted);white-space:nowrap">${a.acertos_unicas}/${a.unicas}</td>
+        <td>${escapeHtml(a.assunto)}</td></tr>`).join("")}</tbody></table></details>
+  </details>`;
+}
 const REV_INFO=Object.fromEntries(REV_ETAPAS.map(e=>[e[0],{rot:e[2],dica:e[3]}]));
 function revGrupoTec(mat){ // matéria do TEC -> grupo do plano (só p/ cor)
   const m=(mat||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
@@ -978,8 +1013,10 @@ function renderAssuntos(){
     <span><span class="dot" style="background:#e3b341"></span>Revisar</span>
     <span><span class="dot" style="background:#56d364"></span>Concluído</span>
   </div>
+  <div id="desempTecBox"></div>
   <div id="assBox"></div>`;
   document.getElementById("tab-assuntos").innerHTML=html;
+  drawDesempTec();
   ["filtMat","filtStatus","filtPrio","filtBusca"].forEach(id=>document.getElementById(id).oninput=drawAssuntos);
   drawAssuntos();
 }
@@ -1111,6 +1148,63 @@ function chartEvolucao(serie){
     <span><span style="border-top:2px dashed var(--accent2);width:16px;display:inline-block"></span>% acerto acumulado</span>
   </div>`;
 }
+/* Desempenho × Prioridade — cruza o desempenho real por assunto (DESEMP_TEC,
+   todas as questões do TEC) com a prioridade curada (P1..P4). Objetivo: achar
+   de relance os assuntos PRIORITÁRIOS ainda FRACOS (canto superior-esquerdo). */
+const MIN_Q_PRIO=3; // ignora assuntos com pouquíssimo volume (ruído)
+function assuntosPrioridade(filtGrupo){
+  if(!DESEMP_TEC||!DESEMP_TEC.assuntos) return [];
+  return DESEMP_TEC.assuntos.filter(a=>a.prio&&a.unicas>=MIN_Q_PRIO&&(!filtGrupo||a.grupo===filtGrupo));
+}
+function chartPrioridade(filtGrupo){
+  const pts=assuntosPrioridade(filtGrupo);
+  if(!DESEMP_TEC) return `<div class="empty">Rode <code>python 06_Scripts/desempenho_assuntos.py</code> e publique <code>Estudos/desempenho_assuntos.json</code> para ver o cruzamento desempenho × prioridade (via <code>file://</code> o fetch é bloqueado).</div>`;
+  if(!pts.length) return `<div class="empty">Sem assuntos com ≥${MIN_Q_PRIO} questões e prioridade mapeada${filtGrupo?" nesta matéria":""}.</div>`;
+  const W=Math.max(560,720),H=300,pL=34,pR=14,pT=14,pB=30, iw=W-pL-pR, ih=H-pT-pB;
+  const xP=v=>pL+iw*v/100;                 // desempenho 0..100
+  const band=p=>pT+ih*((p-0.5)/4);         // centro da faixa da prioridade (P1 topo)
+  const bandH=ih/4;
+  const REF=70;                            // limiar de reforço (P1-P2 abaixo disso = ⚠)
+  let g=`<svg viewBox="0 0 ${W} ${H}" style="width:100%;min-width:${Math.min(W,760)}px;display:block">`;
+  // zona de perigo: prioritário (P1-P2) + abaixo de 70%
+  g+=`<rect x="${pL}" y="${pT}" width="${xP(70)-pL}" height="${bandH*2}" fill="#f8514915"/>`;
+  g+=`<text x="${pL+6}" y="${pT+14}" fill="var(--bad)" font-size="10" font-weight="600">⚠ reforçar</text>`;
+  // linhas verticais de referência (50% / 70%)
+  [50,70,100].forEach(v=>{ g+=`<line x1="${xP(v)}" x2="${xP(v)}" y1="${pT}" y2="${pT+ih}" stroke="var(--line)" stroke-width="1" stroke-dasharray="3 4"/><text x="${xP(v)}" y="${H-10}" fill="var(--muted)" font-size="10" text-anchor="middle">${v}%</text>`; });
+  // faixas de prioridade
+  ["P1","P2","P3","P4"].forEach((lb,i)=>{ const y=pT+bandH*(i+0.5);
+    g+=`<text x="${pL-8}" y="${y+3.5}" fill="var(--muted)" font-size="11" font-weight="600" text-anchor="end">${lb}</text>`;
+    if(i>0) g+=`<line x1="${pL}" x2="${W-pR}" y1="${pT+bandH*i}" y2="${pT+bandH*i}" stroke="var(--line)" stroke-width="1" opacity=".4"/>`;
+  });
+  // bolhas
+  const perBand={};
+  pts.slice().sort((a,b)=>a.pct_unicas-b.pct_unicas).forEach(a=>{
+    const k=a.prio; perBand[k]=(perBand[k]||0);
+    const jit=((perBand[k]%3)-1)*bandH*0.24; perBand[k]++;
+    const cx=xP(a.pct_unicas), cy=band(a.prio)+jit;
+    const r=Math.max(4,Math.min(15,3+Math.sqrt(a.unicas)*1.6));
+    const danger=a.prio<=2&&a.pct_unicas<REF;
+    g+=`<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${r.toFixed(1)}" fill="${matCor(a.grupo)}" fill-opacity="${danger?0.9:0.55}" stroke="${danger?'var(--bad)':'#0006'}" stroke-width="${danger?1.6:1}"><title>${escapeHtml(a.assunto)} — ${a.pct_unicas}% (${a.acertos_unicas}/${a.unicas}) · P${a.prio} · ${matNome(a.grupo)}</title></circle>`;
+    if(danger){ const nm=a.assunto.replace(/\s*\(.*$/,"").slice(0,26);
+      g+=`<text x="${(cx+r+3).toFixed(1)}" y="${(cy+3).toFixed(1)}" fill="var(--txt)" font-size="9.5">${escapeHtml(nm)}</text>`; }
+  });
+  g+=`</svg>`;
+  const grupos=[...new Set(pts.map(a=>a.grupo))];
+  const leg=grupos.map(gr=>`<span><span class="dot" style="background:${matCor(gr)}"></span>${matNome(gr)}</span>`).join("");
+  return `<div style="overflow-x:auto">${g}</div><div class="legend" style="margin:8px 0 0">${leg}<span style="margin-left:auto;color:var(--muted)">tamanho ∝ nº de questões</span></div>`;
+}
+function listaFracosPrio(filtGrupo){
+  const d=assuntosPrioridade(filtGrupo).filter(a=>a.prio<=2&&a.pct_unicas<70)
+          .sort((a,b)=>a.prio-b.prio||a.pct_unicas-b.pct_unicas);
+  if(!DESEMP_TEC||!d.length) return "";
+  return `<table style="margin-top:8px"><thead><tr><th>Prio</th><th>Matéria</th><th class="right">Acerto</th><th class="right">Questões</th><th>Assunto</th></tr></thead><tbody>`+
+    d.map(a=>`<tr><td><span class="prio p${a.prio}">P${a.prio}</span></td>
+      <td><span class="dot" style="background:${matCor(a.grupo)}"></span> ${matNome(a.grupo)}</td>
+      <td class="right" style="color:${a.pct_unicas>=60?'var(--warn)':'var(--bad)'};font-weight:600">${a.pct_unicas}%</td>
+      <td class="right">${a.acertos_unicas}/${a.unicas}</td>
+      <td>${escapeHtml(a.assunto)}${a.c25?' <span class="badge2025">✅ 2025</span>':''}</td></tr>`).join("")+
+    `</tbody></table>`;
+}
 function renderDisciplina(){
   const base=state.sessions.filter(s=>(s.qResolvidas||0)>0);
   const mats=[...new Set(base.map(s=>grupo(s.mat)))].sort((a,b)=>matNome(a).localeCompare(matNome(b)));
@@ -1142,6 +1236,9 @@ function renderDisciplina(){
     <div class="card kpi"><div class="label">📅 Últimos 7 dias</div><div class="val">${u7.qr>0?pct(u7.qa,u7.qr)+"%":"—"}</div><div class="foot">${u7.qr} questões no período</div></div>
     <div class="card kpi"><div class="label">📈 Tendência</div><div class="val" style="font-size:20px;line-height:28px">${tendTag(tendencia(sel))}</div><div class="foot">1ª metade × 2ª metade das questões</div></div>
   </div>
+  <h2 class="sec">🎯 Desempenho × Prioridade <span class="pill">assuntos prioritários fracos = ⚠ reforçar</span></h2>
+  <div class="card">${chartPrioridade(discFilt.mat)}${listaFracosPrio(discFilt.mat)}</div>
+
   <h2 class="sec">📈 Evolução no tempo <span class="pill">${discFilt.mat?matNome(discFilt.mat):"todas as matérias"}${discFilt.ass?" · "+escapeHtml((assMap[discFilt.ass]||{}).nome||""):""} · ${discFilt.gran==="sem"?"por semana":"por dia"}</span></h2>
   <div class="card">${chartEvolucao(serieTemporal(sel))}</div>`;
 
@@ -1611,6 +1708,13 @@ fetch("revisoes_estado.json",{cache:"no-store"})
   .then(r=>r.ok?r.json():null)
   .then(j=>{ if(!j||!j.cadeias) return; REV_ESTADO=j;
     const ab=document.querySelector("#tabs button.active"); render(ab?ab.dataset.tab:"dash"); })
+  .catch(()=>{});
+// Desempenho real por assunto (consolidado de todas as questões do TEC)
+fetch("desempenho_assuntos.json",{cache:"no-store"})
+  .then(r=>r.ok?r.json():null)
+  .then(j=>{ if(!j||!j.resumo) return; DESEMP_TEC=j;
+    const ab=document.querySelector("#tabs button.active");
+    if(ab&&(ab.dataset.tab==="assuntos"||ab.dataset.tab==="disciplina")) render(ab.dataset.tab); })
   .catch(()=>{});
 </script>
 </body>
