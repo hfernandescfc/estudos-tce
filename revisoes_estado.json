@@ -18,7 +18,8 @@
     "tec_registros_2026-07-15.json",
     "tec_registros_2026-07-16 (1).json",
     "tec_registros_2026-07-17.json",
-    "tec_registros_2026-07-20.json"
+    "tec_registros_2026-07-20.json",
+    "tec_registros_2026-07-21.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -665,7 +666,7 @@
         },
         "d14": {
           "prevista": "2026-07-21",
-          "emitida": null
+          "emitida": "2026-07-21"
         },
         "d28": {
           "prevista": "2026-08-04",
@@ -695,7 +696,7 @@
         },
         "d14": {
           "prevista": "2026-07-21",
-          "emitida": null
+          "emitida": "2026-07-21"
         },
         "d28": {
           "prevista": "2026-08-04",
@@ -712,11 +713,11 @@
         "3900859"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-21",
-          "emitida": null
+          "emitida": "2026-07-21"
         }
       }
     },
@@ -731,11 +732,11 @@
         "3608273"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-21",
-          "emitida": null
+          "emitida": "2026-07-21"
         }
       }
     },
@@ -749,11 +750,11 @@
         "2888093"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-21",
-          "emitida": null
+          "emitida": "2026-07-21"
         }
       }
     },
@@ -770,11 +771,11 @@
         "3747932"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-21",
-          "emitida": null
+          "emitida": "2026-07-21"
         }
       }
     },
@@ -797,7 +798,7 @@
         },
         "d6": {
           "prevista": "2026-07-21",
-          "emitida": null,
+          "emitida": "2026-07-21",
           "resultado": null
         },
         "d14": {
@@ -1839,7 +1840,7 @@
         },
         "d6": {
           "prevista": "2026-07-21",
-          "emitida": null,
+          "emitida": "2026-07-21",
           "resultado": null
         },
         "d14": {
@@ -2539,84 +2540,276 @@
           "emitida": null
         }
       }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Ciclo Orçamentário": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Ciclo Orçamentário",
+      "data_base": "2026-07-21",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3823172",
+        "3174640",
+        "3179150",
+        "2619339"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-21",
+          "emitida": "2026-07-21"
+        },
+        "d6": {
+          "prevista": "2026-07-27",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-04",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Fonte / Destinação de Recursos": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Classificação por Fonte / Destinação de Recursos",
+      "data_base": "2026-07-21",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2346830",
+        "2816161"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-21",
+          "emitida": "2026-07-21"
+        },
+        "d6": {
+          "prevista": "2026-07-27",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-04",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Receita Pública": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Estágios da Receita Pública",
+      "data_base": "2026-07-21",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3232099",
+        "3176060",
+        "3178861"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-21",
+          "emitida": "2026-07-21"
+        },
+        "d6": {
+          "prevista": "2026-07-27",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-04",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||LDO - Lei de Diretrizes Orçamentárias (CF/1988 e Lei nº 4.320/1964)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "LDO - Lei de Diretrizes Orçamentárias (CF/1988 e Lei nº 4.320/1964)",
+      "data_base": "2026-07-21",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-21",
+          "emitida": "2026-07-21"
+        },
+        "d6": {
+          "prevista": "2026-07-27",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-04",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||Ativos Intangíveis (CPC 04, Lei 6.404)": {
+      "materia": "Contabilidade Geral",
+      "assunto": "Ativos Intangíveis (CPC 04, Lei 6.404)",
+      "data_base": "2026-07-21",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3885418",
+        "2781033",
+        "2890229"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-21",
+          "emitida": "2026-07-21"
+        },
+        "d6": {
+          "prevista": "2026-07-27",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-04",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Jurisprudência dos Tribunais Superiores sobre Agente Públicos": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Jurisprudência dos Tribunais Superiores sobre Agente Públicos",
+      "data_base": "2026-07-21",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2726699",
+        "1888578",
+        "1924565",
+        "1924580"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-04",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Poder de Polícia": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Poder de Polícia",
+      "data_base": "2026-07-21",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2768932"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-04",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo (Doutrina e Leis Federais)||Terceiro Setor (OSs, OSCIPs, Sistema S e Fundações de Apoio)": {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Terceiro Setor (OSs, OSCIPs, Sistema S e Fundações de Apoio)",
+      "data_base": "2026-07-21",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3601405",
+        "3608255",
+        "2695270"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-04",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-20",
+    "data": "2026-07-21",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||(sem assunto)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Intangível (MCASP e NBC TSP 08)",
         "d6"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Orçamentário (MCASP e NBC TSP 13)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Patrimonial (AFO e CPU)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Ciclo Orçamentário",
         "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Consolidação das Demonstrações Contábeis",
+        "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Fonte / Destinação de Recursos",
         "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Demonstração das Variações Patrimoniais (DVP)",
-        "d6"
+        "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Receita Pública",
+        "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Demonstração de Fluxo de Caixa (MCASP e NBC TSP 12)",
-        "d6"
+        "AFO, Direito Financeiro e Contabilidade Pública||LDO - Lei de Diretrizes Orçamentárias (CF/1988 e Lei nº 4.320/1964)",
+        "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Dívida Ativa",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Estoques (MCASP e NBC TSP 04)",
+        "Análise das Demonstrações Contábeis||Análise Vertical e Horizontal das Demonstrações Contábeis",
         "d14"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Funções de Governo",
-        "d6"
+        "Análise das Demonstrações Contábeis||Índices de Liquidez. Capital Circulante Líquido",
+        "d14"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||LOA - Lei Orçamentária Anual (CF/1988 e Lei nº 4.320/1964)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Lei Complementar nº 159/2017 (Regime de Recuperação Fiscal)",
+        "Contabilidade Geral||Ativos Intangíveis (CPC 04, Lei 6.404)",
         "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Manual de Demonstrativos Fiscais",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||PPA - Plano Plurianual (CF/1988 e Lei nº 4.320/1964)",
+        "Contabilidade Geral||Reservas de Lucros",
         "d6"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários",
-        "d28"
+        "Direito Administrativo (Doutrina e Leis Federais)||Autorização, Permissão e Concessão (Serviços Públicos - Lei nº 8.987/1995)",
+        "d14"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)",
-        "d6"
+        "Direito Administrativo (Doutrina e Leis Federais)||Deveres e Direitos (Usuários, Concedente, Concessionária, Licitações - Lei nº 8.987/1995)",
+        "d14"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Vedações Constitucionais em Matéria Orçamentária (Art. 167 da CF/1988)",
-        "d6"
+        "Direito Administrativo (Doutrina e Leis Federais)||Lei nº 13.303/2016 - Das Licitações (arts. 28 a 90)",
+        "d14"
       ],
       [
-        "Auditoria Governamental e Controle||(sem assunto)",
-        "d6"
-      ],
-      [
-        "Contabilidade Geral||Ativo Imobilizado (Conceito, Classificação, Mensuração Inicial, Reavaliação)",
-        "d6"
+        "Direito Administrativo (Doutrina e Leis Federais)||Lei nº 13.303/2016 - Estatuto Jurídico da EP e SEM (arts. 1º a 27)",
+        "d14"
       ]
     ],
-    "confirmada": "2026-07-20"
+    "confirmada": "2026-07-21"
   }
 }
