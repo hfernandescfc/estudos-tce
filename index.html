@@ -183,6 +183,11 @@ th.wk-now,td.wk-now{background:rgba(76,194,255,.12)}
 </div>
 <div class="toast" id="toast"></div>
 
+<!-- Execução real por tópico, gerada por 06_Scripts/desempenho_assuntos.py a partir das
+     capturas do TEC. Script clássico (não fetch): carrega também via file:// (offline).
+     Define window.EXEC_TEC = {por_topico, por_dia, ...}. Ausente => cai nas sessões manuais. -->
+<script src="execucao_tec.js" onerror="window.EXEC_TEC=null"></script>
+
 <script>
 /* ============================================================
    DADOS DE REFERÊNCIA (plano + matérias)
@@ -1269,7 +1274,10 @@ function renderDisciplina(){
    antes da semana original), empurrando para a frente quando a capacidade
    semanal da matéria (maior carga semanal do próprio plano) estoura.
    ============================================================ */
+/* Execução por tópico. Fonte "Só TEC" (window.EXEC_TEC, gerado das capturas do
+   TEC): fiel e sem lançamento manual. Fallback: sessões digitadas à mão. */
 function planExec(){
+  if(window.EXEC_TEC&&window.EXEC_TEC.por_topico) return planExecTEC();
   const m={};
   [...state.sessions].sort((a,b)=>a.data.localeCompare(b.data)||(a.id||0)-(b.id||0)).forEach(s=>{
     if(!s.topicId) return; const k=String(s.topicId);
@@ -1282,6 +1290,25 @@ function planExec(){
     }
     const meta=topicMeta(s.topicId);
     if(!e.dMeta&&meta>0&&e.qr>=meta) e.dMeta=s.data;
+  });
+  return m;
+}
+// Execução a partir do TEC (por questão única resolvida por tópico). qr/qa e datas
+// vêm prontos do script; dMeta = 1º dia em que o acumulado alcançou a meta (calculado
+// pela contagem por dia, que reflete tentativas — aproximação suficiente p/ semEff).
+function planExecTEC(){
+  const pt=window.EXEC_TEC.por_topico, pd=window.EXEC_TEC.por_dia||[];
+  const m={};
+  Object.keys(pt).forEach(k=>{ const e=pt[k];
+    m[k]={qr:e.qr||0,qa:e.qa||0,min:0,d0:e.d0||null,d1:e.d1||null,dMeta:null,dias:(e.dias||[]).slice()};
+  });
+  // dMeta: varre os dias em ordem, acumulando tentativas até bater a meta do tópico.
+  const acc={};
+  [...pd].sort((a,b)=>String(a.data).localeCompare(String(b.data))).forEach(r=>{
+    const k=String(r.id), e=m[k]; if(!e) return;
+    acc[k]=(acc[k]||0)+(r.qr||0);
+    const meta=topicMeta(r.id);
+    if(!e.dMeta&&meta>0&&acc[k]>=meta) e.dMeta=r.data;
   });
   return m;
 }
