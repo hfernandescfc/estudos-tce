@@ -19,7 +19,9 @@
     "tec_registros_2026-07-16 (1).json",
     "tec_registros_2026-07-17.json",
     "tec_registros_2026-07-20.json",
-    "tec_registros_2026-07-21.json"
+    "tec_registros_2026-07-21.json",
+    "tec_registros_2026-07-21(1).json",
+    "tec_registros_2026-07-22.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -799,7 +801,13 @@
         "d6": {
           "prevista": "2026-07-21",
           "emitida": "2026-07-21",
-          "resultado": null
+          "resultado": {
+            "pct": 100,
+            "questoes": 8,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-07-22"
+          }
         },
         "d14": {
           "prevista": "2026-07-29",
@@ -831,7 +839,7 @@
         },
         "d14": {
           "prevista": "2026-07-22",
-          "emitida": null
+          "emitida": "2026-07-22"
         },
         "d28": {
           "prevista": "2026-08-05",
@@ -865,7 +873,7 @@
         },
         "d14": {
           "prevista": "2026-07-22",
-          "emitida": null
+          "emitida": "2026-07-22"
         },
         "d28": {
           "prevista": "2026-08-05",
@@ -895,7 +903,7 @@
         },
         "d14": {
           "prevista": "2026-07-22",
-          "emitida": null
+          "emitida": "2026-07-22"
         },
         "d28": {
           "prevista": "2026-08-05",
@@ -926,7 +934,7 @@
         },
         "d14": {
           "prevista": "2026-07-22",
-          "emitida": null
+          "emitida": "2026-07-22"
         },
         "d28": {
           "prevista": "2026-08-05",
@@ -954,7 +962,7 @@
         },
         "d14": {
           "prevista": "2026-07-22",
-          "emitida": null
+          "emitida": "2026-07-22"
         },
         "d28": {
           "prevista": "2026-08-05",
@@ -984,7 +992,7 @@
         },
         "d14": {
           "prevista": "2026-07-22",
-          "emitida": null
+          "emitida": "2026-07-22"
         },
         "d28": {
           "prevista": "2026-08-05",
@@ -1012,7 +1020,7 @@
         },
         "d14": {
           "prevista": "2026-07-22",
-          "emitida": null
+          "emitida": "2026-07-22"
         },
         "d28": {
           "prevista": "2026-08-05",
@@ -1046,7 +1054,7 @@
         },
         "d14": {
           "prevista": "2026-07-22",
-          "emitida": null
+          "emitida": "2026-07-22"
         },
         "d28": {
           "prevista": "2026-08-05",
@@ -1686,34 +1694,30 @@
     "AFO, Direito Financeiro e Contabilidade Pública||Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)": {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)",
-      "data_base": "2026-07-14",
+      "data_base": "2026-07-22",
       "cadeia_completa": true,
       "alvos_origem": [
-        "3231345",
-        "2888068",
-        "2292645",
-        "2336568",
         "2709721",
-        "2709723"
+        "2336568"
       ],
-      "reinicios": 0,
+      "reinicios": 1,
       "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-14",
-          "emitida": "2026-07-14"
+          "prevista": "2026-07-22",
+          "emitida": "2026-07-22"
         },
         "d6": {
-          "prevista": "2026-07-20",
-          "emitida": "2026-07-20",
+          "prevista": "2026-07-28",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-28",
+          "prevista": "2026-08-05",
           "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-11",
+          "prevista": "2026-08-16",
           "emitida": null
         }
       }
@@ -1841,7 +1845,13 @@
         "d6": {
           "prevista": "2026-07-21",
           "emitida": "2026-07-21",
-          "resultado": null
+          "resultado": {
+            "pct": 83,
+            "questoes": 6,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-07-22"
+          }
         },
         "d14": {
           "prevista": "2026-07-29",
@@ -2058,7 +2068,7 @@
         },
         "d6": {
           "prevista": "2026-07-22",
-          "emitida": null,
+          "emitida": "2026-07-22",
           "resultado": null
         },
         "d14": {
@@ -2752,64 +2762,288 @@
           "emitida": null
         }
       }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Ativo Imobilizado (MCASP e NBC TSP 07)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Ativo Imobilizado (MCASP e NBC TSP 07)",
+      "data_base": "2026-07-22",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3823031"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-22",
+          "emitida": "2026-07-22"
+        },
+        "d6": {
+          "prevista": "2026-07-28",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-05",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Escrituração Contábil Pública": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Escrituração Contábil Pública",
+      "data_base": "2026-07-22",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3252136",
+        "3735156",
+        "2792238",
+        "2848928"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-22",
+          "emitida": "2026-07-22"
+        },
+        "d6": {
+          "prevista": "2026-07-28",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-05",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Auditoria Privada||Amostragem em Auditoria": {
+      "materia": "Auditoria Privada",
+      "assunto": "Amostragem em Auditoria",
+      "data_base": "2026-07-22",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3604822",
+        "1916168",
+        "1992145"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-22",
+          "emitida": "2026-07-22"
+        },
+        "d6": {
+          "prevista": "2026-07-28",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-05",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Auditoria Privada||Evidência em Auditoria": {
+      "materia": "Auditoria Privada",
+      "assunto": "Evidência em Auditoria",
+      "data_base": "2026-07-22",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "1992153"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-22",
+          "emitida": "2026-07-22"
+        },
+        "d6": {
+          "prevista": "2026-07-28",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-05",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||Demonstração do Valor Adicionado (DVA - CPC 09, Lei 6.404, art. 188, II)": {
+      "materia": "Contabilidade Geral",
+      "assunto": "Demonstração do Valor Adicionado (DVA - CPC 09, Lei 6.404, art. 188, II)",
+      "data_base": "2026-07-22",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3869430",
+        "3601423",
+        "3737545",
+        "2781007",
+        "2893621",
+        "3176878",
+        "2336661",
+        "2570994",
+        "2815938"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-22",
+          "emitida": "2026-07-22"
+        },
+        "d6": {
+          "prevista": "2026-07-28",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-05",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Da Repartição das Receitas Tributárias (arts. 157 a 162 da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Da Repartição das Receitas Tributárias (arts. 157 a 162 da CF/1988)",
+      "data_base": "2026-07-22",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3232408",
+        "3400987"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-05",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Intervenção Federal e Estadual (arts. 34 a 36 da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Intervenção Federal e Estadual (arts. 34 a 36 da CF/1988)",
+      "data_base": "2026-07-22",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3607024"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-05",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Limitações do Poder de Tributar (arts. 150 a 152 da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Limitações do Poder de Tributar (arts. 150 a 152 da CF/1988)",
+      "data_base": "2026-07-22",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3603564",
+        "2336636"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-05",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-21",
+    "data": "2026-07-22",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Intangível (MCASP e NBC TSP 08)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Imobilizado (MCASP e NBC TSP 07)",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Natureza da Receita",
+        "d14"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Depreciação, Amortização e Exaustão (NBC TSP 07, MCASP, etc.)",
+        "d14"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Escrituração Contábil Pública",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)",
+        "d1"
+      ],
+      [
+        "Auditoria Governamental e Controle||Auditoria de Regularidade: Propósito, Características, Contexto",
+        "d14"
+      ],
+      [
+        "Auditoria Governamental e Controle||Controle de Qualidade da Auditoria Governamental",
+        "d14"
+      ],
+      [
+        "Auditoria Governamental e Controle||Execução de Auditoria de Regularidade",
+        "d14"
+      ],
+      [
+        "Auditoria Governamental e Controle||Planejamento de Auditoria de Regularidade",
+        "d14"
+      ],
+      [
+        "Auditoria Governamental e Controle||Relatório, Certificado, Parecer e Nota (Auditoria Governamental)",
+        "d14"
+      ],
+      [
+        "Auditoria Governamental e Controle||Risco de Auditoria. Confiança e Asseguração em Auditoria",
+        "d14"
+      ],
+      [
+        "Auditoria Privada||Amostragem em Auditoria",
+        "d1"
+      ],
+      [
+        "Auditoria Privada||Evidência em Auditoria",
+        "d1"
+      ],
+      [
+        "Auditoria Privada||Testes e Procedimentos em Auditoria",
         "d6"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Ciclo Orçamentário",
+        "Contabilidade Geral||Demonstração do Valor Adicionado (DVA - CPC 09, Lei 6.404, art. 188, II)",
         "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Fonte / Destinação de Recursos",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Receita Pública",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||LDO - Lei de Diretrizes Orçamentárias (CF/1988 e Lei nº 4.320/1964)",
-        "d1"
-      ],
-      [
-        "Análise das Demonstrações Contábeis||Análise Vertical e Horizontal das Demonstrações Contábeis",
-        "d14"
-      ],
-      [
-        "Análise das Demonstrações Contábeis||Índices de Liquidez. Capital Circulante Líquido",
-        "d14"
-      ],
-      [
-        "Contabilidade Geral||Ativos Intangíveis (CPC 04, Lei 6.404)",
-        "d1"
-      ],
-      [
-        "Contabilidade Geral||Reservas de Lucros",
-        "d6"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Autorização, Permissão e Concessão (Serviços Públicos - Lei nº 8.987/1995)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Deveres e Direitos (Usuários, Concedente, Concessionária, Licitações - Lei nº 8.987/1995)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Lei nº 13.303/2016 - Das Licitações (arts. 28 a 90)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Lei nº 13.303/2016 - Estatuto Jurídico da EP e SEM (arts. 1º a 27)",
-        "d14"
       ]
     ],
-    "confirmada": "2026-07-21"
+    "confirmada": "2026-07-22"
   }
 }
