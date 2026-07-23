@@ -21,7 +21,9 @@
     "tec_registros_2026-07-20.json",
     "tec_registros_2026-07-21.json",
     "tec_registros_2026-07-21(1).json",
-    "tec_registros_2026-07-22.json"
+    "tec_registros_2026-07-22.json",
+    "tec_registros_2026-07-22(1).json",
+    "tec_registros_2026-07-23.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -1087,7 +1089,7 @@
         },
         "d14": {
           "prevista": "2026-07-23",
-          "emitida": null
+          "emitida": "2026-07-23"
         },
         "d28": {
           "prevista": "2026-08-06",
@@ -1105,11 +1107,11 @@
         "3156582"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-23",
-          "emitida": null
+          "emitida": "2026-07-23"
         }
       }
     },
@@ -1123,11 +1125,11 @@
         "3611255"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-23",
-          "emitida": null
+          "emitida": "2026-07-23"
         }
       }
     },
@@ -1140,11 +1142,11 @@
         "3178909"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-23",
-          "emitida": null
+          "emitida": "2026-07-23"
         }
       }
     },
@@ -1157,11 +1159,11 @@
         "3994477"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-23",
-          "emitida": null
+          "emitida": "2026-07-23"
         }
       }
     },
@@ -1174,11 +1176,11 @@
         "2336540"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-23",
-          "emitida": null
+          "emitida": "2026-07-23"
         }
       }
     },
@@ -2069,7 +2071,13 @@
         "d6": {
           "prevista": "2026-07-22",
           "emitida": "2026-07-22",
-          "resultado": null
+          "resultado": {
+            "pct": 100,
+            "questoes": 6,
+            "limiar": 60,
+            "aprovada": true,
+            "data": "2026-07-23"
+          }
         },
         "d14": {
           "prevista": "2026-07-30",
@@ -2218,7 +2226,7 @@
         },
         "d6": {
           "prevista": "2026-07-23",
-          "emitida": null,
+          "emitida": "2026-07-23",
           "resultado": null
         },
         "d14": {
@@ -2251,7 +2259,7 @@
         },
         "d6": {
           "prevista": "2026-07-23",
-          "emitida": null,
+          "emitida": "2026-07-23",
           "resultado": null
         },
         "d14": {
@@ -2284,7 +2292,7 @@
         },
         "d6": {
           "prevista": "2026-07-23",
-          "emitida": null,
+          "emitida": "2026-07-23",
           "resultado": null
         },
         "d14": {
@@ -2315,7 +2323,7 @@
         },
         "d6": {
           "prevista": "2026-07-23",
-          "emitida": null,
+          "emitida": "2026-07-23",
           "resultado": null
         },
         "d14": {
@@ -2347,7 +2355,7 @@
         },
         "d6": {
           "prevista": "2026-07-23",
-          "emitida": null,
+          "emitida": "2026-07-23",
           "resultado": null
         },
         "d14": {
@@ -2978,72 +2986,320 @@
           "emitida": null
         }
       }
+    },
+    "Estatística||Distribuição Normal": {
+      "materia": "Estatística",
+      "assunto": "Distribuição Normal",
+      "data_base": "2026-07-22",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3903365"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-22",
+          "emitida": "2026-07-23"
+        },
+        "d6": {
+          "prevista": "2026-07-28",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-05",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Conta Única e GRU": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Conta Única e GRU",
+      "data_base": "2026-07-23",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-23",
+          "emitida": "2026-07-23"
+        },
+        "d6": {
+          "prevista": "2026-07-29",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-06",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Definições, Limites e Recondução da Dívida (arts. 29 a 31 da LRF)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Definições, Limites e Recondução da Dívida (arts. 29 a 31 da LRF)",
+      "data_base": "2026-07-23",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3179147"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-23",
+          "emitida": "2026-07-23"
+        },
+        "d6": {
+          "prevista": "2026-07-29",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-06",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Despesas com Pessoal e Seguridade Social (arts. 18 a 24 da LRF)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Despesas com Pessoal e Seguridade Social (arts. 18 a 24 da LRF)",
+      "data_base": "2026-07-23",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3822485",
+        "2620395",
+        "2772433"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-23",
+          "emitida": "2026-07-23"
+        },
+        "d6": {
+          "prevista": "2026-07-29",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-06",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Regime de Adiantamento": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Regime de Adiantamento",
+      "data_base": "2026-07-23",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3176675"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-23",
+          "emitida": "2026-07-23"
+        },
+        "d6": {
+          "prevista": "2026-07-29",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-06",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||CPC 47: Receita de Contrato com Cliente": {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 47: Receita de Contrato com Cliente",
+      "data_base": "2026-07-23",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3228143",
+        "3601421",
+        "2266737"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-23",
+          "emitida": "2026-07-23"
+        },
+        "d6": {
+          "prevista": "2026-07-29",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-06",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "TI - Ciência de Dados e Inteligência Artificial||Dado, Informação e Conhecimento": {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "assunto": "Dado, Informação e Conhecimento",
+      "data_base": "2026-07-23",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2013227",
+        "2152896"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-06",
+          "emitida": null
+        }
+      }
+    },
+    "TI - Ciência de Dados e Inteligência Artificial||Dados Abertos (Conceitos, Princípios, etc.)": {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "assunto": "Dados Abertos (Conceitos, Princípios, etc.)",
+      "data_base": "2026-07-23",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2776403",
+        "2818597",
+        "1911791",
+        "1970389",
+        "2030739"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-06",
+          "emitida": null
+        }
+      }
+    },
+    "TI - Ciência de Dados e Inteligência Artificial||Dados Estruturados, Não-Estruturados e Semiestruturados": {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "assunto": "Dados Estruturados, Não-Estruturados e Semiestruturados",
+      "data_base": "2026-07-23",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2876053",
+        "2926288",
+        "2639299"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-06",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-22",
+    "data": "2026-07-23",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Imobilizado (MCASP e NBC TSP 07)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Conta Única e GRU",
         "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Natureza da Receita",
+        "AFO, Direito Financeiro e Contabilidade Pública||Créditos Adicionais",
         "d14"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Depreciação, Amortização e Exaustão (NBC TSP 07, MCASP, etc.)",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Escrituração Contábil Pública",
+        "AFO, Direito Financeiro e Contabilidade Pública||Definições, Limites e Recondução da Dívida (arts. 29 a 31 da LRF)",
         "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Despesas com Pessoal e Seguridade Social (arts. 18 a 24 da LRF)",
         "d1"
       ],
       [
-        "Auditoria Governamental e Controle||Auditoria de Regularidade: Propósito, Características, Contexto",
-        "d14"
-      ],
-      [
-        "Auditoria Governamental e Controle||Controle de Qualidade da Auditoria Governamental",
-        "d14"
-      ],
-      [
-        "Auditoria Governamental e Controle||Execução de Auditoria de Regularidade",
-        "d14"
-      ],
-      [
-        "Auditoria Governamental e Controle||Planejamento de Auditoria de Regularidade",
-        "d14"
-      ],
-      [
-        "Auditoria Governamental e Controle||Relatório, Certificado, Parecer e Nota (Auditoria Governamental)",
-        "d14"
-      ],
-      [
-        "Auditoria Governamental e Controle||Risco de Auditoria. Confiança e Asseguração em Auditoria",
-        "d14"
-      ],
-      [
-        "Auditoria Privada||Amostragem em Auditoria",
-        "d1"
-      ],
-      [
-        "Auditoria Privada||Evidência em Auditoria",
-        "d1"
-      ],
-      [
-        "Auditoria Privada||Testes e Procedimentos em Auditoria",
+        "AFO, Direito Financeiro e Contabilidade Pública||Despesas de Exercícios Anteriores (DEA)",
         "d6"
       ],
       [
-        "Contabilidade Geral||Demonstração do Valor Adicionado (DVA - CPC 09, Lei 6.404, art. 188, II)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Despesa Pública",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Programação e Descentralização Orçamentária e Financeira",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Regime de Adiantamento",
         "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Restos a Pagar (RAP)",
+        "d6"
+      ],
+      [
+        "Contabilidade Geral||CPC 47: Receita de Contrato com Cliente",
+        "d1"
+      ],
+      [
+        "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Fiscalização Contábil, Financeira e Orçamentária",
+        "d14"
+      ],
+      [
+        "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Simetria Constitucional",
+        "d14"
+      ],
+      [
+        "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Sistema Tributário Nacional",
+        "d14"
+      ],
+      [
+        "Direito Constitucional (CF/1988 e Doutrina)||Simetria Constitucional",
+        "d14"
+      ],
+      [
+        "Direito Constitucional (CF/1988 e Doutrina)||Tribunais de Contas Estaduais, Distrital e Municipais",
+        "d14"
+      ],
+      [
+        "Estatística||Distribuição Normal",
+        "d1"
+      ],
+      [
+        "Estatística||Teste de Hipóteses: Introdução (Nível de Significância, Erros Tipo I e II, Poder do Teste)",
+        "d6"
       ]
     ],
-    "confirmada": "2026-07-22"
+    "confirmada": "2026-07-23"
   }
 }

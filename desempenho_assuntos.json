@@ -1,13 +1,13 @@
 {
-  "gerado_em": "2026-07-22T15:32:54",
+  "gerado_em": "2026-07-23T08:06:24",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 1433,
-    "acertos": 1082,
-    "pct": 75.5,
-    "unicas": 1328,
-    "acertos_unicas": 1056,
-    "pct_unicas": 79.5
+    "tentativas": 1557,
+    "acertos": 1187,
+    "pct": 76.2,
+    "unicas": 1449,
+    "acertos_unicas": 1160,
+    "pct_unicas": 80.1
   },
   "materias": [
     {
@@ -29,15 +29,6 @@
       "pct_unicas": 54.5
     },
     {
-      "materia": "Estatística",
-      "tentativas": 25,
-      "acertos": 16,
-      "pct": 64.0,
-      "unicas": 25,
-      "acertos_unicas": 16,
-      "pct_unicas": 64.0
-    },
-    {
       "materia": "Análise das Demonstrações Contábeis",
       "tentativas": 44,
       "acertos": 31,
@@ -45,6 +36,15 @@
       "unicas": 40,
       "acertos_unicas": 28,
       "pct_unicas": 70.0
+    },
+    {
+      "materia": "Estatística",
+      "tentativas": 34,
+      "acertos": 24,
+      "pct": 70.6,
+      "unicas": 34,
+      "acertos_unicas": 24,
+      "pct_unicas": 70.6
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -56,22 +56,22 @@
       "pct_unicas": 74.7
     },
     {
-      "materia": "TI - Ciência de Dados e Inteligência Artificial",
-      "tentativas": 95,
-      "acertos": 73,
-      "pct": 76.8,
-      "unicas": 84,
-      "acertos_unicas": 65,
-      "pct_unicas": 77.4
+      "materia": "Contabilidade Geral",
+      "tentativas": 132,
+      "acertos": 95,
+      "pct": 72.0,
+      "unicas": 121,
+      "acertos_unicas": 95,
+      "pct_unicas": 78.5
     },
     {
-      "materia": "Contabilidade Geral",
-      "tentativas": 119,
-      "acertos": 85,
-      "pct": 71.4,
-      "unicas": 108,
-      "acertos_unicas": 85,
-      "pct_unicas": 78.7
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "tentativas": 157,
+      "acertos": 125,
+      "pct": 79.6,
+      "unicas": 145,
+      "acertos_unicas": 116,
+      "pct_unicas": 80.0
     },
     {
       "materia": "Auditoria Governamental e Controle",
@@ -84,12 +84,12 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "tentativas": 560,
-      "acertos": 433,
-      "pct": 77.3,
-      "unicas": 519,
-      "acertos_unicas": 428,
-      "pct_unicas": 82.5
+      "tentativas": 594,
+      "acertos": 462,
+      "pct": 77.8,
+      "unicas": 553,
+      "acertos_unicas": 457,
+      "pct_unicas": 82.6
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -111,12 +111,12 @@
     },
     {
       "materia": "Auditoria Privada",
-      "tentativas": 59,
-      "acertos": 49,
-      "pct": 83.1,
-      "unicas": 57,
-      "acertos_unicas": 49,
-      "pct_unicas": 86.0
+      "tentativas": 65,
+      "acertos": 55,
+      "pct": 84.6,
+      "unicas": 61,
+      "acertos_unicas": 55,
+      "pct_unicas": 90.2
     },
     {
       "materia": "Ciências Políticas",
@@ -359,6 +359,20 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Despesas com Pessoal e Seguridade Social (arts. 18 a 24 da LRF)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 17,
+      "acertos": 14,
+      "pct": 82.4,
+      "unicas": 17,
+      "acertos_unicas": 14,
+      "pct_unicas": 82.4,
+      "ultima": "2026-07-22"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Balanço Patrimonial (AFO e CPU)",
       "grupo": "CASP",
       "prio": 1,
@@ -401,6 +415,20 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Regime de Adiantamento",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 7,
+      "acertos": 6,
+      "pct": 85.7,
+      "unicas": 7,
+      "acertos_unicas": 6,
+      "pct_unicas": 85.7,
+      "ultima": "2026-07-22"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Princípios Orçamentários",
       "grupo": "DFin",
       "prio": 1,
@@ -412,6 +440,20 @@
       "acertos_unicas": 14,
       "pct_unicas": 87.5,
       "ultima": "2026-07-08"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Definições, Limites e Recondução da Dívida (arts. 29 a 31 da LRF)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 8,
+      "acertos": 7,
+      "pct": 87.5,
+      "unicas": 8,
+      "acertos_unicas": 7,
+      "pct_unicas": 87.5,
+      "ultima": "2026-07-22"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -594,6 +636,20 @@
       "acertos_unicas": 2,
       "pct_unicas": 100.0,
       "ultima": "2026-07-15"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Conta Única e GRU",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 2,
+      "pct": 100.0,
+      "unicas": 2,
+      "acertos_unicas": 2,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-22"
     },
     {
       "materia": "Análise das Demonstrações Contábeis",
@@ -821,20 +877,6 @@
     },
     {
       "materia": "Auditoria Privada",
-      "assunto": "Testes e Procedimentos em Auditoria",
-      "grupo": "AUD",
-      "prio": 2,
-      "c25": 1,
-      "tentativas": 29,
-      "acertos": 23,
-      "pct": 79.3,
-      "unicas": 27,
-      "acertos_unicas": 23,
-      "pct_unicas": 85.2,
-      "ultima": "2026-07-17"
-    },
-    {
-      "materia": "Auditoria Privada",
       "assunto": "Evidência em Auditoria",
       "grupo": "AUD",
       "prio": null,
@@ -846,6 +888,20 @@
       "acertos_unicas": 11,
       "pct_unicas": 91.7,
       "ultima": "2026-07-21"
+    },
+    {
+      "materia": "Auditoria Privada",
+      "assunto": "Testes e Procedimentos em Auditoria",
+      "grupo": "AUD",
+      "prio": 2,
+      "c25": 1,
+      "tentativas": 35,
+      "acertos": 29,
+      "pct": 82.9,
+      "unicas": 31,
+      "acertos_unicas": 29,
+      "pct_unicas": 93.5,
+      "ultima": "2026-07-22"
     },
     {
       "materia": "Ciências Políticas",
@@ -916,6 +972,20 @@
       "acertos_unicas": 7,
       "pct_unicas": 63.6,
       "ultima": "2026-07-09"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 47: Receita de Contrato com Cliente",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 13,
+      "acertos": 10,
+      "pct": 76.9,
+      "unicas": 13,
+      "acertos_unicas": 10,
+      "pct_unicas": 76.9,
+      "ultima": "2026-07-22"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1941,6 +2011,20 @@
     },
     {
       "materia": "Estatística",
+      "assunto": "Distribuição Normal",
+      "grupo": "Estat",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 9,
+      "acertos": 8,
+      "pct": 88.9,
+      "unicas": 9,
+      "acertos_unicas": 8,
+      "pct_unicas": 88.9,
+      "ultima": "2026-07-22"
+    },
+    {
+      "materia": "Estatística",
       "assunto": "Sem assunto",
       "grupo": "Estat",
       "prio": null,
@@ -2123,6 +2207,20 @@
     },
     {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "assunto": "Dados Abertos (Conceitos, Princípios, etc.)",
+      "grupo": "TI",
+      "prio": 3,
+      "c25": 0,
+      "tentativas": 18,
+      "acertos": 13,
+      "pct": 72.2,
+      "unicas": 17,
+      "acertos_unicas": 12,
+      "pct_unicas": 70.6,
+      "ultima": "2026-07-22"
+    },
+    {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
       "assunto": "Conceitos Gerais de Machine Learning",
       "grupo": "TI",
       "prio": 3,
@@ -2193,6 +2291,34 @@
     },
     {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "assunto": "Dado, Informação e Conhecimento",
+      "grupo": "TI",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 17,
+      "acertos": 15,
+      "pct": 88.2,
+      "unicas": 17,
+      "acertos_unicas": 15,
+      "pct_unicas": 88.2,
+      "ultima": "2026-07-22"
+    },
+    {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "assunto": "Dados Estruturados, Não-Estruturados e Semiestruturados",
+      "grupo": "TI",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 28,
+      "acertos": 25,
+      "pct": 89.3,
+      "unicas": 28,
+      "acertos_unicas": 25,
+      "pct_unicas": 89.3,
+      "ultima": "2026-07-22"
+    },
+    {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
       "assunto": "Conceitos Iniciais e Gerais de Inteligência Artificial",
       "grupo": "TI",
       "prio": 3,
@@ -2216,20 +2342,6 @@
       "pct": 100.0,
       "unicas": 2,
       "acertos_unicas": 2,
-      "pct_unicas": 100.0,
-      "ultima": "2026-07-01"
-    },
-    {
-      "materia": "TI - Ciência de Dados e Inteligência Artificial",
-      "assunto": "Dados Abertos (Conceitos, Princípios, etc.)",
-      "grupo": "TI",
-      "prio": 3,
-      "c25": 0,
-      "tentativas": 1,
-      "acertos": 1,
-      "pct": 100.0,
-      "unicas": 1,
-      "acertos_unicas": 1,
       "pct_unicas": 100.0,
       "ultima": "2026-07-01"
     },
