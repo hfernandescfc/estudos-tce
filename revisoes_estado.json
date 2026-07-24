@@ -24,42 +24,38 @@
     "tec_registros_2026-07-22.json",
     "tec_registros_2026-07-22(1).json",
     "tec_registros_2026-07-23.json",
-    "tec_registros_2026-07-24.json"
+    "tec_registros_2026-07-24.json",
+    "tec_registros_2026-07-24(1).json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Princípios Orçamentários",
-      "data_base": "2026-06-26",
+      "data_base": "2026-07-24",
       "cadeia_completa": true,
       "alvos_origem": [
-        "2709715"
+        "2915862",
+        "3026469"
       ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-06-27",
-          "emitida": "expirada"
+          "prevista": "2026-07-24",
+          "emitida": "2026-07-24b"
         },
         "d6": {
-          "prevista": "2026-07-02",
-          "emitida": "2026-07-07",
-          "resultado": {
-            "pct": 83,
-            "questoes": 6,
-            "limiar": 70,
-            "aprovada": true,
-            "data": "2026-07-08"
-          }
+          "prevista": "2026-07-30",
+          "emitida": null,
+          "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-10",
-          "emitida": "2026-07-10"
+          "prevista": "2026-08-07",
+          "emitida": null
         },
         "d28": {
-          "prevista": "2026-07-24",
-          "emitida": "2026-07-20"
+          "prevista": "2026-08-16",
+          "emitida": null
         }
       }
     },
@@ -838,7 +834,13 @@
         "d6": {
           "prevista": "2026-07-14",
           "emitida": "2026-07-14",
-          "resultado": null
+          "resultado": {
+            "pct": 85,
+            "questoes": 13,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-07-24"
+          }
         },
         "d14": {
           "prevista": "2026-07-22",
@@ -3363,56 +3365,187 @@
           "emitida": null
         }
       }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Fundos Especiais": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Fundos Especiais",
+      "data_base": "2026-07-24",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2816387"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-24",
+          "emitida": "2026-07-24b"
+        },
+        "d6": {
+          "prevista": "2026-07-30",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Garantia, Contragarantia e Restos a Pagar (arts. 40 a 42 da LRF)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Garantia, Contragarantia e Restos a Pagar (arts. 40 a 42 da LRF)",
+      "data_base": "2026-07-24",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3601460",
+        "2710093"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-24",
+          "emitida": "2026-07-24b"
+        },
+        "d6": {
+          "prevista": "2026-07-30",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Operações de Crédito (arts. 32 a 39 da LRF)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Operações de Crédito (arts. 32 a 39 da LRF)",
+      "data_base": "2026-07-24",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-24",
+          "emitida": "2026-07-24b"
+        },
+        "d6": {
+          "prevista": "2026-07-30",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Plano de Contas (PCASP)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Plano de Contas (PCASP)",
+      "data_base": "2026-07-24",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3735640"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-24",
+          "emitida": "2026-07-24b"
+        },
+        "d6": {
+          "prevista": "2026-07-30",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Provisões, Passivos e Ativos Contingentes (MCASP e NBC TSP 03)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Provisões, Passivos e Ativos Contingentes (MCASP e NBC TSP 03)",
+      "data_base": "2026-07-24",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3231500",
+        "3252140",
+        "2887856"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-24",
+          "emitida": "2026-07-24b"
+        },
+        "d6": {
+          "prevista": "2026-07-30",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
     "data": "2026-07-24",
     "itens": [
       [
-        "Auditoria Governamental e Controle||Auditoria Operacional",
-        "d14"
-      ],
-      [
-        "Auditoria Governamental e Controle||Outras Questões e Tópicos Mesclados de Auditoria Governamental",
-        "d14"
-      ],
-      [
-        "Auditoria Privada||Opinião do Auditor Independente/Relatórios e Pareceres de Auditoria",
+        "AFO, Direito Financeiro e Contabilidade Pública||Fundos Especiais",
         "d1"
       ],
       [
-        "Contabilidade Geral||(sem assunto)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Garantia, Contragarantia e Restos a Pagar (arts. 40 a 42 da LRF)",
         "d1"
       ],
       [
-        "Contabilidade Geral||Conceito, Objeto, Finalidade, Técnicas Contábeis, Equação Patrimonial",
-        "d14"
+        "AFO, Direito Financeiro e Contabilidade Pública||Operações de Crédito (arts. 32 a 39 da LRF)",
+        "d1"
       ],
       [
-        "Contabilidade Geral||Estrutura Conceitual Básica da Contabilidade (CPC 00)",
-        "d14"
+        "AFO, Direito Financeiro e Contabilidade Pública||Plano de Contas (PCASP)",
+        "d1"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Formas de Extinção (Serviços Públicos - Lei nº 8.987/1995)",
-        "d14"
+        "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários",
+        "d1"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Intervenção (Serviços Públicos - Lei nº 8.987/1995)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo Estadual e do DF||Dos Direitos e Vantagens (arts. 85 a 189 da Lei Estadual nº 6.123/1968)",
-        "d14"
-      ],
-      [
-        "Direito Constitucional (CF/1988 e Doutrina)||Dos Orçamentos (Finanças Públicas, arts. 165 a 169 da CF/1988)",
-        "d14"
-      ],
-      [
-        "Estatística||Intervalo de Confiança para a Média",
-        "d14"
+        "AFO, Direito Financeiro e Contabilidade Pública||Provisões, Passivos e Ativos Contingentes (MCASP e NBC TSP 03)",
+        "d1"
       ]
     ],
-    "confirmada": "2026-07-24"
+    "confirmada": "2026-07-24b"
   }
 }

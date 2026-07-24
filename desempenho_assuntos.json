@@ -1,24 +1,15 @@
 {
-  "gerado_em": "2026-07-24T08:21:21",
+  "gerado_em": "2026-07-24T16:13:26",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 1665,
-    "acertos": 1263,
-    "pct": 75.9,
-    "unicas": 1544,
-    "acertos_unicas": 1225,
-    "pct_unicas": 79.3
+    "tentativas": 1777,
+    "acertos": 1356,
+    "pct": 76.3,
+    "unicas": 1639,
+    "acertos_unicas": 1316,
+    "pct_unicas": 80.3
   },
   "materias": [
-    {
-      "materia": "Direito Tributário",
-      "tentativas": 1,
-      "acertos": 0,
-      "pct": 0.0,
-      "unicas": 1,
-      "acertos_unicas": 0,
-      "pct_unicas": 0.0
-    },
     {
       "materia": "Sem materia",
       "tentativas": 17,
@@ -29,13 +20,22 @@
       "pct_unicas": 0.0
     },
     {
+      "materia": "Direito Tributário",
+      "tentativas": 2,
+      "acertos": 1,
+      "pct": 50.0,
+      "unicas": 2,
+      "acertos_unicas": 1,
+      "pct_unicas": 50.0
+    },
+    {
       "materia": "TI - Banco de Dados",
-      "tentativas": 11,
-      "acertos": 6,
-      "pct": 54.5,
-      "unicas": 11,
-      "acertos_unicas": 6,
-      "pct_unicas": 54.5
+      "tentativas": 21,
+      "acertos": 11,
+      "pct": 52.4,
+      "unicas": 18,
+      "acertos_unicas": 11,
+      "pct_unicas": 61.1
     },
     {
       "materia": "Análise das Demonstrações Contábeis",
@@ -57,9 +57,9 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "tentativas": 185,
+      "tentativas": 186,
       "acertos": 131,
-      "pct": 70.8,
+      "pct": 70.4,
       "unicas": 174,
       "acertos_unicas": 130,
       "pct_unicas": 74.7
@@ -75,12 +75,12 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "tentativas": 146,
-      "acertos": 105,
+      "tentativas": 153,
+      "acertos": 110,
       "pct": 71.9,
-      "unicas": 133,
-      "acertos_unicas": 103,
-      "pct_unicas": 77.4
+      "unicas": 135,
+      "acertos_unicas": 107,
+      "pct_unicas": 79.3
     },
     {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
@@ -111,21 +111,21 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
-      "tentativas": 161,
-      "acertos": 130,
-      "pct": 80.7,
+      "tentativas": 164,
+      "acertos": 133,
+      "pct": 81.1,
       "unicas": 151,
-      "acertos_unicas": 124,
-      "pct_unicas": 82.1
+      "acertos_unicas": 126,
+      "pct_unicas": 83.4
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "tentativas": 617,
-      "acertos": 480,
-      "pct": 77.8,
-      "unicas": 576,
-      "acertos_unicas": 475,
-      "pct_unicas": 82.5
+      "tentativas": 705,
+      "acertos": 557,
+      "pct": 79.0,
+      "unicas": 660,
+      "acertos_unicas": 552,
+      "pct_unicas": 83.6
     },
     {
       "materia": "Língua Portuguesa (Português)",
@@ -138,12 +138,12 @@
     },
     {
       "materia": "Auditoria Privada",
-      "tentativas": 84,
-      "acertos": 68,
-      "pct": 81.0,
-      "unicas": 80,
-      "acertos_unicas": 68,
-      "pct_unicas": 85.0
+      "tentativas": 86,
+      "acertos": 70,
+      "pct": 81.4,
+      "unicas": 81,
+      "acertos_unicas": 70,
+      "pct_unicas": 86.4
     },
     {
       "materia": "Ciências Políticas",
@@ -176,6 +176,20 @@
   "assuntos": [
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Garantia, Contragarantia e Restos a Pagar (arts. 40 a 42 da LRF)",
+      "grupo": "DFin",
+      "prio": 2,
+      "c25": 0,
+      "tentativas": 3,
+      "acertos": 1,
+      "pct": 33.3,
+      "unicas": 3,
+      "acertos_unicas": 1,
+      "pct_unicas": 33.3,
+      "ultima": "2026-07-24"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Estágios da Receita Pública",
       "grupo": "DFin",
       "prio": 3,
@@ -201,20 +215,6 @@
       "acertos_unicas": 3,
       "pct_unicas": 60.0,
       "ultima": "2026-07-13"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Ciclo Orçamentário",
-      "grupo": "DFin",
-      "prio": 3,
-      "c25": 0,
-      "tentativas": 12,
-      "acertos": 8,
-      "pct": 66.7,
-      "unicas": 12,
-      "acertos_unicas": 8,
-      "pct_unicas": 66.7,
-      "ultima": "2026-07-20"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -274,17 +274,17 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Manual de Demonstrativos Fiscais",
+      "assunto": "Ciclo Orçamentário",
       "grupo": "DFin",
-      "prio": 2,
+      "prio": 3,
       "c25": 0,
-      "tentativas": 24,
-      "acertos": 18,
-      "pct": 75.0,
-      "unicas": 23,
-      "acertos_unicas": 17,
-      "pct_unicas": 73.9,
-      "ultima": "2026-07-17"
+      "tentativas": 13,
+      "acertos": 9,
+      "pct": 69.2,
+      "unicas": 12,
+      "acertos_unicas": 9,
+      "pct_unicas": 75.0,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -292,13 +292,13 @@
       "grupo": "DFin",
       "prio": 1,
       "c25": 1,
-      "tentativas": 52,
-      "acertos": 38,
-      "pct": 73.1,
-      "unicas": 50,
-      "acertos_unicas": 38,
-      "pct_unicas": 76.0,
-      "ultima": "2026-07-20"
+      "tentativas": 53,
+      "acertos": 39,
+      "pct": 73.6,
+      "unicas": 51,
+      "acertos_unicas": 39,
+      "pct_unicas": 76.5,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -313,6 +313,20 @@
       "acertos_unicas": 33,
       "pct_unicas": 76.7,
       "ultima": "2026-07-08"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Manual de Demonstrativos Fiscais",
+      "grupo": "DFin",
+      "prio": 2,
+      "c25": 0,
+      "tentativas": 25,
+      "acertos": 19,
+      "pct": 76.0,
+      "unicas": 23,
+      "acertos_unicas": 18,
+      "pct_unicas": 78.3,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -358,6 +372,20 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Fundos Especiais",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 5,
+      "acertos": 4,
+      "pct": 80.0,
+      "unicas": 5,
+      "acertos_unicas": 4,
+      "pct_unicas": 80.0,
+      "ultima": "2026-07-24"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Conceitos, Objeto, Objetivos e Campo de Aplicação (Estrutura Conceitual - Prefácio e caps. 1 a 4)",
       "grupo": "CASP",
       "prio": 1,
@@ -386,20 +414,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Despesas com Pessoal e Seguridade Social (arts. 18 a 24 da LRF)",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 17,
-      "acertos": 14,
-      "pct": 82.4,
-      "unicas": 17,
-      "acertos_unicas": 14,
-      "pct_unicas": 82.4,
-      "ultima": "2026-07-22"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Balanço Patrimonial (AFO e CPU)",
       "grupo": "CASP",
       "prio": 1,
@@ -411,6 +425,20 @@
       "acertos_unicas": 15,
       "pct_unicas": 83.3,
       "ultima": "2026-07-20"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Provisões, Passivos e Ativos Contingentes (MCASP e NBC TSP 03)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 18,
+      "acertos": 15,
+      "pct": 83.3,
+      "unicas": 18,
+      "acertos_unicas": 15,
+      "pct_unicas": 83.3,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -442,20 +470,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Sem assunto",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 14,
-      "acertos": 12,
-      "pct": 85.7,
-      "unicas": 14,
-      "acertos_unicas": 12,
-      "pct_unicas": 85.7,
-      "ultima": "2026-07-23"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Regime de Adiantamento",
       "grupo": "",
       "prio": null,
@@ -467,20 +481,6 @@
       "acertos_unicas": 6,
       "pct_unicas": 85.7,
       "ultima": "2026-07-22"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Princípios Orçamentários",
-      "grupo": "DFin",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 16,
-      "acertos": 14,
-      "pct": 87.5,
-      "unicas": 16,
-      "acertos_unicas": 14,
-      "pct_unicas": 87.5,
-      "ultima": "2026-07-08"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -512,6 +512,62 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Despesas com Pessoal e Seguridade Social (arts. 18 a 24 da LRF)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 18,
+      "acertos": 15,
+      "pct": 83.3,
+      "unicas": 17,
+      "acertos_unicas": 15,
+      "pct_unicas": 88.2,
+      "ultima": "2026-07-24"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Classificação por Natureza da Receita",
+      "grupo": "DFin",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 19,
+      "acertos": 17,
+      "pct": 89.5,
+      "unicas": 19,
+      "acertos_unicas": 17,
+      "pct_unicas": 89.5,
+      "ultima": "2026-07-24"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Sem assunto",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 20,
+      "acertos": 18,
+      "pct": 90.0,
+      "unicas": 20,
+      "acertos_unicas": 18,
+      "pct_unicas": 90.0,
+      "ultima": "2026-07-24"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Princípios Orçamentários",
+      "grupo": "DFin",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 37,
+      "acertos": 33,
+      "pct": 89.2,
+      "unicas": 36,
+      "acertos_unicas": 33,
+      "pct_unicas": 91.7,
+      "ultima": "2026-07-24"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Ativo Imobilizado (MCASP e NBC TSP 07)",
       "grupo": "",
       "prio": null,
@@ -523,6 +579,20 @@
       "acertos_unicas": 13,
       "pct_unicas": 92.9,
       "ultima": "2026-07-21"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Plano de Contas (PCASP)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 15,
+      "acertos": 14,
+      "pct": 93.3,
+      "unicas": 15,
+      "acertos_unicas": 14,
+      "pct_unicas": 93.3,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -565,20 +635,6 @@
       "acertos_unicas": 28,
       "pct_unicas": 100.0,
       "ultima": "2026-07-17"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Classificação por Natureza da Receita",
-      "grupo": "DFin",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 6,
-      "acertos": 6,
-      "pct": 100.0,
-      "unicas": 6,
-      "acertos_unicas": 6,
-      "pct_unicas": 100.0,
-      "ultima": "2026-07-08"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -635,6 +691,20 @@
       "acertos_unicas": 4,
       "pct_unicas": 100.0,
       "ultima": "2026-07-13"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Operações de Crédito (arts. 32 a 39 da LRF)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 3,
+      "acertos": 3,
+      "pct": 100.0,
+      "unicas": 3,
+      "acertos_unicas": 3,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -908,13 +978,13 @@
       "grupo": "AUD",
       "prio": null,
       "c25": 0,
-      "tentativas": 18,
-      "acertos": 15,
-      "pct": 83.3,
+      "tentativas": 19,
+      "acertos": 16,
+      "pct": 84.2,
       "unicas": 18,
-      "acertos_unicas": 15,
-      "pct_unicas": 83.3,
-      "ultima": "2026-07-21"
+      "acertos_unicas": 16,
+      "pct_unicas": 88.9,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "Auditoria Privada",
@@ -943,6 +1013,20 @@
       "acertos_unicas": 29,
       "pct_unicas": 93.5,
       "ultima": "2026-07-22"
+    },
+    {
+      "materia": "Auditoria Privada",
+      "assunto": "Sem assunto",
+      "grupo": "AUD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "Ciências Atuariais (Atuária)",
@@ -1076,13 +1160,13 @@
       "grupo": "CG",
       "prio": null,
       "c25": 0,
-      "tentativas": 15,
-      "acertos": 6,
-      "pct": 40.0,
+      "tentativas": 18,
+      "acertos": 7,
+      "pct": 38.9,
       "unicas": 15,
-      "acertos_unicas": 6,
-      "pct_unicas": 40.0,
-      "ultima": "2026-07-21"
+      "acertos_unicas": 7,
+      "pct_unicas": 46.7,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1104,27 +1188,13 @@
       "grupo": "CG",
       "prio": null,
       "c25": 0,
-      "tentativas": 15,
-      "acertos": 9,
-      "pct": 60.0,
-      "unicas": 15,
-      "acertos_unicas": 9,
-      "pct_unicas": 60.0,
-      "ultima": "2026-07-23"
-    },
-    {
-      "materia": "Contabilidade Geral",
-      "assunto": "CPC 47: Receita de Contrato com Cliente",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 14,
+      "tentativas": 17,
       "acertos": 11,
-      "pct": 78.6,
-      "unicas": 13,
-      "acertos_unicas": 10,
-      "pct_unicas": 76.9,
-      "ultima": "2026-07-23"
+      "pct": 64.7,
+      "unicas": 17,
+      "acertos_unicas": 11,
+      "pct_unicas": 64.7,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1132,13 +1202,13 @@
       "grupo": "CG",
       "prio": 1,
       "c25": 1,
-      "tentativas": 14,
-      "acertos": 11,
-      "pct": 78.6,
+      "tentativas": 15,
+      "acertos": 12,
+      "pct": 80.0,
       "unicas": 14,
       "acertos_unicas": 11,
       "pct_unicas": 78.6,
-      "ultima": "2026-07-20"
+      "ultima": "2026-07-24"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1153,6 +1223,20 @@
       "acertos_unicas": 12,
       "pct_unicas": 80.0,
       "ultima": "2026-07-10"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 47: Receita de Contrato com Cliente",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 15,
+      "acertos": 12,
+      "pct": 80.0,
+      "unicas": 13,
+      "acertos_unicas": 11,
+      "pct_unicas": 84.6,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1566,13 +1650,13 @@
       "grupo": "DAD",
       "prio": 2,
       "c25": 1,
-      "tentativas": 10,
+      "tentativas": 11,
       "acertos": 7,
-      "pct": 70.0,
+      "pct": 63.6,
       "unicas": 10,
       "acertos_unicas": 7,
       "pct_unicas": 70.0,
-      "ultima": "2026-07-20"
+      "ultima": "2026-07-24"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -1986,13 +2070,13 @@
       "grupo": "DCON",
       "prio": 1,
       "c25": 1,
-      "tentativas": 11,
-      "acertos": 8,
-      "pct": 72.7,
+      "tentativas": 12,
+      "acertos": 9,
+      "pct": 75.0,
       "unicas": 7,
       "acertos_unicas": 4,
       "pct_unicas": 57.1,
-      "ultima": "2026-07-23"
+      "ultima": "2026-07-24"
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -2007,20 +2091,6 @@
       "acertos_unicas": 3,
       "pct_unicas": 60.0,
       "ultima": "2026-07-08"
-    },
-    {
-      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
-      "assunto": "Limitações do Poder de Tributar (arts. 150 a 152 da CF/1988)",
-      "grupo": "DCON",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 5,
-      "acertos": 3,
-      "pct": 60.0,
-      "unicas": 5,
-      "acertos_unicas": 3,
-      "pct_unicas": 60.0,
-      "ultima": "2026-07-21"
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -2066,17 +2136,17 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
-      "assunto": "Intervenção Federal e Estadual (arts. 34 a 36 da CF/1988)",
+      "assunto": "Limitações do Poder de Tributar (arts. 150 a 152 da CF/1988)",
       "grupo": "DCON",
       "prio": null,
       "c25": 0,
-      "tentativas": 5,
+      "tentativas": 6,
       "acertos": 4,
-      "pct": 80.0,
+      "pct": 66.7,
       "unicas": 5,
       "acertos_unicas": 4,
       "pct_unicas": 80.0,
-      "ultima": "2026-07-21"
+      "ultima": "2026-07-24"
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -2150,6 +2220,20 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Intervenção Federal e Estadual (arts. 34 a 36 da CF/1988)",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 5,
+      "pct": 83.3,
+      "unicas": 5,
+      "acertos_unicas": 5,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-24"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "assunto": "Simetria Constitucional",
       "grupo": "DCON",
       "prio": 1,
@@ -2203,6 +2287,20 @@
       "acertos_unicas": 0,
       "pct_unicas": 0.0,
       "ultima": "2026-07-23"
+    },
+    {
+      "materia": "Direito Tributário",
+      "assunto": "Jurisprudência dos Tribunais Superiores sobre Tópicos Mesclados e/ou Outros Assuntos Tributários",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "Estatística",
@@ -2332,45 +2430,17 @@
     },
     {
       "materia": "TI - Banco de Dados",
-      "assunto": "Normalização",
-      "grupo": "TI",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 1,
-      "acertos": 0,
-      "pct": 0.0,
-      "unicas": 1,
-      "acertos_unicas": 0,
-      "pct_unicas": 0.0,
-      "ultima": "2026-07-10"
-    },
-    {
-      "materia": "TI - Banco de Dados",
       "assunto": "Consultas e Comandos em SQL",
       "grupo": "TI",
       "prio": 3,
       "c25": 0,
-      "tentativas": 5,
-      "acertos": 2,
-      "pct": 40.0,
-      "unicas": 5,
-      "acertos_unicas": 2,
-      "pct_unicas": 40.0,
-      "ultima": "2026-07-10"
-    },
-    {
-      "materia": "TI - Banco de Dados",
-      "assunto": "Conceitos e Fases de Projeto e Modelagem de Dados",
-      "grupo": "TI",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 2,
-      "acertos": 1,
-      "pct": 50.0,
-      "unicas": 2,
-      "acertos_unicas": 1,
-      "pct_unicas": 50.0,
-      "ultima": "2026-07-10"
+      "tentativas": 12,
+      "acertos": 5,
+      "pct": 41.7,
+      "unicas": 11,
+      "acertos_unicas": 5,
+      "pct_unicas": 45.5,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "TI - Banco de Dados",
@@ -2378,13 +2448,27 @@
       "grupo": "TI",
       "prio": null,
       "c25": 0,
-      "tentativas": 2,
+      "tentativas": 3,
       "acertos": 2,
-      "pct": 100.0,
+      "pct": 66.7,
+      "unicas": 3,
+      "acertos_unicas": 2,
+      "pct_unicas": 66.7,
+      "ultima": "2026-07-24"
+    },
+    {
+      "materia": "TI - Banco de Dados",
+      "assunto": "Conceitos e Fases de Projeto e Modelagem de Dados",
+      "grupo": "TI",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 3,
+      "acertos": 2,
+      "pct": 66.7,
       "unicas": 2,
       "acertos_unicas": 2,
       "pct_unicas": 100.0,
-      "ultima": "2026-07-10"
+      "ultima": "2026-07-24"
     },
     {
       "materia": "TI - Banco de Dados",
@@ -2399,6 +2483,20 @@
       "acertos_unicas": 1,
       "pct_unicas": 100.0,
       "ultima": "2026-07-10"
+    },
+    {
+      "materia": "TI - Banco de Dados",
+      "assunto": "Normalização",
+      "grupo": "TI",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 1,
+      "pct": 50.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-24"
     },
     {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
