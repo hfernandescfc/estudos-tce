@@ -23,7 +23,8 @@
     "tec_registros_2026-07-21(1).json",
     "tec_registros_2026-07-22.json",
     "tec_registros_2026-07-22(1).json",
-    "tec_registros_2026-07-23.json"
+    "tec_registros_2026-07-23.json",
+    "tec_registros_2026-07-24.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -197,30 +198,30 @@
     "Contabilidade Geral||(sem assunto)": {
       "materia": "Contabilidade Geral",
       "assunto": "(sem assunto)",
-      "data_base": "2026-07-10",
+      "data_base": "2026-07-24",
       "cadeia_completa": true,
       "alvos_origem": [
-        "3231468",
-        "3231477"
+        "3994431",
+        "3903242"
       ],
-      "reinicios": 1,
+      "reinicios": 2,
       "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-10",
-          "emitida": "2026-07-10"
+          "prevista": "2026-07-24",
+          "emitida": "2026-07-24"
         },
         "d6": {
-          "prevista": "2026-07-16",
-          "emitida": "2026-07-17",
+          "prevista": "2026-07-30",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-24",
+          "prevista": "2026-08-07",
           "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-07",
+          "prevista": "2026-08-16",
           "emitida": null
         }
       }
@@ -1018,7 +1019,13 @@
         "d6": {
           "prevista": "2026-07-14",
           "emitida": "2026-07-14",
-          "resultado": null
+          "resultado": {
+            "pct": 83,
+            "questoes": 6,
+            "limiar": 60,
+            "aprovada": true,
+            "data": "2026-07-24"
+          }
         },
         "d14": {
           "prevista": "2026-07-22",
@@ -1136,17 +1143,18 @@
     "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Sistema Tributário Nacional": {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "assunto": "Jurisprudência dos Tribunais Superiores sobre Sistema Tributário Nacional",
-      "data_base": "2026-07-09",
+      "data_base": "2026-07-24",
       "cadeia_completa": false,
       "alvos_origem": [
-        "3178909"
+        "3610211",
+        "1888633"
       ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-07-23",
-          "emitida": "2026-07-23"
+          "prevista": "2026-08-07",
+          "emitida": null
         }
       }
     },
@@ -1208,7 +1216,7 @@
         },
         "d14": {
           "prevista": "2026-07-24",
-          "emitida": null
+          "emitida": "2026-07-24"
         },
         "d28": {
           "prevista": "2026-08-07",
@@ -1238,7 +1246,7 @@
         },
         "d14": {
           "prevista": "2026-07-24",
-          "emitida": null
+          "emitida": "2026-07-24"
         },
         "d28": {
           "prevista": "2026-08-07",
@@ -1272,7 +1280,7 @@
         },
         "d14": {
           "prevista": "2026-07-24",
-          "emitida": null
+          "emitida": "2026-07-24"
         },
         "d28": {
           "prevista": "2026-08-07",
@@ -1300,7 +1308,7 @@
         },
         "d14": {
           "prevista": "2026-07-24",
-          "emitida": null
+          "emitida": "2026-07-24"
         },
         "d28": {
           "prevista": "2026-08-07",
@@ -1328,7 +1336,7 @@
         },
         "d14": {
           "prevista": "2026-07-24",
-          "emitida": null
+          "emitida": "2026-07-24"
         },
         "d28": {
           "prevista": "2026-08-07",
@@ -1343,11 +1351,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-24",
-          "emitida": null
+          "emitida": "2026-07-24"
         }
       }
     },
@@ -1360,11 +1368,11 @@
         "3607549"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-24",
-          "emitida": null
+          "emitida": "2026-07-24"
         }
       }
     },
@@ -1375,11 +1383,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-24",
-          "emitida": null
+          "emitida": "2026-07-24"
         }
       }
     },
@@ -1393,11 +1401,11 @@
         "2346708"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-24",
-          "emitida": null
+          "emitida": "2026-07-24"
         }
       }
     },
@@ -1417,7 +1425,13 @@
         "d6": {
           "prevista": "2026-07-18",
           "emitida": "2026-07-20",
-          "resultado": null
+          "resultado": {
+            "pct": 71,
+            "questoes": 7,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-07-24"
+          }
         },
         "d14": {
           "prevista": "2026-07-27",
@@ -2260,7 +2274,13 @@
         "d6": {
           "prevista": "2026-07-23",
           "emitida": "2026-07-23",
-          "resultado": null
+          "resultado": {
+            "pct": 83,
+            "questoes": 6,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-07-24"
+          }
         },
         "d14": {
           "prevista": "2026-07-31",
@@ -2293,7 +2313,13 @@
         "d6": {
           "prevista": "2026-07-23",
           "emitida": "2026-07-23",
-          "resultado": null
+          "resultado": {
+            "pct": 75,
+            "questoes": 4,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-07-24"
+          }
         },
         "d14": {
           "prevista": "2026-07-31",
@@ -2324,7 +2350,13 @@
         "d6": {
           "prevista": "2026-07-23",
           "emitida": "2026-07-23",
-          "resultado": null
+          "resultado": {
+            "pct": 80,
+            "questoes": 5,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-07-24"
+          }
         },
         "d14": {
           "prevista": "2026-07-31",
@@ -3226,80 +3258,161 @@
           "emitida": null
         }
       }
+    },
+    "Auditoria Privada||Opinião do Auditor Independente/Relatórios e Pareceres de Auditoria": {
+      "materia": "Auditoria Privada",
+      "assunto": "Opinião do Auditor Independente/Relatórios e Pareceres de Auditoria",
+      "data_base": "2026-07-24",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3228035",
+        "2266762",
+        "2709699",
+        "2217583",
+        "1695470",
+        "1712564"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-24",
+          "emitida": "2026-07-24"
+        },
+        "d6": {
+          "prevista": "2026-07-30",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Ciências Atuariais (Atuária)||Regimes e Métodos Financeiros": {
+      "materia": "Ciências Atuariais (Atuária)",
+      "assunto": "Regimes e Métodos Financeiros",
+      "data_base": "2026-07-24",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3232719",
+        "3232731"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Administrativo Estadual e do DF||Lei Estadual nº 11.781/2000 - Processo Administrativo (PE)": {
+      "materia": "Direito Administrativo Estadual e do DF",
+      "assunto": "Lei Estadual nº 11.781/2000 - Processo Administrativo (PE)",
+      "data_base": "2026-07-24",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Dos Princípios Gerais (Sistema Tributário Nacional, arts. 145 a 149-B da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Dos Princípios Gerais (Sistema Tributário Nacional, arts. 145 a 149-B da CF/1988)",
+      "data_base": "2026-07-24",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2218407"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        }
+      }
+    },
+    "Legislação Penal e Processual Penal Especial||Lei nº 13.869/2019 - Lei de Abuso de Autoridade (antiga Lei nº 4.898/1965)": {
+      "materia": "Legislação Penal e Processual Penal Especial",
+      "assunto": "Lei nº 13.869/2019 - Lei de Abuso de Autoridade (antiga Lei nº 4.898/1965)",
+      "data_base": "2026-07-24",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3803900",
+        "3822196",
+        "3175923",
+        "2336550"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-07",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-23",
+    "data": "2026-07-24",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Conta Única e GRU",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Créditos Adicionais",
+        "Auditoria Governamental e Controle||Auditoria Operacional",
         "d14"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Definições, Limites e Recondução da Dívida (arts. 29 a 31 da LRF)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Despesas com Pessoal e Seguridade Social (arts. 18 a 24 da LRF)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Despesas de Exercícios Anteriores (DEA)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Despesa Pública",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Programação e Descentralização Orçamentária e Financeira",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Regime de Adiantamento",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Restos a Pagar (RAP)",
-        "d6"
-      ],
-      [
-        "Contabilidade Geral||CPC 47: Receita de Contrato com Cliente",
-        "d1"
-      ],
-      [
-        "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Fiscalização Contábil, Financeira e Orçamentária",
+        "Auditoria Governamental e Controle||Outras Questões e Tópicos Mesclados de Auditoria Governamental",
         "d14"
       ],
       [
-        "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Simetria Constitucional",
-        "d14"
-      ],
-      [
-        "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Sistema Tributário Nacional",
-        "d14"
-      ],
-      [
-        "Direito Constitucional (CF/1988 e Doutrina)||Simetria Constitucional",
-        "d14"
-      ],
-      [
-        "Direito Constitucional (CF/1988 e Doutrina)||Tribunais de Contas Estaduais, Distrital e Municipais",
-        "d14"
-      ],
-      [
-        "Estatística||Distribuição Normal",
+        "Auditoria Privada||Opinião do Auditor Independente/Relatórios e Pareceres de Auditoria",
         "d1"
       ],
       [
-        "Estatística||Teste de Hipóteses: Introdução (Nível de Significância, Erros Tipo I e II, Poder do Teste)",
-        "d6"
+        "Contabilidade Geral||(sem assunto)",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||Conceito, Objeto, Finalidade, Técnicas Contábeis, Equação Patrimonial",
+        "d14"
+      ],
+      [
+        "Contabilidade Geral||Estrutura Conceitual Básica da Contabilidade (CPC 00)",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Formas de Extinção (Serviços Públicos - Lei nº 8.987/1995)",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Intervenção (Serviços Públicos - Lei nº 8.987/1995)",
+        "d14"
+      ],
+      [
+        "Direito Administrativo Estadual e do DF||Dos Direitos e Vantagens (arts. 85 a 189 da Lei Estadual nº 6.123/1968)",
+        "d14"
+      ],
+      [
+        "Direito Constitucional (CF/1988 e Doutrina)||Dos Orçamentos (Finanças Públicas, arts. 165 a 169 da CF/1988)",
+        "d14"
+      ],
+      [
+        "Estatística||Intervalo de Confiança para a Média",
+        "d14"
       ]
     ],
-    "confirmada": "2026-07-23"
+    "confirmada": "2026-07-24"
   }
 }
