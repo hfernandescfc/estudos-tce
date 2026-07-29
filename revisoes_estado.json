@@ -27,7 +27,8 @@
     "tec_registros_2026-07-24.json",
     "tec_registros_2026-07-24(1).json",
     "tec_registros_2026-07-28(1).json",
-    "tec_registros_2026-07-28.json"
+    "tec_registros_2026-07-28.json",
+    "tec_registros_2026-07-29.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -137,38 +138,28 @@
     "Auditoria Governamental e Controle||Princípios, Propósitos e Abrangência da Auditoria Governamental": {
       "materia": "Auditoria Governamental e Controle",
       "assunto": "Princípios, Propósitos e Abrangência da Auditoria Governamental",
-      "data_base": "2026-07-01",
+      "data_base": "2026-07-29",
       "cadeia_completa": true,
-      "alvos_origem": [
-        "3604626",
-        "3043551",
-        "3178866",
-        "2336615",
-        "2336621",
-        "2369093",
-        "2369842",
-        "2369869",
-        "1916155"
-      ],
+      "alvos_origem": [],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-02",
-          "emitida": "expirada"
+          "prevista": "2026-07-29",
+          "emitida": "2026-07-29"
         },
         "d6": {
-          "prevista": "2026-07-07",
-          "emitida": "2026-07-07",
+          "prevista": "2026-08-04",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-15",
-          "emitida": "2026-07-15"
+          "prevista": "2026-08-12",
+          "emitida": null
         },
         "d28": {
-          "prevista": "2026-07-29",
-          "emitida": "2026-07-28"
+          "prevista": "2026-08-16",
+          "emitida": null
         }
       }
     },
@@ -818,7 +809,7 @@
         },
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         },
         "d28": {
           "prevista": "2026-08-12",
@@ -1258,7 +1249,13 @@
         "d6": {
           "prevista": "2026-07-16",
           "emitida": "2026-07-17",
-          "resultado": null
+          "resultado": {
+            "pct": 93,
+            "questoes": 15,
+            "limiar": 60,
+            "aprovada": true,
+            "data": "2026-07-29"
+          }
         },
         "d14": {
           "prevista": "2026-07-24",
@@ -1899,7 +1896,7 @@
         },
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         },
         "d28": {
           "prevista": "2026-08-12",
@@ -1916,11 +1913,11 @@
         "2909140"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         }
       }
     },
@@ -1931,11 +1928,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         }
       }
     },
@@ -1948,11 +1945,11 @@
         "2886973"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         }
       }
     },
@@ -1963,11 +1960,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         }
       }
     },
@@ -1980,11 +1977,11 @@
         "2773569"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         }
       }
     },
@@ -1997,11 +1994,11 @@
         "2771866"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         }
       }
     },
@@ -2012,11 +2009,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         }
       }
     },
@@ -2029,11 +2026,11 @@
         "3747995"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         }
       }
     },
@@ -2046,11 +2043,11 @@
         "3748021"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         }
       }
     },
@@ -2064,11 +2061,11 @@
         "3610234"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         }
       }
     },
@@ -2082,11 +2079,11 @@
         "2687858"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-29",
-          "emitida": null
+          "emitida": "2026-07-29"
         }
       }
     },
@@ -3092,7 +3089,7 @@
         },
         "d6": {
           "prevista": "2026-07-29",
-          "emitida": null,
+          "emitida": "2026-07-29",
           "resultado": null
         },
         "d14": {
@@ -3122,7 +3119,7 @@
         },
         "d6": {
           "prevista": "2026-07-29",
-          "emitida": null,
+          "emitida": "2026-07-29",
           "resultado": null
         },
         "d14": {
@@ -3154,7 +3151,7 @@
         },
         "d6": {
           "prevista": "2026-07-29",
-          "emitida": null,
+          "emitida": "2026-07-29",
           "resultado": null
         },
         "d14": {
@@ -3184,7 +3181,7 @@
         },
         "d6": {
           "prevista": "2026-07-29",
-          "emitida": null,
+          "emitida": "2026-07-29",
           "resultado": null
         },
         "d14": {
@@ -3216,7 +3213,7 @@
         },
         "d6": {
           "prevista": "2026-07-29",
-          "emitida": null,
+          "emitida": "2026-07-29",
           "resultado": null
         },
         "d14": {
@@ -3718,168 +3715,397 @@
           "emitida": null
         }
       }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Balanço Financeiro": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Balanço Financeiro",
+      "data_base": "2026-07-29",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3823189"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-29",
+          "emitida": "2026-07-29"
+        },
+        "d6": {
+          "prevista": "2026-08-04",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-12",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Introdução às DCASP (Parte V, Capítulo 1 do MCASP e NBC TSP 11)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Introdução às DCASP (Parte V, Capítulo 1 do MCASP e NBC TSP 11)",
+      "data_base": "2026-07-29",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2369025"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-29",
+          "emitida": "2026-07-29"
+        },
+        "d6": {
+          "prevista": "2026-08-04",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-12",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Patrimônio Público": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Patrimônio Público",
+      "data_base": "2026-07-29",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2292837"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-29",
+          "emitida": "2026-07-29"
+        },
+        "d6": {
+          "prevista": "2026-08-04",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-12",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Regimes Orçamentário e Patrimonial e Exercício Financeiro": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Regimes Orçamentário e Patrimonial e Exercício Financeiro",
+      "data_base": "2026-07-29",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-29",
+          "emitida": "2026-07-29"
+        },
+        "d6": {
+          "prevista": "2026-08-04",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-12",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Auditoria Governamental e Controle||Entidades de Fiscalização Superior": {
+      "materia": "Auditoria Governamental e Controle",
+      "assunto": "Entidades de Fiscalização Superior",
+      "data_base": "2026-07-29",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2942737",
+        "3045550"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-29",
+          "emitida": "2026-07-29"
+        },
+        "d6": {
+          "prevista": "2026-08-04",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-12",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Auditoria Governamental e Controle||Ética e Sigilo Profissional": {
+      "materia": "Auditoria Governamental e Controle",
+      "assunto": "Ética e Sigilo Profissional",
+      "data_base": "2026-07-29",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-29",
+          "emitida": "2026-07-29"
+        },
+        "d6": {
+          "prevista": "2026-08-04",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-12",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Auditoria Privada||Fraude e Erro (Auditoria)": {
+      "materia": "Auditoria Privada",
+      "assunto": "Fraude e Erro (Auditoria)",
+      "data_base": "2026-07-29",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3734617",
+        "2771976"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-29",
+          "emitida": "2026-07-29"
+        },
+        "d6": {
+          "prevista": "2026-08-04",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-12",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||Demonstração do Resultado do Exercício (DRE) e Destinação do Resultado": {
+      "materia": "Contabilidade Geral",
+      "assunto": "Demonstração do Resultado do Exercício (DRE) e Destinação do Resultado",
+      "data_base": "2026-07-29",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2849350",
+        "2890212"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-29",
+          "emitida": "2026-07-29"
+        },
+        "d6": {
+          "prevista": "2026-08-04",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-12",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Processual Civil||Disposições Gerais (arts. 369 a 380)": {
+      "materia": "Direito Processual Civil",
+      "assunto": "Disposições Gerais (arts. 369 a 380)",
+      "data_base": "2026-07-29",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "4001897",
+        "2460790"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-12",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Processual Civil||Tópicos Mesclados do Capítulo \"das Provas\"": {
+      "materia": "Direito Processual Civil",
+      "assunto": "Tópicos Mesclados do Capítulo \"das Provas\"",
+      "data_base": "2026-07-29",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3117477",
+        "3443612",
+        "3610357",
+        "3647977"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-12",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-28",
+    "data": "2026-07-29",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||(sem assunto)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Intangível (MCASP e NBC TSP 08)",
         "d14"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Imobilizado (MCASP e NBC TSP 07)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Orçamentário (MCASP e NBC TSP 13)",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Patrimonial (AFO e CPU)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Ciclo Orçamentário",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Classificação da Despesa Orçamentária",
-        "d28"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Fonte / Destinação de Recursos",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Conceitos, Objeto, Objetivos e Campo de Aplicação (Estrutura Conceitual - Prefácio e caps. 1 a 4)",
-        "d28"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Consolidação das Demonstrações Contábeis",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Demonstração das Variações Patrimoniais (DVP)",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Demonstração de Fluxo de Caixa (MCASP e NBC TSP 12)",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Dívida Ativa",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Escrituração Contábil Pública",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Receita Pública",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Funções de Governo",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||LDO - Lei de Diretrizes Orçamentárias (CF/1988 e Lei nº 4.320/1964)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||LOA - Lei Orçamentária Anual (CF/1988 e Lei nº 4.320/1964)",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Lei Complementar nº 159/2017 (Regime de Recuperação Fiscal)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Manual de Demonstrativos Fiscais",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||PPA - Plano Plurianual (CF/1988 e Lei nº 4.320/1964)",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Vedações Constitucionais em Matéria Orçamentária (Art. 167 da CF/1988)",
-        "d14"
-      ],
-      [
-        "Auditoria Governamental e Controle||(sem assunto)",
-        "d14"
-      ],
-      [
-        "Auditoria Governamental e Controle||Classificação dos Tipos de Auditoria",
-        "d28"
-      ],
-      [
-        "Auditoria Governamental e Controle||Princípios, Propósitos e Abrangência da Auditoria Governamental",
-        "d28"
-      ],
-      [
-        "Auditoria Privada||Amostragem em Auditoria",
-        "d6"
-      ],
-      [
-        "Auditoria Privada||Evidência em Auditoria",
-        "d6"
-      ],
-      [
-        "Contabilidade Geral||Ativo Imobilizado (Conceito, Classificação, Mensuração Inicial, Reavaliação)",
-        "d14"
-      ],
-      [
-        "Contabilidade Geral||Ativos Intangíveis (CPC 04, Lei 6.404)",
-        "d6"
-      ],
-      [
-        "Contabilidade Geral||Balanço Patrimonial",
+        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Financeiro",
         "d1"
       ],
       [
-        "Contabilidade Geral||Demonstração do Valor Adicionado (DVA - CPC 09, Lei 6.404, art. 188, II)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Conta Única e GRU",
         "d6"
       ],
       [
-        "Contabilidade Geral||Depreciação, Amortização e Exaustão",
-        "d28"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||(sem assunto)",
-        "d14"
-      ],
-      [
-        "Estatística||Distribuição Binomial",
-        "d28"
-      ],
-      [
-        "Estatística||Distribuição Normal",
+        "AFO, Direito Financeiro e Contabilidade Pública||Definições, Limites e Recondução da Dívida (arts. 29 a 31 da LRF)",
         "d6"
       ],
       [
-        "Língua Portuguesa (Português)||(sem assunto)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Despesas com Pessoal e Seguridade Social (arts. 18 a 24 da LRF)",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Introdução às DCASP (Parte V, Capítulo 1 do MCASP e NBC TSP 11)",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Patrimônio Público",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Regime de Adiantamento",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Regimes Orçamentário e Patrimonial e Exercício Financeiro",
+        "d1"
+      ],
+      [
+        "Auditoria Governamental e Controle||Entidades de Fiscalização Superior",
+        "d1"
+      ],
+      [
+        "Auditoria Governamental e Controle||Princípios, Propósitos e Abrangência da Auditoria Governamental",
+        "d1"
+      ],
+      [
+        "Auditoria Governamental e Controle||Ética e Sigilo Profissional",
+        "d1"
+      ],
+      [
+        "Auditoria Privada||Fraude e Erro (Auditoria)",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||CPC 47: Receita de Contrato com Cliente",
+        "d6"
+      ],
+      [
+        "Contabilidade Geral||Demonstração do Resultado do Exercício (DRE) e Destinação do Resultado",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||Reservas de Lucros",
         "d14"
       ],
       [
-        "TI - Banco de Dados||Conceitos e Fases de Projeto e Modelagem de Dados",
+        "Direito Administrativo (Doutrina e Leis Federais)||Administração Direta (Órgãos Públicos)",
         "d14"
       ],
       [
-        "TI - Banco de Dados||Conceitos e Fundamentos de Modelo Relacional",
+        "Direito Administrativo (Doutrina e Leis Federais)||Administração Indireta",
         "d14"
       ],
       [
-        "TI - Banco de Dados||Consultas e Comandos em SQL",
+        "Direito Administrativo (Doutrina e Leis Federais)||Agências Reguladoras e Executivas",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Características dos Bens Públicos",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Conceitos Iniciais e Teorias da Responsabilidade",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Formas de Utilização de Bens Públicos",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Responsabilidade dos Agentes Públicos e Direito de Regresso",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados de Bens Públicos (Direito Administrativo)",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados de Responsabilidade Civil do Estado",
+        "d14"
+      ],
+      [
+        "Direito Constitucional (CF/1988 e Doutrina)||Eficácia das Normas Constitucionais",
+        "d14"
+      ],
+      [
+        "Direito Constitucional (CF/1988 e Doutrina)||União: Bens e Competências Exclusivas, Privativas, Comuns e Concorrentes (arts. 20 a 24 da CF/1988)",
         "d14"
       ]
     ],
-    "confirmada": "2026-07-28"
+    "confirmada": "2026-07-29"
   }
 }

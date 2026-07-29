@@ -1,21 +1,21 @@
 {
-  "gerado_em": "2026-07-28T08:13:58",
+  "gerado_em": "2026-07-29T10:10:41",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 1918,
-    "acertos": 1465,
-    "pct": 76.4,
-    "unicas": 1767,
-    "acertos_unicas": 1420,
-    "pct_unicas": 80.4
+    "tentativas": 2031,
+    "acertos": 1556,
+    "pct": 76.6,
+    "unicas": 1873,
+    "acertos_unicas": 1508,
+    "pct_unicas": 80.5
   },
   "materias": [
     {
       "materia": "Sem materia",
-      "tentativas": 22,
+      "tentativas": 23,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 22,
+      "unicas": 23,
       "acertos_unicas": 0,
       "pct_unicas": 0.0
     },
@@ -36,6 +36,15 @@
       "unicas": 18,
       "acertos_unicas": 11,
       "pct_unicas": 61.1
+    },
+    {
+      "materia": "Direito Processual Civil",
+      "tentativas": 17,
+      "acertos": 11,
+      "pct": 64.7,
+      "unicas": 17,
+      "acertos_unicas": 11,
+      "pct_unicas": 64.7
     },
     {
       "materia": "Direito Civil",
@@ -75,12 +84,12 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "tentativas": 187,
-      "acertos": 136,
-      "pct": 72.7,
-      "unicas": 164,
-      "acertos_unicas": 128,
-      "pct_unicas": 78.0
+      "tentativas": 205,
+      "acertos": 148,
+      "pct": 72.2,
+      "unicas": 181,
+      "acertos_unicas": 140,
+      "pct_unicas": 77.3
     },
     {
       "materia": "Estatística",
@@ -110,15 +119,6 @@
       "pct_unicas": 81.0
     },
     {
-      "materia": "Auditoria Governamental e Controle",
-      "tentativas": 152,
-      "acertos": 116,
-      "pct": 76.3,
-      "unicas": 128,
-      "acertos_unicas": 104,
-      "pct_unicas": 81.2
-    },
-    {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "tentativas": 164,
       "acertos": 133,
@@ -128,13 +128,31 @@
       "pct_unicas": 83.4
     },
     {
+      "materia": "Auditoria Governamental e Controle",
+      "tentativas": 178,
+      "acertos": 139,
+      "pct": 78.1,
+      "unicas": 148,
+      "acertos_unicas": 124,
+      "pct_unicas": 83.8
+    },
+    {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "tentativas": 748,
-      "acertos": 592,
-      "pct": 79.1,
-      "unicas": 696,
-      "acertos_unicas": 587,
-      "pct_unicas": 84.3
+      "tentativas": 794,
+      "acertos": 634,
+      "pct": 79.8,
+      "unicas": 742,
+      "acertos_unicas": 629,
+      "pct_unicas": 84.8
+    },
+    {
+      "materia": "Auditoria Privada",
+      "tentativas": 91,
+      "acertos": 73,
+      "pct": 80.2,
+      "unicas": 86,
+      "acertos_unicas": 73,
+      "pct_unicas": 84.9
     },
     {
       "materia": "Língua Portuguesa (Português)",
@@ -144,15 +162,6 @@
       "unicas": 21,
       "acertos_unicas": 18,
       "pct_unicas": 85.7
-    },
-    {
-      "materia": "Auditoria Privada",
-      "tentativas": 86,
-      "acertos": 70,
-      "pct": 81.4,
-      "unicas": 81,
-      "acertos_unicas": 70,
-      "pct_unicas": 86.4
     },
     {
       "materia": "Ciências Políticas",
@@ -190,20 +199,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Estágios da Receita Pública",
-      "grupo": "DFin",
-      "prio": 3,
-      "c25": 0,
-      "tentativas": 7,
-      "acertos": 4,
-      "pct": 57.1,
-      "unicas": 7,
-      "acertos_unicas": 4,
-      "pct_unicas": 57.1,
-      "ultima": "2026-07-23"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Vedações Constitucionais em Matéria Orçamentária (Art. 167 da CF/1988)",
       "grupo": "DFin",
       "prio": 2,
@@ -232,6 +227,20 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Estágios da Receita Pública",
+      "grupo": "DFin",
+      "prio": 3,
+      "c25": 0,
+      "tentativas": 10,
+      "acertos": 7,
+      "pct": 70.0,
+      "unicas": 10,
+      "acertos_unicas": 7,
+      "pct_unicas": 70.0,
+      "ultima": "2026-07-28"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Depreciação, Amortização e Exaustão (NBC TSP 07, MCASP, etc.)",
       "grupo": "CASP",
       "prio": 1,
@@ -243,20 +252,6 @@
       "acertos_unicas": 12,
       "pct_unicas": 70.6,
       "ultima": "2026-07-14"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Classificação por Fonte / Destinação de Recursos",
-      "grupo": "DFin",
-      "prio": 3,
-      "c25": 0,
-      "tentativas": 7,
-      "acertos": 5,
-      "pct": 71.4,
-      "unicas": 7,
-      "acertos_unicas": 5,
-      "pct_unicas": 71.4,
-      "ultima": "2026-07-20"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -274,20 +269,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Ciclo Orçamentário",
-      "grupo": "DFin",
-      "prio": 3,
-      "c25": 0,
-      "tentativas": 13,
-      "acertos": 9,
-      "pct": 69.2,
-      "unicas": 12,
-      "acertos_unicas": 9,
-      "pct_unicas": 75.0,
-      "ultima": "2026-07-24"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Classificação da Despesa Orçamentária",
       "grupo": "DFin",
       "prio": 1,
@@ -299,6 +280,20 @@
       "acertos_unicas": 33,
       "pct_unicas": 76.7,
       "ultima": "2026-07-08"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Classificação por Fonte / Destinação de Recursos",
+      "grupo": "DFin",
+      "prio": 3,
+      "c25": 0,
+      "tentativas": 9,
+      "acertos": 7,
+      "pct": 77.8,
+      "unicas": 9,
+      "acertos_unicas": 7,
+      "pct_unicas": 77.8,
+      "ultima": "2026-07-28"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -355,6 +350,20 @@
       "acertos_unicas": 12,
       "pct_unicas": 80.0,
       "ultima": "2026-07-23"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Ciclo Orçamentário",
+      "grupo": "DFin",
+      "prio": 3,
+      "c25": 0,
+      "tentativas": 16,
+      "acertos": 12,
+      "pct": 75.0,
+      "unicas": 15,
+      "acertos_unicas": 12,
+      "pct_unicas": 80.0,
+      "ultima": "2026-07-28"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -470,6 +479,20 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "LDO - Lei de Diretrizes Orçamentárias (CF/1988 e Lei nº 4.320/1964)",
+      "grupo": "DFin",
+      "prio": 3,
+      "c25": 1,
+      "tentativas": 8,
+      "acertos": 7,
+      "pct": 87.5,
+      "unicas": 8,
+      "acertos_unicas": 7,
+      "pct_unicas": 87.5,
+      "ultima": "2026-07-28"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Definições, Limites e Recondução da Dívida (arts. 29 a 31 da LRF)",
       "grupo": "",
       "prio": null,
@@ -481,6 +504,20 @@
       "acertos_unicas": 7,
       "pct_unicas": 87.5,
       "ultima": "2026-07-22"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Patrimônio Público",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 8,
+      "acertos": 7,
+      "pct": 87.5,
+      "unicas": 8,
+      "acertos_unicas": 7,
+      "pct_unicas": 87.5,
+      "ultima": "2026-07-28"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -509,6 +546,20 @@
       "acertos_unicas": 15,
       "pct_unicas": 88.2,
       "ultima": "2026-07-24"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Introdução às DCASP (Parte V, Capítulo 1 do MCASP e NBC TSP 11)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 9,
+      "acertos": 8,
+      "pct": 88.9,
+      "unicas": 9,
+      "acertos_unicas": 8,
+      "pct_unicas": 88.9,
+      "ultima": "2026-07-28"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -551,6 +602,20 @@
       "acertos_unicas": 18,
       "pct_unicas": 90.0,
       "ultima": "2026-07-24"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Balanço Financeiro",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 10,
+      "acertos": 9,
+      "pct": 90.0,
+      "unicas": 10,
+      "acertos_unicas": 9,
+      "pct_unicas": 90.0,
+      "ultima": "2026-07-28"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -638,6 +703,20 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Regimes Orçamentário e Patrimonial e Exercício Financeiro",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 8,
+      "acertos": 8,
+      "pct": 100.0,
+      "unicas": 8,
+      "acertos_unicas": 8,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-28"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Dívida Ativa",
       "grupo": "DFin",
       "prio": 2,
@@ -663,20 +742,6 @@
       "acertos_unicas": 5,
       "pct_unicas": 100.0,
       "ultima": "2026-07-17"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "LDO - Lei de Diretrizes Orçamentárias (CF/1988 e Lei nº 4.320/1964)",
-      "grupo": "DFin",
-      "prio": 3,
-      "c25": 1,
-      "tentativas": 5,
-      "acertos": 5,
-      "pct": 100.0,
-      "unicas": 5,
-      "acertos_unicas": 5,
-      "pct_unicas": 100.0,
-      "ultima": "2026-07-20"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -778,20 +843,6 @@
     },
     {
       "materia": "Auditoria Governamental e Controle",
-      "assunto": "Entidades de Fiscalização Superior",
-      "grupo": "AUD",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 2,
-      "acertos": 0,
-      "pct": 0.0,
-      "unicas": 2,
-      "acertos_unicas": 0,
-      "pct_unicas": 0.0,
-      "ultima": "2026-07-14"
-    },
-    {
-      "materia": "Auditoria Governamental e Controle",
       "assunto": "Controle de Qualidade da Auditoria Governamental",
       "grupo": "AUD",
       "prio": 1,
@@ -803,20 +854,6 @@
       "acertos_unicas": 1,
       "pct_unicas": 33.3,
       "ultima": "2026-07-14"
-    },
-    {
-      "materia": "Auditoria Governamental e Controle",
-      "assunto": "Auditoria Operacional",
-      "grupo": "AUD",
-      "prio": 2,
-      "c25": 1,
-      "tentativas": 2,
-      "acertos": 1,
-      "pct": 50.0,
-      "unicas": 2,
-      "acertos_unicas": 1,
-      "pct_unicas": 50.0,
-      "ultima": "2026-07-09"
     },
     {
       "materia": "Auditoria Governamental e Controle",
@@ -834,17 +871,31 @@
     },
     {
       "materia": "Auditoria Governamental e Controle",
+      "assunto": "Entidades de Fiscalização Superior",
+      "grupo": "AUD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 9,
+      "acertos": 5,
+      "pct": 55.6,
+      "unicas": 7,
+      "acertos_unicas": 5,
+      "pct_unicas": 71.4,
+      "ultima": "2026-07-28"
+    },
+    {
+      "materia": "Auditoria Governamental e Controle",
       "assunto": "Princípios, Propósitos e Abrangência da Auditoria Governamental",
       "grupo": "AUD",
       "prio": 1,
       "c25": 1,
-      "tentativas": 34,
-      "acertos": 25,
-      "pct": 73.5,
+      "tentativas": 36,
+      "acertos": 27,
+      "pct": 75.0,
       "unicas": 31,
       "acertos_unicas": 23,
       "pct_unicas": 74.2,
-      "ultima": "2026-07-14"
+      "ultima": "2026-07-28"
     },
     {
       "materia": "Auditoria Governamental e Controle",
@@ -887,6 +938,20 @@
       "acertos_unicas": 5,
       "pct_unicas": 83.3,
       "ultima": "2026-07-23"
+    },
+    {
+      "materia": "Auditoria Governamental e Controle",
+      "assunto": "Auditoria Operacional",
+      "grupo": "AUD",
+      "prio": 2,
+      "c25": 1,
+      "tentativas": 17,
+      "acertos": 15,
+      "pct": 88.2,
+      "unicas": 15,
+      "acertos_unicas": 14,
+      "pct_unicas": 93.3,
+      "ultima": "2026-07-28"
     },
     {
       "materia": "Auditoria Governamental e Controle",
@@ -946,6 +1011,20 @@
     },
     {
       "materia": "Auditoria Governamental e Controle",
+      "assunto": "Ética e Sigilo Profissional",
+      "grupo": "AUD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 2,
+      "pct": 100.0,
+      "unicas": 2,
+      "acertos_unicas": 2,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-28"
+    },
+    {
+      "materia": "Auditoria Governamental e Controle",
       "assunto": "Objeto e Escopo de Auditoria de Regularidade",
       "grupo": "AUD",
       "prio": null,
@@ -957,6 +1036,20 @@
       "acertos_unicas": 1,
       "pct_unicas": 100.0,
       "ultima": "2026-07-14"
+    },
+    {
+      "materia": "Auditoria Privada",
+      "assunto": "Fraude e Erro (Auditoria)",
+      "grupo": "AUD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 5,
+      "acertos": 3,
+      "pct": 60.0,
+      "unicas": 5,
+      "acertos_unicas": 3,
+      "pct_unicas": 60.0,
+      "ultima": "2026-07-28"
     },
     {
       "materia": "Auditoria Privada",
@@ -1198,17 +1291,31 @@
     },
     {
       "materia": "Contabilidade Geral",
+      "assunto": "Demonstração do Resultado do Exercício (DRE) e Destinação do Resultado",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 4,
+      "pct": 66.7,
+      "unicas": 6,
+      "acertos_unicas": 4,
+      "pct_unicas": 66.7,
+      "ultima": "2026-07-28"
+    },
+    {
+      "materia": "Contabilidade Geral",
       "assunto": "Balanço Patrimonial",
       "grupo": "CASP",
       "prio": 1,
       "c25": 1,
-      "tentativas": 13,
-      "acertos": 9,
-      "pct": 69.2,
-      "unicas": 13,
-      "acertos_unicas": 9,
-      "pct_unicas": 69.2,
-      "ultima": "2026-07-27"
+      "tentativas": 25,
+      "acertos": 17,
+      "pct": 68.0,
+      "unicas": 24,
+      "acertos_unicas": 17,
+      "pct_unicas": 70.8,
+      "ultima": "2026-07-28"
     },
     {
       "materia": "Contabilidade Geral",
@@ -2443,6 +2550,34 @@
       "ultima": "2026-06-30"
     },
     {
+      "materia": "Direito Processual Civil",
+      "assunto": "Tópicos Mesclados do Capítulo \"das Provas\"",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 2,
+      "pct": 33.3,
+      "unicas": 6,
+      "acertos_unicas": 2,
+      "pct_unicas": 33.3,
+      "ultima": "2026-07-28"
+    },
+    {
+      "materia": "Direito Processual Civil",
+      "assunto": "Disposições Gerais (arts. 369 a 380)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 11,
+      "acertos": 9,
+      "pct": 81.8,
+      "unicas": 11,
+      "acertos_unicas": 9,
+      "pct_unicas": 81.8,
+      "ultima": "2026-07-28"
+    },
+    {
       "materia": "Direito Tributário",
       "assunto": "Sem assunto",
       "grupo": "",
@@ -2588,13 +2723,13 @@
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 22,
+      "tentativas": 23,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 22,
+      "unicas": 23,
       "acertos_unicas": 0,
       "pct_unicas": 0.0,
-      "ultima": "2026-07-27"
+      "ultima": "2026-07-28"
     },
     {
       "materia": "TI - Banco de Dados",
