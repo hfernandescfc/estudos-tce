@@ -1,21 +1,21 @@
 {
-  "gerado_em": "2026-07-29T10:10:41",
+  "gerado_em": "2026-07-30T07:54:14",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 2031,
-    "acertos": 1556,
-    "pct": 76.6,
-    "unicas": 1873,
-    "acertos_unicas": 1508,
-    "pct_unicas": 80.5
+    "tentativas": 2104,
+    "acertos": 1610,
+    "pct": 76.5,
+    "unicas": 1946,
+    "acertos_unicas": 1562,
+    "pct_unicas": 80.3
   },
   "materias": [
     {
       "materia": "Sem materia",
-      "tentativas": 23,
+      "tentativas": 24,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 23,
+      "unicas": 24,
       "acertos_unicas": 0,
       "pct_unicas": 0.0
     },
@@ -39,12 +39,12 @@
     },
     {
       "materia": "Direito Processual Civil",
-      "tentativas": 17,
-      "acertos": 11,
-      "pct": 64.7,
-      "unicas": 17,
-      "acertos_unicas": 11,
-      "pct_unicas": 64.7
+      "tentativas": 40,
+      "acertos": 27,
+      "pct": 67.5,
+      "unicas": 40,
+      "acertos_unicas": 27,
+      "pct_unicas": 67.5
     },
     {
       "materia": "Direito Civil",
@@ -84,12 +84,12 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "tentativas": 205,
-      "acertos": 148,
-      "pct": 72.2,
-      "unicas": 181,
-      "acertos_unicas": 140,
-      "pct_unicas": 77.3
+      "tentativas": 219,
+      "acertos": 158,
+      "pct": 72.1,
+      "unicas": 195,
+      "acertos_unicas": 150,
+      "pct_unicas": 76.9
     },
     {
       "materia": "Estatística",
@@ -120,12 +120,12 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
-      "tentativas": 164,
-      "acertos": 133,
-      "pct": 81.1,
-      "unicas": 151,
-      "acertos_unicas": 126,
-      "pct_unicas": 83.4
+      "tentativas": 199,
+      "acertos": 161,
+      "pct": 80.9,
+      "unicas": 186,
+      "acertos_unicas": 154,
+      "pct_unicas": 82.8
     },
     {
       "materia": "Auditoria Governamental e Controle",
@@ -1295,13 +1295,13 @@
       "grupo": "CG",
       "prio": null,
       "c25": 0,
-      "tentativas": 6,
-      "acertos": 4,
-      "pct": 66.7,
-      "unicas": 6,
-      "acertos_unicas": 4,
-      "pct_unicas": 66.7,
-      "ultima": "2026-07-28"
+      "tentativas": 20,
+      "acertos": 14,
+      "pct": 70.0,
+      "unicas": 20,
+      "acertos_unicas": 14,
+      "pct_unicas": 70.0,
+      "ultima": "2026-07-29"
     },
     {
       "materia": "Contabilidade Geral",
@@ -2313,6 +2313,34 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Jurisprudência dos Tribunais Superiores sobre Comissões Parlamentares",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 0,
+      "pct": 0.0,
+      "unicas": 1,
+      "acertos_unicas": 0,
+      "pct_unicas": 0.0,
+      "ultima": "2026-07-29"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Jurisprudência dos Tribunais Superiores sobre Controle de Constitucionalidade",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 0,
+      "pct": 0.0,
+      "unicas": 1,
+      "acertos_unicas": 0,
+      "pct_unicas": 0.0,
+      "ultima": "2026-07-29"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "assunto": "Da Repartição das Receitas Tributárias (arts. 157 a 162 da CF/1988)",
       "grupo": "DCON",
       "prio": null,
@@ -2338,6 +2366,20 @@
       "acertos_unicas": 1,
       "pct_unicas": 50.0,
       "ultima": "2026-07-23"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Das Comissões Parlamentares - Permanentes e Temporárias (art. 58 da CF/1988)",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 1,
+      "pct": 50.0,
+      "unicas": 2,
+      "acertos_unicas": 1,
+      "pct_unicas": 50.0,
+      "ultima": "2026-07-29"
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -2439,6 +2481,20 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Medidas Provisórias",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 5,
+      "pct": 83.3,
+      "unicas": 6,
+      "acertos_unicas": 5,
+      "pct_unicas": 83.3,
+      "ultima": "2026-07-29"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "assunto": "Jurisprudência dos Tribunais Superiores sobre Organização, Competências e Bens dos Entes Federativos",
       "grupo": "DCON",
       "prio": 2,
@@ -2450,6 +2506,34 @@
       "acertos_unicas": 11,
       "pct_unicas": 84.6,
       "ultima": "2026-07-17"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Dos Servidores Públicos (arts. 39 a 41 da CF/1988)",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 13,
+      "acertos": 11,
+      "pct": 84.6,
+      "unicas": 13,
+      "acertos_unicas": 11,
+      "pct_unicas": 84.6,
+      "ultima": "2026-07-29"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Disposições Gerais (Administração Pública - arts. 37 e 38 da CF/1988)",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 8,
+      "acertos": 7,
+      "pct": 87.5,
+      "unicas": 8,
+      "acertos_unicas": 7,
+      "pct_unicas": 87.5,
+      "ultima": "2026-07-29"
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -2509,6 +2593,20 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Jurisprudência dos Tribunais Superiores sobre Administração Pública",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 4,
+      "acertos": 4,
+      "pct": 100.0,
+      "unicas": 4,
+      "acertos_unicas": 4,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-29"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "assunto": "Simetria Constitucional",
       "grupo": "DCON",
       "prio": 1,
@@ -2562,6 +2660,34 @@
       "acertos_unicas": 2,
       "pct_unicas": 33.3,
       "ultima": "2026-07-28"
+    },
+    {
+      "materia": "Direito Processual Civil",
+      "assunto": "Da Sentença e Da Coisa Julgada (arts. 485 a 508)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 3,
+      "pct": 50.0,
+      "unicas": 6,
+      "acertos_unicas": 3,
+      "pct_unicas": 50.0,
+      "ultima": "2026-07-29"
+    },
+    {
+      "materia": "Direito Processual Civil",
+      "assunto": "Princípios Processuais Civis (arts. 1º a 12 e CF/1988)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 17,
+      "acertos": 13,
+      "pct": 76.5,
+      "unicas": 17,
+      "acertos_unicas": 13,
+      "pct_unicas": 76.5,
+      "ultima": "2026-07-29"
     },
     {
       "materia": "Direito Processual Civil",
@@ -2723,13 +2849,13 @@
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 23,
+      "tentativas": 24,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 23,
+      "unicas": 24,
       "acertos_unicas": 0,
       "pct_unicas": 0.0,
-      "ultima": "2026-07-28"
+      "ultima": "2026-07-29"
     },
     {
       "materia": "TI - Banco de Dados",

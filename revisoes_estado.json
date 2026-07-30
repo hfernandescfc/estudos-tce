@@ -28,7 +28,8 @@
     "tec_registros_2026-07-24(1).json",
     "tec_registros_2026-07-28(1).json",
     "tec_registros_2026-07-28.json",
-    "tec_registros_2026-07-29.json"
+    "tec_registros_2026-07-29.json",
+    "tec_registros_2026-07-30.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -49,7 +50,7 @@
         },
         "d6": {
           "prevista": "2026-07-30",
-          "emitida": null,
+          "emitida": "2026-07-30",
           "resultado": null
         },
         "d14": {
@@ -202,7 +203,7 @@
         },
         "d6": {
           "prevista": "2026-07-30",
-          "emitida": null,
+          "emitida": "2026-07-30",
           "resultado": null
         },
         "d14": {
@@ -2120,7 +2121,7 @@
         },
         "d14": {
           "prevista": "2026-07-30",
-          "emitida": null
+          "emitida": "2026-07-30"
         },
         "d28": {
           "prevista": "2026-08-13",
@@ -2137,11 +2138,11 @@
         "2368981"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-30",
-          "emitida": null
+          "emitida": "2026-07-30"
         }
       }
     },
@@ -2156,11 +2157,11 @@
         "2695267"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-30",
-          "emitida": null
+          "emitida": "2026-07-30"
         }
       }
     },
@@ -2171,11 +2172,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-30",
-          "emitida": null
+          "emitida": "2026-07-30"
         }
       }
     },
@@ -2190,11 +2191,11 @@
         "2369725"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-30",
-          "emitida": null
+          "emitida": "2026-07-30"
         }
       }
     },
@@ -2207,11 +2208,11 @@
         "3135579"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-30",
-          "emitida": null
+          "emitida": "2026-07-30"
         }
       }
     },
@@ -2222,11 +2223,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-30",
-          "emitida": null
+          "emitida": "2026-07-30"
         }
       }
     },
@@ -2242,11 +2243,11 @@
         "2369763"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-30",
-          "emitida": null
+          "emitida": "2026-07-30"
         }
       }
     },
@@ -3306,7 +3307,7 @@
         },
         "d6": {
           "prevista": "2026-07-30",
-          "emitida": null,
+          "emitida": "2026-07-30",
           "resultado": null
         },
         "d14": {
@@ -3406,7 +3407,7 @@
         },
         "d6": {
           "prevista": "2026-07-30",
-          "emitida": null,
+          "emitida": "2026-07-30",
           "resultado": null
         },
         "d14": {
@@ -3437,7 +3438,7 @@
         },
         "d6": {
           "prevista": "2026-07-30",
-          "emitida": null,
+          "emitida": "2026-07-30",
           "resultado": null
         },
         "d14": {
@@ -3465,7 +3466,7 @@
         },
         "d6": {
           "prevista": "2026-07-30",
-          "emitida": null,
+          "emitida": "2026-07-30",
           "resultado": null
         },
         "d14": {
@@ -3495,7 +3496,7 @@
         },
         "d6": {
           "prevista": "2026-07-30",
-          "emitida": null,
+          "emitida": "2026-07-30",
           "resultado": null
         },
         "d14": {
@@ -3527,7 +3528,7 @@
         },
         "d6": {
           "prevista": "2026-07-30",
-          "emitida": null,
+          "emitida": "2026-07-30",
           "resultado": null
         },
         "d14": {
@@ -3992,120 +3993,199 @@
           "emitida": null
         }
       }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Das Comissões Parlamentares - Permanentes e Temporárias (art. 58 da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Das Comissões Parlamentares - Permanentes e Temporárias (art. 58 da CF/1988)",
+      "data_base": "2026-07-30",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "1992234"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-13",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Disposições Gerais (Administração Pública - arts. 37 e 38 da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Disposições Gerais (Administração Pública - arts. 37 e 38 da CF/1988)",
+      "data_base": "2026-07-30",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3994476"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-13",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Dos Servidores Públicos (arts. 39 a 41 da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Dos Servidores Públicos (arts. 39 a 41 da CF/1988)",
+      "data_base": "2026-07-30",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3105647",
+        "3135662"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-13",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Administração Pública": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Jurisprudência dos Tribunais Superiores sobre Administração Pública",
+      "data_base": "2026-07-30",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-13",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Medidas Provisórias": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Medidas Provisórias",
+      "data_base": "2026-07-30",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3400986"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-13",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Processual Civil||Da Sentença e Da Coisa Julgada (arts. 485 a 508)": {
+      "materia": "Direito Processual Civil",
+      "assunto": "Da Sentença e Da Coisa Julgada (arts. 485 a 508)",
+      "data_base": "2026-07-30",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3822055",
+        "3915006",
+        "3993271"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-13",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Processual Civil||Princípios Processuais Civis (arts. 1º a 12 e CF/1988)": {
+      "materia": "Direito Processual Civil",
+      "assunto": "Princípios Processuais Civis (arts. 1º a 12 e CF/1988)",
+      "data_base": "2026-07-30",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3736835",
+        "3043571",
+        "3117472",
+        "3179113"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-13",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-29",
+    "data": "2026-07-30",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Intangível (MCASP e NBC TSP 08)",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Financeiro",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Conta Única e GRU",
+        "AFO, Direito Financeiro e Contabilidade Pública||Fundos Especiais",
         "d6"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Definições, Limites e Recondução da Dívida (arts. 29 a 31 da LRF)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Garantia, Contragarantia e Restos a Pagar (arts. 40 a 42 da LRF)",
         "d6"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Despesas com Pessoal e Seguridade Social (arts. 18 a 24 da LRF)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Operações de Crédito (arts. 32 a 39 da LRF)",
         "d6"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Introdução às DCASP (Parte V, Capítulo 1 do MCASP e NBC TSP 11)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Patrimônio Público",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Regime de Adiantamento",
+        "AFO, Direito Financeiro e Contabilidade Pública||Plano de Contas (PCASP)",
         "d6"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Regimes Orçamentário e Patrimonial e Exercício Financeiro",
-        "d1"
-      ],
-      [
-        "Auditoria Governamental e Controle||Entidades de Fiscalização Superior",
-        "d1"
-      ],
-      [
-        "Auditoria Governamental e Controle||Princípios, Propósitos e Abrangência da Auditoria Governamental",
-        "d1"
-      ],
-      [
-        "Auditoria Governamental e Controle||Ética e Sigilo Profissional",
-        "d1"
-      ],
-      [
-        "Auditoria Privada||Fraude e Erro (Auditoria)",
-        "d1"
-      ],
-      [
-        "Contabilidade Geral||CPC 47: Receita de Contrato com Cliente",
+        "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários",
         "d6"
       ],
       [
-        "Contabilidade Geral||Demonstração do Resultado do Exercício (DRE) e Destinação do Resultado",
-        "d1"
+        "AFO, Direito Financeiro e Contabilidade Pública||Provisões, Passivos e Ativos Contingentes (MCASP e NBC TSP 03)",
+        "d6"
       ],
       [
-        "Contabilidade Geral||Reservas de Lucros",
+        "Auditoria Privada||Opinião do Auditor Independente/Relatórios e Pareceres de Auditoria",
+        "d6"
+      ],
+      [
+        "Auditoria Privada||Testes e Procedimentos em Auditoria",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Administração Direta (Órgãos Públicos)",
+        "Contabilidade Geral||(sem assunto)",
+        "d6"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Das Responsabilidades (arts. 32 a 34 da Lei nº 12.527/2011)",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Administração Indireta",
+        "Direito Administrativo (Doutrina e Leis Federais)||Das Restrições de Acesso à Informação (arts. 21 a 31 da Lei nº 12.527/2011)",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Agências Reguladoras e Executivas",
+        "Direito Administrativo (Doutrina e Leis Federais)||Do Acesso a Informações e da sua Divulgação (arts. 6º a 9º da Lei nº 12.527/2011)",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Características dos Bens Públicos",
+        "Direito Administrativo (Doutrina e Leis Federais)||Do Procedimento de Acesso à Informação (arts. 10 a 20 da Lei nº 12.527/2011)",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Conceitos Iniciais e Teorias da Responsabilidade",
+        "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados da Lei nº 12.527/2011",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Formas de Utilização de Bens Públicos",
+        "Direito Constitucional (CF/1988 e Doutrina)||Estados Federados - Organização, Competências, Bens (arts. 25 a 28 da CF/1988)",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Responsabilidade dos Agentes Públicos e Direito de Regresso",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados de Bens Públicos (Direito Administrativo)",
-        "d14"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados de Responsabilidade Civil do Estado",
-        "d14"
-      ],
-      [
-        "Direito Constitucional (CF/1988 e Doutrina)||Eficácia das Normas Constitucionais",
-        "d14"
-      ],
-      [
-        "Direito Constitucional (CF/1988 e Doutrina)||União: Bens e Competências Exclusivas, Privativas, Comuns e Concorrentes (arts. 20 a 24 da CF/1988)",
+        "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Organização, Competências e Bens dos Entes Federativos",
         "d14"
       ]
     ],
-    "confirmada": "2026-07-29"
+    "confirmada": "2026-07-30"
   }
 }
