@@ -160,6 +160,7 @@ th.wk-now,td.wk-now{background:rgba(76,194,255,.12)}
     <button class="btn sm" onclick="syncSetup()">☁ Sync</button>
     <button class="btn sm" onclick="exportData()">⭳ Backup</button>
     <button class="btn sm" onclick="document.getElementById('importFile').click()">⭱ Restaurar</button>
+    <button class="btn sm" onclick="snapRestaurar()" title="Snapshots automáticos guardados neste navegador">⤺ Snapshots</button>
     <input type="file" id="importFile" accept="application/json" class="hide" onchange="importData(event)">
   </header>
 
@@ -498,12 +499,46 @@ const PROVA1 = "2026-08-23", PROVA2 = "2026-08-30";
    ESTADO / PERSISTÊNCIA
    ============================================================ */
 const LS_KEY = "estudosTCEPE_v2"; // v2: assuntos repriorizados a partir das análises (jun/2026)
+const LS_SNAP = "estudosTCEPE_v2_snap"; // anel de snapshots locais (rede de segurança)
+const LS_DEV  = "estudosTCEPE_deviceId"; // id da máquina, fora do estado (não vai p/ o Gist)
+
+/* Identidade da máquina: usada para gerar uid de sessão que NUNCA colide entre
+   computadores. Antes o id era um contador (1,2,3…) que reiniciava em cada
+   máquina — dois registros diferentes recebiam o mesmo id e qualquer tentativa
+   de juntar os estados perdia dados. */
+function deviceId(){
+  let d = localStorage.getItem(LS_DEV);
+  if(!d){ d = Math.random().toString(36).slice(2,8) + Date.now().toString(36).slice(-4); localStorage.setItem(LS_DEV,d); }
+  return d;
+}
+/* uid determinístico para sessões antigas (sem uid): derivado do CONTEÚDO, não da
+   máquina — assim a mesma sessão já sincronizada entre os dois PCs recebe o mesmo
+   uid nos dois lados e o merge a reconhece como uma só (não duplica). */
+function uidLegado(s){
+  return "L~" + [s.id, s.data, s.mat, s.topicId||s.assuntoLivre||"", s.minutos||0,
+                 s.qResolvidas||0, s.qAcertadas||0].join("~");
+}
+function novoUid(){ return deviceId()+":"+(state.nextSid++)+":"+Date.now().toString(36); }
+
 let state = load();
 
 function defaultState(){
   const ts = {};
   SEED_TOPICS.forEach(t=> ts[t.id] = "nao");
-  return { sessions:[], topicStatus:ts, customTopics:[], nextSid:1, nextTid:1000, revFeitas:{} };
+  return { schema:3, sessions:[], topicStatus:ts, topicStatusAt:{}, customTopics:[],
+           nextSid:1, nextTid:1000, revFeitas:{}, revFeitasAt:{}, sessionsDel:{} };
+}
+function migrar(s){
+  s.sessions = (s.sessions||[]).filter(x=>x&&typeof x==="object");
+  s.sessions.forEach(x=>{ if(!x.uid) x.uid = uidLegado(x); });
+  // dedup defensivo por uid (estados que já vieram bagunçados de syncs antigas)
+  const vistos={}; s.sessions = s.sessions.filter(x=> vistos[x.uid] ? false : (vistos[x.uid]=1));
+  s.sessionsDel = s.sessionsDel || {};
+  s.topicStatusAt = s.topicStatusAt || {};
+  s.revFeitasAt = s.revFeitasAt || {};
+  s.customTopics = s.customTopics || [];
+  s.schema = 3;
+  return s;
 }
 function load(){
   try{
@@ -512,11 +547,42 @@ function load(){
     const s = JSON.parse(raw);
     const d = defaultState();
     // garante que assuntos novos do seed ganhem status
-    SEED_TOPICS.forEach(t=>{ if(!(t.id in (s.topicStatus||{}))) s.topicStatus[t.id]="nao"; });
-    return Object.assign(d, s);
+    s.topicStatus = s.topicStatus || {};
+    SEED_TOPICS.forEach(t=>{ if(!(t.id in s.topicStatus)) s.topicStatus[t.id]="nao"; });
+    return migrar(Object.assign(d, s));
   }catch(e){ return defaultState(); }
 }
-function save(){ state.updatedAt=new Date().toISOString(); localStorage.setItem(LS_KEY, JSON.stringify(state)); syncAgendar(); }
+function gravarLocal(){ try{ localStorage.setItem(LS_KEY, JSON.stringify(state)); }
+  catch(e){ toast("⚠ Falha ao gravar no navegador"); } }
+function save(){ state.updatedAt=new Date().toISOString(); gravarLocal(); syncAgendar(); }
+
+/* --- Snapshots locais: guarda as últimas versões do estado antes de qualquer
+   substituição vinda da nuvem. Se algo der errado, dá para voltar sem depender
+   de backup manual. --- */
+const SNAP_MAX = 12;
+function snapshot(motivo){
+  try{
+    const arr = JSON.parse(localStorage.getItem(LS_SNAP)||"[]");
+    arr.unshift({ts:new Date().toISOString(), motivo, n:(state.sessions||[]).length, estado:state});
+    localStorage.setItem(LS_SNAP, JSON.stringify(arr.slice(0,SNAP_MAX)));
+  }catch(e){ /* cota cheia: descarta os mais antigos e desiste em silêncio */
+    try{ localStorage.setItem(LS_SNAP,"[]"); }catch(_){}
+  }
+}
+function snapRestaurar(){
+  let arr=[]; try{ arr=JSON.parse(localStorage.getItem(LS_SNAP)||"[]"); }catch(e){}
+  if(!arr.length){ alert("Nenhum snapshot local guardado ainda."); return; }
+  const lista = arr.map((s,i)=>`${i+1}) ${s.ts.slice(0,16).replace("T"," ")} · ${s.n} sessões · ${s.motivo}`).join("\n");
+  const esc = prompt("Snapshots locais (o estado ANTES de cada substituição):\n\n"+lista+
+    "\n\nDigite o número para restaurar (o estado atual vira snapshot antes):","");
+  const i = parseInt(esc)-1;
+  if(isNaN(i)||!arr[i]) return;
+  snapshot("antes de restaurar snapshot");
+  state = migrar(Object.assign(defaultState(), arr[i].estado));
+  save();
+  const ab=document.querySelector("#tabs button.active"); render(ab?ab.dataset.tab:"dash");
+  toast("Snapshot restaurado ("+arr[i].n+" sessões)");
+}
 
 function allTopics(){ return SEED_TOPICS.concat(state.customTopics||[]); }
 function topicById(id){ return allTopics().find(t=>String(t.id)===String(id)); }
@@ -699,8 +765,9 @@ function revListaReal(){ // espelha a montar_fila do gerar_fila.py sobre o estad
   out.sort((a,b)=> (b.due?1:0)-(a.due?1:0) || b.atraso-a.atraso || a.prev.localeCompare(b.prev) || a.assunto.localeCompare(b.assunto));
   return out;
 }
+function marcarRev(key,valor){ state.revFeitas[key]=valor; state.revFeitasAt[key]=new Date().toISOString(); }
 function revMarcarReal(chaveEnc,et,pular){
-  state.revFeitas["real|"+decodeURIComponent(chaveEnc)+"|"+et]=pular?"pulada":todayStr(); save();
+  marcarRev("real|"+decodeURIComponent(chaveEnc)+"|"+et, pular?"pulada":todayStr()); save();
   const ab=document.querySelector("#tabs button.active"); render(ab?ab.dataset.tab:"dash");
   toast(pular?"Revisão pulada":"Revisão concluída ✓");
 }
@@ -739,7 +806,7 @@ function revLista(){ // etapas não feitas de todos os assuntos já iniciados
       const key=tid+"|"+et; if(state.revFeitas[key]) return;
       const prev=revData(base,dias);
       const atraso=Math.round((new Date(todayStr())-new Date(prev))/86400000);
-      if(et==="d1"&&atraso>3){ state.revFeitas[key]="expirada"; mudou=true; return; } // consolidação tardia não vale o custo
+      if(et==="d1"&&atraso>3){ marcarRev(key,"expirada"); mudou=true; return; } // consolidação tardia não vale o custo
       out.push({tid,et,rot,dica,prev,atraso,t});
     });
   });
@@ -748,7 +815,7 @@ function revLista(){ // etapas não feitas de todos os assuntos já iniciados
   return out;
 }
 function revMarcar(tid,et,pular){
-  state.revFeitas[tid+"|"+et]=pular?"pulada":todayStr(); save();
+  marcarRev(tid+"|"+et, pular?"pulada":todayStr()); save();
   const ab=document.querySelector("#tabs button.active"); render(ab?ab.dataset.tab:"dash");
   toast(pular?"Revisão pulada":"Revisão concluída ✓");
 }
@@ -989,9 +1056,10 @@ function salvarSessao(){
   const st=document.getElementById("fStatus").value;
   itens.forEach((x,i)=>{
     const m=base+(resto>0?1:0); if(resto>0)resto--;
-    state.sessions.push({ id:state.nextSid++, data, mat:x.mat, topicId:x.topicId, assuntoLivre:x.assuntoLivre,
-      minutos:m, qResolvidas:x.qr, qAcertadas:x.qa, obs:i===0?obs:"" });
-    if(st && x.topicId) state.topicStatus[x.topicId]=st;
+    const sid=state.nextSid;
+    state.sessions.push({ uid:novoUid(), id:sid, data, mat:x.mat, topicId:x.topicId, assuntoLivre:x.assuntoLivre,
+      minutos:m, qResolvidas:x.qr, qAcertadas:x.qa, obs:i===0?obs:"", criadoEm:new Date().toISOString() });
+    if(st && x.topicId) setTopicStatus(x.topicId, st);
   });
   save();
   // limpar
@@ -1009,10 +1077,17 @@ function renderHoje(){
   let h=`<div class="flex" style="margin-bottom:10px"><b>Hoje:</b> ${fmtMin(tot.min)} · ${tot.qr} questões · ${pct(tot.qa,tot.qr)}% acerto</div><table><tbody>`;
   ss.forEach(s=>{ const tp=s.topicId?topicById(s.topicId):null; const ass=tp?tp.assunto:(s.assuntoLivre||"—");
     const q = s.qResolvidas>0 ? `${s.qAcertadas||0}/${s.qResolvidas}q (${pct(s.qAcertadas,s.qResolvidas)}%)` : "—";
-    h+=`<tr><td><span class="dot" style="background:${matCor(s.mat)}"></span> ${matNome(s.mat)}</td><td>${escapeHtml(ass)}</td><td>${fmtMin(s.minutos)}</td><td>${q}</td><td><button class="btn sm danger" onclick="delSession(${s.id})">excluir</button></td></tr>`; });
+    h+=`<tr><td><span class="dot" style="background:${matCor(s.mat)}"></span> ${matNome(s.mat)}</td><td>${escapeHtml(ass)}</td><td>${fmtMin(s.minutos)}</td><td>${q}</td><td><button class="btn sm danger" onclick="delSession('${encodeURIComponent(s.uid)}')">excluir</button></td></tr>`; });
   box.innerHTML=h+`</tbody></table>`;
 }
-function delSession(id){ state.sessions=state.sessions.filter(s=>s.id!==id); save(); renderHoje(); toast("Sessão excluída"); }
+/* Exclusão = tombstone. Sem isso, o merge com a nuvem ressuscitaria a sessão
+   apagada na próxima sincronização. */
+function apagarSessao(uid){
+  state.sessions = state.sessions.filter(s=>String(s.uid)!==String(uid));
+  state.sessionsDel[uid] = new Date().toISOString();
+  save();
+}
+function delSession(uidEnc){ apagarSessao(decodeURIComponent(uidEnc)); renderHoje(); toast("Sessão excluída"); }
 
 /* ============================================================
    ASSUNTOS POR MATÉRIA
@@ -1092,14 +1167,16 @@ function drawAssuntos(){
   });
   document.getElementById("assBox").innerHTML=html||`<div class="empty">Nenhum assunto encontrado com esses filtros.</div>`;
 }
-function setStatus(id,v){ state.topicStatus[id]=v; save(); toast("Status atualizado");
+function setTopicStatus(id,v){ state.topicStatus[id]=v; state.topicStatusAt[id]=new Date().toISOString(); }
+function setStatus(id,v){ setTopicStatus(id,v); save(); toast("Status atualizado");
   // re-render só para atualizar barras de progresso
   drawAssuntos(); }
 function addCustomTopic(){
   const nome=prompt("Nome do novo assunto:"); if(!nome) return;
   const codes=Object.keys(MAT_INFO);
   const mat=prompt("Matéria (código):\n"+codes.join(", "), "DFin"); if(!mat||!MAT_INFO[mat]){ alert("Código inválido."); return; }
-  const t={id:"c"+(state.nextTid++), assunto:nome.trim(), mat, prio:3, c25:0, custom:true};
+  // id com prefixo da máquina: assuntos criados nos dois PCs não colidem mais
+  const t={id:"c"+deviceId()+"-"+(state.nextTid++), assunto:nome.trim(), mat, prio:3, c25:0, custom:true};
   state.customTopics.push(t); state.topicStatus[t.id]="nao"; save(); drawAssuntos(); toast("Assunto adicionado");
 }
 
@@ -1300,7 +1377,17 @@ function renderDisciplina(){
 /* Execução por tópico. Fonte "Só TEC" (window.EXEC_TEC, gerado das capturas do
    TEC): fiel e sem lançamento manual. Fallback: sessões digitadas à mão. */
 function planExec(){
-  if(window.EXEC_TEC&&window.EXEC_TEC.por_topico) return planExecTEC();
+  const manual=planExecManual();
+  if(!(window.EXEC_TEC&&window.EXEC_TEC.por_topico)) return manual;
+  // Fusão por TÓPICO: onde há captura do TEC ela manda (é fiel e deduplicada);
+  // onde NÃO há, valem as sessões lançadas à mão. Antes o TEC zerava tudo que
+  // ele não mapeava — assuntos estudados fora do TEC (ou com assunto ainda sem
+  // topicId no desempenho_assuntos.py) apareciam com 0% de avanço no cronograma.
+  const tec=planExecTEC();
+  Object.keys(manual).forEach(k=>{ if(!tec[k]) tec[k]=manual[k]; });
+  return tec;
+}
+function planExecManual(){
   const m={};
   [...state.sessions].sort((a,b)=>a.data.localeCompare(b.data)||(a.id||0)-(b.id||0)).forEach(s=>{
     if(!s.topicId) return; const k=String(s.topicId);
@@ -1630,21 +1717,31 @@ function drawHist(){
   let h=`<table><thead><tr><th>Data</th><th>Matéria</th><th>Assunto</th><th>Tempo</th><th class="right">Resolv.</th><th class="right">Acerto</th><th>Obs</th><th></th></tr></thead><tbody>`;
   ss.forEach(s=>{ const t=s.topicId?topicById(s.topicId):null; const ass=t?t.assunto:(s.assuntoLivre||"—");
     const ac=s.qResolvidas>0?pct(s.qAcertadas,s.qResolvidas)+"%":"—";
-    h+=`<tr><td>${fmtData(s.data)}</td><td><span class="dot" style="background:${matCor(s.mat)}"></span> ${matNome(s.mat)}</td><td>${escapeHtml(ass)}</td><td>${fmtMin(s.minutos)}</td><td class="right">${s.qResolvidas||0}</td><td class="right">${ac}</td><td class="muted">${escapeHtml(s.obs||"")}</td><td><button class="btn sm danger" onclick="delHist(${s.id})">×</button></td></tr>`; });
+    h+=`<tr><td>${fmtData(s.data)}</td><td><span class="dot" style="background:${matCor(s.mat)}"></span> ${matNome(s.mat)}</td><td>${escapeHtml(ass)}</td><td>${fmtMin(s.minutos)}</td><td class="right">${s.qResolvidas||0}</td><td class="right">${ac}</td><td class="muted">${escapeHtml(s.obs||"")}</td><td><button class="btn sm danger" onclick="delHist('${encodeURIComponent(s.uid)}')">×</button></td></tr>`; });
   document.getElementById("histBox").innerHTML=h+`</tbody></table>`;
 }
-function delHist(id){ if(!confirm("Excluir esta sessão?"))return; state.sessions=state.sessions.filter(s=>s.id!==id); save(); drawHist(); toast("Excluída"); }
+function delHist(uidEnc){ if(!confirm("Excluir esta sessão?"))return; apagarSessao(decodeURIComponent(uidEnc)); drawHist(); toast("Excluída"); }
 
 /* ============================================================
    SYNC ENTRE COMPUTADORES (GitHub Gist secreto)
    O estado inteiro vive num arquivo JSON dentro de um Gist. Cada máquina
    guarda token+id só no próprio localStorage (fora do estado — não entram
-   no backup nem no Gist). Conflito: o estado mais recente (updatedAt) vence,
-   então evite usar dois computadores com a aba aberta ao mesmo tempo.
+   no backup nem no Gist).
+
+   MODELO: UNIÃO (merge), não "o mais recente vence".
+   A versão antiga substituía o estado inteiro pelo lado com updatedAt maior —
+   qualquer sessão registrada na outra máquina (ou na cópia local aberta em
+   file://, que tem localStorage próprio) era apagada em silêncio. Agora:
+     · sessões são unidas por uid, com tombstone para exclusões reais;
+     · topicStatus e revFeitas resolvem conflito item a item;
+     · todo envio é read-modify-write (busca → funde → grava).
+   Consequência prática: um dado sobrevive enquanto QUALQUER máquina ainda o
+   tiver — basta abrir o dashboard nela para ele voltar ao Gist.
    ============================================================ */
 const SYNC_LS={token:"estudosTCEPE_syncToken",gist:"estudosTCEPE_syncGist"};
 const SYNC_FILE="estudos-tcepe.json";
-let syncTimer=null, syncEstado="off"; // off | ok | pendente | sincronizando | erro
+const SYNC_POLL_MS=90000; // relê a nuvem periodicamente
+let syncTimer=null, syncPollTimer=null, syncEmVoo=false, syncEstado="off"; // off|ok|pendente|sincronizando|erro
 
 function syncCfg(){ return {token:localStorage.getItem(SYNC_LS.token)||"", gist:localStorage.getItem(SYNC_LS.gist)||""}; }
 function syncSetStatus(s,msg){
@@ -1659,44 +1756,131 @@ async function syncApi(method,path,body,token){
   if(!r.ok) throw new Error("GitHub "+r.status);
   return r.json();
 }
-function syncTemDados(s){ return !!(s && ((s.sessions&&s.sessions.length) || Object.keys(s.revFeitas||{}).length)); }
-async function syncPush(){
-  const c=syncCfg(); if(!c.token||!c.gist) return;
-  if(!state.updatedAt){ state.updatedAt=new Date().toISOString(); localStorage.setItem(LS_KEY,JSON.stringify(state)); }
-  syncSetStatus("sincronizando");
-  try{
-    await syncApi("PATCH","/gists/"+c.gist,{files:{[SYNC_FILE]:{content:JSON.stringify(state)}}},c.token);
-    syncSetStatus("ok");
-  }catch(e){ syncSetStatus("erro","falha ao enviar — clique em ☁ Sync"); }
+
+/* ---------- MERGE ----------
+   Devolve {estado, mudouLocal, mudouRemoto} — quem ganhou item por item. */
+const ST_RANK={nao:0,estudando:1,revisar:2,concluido:3};
+function mergeState(local, remoto){
+  const out = Object.assign(defaultState(), JSON.parse(JSON.stringify(local)));
+  let mudouLocal=false, mudouRemoto=false;
+  const R = remoto||{};
+
+  // -- tombstones: união (uma exclusão feita em qualquer máquina vale) --
+  const del = Object.assign({}, R.sessionsDel||{}, out.sessionsDel||{});
+  if(Object.keys(del).length!==Object.keys(out.sessionsDel||{}).length) mudouLocal=true;
+  if(Object.keys(del).length!==Object.keys(R.sessionsDel||{}).length) mudouRemoto=true;
+  out.sessionsDel = del;
+
+  // -- sessões: união por uid, menos as apagadas --
+  const porUid={};
+  (out.sessions||[]).forEach(s=>{ if(s&&s.uid) porUid[s.uid]=s; });
+  const antesLocal = Object.keys(porUid).length;
+  (R.sessions||[]).forEach(s=>{
+    if(!s) return;
+    const uid = s.uid || uidLegado(s);
+    s.uid = uid;
+    if(!porUid[uid]) porUid[uid]=s;
+  });
+  Object.keys(porUid).forEach(u=>{ if(del[u]) delete porUid[u]; });
+  const remotoUids = new Set((R.sessions||[]).map(s=>s&&(s.uid||uidLegado(s))).filter(Boolean));
+  Object.keys(porUid).forEach(u=>{ if(!remotoUids.has(u)) mudouRemoto=true; });
+  if(Object.keys(porUid).length!==antesLocal) mudouLocal=true;
+  out.sessions = Object.values(porUid).sort((a,b)=> String(a.data).localeCompare(String(b.data)) || String(a.uid).localeCompare(String(b.uid)));
+
+  // -- topicStatus: vence o carimbo mais novo; sem carimbo, o status mais avançado --
+  const stAt = Object.assign({}, out.topicStatusAt||{});
+  Object.keys(R.topicStatus||{}).forEach(k=>{
+    const rv=R.topicStatus[k], lv=out.topicStatus[k];
+    const ra=(R.topicStatusAt||{})[k]||"", la=stAt[k]||"";
+    if(lv===undefined){ out.topicStatus[k]=rv; if(ra)stAt[k]=ra; mudouLocal=true; return; }
+    if(rv===lv){ if(ra&&ra>la) stAt[k]=ra; return; }
+    const remotoVence = (ra||la) ? (ra>la) : ((ST_RANK[rv]||0)>(ST_RANK[lv]||0));
+    if(remotoVence){ out.topicStatus[k]=rv; if(ra)stAt[k]=ra; mudouLocal=true; }
+    else mudouRemoto=true;
+  });
+  Object.keys(out.topicStatus).forEach(k=>{ if(!(k in (R.topicStatus||{}))) mudouRemoto=true; });
+  out.topicStatusAt = stAt;
+
+  // -- revFeitas: união; conflito → revisão realmente FEITA vence "pulada"/"expirada",
+  //    e entre duas datas fica a mais antiga (a que de fato marcou a conclusão) --
+  const rvAt = Object.assign({}, out.revFeitasAt||{});
+  const concreta = v => v && v!=="pulada" && v!=="expirada";
+  Object.keys(R.revFeitas||{}).forEach(k=>{
+    const rv=R.revFeitas[k], lv=out.revFeitas[k];
+    if(lv===undefined){ out.revFeitas[k]=rv; const ra=(R.revFeitasAt||{})[k]; if(ra)rvAt[k]=ra; mudouLocal=true; return; }
+    if(rv===lv) return;
+    let vencedor;
+    if(concreta(rv)&&!concreta(lv)) vencedor=rv;
+    else if(concreta(lv)&&!concreta(rv)) vencedor=lv;
+    else vencedor = (String(rv)<String(lv)) ? rv : lv;
+    if(vencedor!==lv){ out.revFeitas[k]=vencedor; mudouLocal=true; } else mudouRemoto=true;
+  });
+  Object.keys(out.revFeitas).forEach(k=>{ if(!(k in (R.revFeitas||{}))) mudouRemoto=true; });
+  out.revFeitasAt = rvAt;
+
+  // -- assuntos personalizados: união por id --
+  const ct={}; (out.customTopics||[]).forEach(t=>{ if(t&&t.id!=null) ct[t.id]=t; });
+  const nCt=Object.keys(ct).length;
+  (R.customTopics||[]).forEach(t=>{ if(t&&t.id!=null&&!ct[t.id]){ ct[t.id]=t; mudouLocal=true; } });
+  if(Object.keys(ct).length!==(R.customTopics||[]).length || nCt!==Object.keys(ct).length) mudouRemoto=true;
+  out.customTopics = Object.values(ct);
+
+  out.nextSid = Math.max(out.nextSid||1, R.nextSid||1);
+  out.nextTid = Math.max(out.nextTid||1000, R.nextTid||1000);
+  out.updatedAt = new Date().toISOString();
+  return {estado:out, mudouLocal, mudouRemoto};
 }
-function syncAgendar(){ // chamada em todo save(); agrupa gravações em 1 envio
-  const c=syncCfg(); if(!c.token||!c.gist) return;
-  syncSetStatus("pendente"); clearTimeout(syncTimer); syncTimer=setTimeout(syncPush,2500);
+
+function lerRemoto(g){
+  const f=g.files&&g.files[SYNC_FILE];
+  if(!f) return Promise.resolve(null);
+  if(f.truncated) return fetch(f.raw_url).then(r=>r.text()).then(t=>{ try{return JSON.parse(t);}catch(_){return null;} });
+  try{ return Promise.resolve(JSON.parse(f.content)); }catch(_){ return Promise.resolve(null); }
 }
-async function syncPull(){
+function aplicar(novo, avisar){
+  const antes=(state.sessions||[]).length;
+  if(novo.sessions.length<antes) snapshot("merge reduziu de "+antes+" p/ "+novo.sessions.length+" sessões");
+  state = novo; gravarLocal();
+  const ab=document.querySelector("#tabs button.active");
+  const tab = ab?ab.dataset.tab:"dash";
+  // nunca reconstruir a aba "Sessão de Estudo" por trás do usuário: apagaria o
+  // formulário/cronômetro em uso. Ali só o resumo do dia é atualizado.
+  if(tab==="sessao") renderHoje(); else render(tab);
+  if(avisar) toast(avisar);
+}
+
+/* Read-modify-write: sempre busca a nuvem, funde e só então grava.
+   É o que impede uma máquina de sobrescrever o trabalho da outra. */
+let syncRefazer=false;
+async function syncSincronizar(silencioso){
   const c=syncCfg(); if(!c.token||!c.gist) return;
+  // já há uma rodada em voo: marca para repetir depois em vez de descartar
+  // (descartar era como uma sessão salva durante a sincronização ficava só local)
+  if(syncEmVoo){ syncRefazer=true; return; }
+  syncEmVoo=true;
   syncSetStatus("sincronizando");
   try{
     const g=await syncApi("GET","/gists/"+c.gist,null,c.token);
-    const f=g.files&&g.files[SYNC_FILE];
-    if(f){
-      let remoto=null;
-      try{ remoto=JSON.parse(f.truncated ? await (await fetch(f.raw_url)).text() : f.content); }catch(_){}
-      if(remoto&&remoto.sessions){
-        const rU=remoto.updatedAt||"", lU=state.updatedAt||"";
-        // Proteções: estado vazio nunca sobrescreve dados reais, em nenhuma direção.
-        if(syncTemDados(state)&&!syncTemDados(remoto)) return syncPush();
-        const adotarRemoto = (syncTemDados(remoto)&&!syncTemDados(state)) || rU>lU;
-        if(adotarRemoto){
-          state=Object.assign(defaultState(),remoto);
-          localStorage.setItem(LS_KEY,JSON.stringify(state));
-          const ab=document.querySelector("#tabs button.active"); render(ab?ab.dataset.tab:"dash");
-          toast("Dados atualizados do outro computador ☁");
-        } else if(lU>rU){ return syncPush(); } // local é mais novo → envia
-      }
+    const remoto=await lerRemoto(g);
+    const {estado,mudouLocal,mudouRemoto}=mergeState(state,remoto);
+    if(mudouLocal) aplicar(estado, silencioso?"":"Dados do outro computador incorporados ☁");
+    else { state=estado; gravarLocal(); }
+    if(mudouRemoto||!remoto){
+      await syncApi("PATCH","/gists/"+c.gist,{files:{[SYNC_FILE]:{content:JSON.stringify(state)}}},c.token);
     }
     syncSetStatus("ok");
-  }catch(e){ syncSetStatus("erro","falha ao buscar"); }
+  }catch(e){ syncSetStatus("erro", String(e.message||e).indexOf("401")>=0 ? "token inválido — clique em ☁ Sync" : "sem conexão; dados salvos localmente"); }
+  finally{
+    syncEmVoo=false;
+    if(syncRefazer){ syncRefazer=false; setTimeout(()=>syncSincronizar(true),400); }
+  }
+}
+const syncPush = ()=>syncSincronizar(true);
+const syncPull = ()=>syncSincronizar(false);
+
+function syncAgendar(){ // chamada em todo save(); agrupa gravações em 1 envio
+  const c=syncCfg(); if(!c.token||!c.gist) return;
+  syncSetStatus("pendente"); clearTimeout(syncTimer); syncTimer=setTimeout(()=>syncSincronizar(true),2500);
 }
 async function syncSetup(){
   const c=syncCfg();
@@ -1721,8 +1905,31 @@ async function syncSetup(){
     toast("Sync configurada ✓"); syncPull();
   }catch(e){ alert("Não deu certo ("+e.message+").\nConfira se o token tem o escopo Gists e se o ID está correto."); }
 }
-syncPull(); // ao abrir: busca o estado mais recente
-window.addEventListener("beforeunload",()=>{ // fechar a aba com envio pendente → tenta mandar mesmo assim
+/* Duas abas/janelas do dashboard na MESMA máquina eram um caminho de perda
+   independente da nuvem: a aba antiga guardava um `state` em memória e, ao
+   salvar, regravava por cima do que a outra aba tinha acabado de registrar.
+   Agora cada aba funde o que a vizinha gravou. */
+window.addEventListener("storage", ev=>{
+  if(ev.key!==LS_KEY || !ev.newValue) return;
+  let outro=null; try{ outro=JSON.parse(ev.newValue); }catch(e){ return; }
+  if(!outro||!outro.sessions) return;
+  const {estado,mudouLocal}=mergeState(state,migrar(outro));
+  if(mudouLocal) aplicar(estado,"");
+  else state=estado;
+});
+
+syncPull(); // ao abrir: funde com o estado da nuvem
+
+// Relê a nuvem de tempos em tempos e sempre que a aba volta ao primeiro plano.
+// Com merge isso é seguro (nunca substitui, só acrescenta) e evita ficar horas
+// com um estado defasado da outra máquina.
+syncPollTimer=setInterval(()=>{ if(!document.hidden) syncSincronizar(true); }, SYNC_POLL_MS);
+document.addEventListener("visibilitychange",()=>{ if(!document.hidden) syncSincronizar(true); });
+
+// Fechar a aba com envio pendente: tenta mandar mesmo assim. Sem merge prévio,
+// mas nada se perde de forma definitiva — o que existir só na outra máquina
+// volta ao Gist assim que o dashboard for aberto lá.
+window.addEventListener("beforeunload",()=>{
   if(syncEstado!=="pendente") return;
   const c=syncCfg(); if(!c.token||!c.gist) return;
   fetch("https://api.github.com/gists/"+c.gist,{method:"PATCH",keepalive:true,
@@ -1742,7 +1949,8 @@ function importData(ev){
   const f=ev.target.files[0]; if(!f) return;
   const r=new FileReader(); r.onload=()=>{ try{ const s=JSON.parse(r.result);
     if(!s.sessions||!s.topicStatus) throw 0;
-    state=Object.assign(defaultState(),s); save();
+    snapshot("antes de restaurar backup "+f.name);
+    state=migrar(Object.assign(defaultState(),s)); save();
     document.querySelector("#tabs button.active")?.click() || render("dash"); render("dash");
     toast("Backup restaurado");
   }catch(e){ alert("Arquivo inválido."); } ev.target.value=""; };
