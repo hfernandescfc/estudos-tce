@@ -161,6 +161,7 @@ th.wk-now,td.wk-now{background:rgba(76,194,255,.12)}
     <button class="btn sm" onclick="exportData()">⭳ Backup</button>
     <button class="btn sm" onclick="document.getElementById('importFile').click()">⭱ Restaurar</button>
     <button class="btn sm" onclick="snapRestaurar()" title="Snapshots automáticos guardados neste navegador">⤺ Snapshots</button>
+    <button class="btn sm" onclick="reconstruirDoTec()" title="Repor o histórico a partir das capturas do TEC">⟳ Reconstruir do TEC</button>
     <input type="file" id="importFile" accept="application/json" class="hide" onchange="importData(event)">
   </header>
 
@@ -188,6 +189,11 @@ th.wk-now,td.wk-now{background:rgba(76,194,255,.12)}
      capturas do TEC. Script clássico (não fetch): carrega também via file:// (offline).
      Define window.EXEC_TEC = {por_topico, por_dia, ...}. Ausente => cai nas sessões manuais. -->
 <script src="execucao_tec.js" onerror="window.EXEC_TEC=null"></script>
+
+<!-- Sessões reconstruídas das capturas do TEC (06_Scripts/gerar_sessoes_tec.py):
+     1 sessão por dia+assunto, com uid determinístico. Rede de segurança para o
+     que se perdeu no localStorage: o dashboard só insere o que ainda não tem. -->
+<script src="sessoes_tec.js" onerror="window.SESSOES_TEC=null"></script>
 
 <script>
 /* ============================================================
@@ -1831,6 +1837,63 @@ function mergeState(local, remoto){
   return {estado:out, mudouLocal, mudouRemoto};
 }
 
+/* ============================================================
+   RECONSTRUÇÃO A PARTIR DO TEC
+   As capturas do TEC são a fonte durável do que foi estudado (dia, assunto,
+   tempo, acerto). Aqui elas preenchem SÓ as lacunas do histórico:
+     · sessão que já existe (mesmo uid) não entra de novo;
+     · sessão apagada de propósito não ressuscita (tombstone);
+     · lançamento manual no mesmo dia+assunto tem precedência — ele inclui o
+       tempo de teoria/leitura, que o TEC não registra.
+   Idempotente: rodar de novo não duplica nada.
+   ============================================================ */
+function absorverSessoesTec(avisar){
+  const pacote = window.SESSOES_TEC;
+  if(!pacote || !Array.isArray(pacote.sessoes)) return 0;
+  const porUid = {}; const ocupado = {};
+  (state.sessions||[]).forEach(s=>{
+    porUid[s.uid]=1;
+    ocupado[s.data+"|"+(s.topicId!=null?String(s.topicId):"livre:"+(s.assuntoLivre||""))]=1;
+  });
+  let add=0;
+  pacote.sessoes.forEach(t=>{
+    if(porUid[t.uid] || state.sessionsDel[t.uid]) return;
+    const chave = t.data+"|"+(t.topicId!=null?String(t.topicId):"livre:"+(t.assuntoLivre||""));
+    if(ocupado[chave]) return;              // já lançada à mão: não mexe
+    state.sessions.push(Object.assign({}, t));
+    ocupado[chave]=1; porUid[t.uid]=1; add++;
+  });
+  if(add){
+    state.sessions.sort((a,b)=> String(a.data).localeCompare(String(b.data)) || String(a.uid).localeCompare(String(b.uid)));
+    save();
+    const ab=document.querySelector("#tabs button.active"); const tab=ab?ab.dataset.tab:"dash";
+    if(tab==="sessao") renderHoje(); else render(tab);
+    if(avisar!==false) toast(add+" sessão(ões) recuperada(s) do histórico do TEC ✓");
+  }
+  return add;
+}
+/* Refaz o histórico do TEC ignorando os lançamentos manuais que o encobrem.
+   Botão de emergência: use se o histórico manual estiver claramente furado. */
+function reconstruirDoTec(){
+  const p=window.SESSOES_TEC;
+  if(!p||!p.sessoes){ alert("sessoes_tec.js não carregou. Rode 06_Scripts/gerar_sessoes_tec.py e publique o arquivo."); return; }
+  if(!confirm("Reconstruir o histórico a partir das "+p.sessoes.length+" sessões do TEC?\n\n"+
+     "· Sessões lançadas à mão são MANTIDAS.\n"+
+     "· Sessões do TEC ausentes são inseridas, inclusive onde há lançamento manual no mesmo dia/assunto.\n"+
+     "· Exclusões que você fez de propósito são reativadas.\n\n"+
+     "O estado atual vira snapshot antes (botão ⤺ Snapshots).")) return;
+  snapshot("antes de reconstruir do TEC");
+  const porUid={}; (state.sessions||[]).forEach(s=>porUid[s.uid]=1);
+  let add=0;
+  p.sessoes.forEach(t=>{ if(porUid[t.uid]) return;
+    delete state.sessionsDel[t.uid];
+    state.sessions.push(Object.assign({},t)); add++; });
+  state.sessions.sort((a,b)=> String(a.data).localeCompare(String(b.data)) || String(a.uid).localeCompare(String(b.uid)));
+  save();
+  const ab=document.querySelector("#tabs button.active"); render(ab?ab.dataset.tab:"dash");
+  alert(add?(add+" sessão(ões) inserida(s)."):"Nada a inserir — o histórico já cobre todo o TEC.");
+}
+
 function lerRemoto(g){
   const f=g.files&&g.files[SYNC_FILE];
   if(!f) return Promise.resolve(null);
@@ -1862,9 +1925,12 @@ async function syncSincronizar(silencioso){
   try{
     const g=await syncApi("GET","/gists/"+c.gist,null,c.token);
     const remoto=await lerRemoto(g);
-    const {estado,mudouLocal,mudouRemoto}=mergeState(state,remoto);
+    let {estado,mudouLocal,mudouRemoto}=mergeState(state,remoto);
     if(mudouLocal) aplicar(estado, silencioso?"":"Dados do outro computador incorporados ☁");
     else { state=estado; gravarLocal(); }
+    // só depois de conhecer a nuvem: evita inserir do TEC algo que a outra
+    // máquina já tinha lançado à mão e ainda não havia chegado aqui
+    if(absorverSessoesTec(!silencioso)) mudouRemoto=true;
     if(mudouRemoto||!remoto){
       await syncApi("PATCH","/gists/"+c.gist,{files:{[SYNC_FILE]:{content:JSON.stringify(state)}}},c.token);
     }
@@ -1918,7 +1984,9 @@ window.addEventListener("storage", ev=>{
   else state=estado;
 });
 
-syncPull(); // ao abrir: funde com o estado da nuvem
+syncPull(); // ao abrir: funde com o estado da nuvem (e depois absorve o TEC)
+// Sem sync configurada não há nuvem para esperar: absorve o TEC direto.
+if(!syncCfg().token) absorverSessoesTec(true);
 
 // Relê a nuvem de tempos em tempos e sempre que a aba volta ao primeiro plano.
 // Com merge isso é seguro (nunca substitui, só acrescenta) e evita ficar horas
