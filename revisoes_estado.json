@@ -29,7 +29,8 @@
     "tec_registros_2026-07-28(1).json",
     "tec_registros_2026-07-28.json",
     "tec_registros_2026-07-29.json",
-    "tec_registros_2026-07-30.json"
+    "tec_registros_2026-07-30.json",
+    "tec_registros_2026-07-31.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -2271,7 +2272,7 @@
         },
         "d14": {
           "prevista": "2026-07-31",
-          "emitida": null
+          "emitida": "2026-07-31"
         },
         "d28": {
           "prevista": "2026-08-14",
@@ -2310,7 +2311,7 @@
         },
         "d14": {
           "prevista": "2026-07-31",
-          "emitida": null
+          "emitida": "2026-07-31"
         },
         "d28": {
           "prevista": "2026-08-14",
@@ -2349,7 +2350,7 @@
         },
         "d14": {
           "prevista": "2026-07-31",
-          "emitida": null
+          "emitida": "2026-07-31"
         },
         "d28": {
           "prevista": "2026-08-14",
@@ -2386,7 +2387,7 @@
         },
         "d14": {
           "prevista": "2026-07-31",
-          "emitida": null
+          "emitida": "2026-07-31"
         },
         "d28": {
           "prevista": "2026-08-14",
@@ -2418,7 +2419,7 @@
         },
         "d14": {
           "prevista": "2026-07-31",
-          "emitida": null
+          "emitida": "2026-07-31"
         },
         "d28": {
           "prevista": "2026-08-14",
@@ -2437,11 +2438,11 @@
         "3195655"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-31",
-          "emitida": null
+          "emitida": "2026-07-31"
         }
       }
     },
@@ -2452,11 +2453,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-31",
-          "emitida": null
+          "emitida": "2026-07-31"
         }
       }
     },
@@ -2469,11 +2470,11 @@
         "3603144"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-31",
-          "emitida": null
+          "emitida": "2026-07-31"
         }
       }
     },
@@ -2484,11 +2485,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-07-31",
-          "emitida": null
+          "emitida": "2026-07-31"
         }
       }
     },
@@ -3153,7 +3154,13 @@
         "d6": {
           "prevista": "2026-07-29",
           "emitida": "2026-07-29",
-          "resultado": null
+          "resultado": {
+            "pct": 100,
+            "questoes": 6,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-07-31"
+          }
         },
         "d14": {
           "prevista": "2026-08-06",
@@ -3183,7 +3190,13 @@
         "d6": {
           "prevista": "2026-07-29",
           "emitida": "2026-07-29",
-          "resultado": null
+          "resultado": {
+            "pct": 75,
+            "questoes": 4,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-07-31"
+          }
         },
         "d14": {
           "prevista": "2026-08-06",
@@ -3308,7 +3321,13 @@
         "d6": {
           "prevista": "2026-07-30",
           "emitida": "2026-07-30",
-          "resultado": null
+          "resultado": {
+            "pct": 75,
+            "questoes": 4,
+            "limiar": 60,
+            "aprovada": true,
+            "data": "2026-07-31"
+          }
         },
         "d14": {
           "prevista": "2026-08-07",
@@ -4116,76 +4135,350 @@
           "emitida": null
         }
       }
+    },
+    "Auditoria Privada||Documentação de Auditoria/Papéis de Trabalho": {
+      "materia": "Auditoria Privada",
+      "assunto": "Documentação de Auditoria/Papéis de Trabalho",
+      "data_base": "2026-07-31",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "1992372"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-31",
+          "emitida": "2026-07-31"
+        },
+        "d6": {
+          "prevista": "2026-08-06",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||CPC 07: Subvenção e Assistência Governamentais": {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 07: Subvenção e Assistência Governamentais",
+      "data_base": "2026-07-31",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-31",
+          "emitida": "2026-07-31"
+        },
+        "d6": {
+          "prevista": "2026-08-06",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||CPC 12: Ajuste a Valor Presente": {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 12: Ajuste a Valor Presente",
+      "data_base": "2026-07-31",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-31",
+          "emitida": "2026-07-31"
+        },
+        "d6": {
+          "prevista": "2026-08-06",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||CPC 15: Combinação de Negócios, Fusão, Incorporação e Cisão": {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 15: Combinação de Negócios, Fusão, Incorporação e Cisão",
+      "data_base": "2026-07-31",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2771944"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-31",
+          "emitida": "2026-07-31"
+        },
+        "d6": {
+          "prevista": "2026-08-06",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||Investimentos Avaliados pelo Custo ou MEP (CPC 18, Lei 6.404, art. 248)": {
+      "materia": "Contabilidade Geral",
+      "assunto": "Investimentos Avaliados pelo Custo ou MEP (CPC 18, Lei 6.404, art. 248)",
+      "data_base": "2026-07-31",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-31",
+          "emitida": "2026-07-31"
+        },
+        "d6": {
+          "prevista": "2026-08-06",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Civil||Da Responsabilidade Civil (arts. 927 a 954)": {
+      "materia": "Direito Civil",
+      "assunto": "Da Responsabilidade Civil (arts. 927 a 954)",
+      "data_base": "2026-07-31",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3903507",
+        "4079314",
+        "3259232",
+        "3604520"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Da Saúde (arts. 196 a 200 da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Da Saúde (arts. 196 a 200 da CF/1988)",
+      "data_base": "2026-07-31",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Espécies de Nacionalidade (Brasileiros Natos e Naturalizados)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Espécies de Nacionalidade (Brasileiros Natos e Naturalizados)",
+      "data_base": "2026-07-31",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2336490",
+        "3043724"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Comissões Parlamentares": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Jurisprudência dos Tribunais Superiores sobre Comissões Parlamentares",
+      "data_base": "2026-07-31",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3994473"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Controle de Constitucionalidade": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Jurisprudência dos Tribunais Superiores sobre Controle de Constitucionalidade",
+      "data_base": "2026-07-31",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2942682"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Constitucional (CF/1988 e Doutrina)||Municípios - Organização e Competências (arts. 29 a 31 da CF/1988)": {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Municípios - Organização e Competências (arts. 29 a 31 da CF/1988)",
+      "data_base": "2026-07-31",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3232400"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        }
+      }
+    },
+    "Estatística||Cálculo de Probabilidades Usando Análise Combinatória": {
+      "materia": "Estatística",
+      "assunto": "Cálculo de Probabilidades Usando Análise Combinatória",
+      "data_base": "2026-07-31",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3046622"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-07-31",
+          "emitida": "2026-07-31"
+        },
+        "d6": {
+          "prevista": "2026-08-06",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-14",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-30",
+    "data": "2026-07-31",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Fundos Especiais",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Garantia, Contragarantia e Restos a Pagar (arts. 40 a 42 da LRF)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Operações de Crédito (arts. 32 a 39 da LRF)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Plano de Contas (PCASP)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Provisões, Passivos e Ativos Contingentes (MCASP e NBC TSP 03)",
-        "d6"
-      ],
-      [
-        "Auditoria Privada||Opinião do Auditor Independente/Relatórios e Pareceres de Auditoria",
-        "d6"
-      ],
-      [
-        "Auditoria Privada||Testes e Procedimentos em Auditoria",
+        "AFO, Direito Financeiro e Contabilidade Pública||Despesas de Exercícios Anteriores (DEA)",
         "d14"
       ],
       [
-        "Contabilidade Geral||(sem assunto)",
-        "d6"
-      ],
-      [
-        "Direito Administrativo (Doutrina e Leis Federais)||Das Responsabilidades (arts. 32 a 34 da Lei nº 12.527/2011)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Despesa Pública",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Das Restrições de Acesso à Informação (arts. 21 a 31 da Lei nº 12.527/2011)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Programação e Descentralização Orçamentária e Financeira",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Do Acesso a Informações e da sua Divulgação (arts. 6º a 9º da Lei nº 12.527/2011)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Restos a Pagar (RAP)",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Do Procedimento de Acesso à Informação (arts. 10 a 20 da Lei nº 12.527/2011)",
+        "Auditoria Privada||Documentação de Auditoria/Papéis de Trabalho",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||CPC 07: Subvenção e Assistência Governamentais",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||CPC 12: Ajuste a Valor Presente",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||CPC 15: Combinação de Negócios, Fusão, Incorporação e Cisão",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||Investimentos Avaliados pelo Custo ou MEP (CPC 18, Lei 6.404, art. 248)",
+        "d1"
+      ],
+      [
+        "Estatística||Cálculo de Probabilidades Usando Análise Combinatória",
+        "d1"
+      ],
+      [
+        "Estatística||Teste de Hipóteses: Introdução (Nível de Significância, Erros Tipo I e II, Poder do Teste)",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Tópicos Mesclados da Lei nº 12.527/2011",
+        "TI - Ciência de Dados e Inteligência Artificial||Conceitos Gerais de Machine Learning",
         "d14"
       ],
       [
-        "Direito Constitucional (CF/1988 e Doutrina)||Estados Federados - Organização, Competências, Bens (arts. 25 a 28 da CF/1988)",
+        "TI - Ciência de Dados e Inteligência Artificial||Conceitos Iniciais e Gerais de Inteligência Artificial",
         "d14"
       ],
       [
-        "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Organização, Competências e Bens dos Entes Federativos",
+        "TI - Ciência de Dados e Inteligência Artificial||LLM (Large Language Models)",
+        "d14"
+      ],
+      [
+        "TI - Ciência de Dados e Inteligência Artificial||Redes Neurais",
         "d14"
       ]
     ],
-    "confirmada": "2026-07-30"
+    "confirmada": "2026-07-31"
   }
 }
