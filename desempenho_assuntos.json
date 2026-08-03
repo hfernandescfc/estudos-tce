@@ -1,21 +1,21 @@
 {
-  "gerado_em": "2026-07-31T07:47:32",
+  "gerado_em": "2026-08-03T08:06:43",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 2202,
-    "acertos": 1685,
-    "pct": 76.5,
-    "unicas": 2043,
-    "acertos_unicas": 1637,
-    "pct_unicas": 80.1
+    "tentativas": 2308,
+    "acertos": 1774,
+    "pct": 76.9,
+    "unicas": 2145,
+    "acertos_unicas": 1726,
+    "pct_unicas": 80.5
   },
   "materias": [
     {
       "materia": "Sem materia",
-      "tentativas": 25,
+      "tentativas": 27,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 25,
+      "unicas": 27,
       "acertos_unicas": 0,
       "pct_unicas": 0.0
     },
@@ -39,12 +39,12 @@
     },
     {
       "materia": "Direito Processual Civil",
-      "tentativas": 40,
-      "acertos": 27,
-      "pct": 67.5,
-      "unicas": 40,
-      "acertos_unicas": 27,
-      "pct_unicas": 67.5
+      "tentativas": 66,
+      "acertos": 46,
+      "pct": 69.7,
+      "unicas": 66,
+      "acertos_unicas": 46,
+      "pct_unicas": 69.7
     },
     {
       "materia": "Análise das Demonstrações Contábeis",
@@ -65,22 +65,13 @@
       "pct_unicas": 71.0
     },
     {
-      "materia": "Ciências Atuariais (Atuária)",
-      "tentativas": 7,
-      "acertos": 5,
-      "pct": 71.4,
-      "unicas": 7,
-      "acertos_unicas": 5,
-      "pct_unicas": 71.4
-    },
-    {
       "materia": "Contabilidade Geral",
-      "tentativas": 233,
-      "acertos": 167,
-      "pct": 71.7,
-      "unicas": 208,
-      "acertos_unicas": 159,
-      "pct_unicas": 76.4
+      "tentativas": 239,
+      "acertos": 172,
+      "pct": 72.0,
+      "unicas": 214,
+      "acertos_unicas": 164,
+      "pct_unicas": 76.6
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -90,15 +81,6 @@
       "unicas": 212,
       "acertos_unicas": 163,
       "pct_unicas": 76.9
-    },
-    {
-      "materia": "Estatística",
-      "tentativas": 47,
-      "acertos": 36,
-      "pct": 76.6,
-      "unicas": 45,
-      "acertos_unicas": 36,
-      "pct_unicas": 80.0
     },
     {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
@@ -128,6 +110,15 @@
       "pct_unicas": 81.7
     },
     {
+      "materia": "Estatística",
+      "tentativas": 53,
+      "acertos": 42,
+      "pct": 79.2,
+      "unicas": 51,
+      "acertos_unicas": 42,
+      "pct_unicas": 82.4
+    },
+    {
       "materia": "Direito Administrativo Estadual e do DF",
       "tentativas": 6,
       "acertos": 5,
@@ -146,15 +137,6 @@
       "pct_unicas": 83.8
     },
     {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "tentativas": 809,
-      "acertos": 647,
-      "pct": 80.0,
-      "unicas": 757,
-      "acertos_unicas": 642,
-      "pct_unicas": 84.8
-    },
-    {
       "materia": "Auditoria Privada",
       "tentativas": 113,
       "acertos": 92,
@@ -164,6 +146,15 @@
       "pct_unicas": 85.2
     },
     {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "tentativas": 858,
+      "acertos": 690,
+      "pct": 80.4,
+      "unicas": 802,
+      "acertos_unicas": 685,
+      "pct_unicas": 85.4
+    },
+    {
       "materia": "Língua Portuguesa (Português)",
       "tentativas": 21,
       "acertos": 18,
@@ -171,6 +162,24 @@
       "unicas": 21,
       "acertos_unicas": 18,
       "pct_unicas": 85.7
+    },
+    {
+      "materia": "Ciências Atuariais (Atuária)",
+      "tentativas": 15,
+      "acertos": 13,
+      "pct": 86.7,
+      "unicas": 15,
+      "acertos_unicas": 13,
+      "pct_unicas": 86.7
+    },
+    {
+      "materia": "Direito Previdenciário",
+      "tentativas": 9,
+      "acertos": 8,
+      "pct": 88.9,
+      "unicas": 9,
+      "acertos_unicas": 8,
+      "pct_unicas": 88.9
     },
     {
       "materia": "Ciências Políticas",
@@ -266,20 +275,6 @@
       "acertos_unicas": 13,
       "pct_unicas": 72.2,
       "ultima": "2026-07-21"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Classificação da Despesa Orçamentária",
-      "grupo": "DFin",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 50,
-      "acertos": 33,
-      "pct": 66.0,
-      "unicas": 43,
-      "acertos_unicas": 33,
-      "pct_unicas": 76.7,
-      "ultima": "2026-07-08"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -493,6 +488,20 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Classificação da Despesa Orçamentária",
+      "grupo": "DFin",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 79,
+      "acertos": 58,
+      "pct": 73.4,
+      "unicas": 68,
+      "acertos_unicas": 58,
+      "pct_unicas": 85.3,
+      "ultima": "2026-07-31"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "LDO - Lei de Diretrizes Orçamentárias (CF/1988 e Lei nº 4.320/1964)",
       "grupo": "DFin",
       "prio": 3,
@@ -518,6 +527,20 @@
       "acertos_unicas": 7,
       "pct_unicas": 87.5,
       "ultima": "2026-07-28"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Investimentos Permanentes, em Coligada e Empreendimento Controlado em Conjunto (MCASP e NBC TSP 18)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 8,
+      "acertos": 7,
+      "pct": 87.5,
+      "unicas": 8,
+      "acertos_unicas": 7,
+      "pct_unicas": 87.5,
+      "ultima": "2026-07-31"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -563,20 +586,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Créditos Adicionais",
-      "grupo": "DFin",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 31,
-      "acertos": 27,
-      "pct": 87.1,
-      "unicas": 30,
-      "acertos_unicas": 27,
-      "pct_unicas": 90.0,
-      "ultima": "2026-07-27"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Sem assunto",
       "grupo": "",
       "prio": null,
@@ -602,6 +611,20 @@
       "acertos_unicas": 9,
       "pct_unicas": 90.0,
       "ultima": "2026-07-28"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Créditos Adicionais",
+      "grupo": "DFin",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 43,
+      "acertos": 38,
+      "pct": 88.4,
+      "unicas": 42,
+      "acertos_unicas": 38,
+      "pct_unicas": 90.5,
+      "ultima": "2026-07-31"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -1141,13 +1164,27 @@
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 3,
-      "acertos": 1,
-      "pct": 33.3,
-      "unicas": 3,
-      "acertos_unicas": 1,
-      "pct_unicas": 33.3,
-      "ultima": "2026-07-23"
+      "tentativas": 6,
+      "acertos": 4,
+      "pct": 66.7,
+      "unicas": 6,
+      "acertos_unicas": 4,
+      "pct_unicas": 66.7,
+      "ultima": "2026-07-31"
+    },
+    {
+      "materia": "Ciências Atuariais (Atuária)",
+      "assunto": "Portarias Ministério da Previdência Social (MPS)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 5,
+      "acertos": 5,
+      "pct": 100.0,
+      "unicas": 5,
+      "acertos_unicas": 5,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-31"
     },
     {
       "materia": "Ciências Atuariais (Atuária)",
@@ -1361,20 +1398,6 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "assunto": "CPC 47: Receita de Contrato com Cliente",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 18,
-      "acertos": 13,
-      "pct": 72.2,
-      "unicas": 16,
-      "acertos_unicas": 12,
-      "pct_unicas": 75.0,
-      "ultima": "2026-07-30"
-    },
-    {
-      "materia": "Contabilidade Geral",
       "assunto": "Conceito, Objeto, Finalidade, Técnicas Contábeis, Equação Patrimonial",
       "grupo": "CG",
       "prio": 3,
@@ -1386,6 +1409,20 @@
       "acertos_unicas": 3,
       "pct_unicas": 75.0,
       "ultima": "2026-07-27"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 47: Receita de Contrato com Cliente",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 24,
+      "acertos": 18,
+      "pct": 75.0,
+      "unicas": 22,
+      "acertos_unicas": 17,
+      "pct_unicas": 77.3,
+      "ultima": "2026-07-31"
     },
     {
       "materia": "Contabilidade Geral",
@@ -2830,6 +2867,34 @@
       "ultima": "2026-07-30"
     },
     {
+      "materia": "Direito Previdenciário",
+      "assunto": "Regime Próprio de Previdência Social na Constituição Federal",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 8,
+      "acertos": 7,
+      "pct": 87.5,
+      "unicas": 8,
+      "acertos_unicas": 7,
+      "pct_unicas": 87.5,
+      "ultima": "2026-07-31"
+    },
+    {
+      "materia": "Direito Previdenciário",
+      "assunto": "Lei nº 10.887/2004 -  Aplicação da EC nº 41/2003",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-31"
+    },
+    {
       "materia": "Direito Processual Civil",
       "assunto": "Tópicos Mesclados do Capítulo \"das Provas\"",
       "grupo": "",
@@ -2849,13 +2914,13 @@
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 6,
-      "acertos": 3,
-      "pct": 50.0,
-      "unicas": 6,
-      "acertos_unicas": 3,
-      "pct_unicas": 50.0,
-      "ultima": "2026-07-29"
+      "tentativas": 32,
+      "acertos": 22,
+      "pct": 68.8,
+      "unicas": 32,
+      "acertos_unicas": 22,
+      "pct_unicas": 68.8,
+      "ultima": "2026-07-31"
     },
     {
       "materia": "Direito Processual Civil",
@@ -2985,6 +3050,20 @@
     },
     {
       "materia": "Estatística",
+      "assunto": "Probabilidade Condicional",
+      "grupo": "Estat",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 6,
+      "pct": 100.0,
+      "unicas": 6,
+      "acertos_unicas": 6,
+      "pct_unicas": 100.0,
+      "ultima": "2026-07-31"
+    },
+    {
+      "materia": "Estatística",
       "assunto": "Sem assunto",
       "grupo": "Estat",
       "prio": null,
@@ -3045,13 +3124,13 @@
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 25,
+      "tentativas": 27,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 25,
+      "unicas": 27,
       "acertos_unicas": 0,
       "pct_unicas": 0.0,
-      "ultima": "2026-07-30"
+      "ultima": "2026-07-31"
     },
     {
       "materia": "TI - Banco de Dados",

@@ -30,7 +30,8 @@
     "tec_registros_2026-07-28.json",
     "tec_registros_2026-07-29.json",
     "tec_registros_2026-07-30.json",
-    "tec_registros_2026-07-31.json"
+    "tec_registros_2026-07-31.json",
+    "tec_registros_2026-08-03.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -220,36 +221,33 @@
     "AFO, Direito Financeiro e Contabilidade Pública||Classificação da Despesa Orçamentária": {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Classificação da Despesa Orçamentária",
-      "data_base": "2026-07-02",
+      "data_base": "2026-08-03",
       "cadeia_completa": true,
       "alvos_origem": [
-        "3822939",
-        "3363537",
-        "3735394",
-        "3735732",
-        "2791894",
-        "2792237",
-        "2887693"
+        "3392129",
+        "3395888",
+        "2774258",
+        "2459310"
       ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-03",
-          "emitida": "expirada"
+          "prevista": "2026-08-03",
+          "emitida": "2026-08-03"
         },
         "d6": {
-          "prevista": "2026-07-08",
-          "emitida": "2026-07-08",
+          "prevista": "2026-08-08",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-16",
-          "emitida": "2026-07-17"
+          "prevista": "2026-08-16",
+          "emitida": null
         },
         "d28": {
-          "prevista": "2026-07-30",
-          "emitida": "2026-07-28"
+          "prevista": "2026-08-16",
+          "emitida": null
         }
       }
     },
@@ -292,11 +290,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-03",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -356,11 +354,11 @@
         "3177836"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-03",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -584,7 +582,7 @@
         "2709657"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-07",
@@ -601,7 +599,7 @@
         },
         "d28": {
           "prevista": "2026-08-03",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -655,7 +653,7 @@
         "1990569"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-07",
@@ -672,7 +670,7 @@
         },
         "d28": {
           "prevista": "2026-08-04",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -685,7 +683,7 @@
         "3869534"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-07",
@@ -702,7 +700,7 @@
         },
         "d28": {
           "prevista": "2026-08-04",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -826,7 +824,7 @@
       "cadeia_completa": true,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-08",
@@ -849,7 +847,7 @@
         },
         "d28": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -866,7 +864,7 @@
         "2215176"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-08",
@@ -883,7 +881,7 @@
         },
         "d28": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -896,7 +894,7 @@
         "3257334"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-08",
@@ -913,7 +911,7 @@
         },
         "d28": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -927,7 +925,7 @@
         "3601507"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-08",
@@ -944,7 +942,7 @@
         },
         "d28": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -955,7 +953,7 @@
       "cadeia_completa": true,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-08",
@@ -972,7 +970,7 @@
         },
         "d28": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -985,7 +983,7 @@
         "3822537"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-08",
@@ -1002,7 +1000,7 @@
         },
         "d28": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -1013,7 +1011,7 @@
       "cadeia_completa": true,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-08",
@@ -1036,7 +1034,7 @@
         },
         "d28": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -1053,7 +1051,7 @@
         "2709693"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-08",
@@ -1070,7 +1068,7 @@
         },
         "d28": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -1086,7 +1084,7 @@
         "2336555"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-09",
@@ -1109,7 +1107,7 @@
         },
         "d28": {
           "prevista": "2026-08-06",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -1212,7 +1210,7 @@
         "3645762"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-10",
@@ -1229,7 +1227,7 @@
         },
         "d28": {
           "prevista": "2026-08-07",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -1242,7 +1240,7 @@
         "3604810"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-10",
@@ -1265,7 +1263,7 @@
         },
         "d28": {
           "prevista": "2026-08-07",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -1282,7 +1280,7 @@
         "3043666"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-10",
@@ -1299,7 +1297,7 @@
         },
         "d28": {
           "prevista": "2026-08-07",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -1310,7 +1308,7 @@
       "cadeia_completa": true,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-10",
@@ -1333,7 +1331,7 @@
         },
         "d28": {
           "prevista": "2026-08-07",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -1344,7 +1342,7 @@
       "cadeia_completa": true,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d1": {
           "prevista": "2026-07-10",
@@ -1367,7 +1365,7 @@
         },
         "d28": {
           "prevista": "2026-08-07",
-          "emitida": null
+          "emitida": "2026-08-03"
         }
       }
     },
@@ -2517,7 +2515,7 @@
         },
         "d14": {
           "prevista": "2026-08-03",
-          "emitida": null
+          "emitida": "2026-08-03"
         },
         "d28": {
           "prevista": "2026-08-16",
@@ -2547,7 +2545,7 @@
         },
         "d14": {
           "prevista": "2026-08-03",
-          "emitida": null
+          "emitida": "2026-08-03"
         },
         "d28": {
           "prevista": "2026-08-16",
@@ -2575,7 +2573,7 @@
         },
         "d14": {
           "prevista": "2026-08-03",
-          "emitida": null
+          "emitida": "2026-08-03"
         },
         "d28": {
           "prevista": "2026-08-16",
@@ -2610,7 +2608,7 @@
         },
         "d14": {
           "prevista": "2026-08-03",
-          "emitida": null
+          "emitida": "2026-08-03"
         },
         "d28": {
           "prevista": "2026-08-16",
@@ -3228,7 +3226,13 @@
         "d6": {
           "prevista": "2026-07-29",
           "emitida": "2026-07-29",
-          "resultado": null
+          "resultado": {
+            "pct": 83,
+            "questoes": 6,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-08-03"
+          }
         },
         "d14": {
           "prevista": "2026-08-06",
@@ -3575,7 +3579,7 @@
         },
         "d6": {
           "prevista": "2026-08-03",
-          "emitida": null,
+          "emitida": "2026-08-03",
           "resultado": null
         },
         "d14": {
@@ -4413,72 +4417,210 @@
           "emitida": null
         }
       }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Investimentos Permanentes, em Coligada e Empreendimento Controlado em Conjunto (MCASP e NBC TSP 18)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Investimentos Permanentes, em Coligada e Empreendimento Controlado em Conjunto (MCASP e NBC TSP 18)",
+      "data_base": "2026-08-03",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2620968"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-08-03",
+          "emitida": "2026-08-03"
+        },
+        "d6": {
+          "prevista": "2026-08-08",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Ciências Atuariais (Atuária)||Portarias Ministério da Previdência Social (MPS)": {
+      "materia": "Ciências Atuariais (Atuária)",
+      "assunto": "Portarias Ministério da Previdência Social (MPS)",
+      "data_base": "2026-08-03",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Previdenciário||Regime Próprio de Previdência Social na Constituição Federal": {
+      "materia": "Direito Previdenciário",
+      "assunto": "Regime Próprio de Previdência Social na Constituição Federal",
+      "data_base": "2026-08-03",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "2220385"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
+    },
+    "Estatística||Probabilidade Condicional": {
+      "materia": "Estatística",
+      "assunto": "Probabilidade Condicional",
+      "data_base": "2026-08-03",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-08-03",
+          "emitida": "2026-08-03"
+        },
+        "d6": {
+          "prevista": "2026-08-08",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-16",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-07-31",
+    "data": "2026-08-03",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Despesas de Exercícios Anteriores (DEA)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Patrimonial (AFO e CPU)",
         "d14"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Despesa Pública",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Programação e Descentralização Orçamentária e Financeira",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Restos a Pagar (RAP)",
-        "d14"
-      ],
-      [
-        "Auditoria Privada||Documentação de Auditoria/Papéis de Trabalho",
+        "AFO, Direito Financeiro e Contabilidade Pública||Classificação da Despesa Orçamentária",
         "d1"
       ],
       [
-        "Contabilidade Geral||CPC 07: Subvenção e Assistência Governamentais",
-        "d1"
+        "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Natureza da Receita",
+        "d28"
       ],
       [
-        "Contabilidade Geral||CPC 12: Ajuste a Valor Presente",
-        "d1"
-      ],
-      [
-        "Contabilidade Geral||CPC 15: Combinação de Negócios, Fusão, Incorporação e Cisão",
-        "d1"
-      ],
-      [
-        "Contabilidade Geral||Investimentos Avaliados pelo Custo ou MEP (CPC 18, Lei 6.404, art. 248)",
-        "d1"
-      ],
-      [
-        "Estatística||Cálculo de Probabilidades Usando Análise Combinatória",
-        "d1"
-      ],
-      [
-        "Estatística||Teste de Hipóteses: Introdução (Nível de Significância, Erros Tipo I e II, Poder do Teste)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Consolidação das Demonstrações Contábeis",
         "d14"
       ],
       [
-        "TI - Ciência de Dados e Inteligência Artificial||Conceitos Gerais de Machine Learning",
+        "AFO, Direito Financeiro e Contabilidade Pública||Créditos Adicionais",
+        "d28"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Depreciação, Amortização e Exaustão (NBC TSP 07, MCASP, etc.)",
+        "d28"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Estoques (MCASP e NBC TSP 04)",
+        "d28"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Investimentos Permanentes, em Coligada e Empreendimento Controlado em Conjunto (MCASP e NBC TSP 18)",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Lei Complementar nº 159/2017 (Regime de Recuperação Fiscal)",
         "d14"
       ],
       [
-        "TI - Ciência de Dados e Inteligência Artificial||Conceitos Iniciais e Gerais de Inteligência Artificial",
+        "AFO, Direito Financeiro e Contabilidade Pública||Manual de Demonstrativos Fiscais",
         "d14"
       ],
       [
-        "TI - Ciência de Dados e Inteligência Artificial||LLM (Large Language Models)",
+        "Análise das Demonstrações Contábeis||Análise Vertical e Horizontal das Demonstrações Contábeis",
+        "d28"
+      ],
+      [
+        "Análise das Demonstrações Contábeis||Índices de Liquidez. Capital Circulante Líquido",
+        "d28"
+      ],
+      [
+        "Auditoria Governamental e Controle||Auditoria Operacional",
+        "d28"
+      ],
+      [
+        "Auditoria Governamental e Controle||Auditoria de Regularidade: Propósito, Características, Contexto",
+        "d28"
+      ],
+      [
+        "Auditoria Governamental e Controle||Controle de Qualidade da Auditoria Governamental",
+        "d28"
+      ],
+      [
+        "Auditoria Governamental e Controle||Execução de Auditoria de Regularidade",
+        "d28"
+      ],
+      [
+        "Auditoria Governamental e Controle||Outras Questões e Tópicos Mesclados de Auditoria Governamental",
+        "d28"
+      ],
+      [
+        "Auditoria Governamental e Controle||Planejamento de Auditoria de Regularidade",
+        "d28"
+      ],
+      [
+        "Auditoria Governamental e Controle||Relatório, Certificado, Parecer e Nota (Auditoria Governamental)",
+        "d28"
+      ],
+      [
+        "Auditoria Governamental e Controle||Risco de Auditoria. Confiança e Asseguração em Auditoria",
+        "d28"
+      ],
+      [
+        "Contabilidade Geral||Balanço Patrimonial",
+        "d6"
+      ],
+      [
+        "Contabilidade Geral||Conceito, Objeto, Finalidade, Técnicas Contábeis, Equação Patrimonial",
+        "d28"
+      ],
+      [
+        "Contabilidade Geral||Estrutura Conceitual Básica da Contabilidade (CPC 00)",
+        "d28"
+      ],
+      [
+        "Estatística||Intervalo de Confiança para a Média",
+        "d28"
+      ],
+      [
+        "Estatística||Probabilidade Condicional",
+        "d1"
+      ],
+      [
+        "TI - Ciência de Dados e Inteligência Artificial||Algoritmos de Machine Learning (Classificação, Regressão e Clusterização)",
         "d14"
       ],
       [
-        "TI - Ciência de Dados e Inteligência Artificial||Redes Neurais",
+        "TI - Ciência de Dados e Inteligência Artificial||Treinamento e Avaliação de Modelos",
         "d14"
       ]
     ],
-    "confirmada": "2026-07-31"
+    "confirmada": "2026-08-03"
   }
 }

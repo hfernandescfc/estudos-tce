@@ -1,6 +1,6 @@
 // Gerado por 06_Scripts/gerar_sessoes_tec.py - NAO editar a mao.
 window.SESSOES_TEC = {
- "gerado_em": "2026-07-31T07:47:36",
+ "gerado_em": "2026-08-03T08:06:43",
  "fonte": "07_TEC/TEC_Captura/tec_registros_*.json (1 sessão por dia+assunto)",
  "sessoes": [
   {
@@ -3565,6 +3565,138 @@ window.SESSOES_TEC = {
    "minutos": 5,
    "qResolvidas": 5,
    "qAcertadas": 4,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-07-31~investimentos-permanentes-em-coligada-e-empreendimento-contr-9c06d1",
+   "origem": "tec",
+   "data": "2026-07-31",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "Investimentos Permanentes, em Coligada e Empreendimento Controlado em Conjunto (MCASP e NBC TSP 18)",
+   "minutos": 21,
+   "qResolvidas": 8,
+   "qAcertadas": 7,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-07-31~lei-n-10-887-2004-aplicacao-da-ec-n-41-2003-9d9e3d",
+   "origem": "tec",
+   "data": "2026-07-31",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "Lei nº 10.887/2004 -  Aplicação da EC nº 41/2003",
+   "minutos": 1,
+   "qResolvidas": 1,
+   "qAcertadas": 1,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-07-31~portarias-ministerio-da-previdencia-social-mps-e12fa0",
+   "origem": "tec",
+   "data": "2026-07-31",
+   "mat": "DPREV",
+   "topicId": null,
+   "assuntoLivre": "Portarias Ministério da Previdência Social (MPS)",
+   "minutos": 1,
+   "qResolvidas": 5,
+   "qAcertadas": 5,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-07-31~probabilidade-condicional-2a16f5",
+   "origem": "tec",
+   "data": "2026-07-31",
+   "mat": "Estat",
+   "topicId": null,
+   "assuntoLivre": "Probabilidade Condicional",
+   "minutos": 25,
+   "qResolvidas": 6,
+   "qAcertadas": 6,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-07-31~regime-proprio-de-previdencia-social-na-constituicao-federal-7b19a3",
+   "origem": "tec",
+   "data": "2026-07-31",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "Regime Próprio de Previdência Social na Constituição Federal",
+   "minutos": 5,
+   "qResolvidas": 8,
+   "qAcertadas": 7,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-07-31~regimes-e-metodos-financeiros-e19a49",
+   "origem": "tec",
+   "data": "2026-07-31",
+   "mat": "DPREV",
+   "topicId": null,
+   "assuntoLivre": "Regimes e Métodos Financeiros",
+   "minutos": 4,
+   "qResolvidas": 3,
+   "qAcertadas": 3,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-07-31~sem-assunto-177bb3",
+   "origem": "tec",
+   "data": "2026-07-31",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "(sem assunto no TEC)",
+   "minutos": 1,
+   "qResolvidas": 2,
+   "qAcertadas": 0,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-07-31~146",
+   "origem": "tec",
+   "data": "2026-07-31",
+   "mat": "PROC",
+   "topicId": "146",
+   "assuntoLivre": "",
+   "minutos": 71,
+   "qResolvidas": 26,
+   "qAcertadas": 19,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-07-31~32",
+   "origem": "tec",
+   "data": "2026-07-31",
+   "mat": "CG",
+   "topicId": "32",
+   "assuntoLivre": "",
+   "minutos": 17,
+   "qResolvidas": 6,
+   "qAcertadas": 5,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-07-31~4",
+   "origem": "tec",
+   "data": "2026-07-31",
+   "mat": "DFin",
+   "topicId": "4",
+   "assuntoLivre": "",
+   "minutos": 29,
+   "qResolvidas": 12,
+   "qAcertadas": 11,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-07-31~6",
+   "origem": "tec",
+   "data": "2026-07-31",
+   "mat": "DFin",
+   "topicId": "6",
+   "assuntoLivre": "",
+   "minutos": 30,
+   "qResolvidas": 29,
+   "qAcertadas": 25,
    "obs": "reconstruída do TEC"
   }
  ]
