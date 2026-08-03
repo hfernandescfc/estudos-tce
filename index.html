@@ -678,7 +678,8 @@ function render(tab){
    As folhas diárias em 07_TEC/Revisao/ trazem o conteúdo de cada etapa;
    aqui fica a fila/checklist do que vence em cada dia.
    ============================================================ */
-const REV_CUTOFF="2026-08-16"; // depois disso a reta final (S7-S8) já é toda revisão
+const REV_CUTOFF="2026-08-28"; // última sexta útil (entre as provas de 23/08 e 30/08)
+const REV_PROVAS=["2026-08-23","2026-08-30"];
 const REV_ETAPAS=[ // [chave, dias, rótulo, escopo]
   ["d1",0,"D+1 · Consolidação","No fim do dia/manhã seguinte: reler os erros + explicar de memória os pontos-chave (10-15min)"],
   ["d6",6,"D+6 · Resgate","4-6 questões NOVAS do assunto · <60% (70% DFin/Cont.Geral) → volta ao estudo"],
@@ -796,11 +797,14 @@ function revBases(){ // topicId -> data da 1ª sessão registrada
     if(!m[k]||s.data<m[k]) m[k]=s.data; });
   return m;
 }
-function revData(base,dias){ // prevista: +dias, domingo antecipa p/ sábado, corte 16/08
+function revData(base,dias){ // prevista: +dias, corte, e recuo p/ dia útil (mesma regra do gerar_fila.py)
   const d=new Date(base+"T12:00:00"); d.setDate(d.getDate()+dias);
-  if(d.getDay()===0) d.setDate(d.getDate()-1);
-  const s=d.toISOString().slice(0,10);
-  return s>REV_CUTOFF?REV_CUTOFF:s;
+  let s=d.toISOString().slice(0,10);
+  if(s>REV_CUTOFF) s=REV_CUTOFF;            // corta ANTES de ajustar o dia da semana:
+  const x=new Date(s+"T12:00:00");          // na ordem inversa o corte devolvia um domingo
+  while(x.getDay()===0||x.getDay()===6||REV_PROVAS.includes(x.toISOString().slice(0,10)))
+    x.setDate(x.getDate()-1);
+  return x.toISOString().slice(0,10);
 }
 function revLista(){ // etapas não feitas de todos os assuntos já iniciados
   const bases=revBases(), out=[]; let mudou=false;
