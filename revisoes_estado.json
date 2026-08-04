@@ -32,7 +32,9 @@
     "tec_registros_2026-07-30.json",
     "tec_registros_2026-07-31.json",
     "tec_registros_2026-08-03.json",
-    "tec_registros_2026-08-02.json"
+    "tec_registros_2026-08-02.json",
+    "tec_registros_2026-08-04 (1).json",
+    "tec_registros_2026-08-04.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -154,7 +156,7 @@
         },
         "d6": {
           "prevista": "2026-08-04",
-          "emitida": null,
+          "emitida": "2026-08-04",
           "resultado": null
         },
         "d14": {
@@ -238,7 +240,7 @@
           "emitida": "2026-08-03"
         },
         "d6": {
-          "prevista": "2026-08-07",
+          "prevista": "2026-08-10",
           "emitida": null,
           "resultado": null
         },
@@ -437,74 +439,71 @@
     "Direito Administrativo (Doutrina e Leis Federais)||Das Disposições Gerais (arts. 1º a 8º-A da Lei nº 8.429/1992)": {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Das Disposições Gerais (arts. 1º a 8º-A da Lei nº 8.429/1992)",
-      "data_base": "2026-07-03",
+      "data_base": "2026-08-04",
       "cadeia_completa": false,
       "alvos_origem": [
-        "3043541",
         "3105640"
       ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-07-17",
-          "emitida": "2026-07-17"
+          "prevista": "2026-08-18",
+          "emitida": null
         }
       }
     },
     "Direito Administrativo (Doutrina e Leis Federais)||Das Penas (art. 12 da Lei nº 8.429/1992)": {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Das Penas (art. 12 da Lei nº 8.429/1992)",
-      "data_base": "2026-07-03",
+      "data_base": "2026-08-04",
       "cadeia_completa": false,
       "alvos_origem": [
-        "3905399"
+        "3257574",
+        "3734587"
       ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-07-17",
-          "emitida": "2026-07-17"
+          "prevista": "2026-08-18",
+          "emitida": null
         }
       }
     },
     "Direito Administrativo (Doutrina e Leis Federais)||Do Procedimento Administrativo e do Processo Judicial (arts. 14 a 18-A da Lei nº 8.429/1992)": {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Do Procedimento Administrativo e do Processo Judicial (arts. 14 a 18-A da Lei nº 8.429/1992)",
-      "data_base": "2026-07-03",
+      "data_base": "2026-08-04",
       "cadeia_completa": false,
       "alvos_origem": [
-        "3821528",
+        "3604670",
         "3610242"
       ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-07-17",
-          "emitida": "2026-07-17"
+          "prevista": "2026-08-18",
+          "emitida": null
         }
       }
     },
     "Direito Administrativo (Doutrina e Leis Federais)||Dos Atos de Improbidade (arts. 9º a 11 da Lei nº 8.429/1992)": {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Dos Atos de Improbidade (arts. 9º a 11 da Lei nº 8.429/1992)",
-      "data_base": "2026-07-03",
+      "data_base": "2026-08-04",
       "cadeia_completa": false,
       "alvos_origem": [
-        "3822063",
-        "3903090",
-        "3903166",
-        "3608253",
-        "3736718"
+        "3994216",
+        "2558339"
       ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-07-17",
-          "emitida": "2026-07-17"
+          "prevista": "2026-08-18",
+          "emitida": null
         }
       }
     },
@@ -708,36 +707,32 @@
     "Direito Administrativo (Doutrina e Leis Federais)||Autorização, Permissão e Concessão (Serviços Públicos - Lei nº 8.987/1995)": {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Autorização, Permissão e Concessão (Serviços Públicos - Lei nº 8.987/1995)",
-      "data_base": "2026-07-07",
+      "data_base": "2026-08-04",
       "cadeia_completa": false,
       "alvos_origem": [
-        "3900859"
+        "2777756"
       ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-07-21",
-          "emitida": "2026-07-21"
+          "prevista": "2026-08-18",
+          "emitida": null
         }
       }
     },
     "Direito Administrativo (Doutrina e Leis Federais)||Deveres e Direitos (Usuários, Concedente, Concessionária, Licitações - Lei nº 8.987/1995)": {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Deveres e Direitos (Usuários, Concedente, Concessionária, Licitações - Lei nº 8.987/1995)",
-      "data_base": "2026-07-07",
+      "data_base": "2026-08-04",
       "cadeia_completa": false,
-      "alvos_origem": [
-        "3824727",
-        "3605210",
-        "3608273"
-      ],
+      "alvos_origem": [],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-07-21",
-          "emitida": "2026-07-21"
+          "prevista": "2026-08-18",
+          "emitida": null
         }
       }
     },
@@ -1373,15 +1368,17 @@
     "Direito Administrativo (Doutrina e Leis Federais)||Formas de Extinção (Serviços Públicos - Lei nº 8.987/1995)": {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Formas de Extinção (Serviços Públicos - Lei nº 8.987/1995)",
-      "data_base": "2026-07-10",
+      "data_base": "2026-08-04",
       "cadeia_completa": false,
-      "alvos_origem": [],
+      "alvos_origem": [
+        "2774685"
+      ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-07-24",
-          "emitida": "2026-07-24"
+          "prevista": "2026-08-18",
+          "emitida": null
         }
       }
     },
@@ -2642,7 +2639,7 @@
         },
         "d14": {
           "prevista": "2026-08-04",
-          "emitida": null
+          "emitida": "2026-08-04"
         },
         "d28": {
           "prevista": "2026-08-18",
@@ -2673,7 +2670,7 @@
         },
         "d14": {
           "prevista": "2026-08-04",
-          "emitida": null
+          "emitida": "2026-08-04"
         },
         "d28": {
           "prevista": "2026-08-18",
@@ -2705,7 +2702,7 @@
         },
         "d14": {
           "prevista": "2026-08-04",
-          "emitida": null
+          "emitida": "2026-08-04"
         },
         "d28": {
           "prevista": "2026-08-18",
@@ -2733,7 +2730,7 @@
         },
         "d14": {
           "prevista": "2026-08-04",
-          "emitida": null
+          "emitida": "2026-08-04"
         },
         "d28": {
           "prevista": "2026-08-18",
@@ -2765,7 +2762,7 @@
         },
         "d14": {
           "prevista": "2026-08-04",
-          "emitida": null
+          "emitida": "2026-08-04"
         },
         "d28": {
           "prevista": "2026-08-18",
@@ -3066,7 +3063,7 @@
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-05",
+          "prevista": "2026-08-06",
           "emitida": null
         },
         "d28": {
@@ -3121,7 +3118,13 @@
         "d6": {
           "prevista": "2026-07-29",
           "emitida": "2026-07-29",
-          "resultado": null
+          "resultado": {
+            "pct": 100,
+            "questoes": 4,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-08-04"
+          }
         },
         "d14": {
           "prevista": "2026-08-06",
@@ -3298,7 +3301,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-06",
+          "prevista": "2026-08-07",
           "emitida": null
         }
       }
@@ -3581,7 +3584,13 @@
         "d6": {
           "prevista": "2026-08-03",
           "emitida": "2026-08-03",
-          "resultado": null
+          "resultado": {
+            "pct": 75,
+            "questoes": 8,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-08-04"
+          }
         },
         "d14": {
           "prevista": "2026-08-11",
@@ -3758,7 +3767,7 @@
         },
         "d6": {
           "prevista": "2026-08-04",
-          "emitida": null,
+          "emitida": "2026-08-04",
           "resultado": null
         },
         "d14": {
@@ -3788,7 +3797,7 @@
         },
         "d6": {
           "prevista": "2026-08-04",
-          "emitida": null,
+          "emitida": "2026-08-04",
           "resultado": null
         },
         "d14": {
@@ -3818,7 +3827,7 @@
         },
         "d6": {
           "prevista": "2026-08-04",
-          "emitida": null,
+          "emitida": "2026-08-04",
           "resultado": null
         },
         "d14": {
@@ -3846,7 +3855,7 @@
         },
         "d6": {
           "prevista": "2026-08-04",
-          "emitida": null,
+          "emitida": "2026-08-04",
           "resultado": null
         },
         "d14": {
@@ -3877,7 +3886,7 @@
         },
         "d6": {
           "prevista": "2026-08-04",
-          "emitida": null,
+          "emitida": "2026-08-04",
           "resultado": null
         },
         "d14": {
@@ -3905,7 +3914,7 @@
         },
         "d6": {
           "prevista": "2026-08-04",
-          "emitida": null,
+          "emitida": "2026-08-04",
           "resultado": null
         },
         "d14": {
@@ -3936,7 +3945,7 @@
         },
         "d6": {
           "prevista": "2026-08-04",
-          "emitida": null,
+          "emitida": "2026-08-04",
           "resultado": null
         },
         "d14": {
@@ -3966,7 +3975,7 @@
           "emitida": "2026-07-29"
         },
         "d6": {
-          "prevista": "2026-08-04",
+          "prevista": "2026-08-05",
           "emitida": null,
           "resultado": null
         },
@@ -4508,10 +4517,166 @@
           "emitida": null
         }
       }
+    },
+    "Contabilidade Geral||CPC 16 - Tratamento Contábil para os Estoques": {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 16 - Tratamento Contábil para os Estoques",
+      "data_base": "2026-08-04",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2266745",
+        "3823642",
+        "3195216",
+        "2346885",
+        "2558370",
+        "2687943"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-08-04",
+          "emitida": "2026-08-04"
+        },
+        "d6": {
+          "prevista": "2026-08-10",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-18",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-28",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||Critérios de Avaliação do Estoque (PEPS, UEPS, Média Ponderada)": {
+      "materia": "Contabilidade Geral",
+      "assunto": "Critérios de Avaliação do Estoque (PEPS, UEPS, Média Ponderada)",
+      "data_base": "2026-08-04",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2903828"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-08-05",
+          "emitida": null
+        },
+        "d6": {
+          "prevista": "2026-08-10",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-18",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-28",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Civil||Bens Públicos (arts. 98 a 103)": {
+      "materia": "Direito Civil",
+      "assunto": "Bens Públicos (arts. 98 a 103)",
+      "data_base": "2026-08-04",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-19",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Civil||Da Personalidade e da Capacidade (arts. 1º a 10)": {
+      "materia": "Direito Civil",
+      "assunto": "Da Personalidade e da Capacidade (arts. 1º a 10)",
+      "data_base": "2026-08-04",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3441504",
+        "3610322"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-19",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-08-03",
-    "itens": []
+    "data": "2026-08-04",
+    "itens": [
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Financeiro",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Ciclo Orçamentário",
+        "d14"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Fonte / Destinação de Recursos",
+        "d14"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Receita Pública",
+        "d14"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Introdução às DCASP (Parte V, Capítulo 1 do MCASP e NBC TSP 11)",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||LDO - Lei de Diretrizes Orçamentárias (CF/1988 e Lei nº 4.320/1964)",
+        "d14"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Patrimônio Público",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Regimes Orçamentário e Patrimonial e Exercício Financeiro",
+        "d6"
+      ],
+      [
+        "Auditoria Governamental e Controle||Entidades de Fiscalização Superior",
+        "d6"
+      ],
+      [
+        "Auditoria Governamental e Controle||Princípios, Propósitos e Abrangência da Auditoria Governamental",
+        "d6"
+      ],
+      [
+        "Auditoria Governamental e Controle||Ética e Sigilo Profissional",
+        "d6"
+      ],
+      [
+        "Auditoria Privada||Fraude e Erro (Auditoria)",
+        "d6"
+      ],
+      [
+        "Contabilidade Geral||Ativos Intangíveis (CPC 04, Lei 6.404)",
+        "d14"
+      ],
+      [
+        "Contabilidade Geral||CPC 16 - Tratamento Contábil para os Estoques",
+        "d1"
+      ]
+    ],
+    "confirmada": "2026-08-04"
   }
 }

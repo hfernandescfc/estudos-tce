@@ -1,21 +1,21 @@
 {
-  "gerado_em": "2026-08-03T10:24:14",
+  "gerado_em": "2026-08-04T09:11:35",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 2388,
-    "acertos": 1839,
+    "tentativas": 2482,
+    "acertos": 1911,
     "pct": 77.0,
-    "unicas": 2147,
-    "acertos_unicas": 1744,
-    "pct_unicas": 81.2
+    "unicas": 2230,
+    "acertos_unicas": 1813,
+    "pct_unicas": 81.3
   },
   "materias": [
     {
       "materia": "Sem materia",
-      "tentativas": 27,
+      "tentativas": 28,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 27,
+      "unicas": 28,
       "acertos_unicas": 0,
       "pct_unicas": 0.0
     },
@@ -57,30 +57,21 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "tentativas": 241,
-      "acertos": 173,
-      "pct": 71.8,
-      "unicas": 214,
-      "acertos_unicas": 163,
-      "pct_unicas": 76.2
+      "tentativas": 274,
+      "acertos": 197,
+      "pct": 71.9,
+      "unicas": 246,
+      "acertos_unicas": 186,
+      "pct_unicas": 75.6
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "tentativas": 236,
-      "acertos": 171,
-      "pct": 72.5,
-      "unicas": 212,
-      "acertos_unicas": 163,
-      "pct_unicas": 76.9
-    },
-    {
-      "materia": "Direito Civil",
-      "tentativas": 34,
-      "acertos": 25,
-      "pct": 73.5,
-      "unicas": 31,
-      "acertos_unicas": 24,
-      "pct_unicas": 77.4
+      "tentativas": 267,
+      "acertos": 192,
+      "pct": 71.9,
+      "unicas": 236,
+      "acertos_unicas": 184,
+      "pct_unicas": 78.0
     },
     {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
@@ -119,6 +110,15 @@
       "pct_unicas": 83.8
     },
     {
+      "materia": "Direito Civil",
+      "tentativas": 59,
+      "acertos": 48,
+      "pct": 81.4,
+      "unicas": 56,
+      "acertos_unicas": 47,
+      "pct_unicas": 83.9
+    },
+    {
       "materia": "Estatística",
       "tentativas": 56,
       "acertos": 45,
@@ -147,12 +147,12 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "tentativas": 880,
-      "acertos": 709,
-      "pct": 80.6,
-      "unicas": 802,
-      "acertos_unicas": 689,
-      "pct_unicas": 85.9
+      "tentativas": 884,
+      "acertos": 713,
+      "pct": 80.7,
+      "unicas": 803,
+      "acertos_unicas": 691,
+      "pct_unicas": 86.1
     },
     {
       "materia": "Direito Previdenciário",
@@ -413,20 +413,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Definições, Limites e Recondução da Dívida (arts. 29 a 31 da LRF)",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 11,
-      "acertos": 9,
-      "pct": 81.8,
-      "unicas": 11,
-      "acertos_unicas": 9,
-      "pct_unicas": 81.8,
-      "ultima": "2026-07-30"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Conceitos, Objeto, Objetivos e Campo de Aplicação (Estrutura Conceitual - Prefácio e caps. 1 a 4)",
       "grupo": "CASP",
       "prio": 1,
@@ -648,6 +634,20 @@
       "acertos_unicas": 33,
       "pct_unicas": 91.7,
       "ultima": "2026-08-02"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Definições, Limites e Recondução da Dívida (arts. 29 a 31 da LRF)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 15,
+      "acertos": 13,
+      "pct": 86.7,
+      "unicas": 12,
+      "acertos_unicas": 11,
+      "pct_unicas": 91.7,
+      "ultima": "2026-08-03"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -1407,6 +1407,20 @@
     },
     {
       "materia": "Contabilidade Geral",
+      "assunto": "Critérios de Avaliação do Estoque (PEPS, UEPS, Média Ponderada)",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 3,
+      "acertos": 2,
+      "pct": 66.7,
+      "unicas": 3,
+      "acertos_unicas": 2,
+      "pct_unicas": 66.7,
+      "ultima": "2026-08-03"
+    },
+    {
+      "materia": "Contabilidade Geral",
       "assunto": "Demonstração do Resultado do Exercício (DRE) e Destinação do Resultado",
       "grupo": "CG",
       "prio": null,
@@ -1425,13 +1439,13 @@
       "grupo": "CASP",
       "prio": 1,
       "c25": 1,
-      "tentativas": 25,
-      "acertos": 17,
-      "pct": 68.0,
-      "unicas": 24,
-      "acertos_unicas": 17,
-      "pct_unicas": 70.8,
-      "ultima": "2026-07-28"
+      "tentativas": 33,
+      "acertos": 23,
+      "pct": 69.7,
+      "unicas": 32,
+      "acertos_unicas": 23,
+      "pct_unicas": 71.9,
+      "ultima": "2026-08-03"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1446,6 +1460,20 @@
       "acertos_unicas": 11,
       "pct_unicas": 73.3,
       "ultima": "2026-08-02"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 16 - Tratamento Contábil para os Estoques",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 24,
+      "acertos": 18,
+      "pct": 75.0,
+      "unicas": 23,
+      "acertos_unicas": 17,
+      "pct_unicas": 73.9,
+      "ultima": "2026-08-03"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1544,20 +1572,6 @@
       "acertos_unicas": 3,
       "pct_unicas": 100.0,
       "ultima": "2026-07-30"
-    },
-    {
-      "materia": "Contabilidade Geral",
-      "assunto": "CPC 16 - Tratamento Contábil para os Estoques",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 2,
-      "acertos": 2,
-      "pct": 100.0,
-      "unicas": 2,
-      "acertos_unicas": 2,
-      "pct_unicas": 100.0,
-      "ultima": "2026-07-23"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1729,20 +1743,6 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "assunto": "Deveres e Direitos (Usuários, Concedente, Concessionária, Licitações - Lei nº 8.987/1995)",
-      "grupo": "DAD",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 10,
-      "acertos": 4,
-      "pct": 40.0,
-      "unicas": 8,
-      "acertos_unicas": 2,
-      "pct_unicas": 25.0,
-      "ultima": "2026-08-02"
-    },
-    {
-      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Atributos ou Características dos Atos Administrativos",
       "grupo": "DAD",
       "prio": null,
@@ -1757,45 +1757,17 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "assunto": "Das Disposições Gerais (arts. 1º a 8º-A da Lei nº 8.429/1992)",
+      "assunto": "Deveres e Direitos (Usuários, Concedente, Concessionária, Licitações - Lei nº 8.987/1995)",
       "grupo": "DAD",
       "prio": 1,
       "c25": 1,
-      "tentativas": 6,
-      "acertos": 3,
+      "tentativas": 12,
+      "acertos": 6,
       "pct": 50.0,
-      "unicas": 4,
-      "acertos_unicas": 2,
-      "pct_unicas": 50.0,
-      "ultima": "2026-08-02"
-    },
-    {
-      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "assunto": "Do Procedimento Administrativo e do Processo Judicial (arts. 14 a 18-A da Lei nº 8.429/1992)",
-      "grupo": "DAD",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 6,
-      "acertos": 4,
-      "pct": 66.7,
-      "unicas": 4,
-      "acertos_unicas": 2,
-      "pct_unicas": 50.0,
-      "ultima": "2026-08-02"
-    },
-    {
-      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "assunto": "Autorização, Permissão e Concessão (Serviços Públicos - Lei nº 8.987/1995)",
-      "grupo": "DAD",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 5,
-      "acertos": 3,
-      "pct": 60.0,
-      "unicas": 4,
-      "acertos_unicas": 2,
-      "pct_unicas": 50.0,
-      "ultima": "2026-08-02"
+      "unicas": 9,
+      "acertos_unicas": 4,
+      "pct_unicas": 44.4,
+      "ultima": "2026-08-03"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -1841,6 +1813,48 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Das Penas (art. 12 da Lei nº 8.429/1992)",
+      "grupo": "DAD",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 7,
+      "acertos": 4,
+      "pct": 57.1,
+      "unicas": 7,
+      "acertos_unicas": 4,
+      "pct_unicas": 57.1,
+      "ultima": "2026-08-03"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Autorização, Permissão e Concessão (Serviços Públicos - Lei nº 8.987/1995)",
+      "grupo": "DAD",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 7,
+      "acertos": 4,
+      "pct": 57.1,
+      "unicas": 5,
+      "acertos_unicas": 3,
+      "pct_unicas": 60.0,
+      "ultima": "2026-08-03"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Do Procedimento Administrativo e do Processo Judicial (arts. 14 a 18-A da Lei nº 8.429/1992)",
+      "grupo": "DAD",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 11,
+      "acertos": 7,
+      "pct": 63.6,
+      "unicas": 8,
+      "acertos_unicas": 5,
+      "pct_unicas": 62.5,
+      "ultima": "2026-08-03"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Das Restrições de Acesso à Informação (arts. 21 a 31 da Lei nº 12.527/2011)",
       "grupo": "DAD",
       "prio": 2,
@@ -1859,13 +1873,13 @@
       "grupo": "DAD",
       "prio": 1,
       "c25": 1,
-      "tentativas": 3,
+      "tentativas": 4,
       "acertos": 2,
-      "pct": 66.7,
+      "pct": 50.0,
       "unicas": 3,
       "acertos_unicas": 2,
       "pct_unicas": 66.7,
-      "ultima": "2026-07-09"
+      "ultima": "2026-08-03"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -1922,20 +1936,6 @@
       "acertos_unicas": 2,
       "pct_unicas": 66.7,
       "ultima": "2026-07-27"
-    },
-    {
-      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "assunto": "Terceiro Setor (OSs, OSCIPs, Sistema S e Fundações de Apoio)",
-      "grupo": "DAD",
-      "prio": 2,
-      "c25": 1,
-      "tentativas": 11,
-      "acertos": 7,
-      "pct": 63.6,
-      "unicas": 10,
-      "acertos_unicas": 7,
-      "pct_unicas": 70.0,
-      "ultima": "2026-07-24"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -2023,17 +2023,45 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "assunto": "Das Penas (art. 12 da Lei nº 8.429/1992)",
+      "assunto": "Das Disposições Gerais (arts. 1º a 8º-A da Lei nº 8.429/1992)",
       "grupo": "DAD",
       "prio": 1,
       "c25": 1,
-      "tentativas": 5,
-      "acertos": 4,
-      "pct": 80.0,
-      "unicas": 5,
-      "acertos_unicas": 4,
-      "pct_unicas": 80.0,
-      "ultima": "2026-07-02"
+      "tentativas": 10,
+      "acertos": 6,
+      "pct": 60.0,
+      "unicas": 6,
+      "acertos_unicas": 5,
+      "pct_unicas": 83.3,
+      "ultima": "2026-08-03"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Terceiro Setor (OSs, OSCIPs, Sistema S e Fundações de Apoio)",
+      "grupo": "DAD",
+      "prio": 2,
+      "c25": 1,
+      "tentativas": 15,
+      "acertos": 11,
+      "pct": 73.3,
+      "unicas": 13,
+      "acertos_unicas": 11,
+      "pct_unicas": 84.6,
+      "ultima": "2026-08-03"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Formas de Extinção (Serviços Públicos - Lei nº 8.987/1995)",
+      "grupo": "DAD",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 7,
+      "acertos": 6,
+      "pct": 85.7,
+      "unicas": 7,
+      "acertos_unicas": 6,
+      "pct_unicas": 85.7,
+      "ultima": "2026-08-03"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -2083,13 +2111,13 @@
       "grupo": "DAD",
       "prio": 1,
       "c25": 1,
-      "tentativas": 19,
-      "acertos": 14,
-      "pct": 73.7,
-      "unicas": 13,
-      "acertos_unicas": 13,
-      "pct_unicas": 100.0,
-      "ultima": "2026-07-06"
+      "tentativas": 27,
+      "acertos": 20,
+      "pct": 74.1,
+      "unicas": 21,
+      "acertos_unicas": 19,
+      "pct_unicas": 90.5,
+      "ultima": "2026-08-03"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -2132,20 +2160,6 @@
       "acertos_unicas": 6,
       "pct_unicas": 100.0,
       "ultima": "2026-07-27"
-    },
-    {
-      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "assunto": "Formas de Extinção (Serviços Públicos - Lei nº 8.987/1995)",
-      "grupo": "DAD",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 4,
-      "acertos": 4,
-      "pct": 100.0,
-      "unicas": 4,
-      "acertos_unicas": 4,
-      "pct_unicas": 100.0,
-      "ultima": "2026-07-09"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -2468,6 +2482,34 @@
       "acertos_unicas": 11,
       "pct_unicas": 73.3,
       "ultima": "2026-07-30"
+    },
+    {
+      "materia": "Direito Civil",
+      "assunto": "Da Personalidade e da Capacidade (arts. 1º a 10)",
+      "grupo": "DCIV",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 13,
+      "acertos": 11,
+      "pct": 84.6,
+      "unicas": 13,
+      "acertos_unicas": 11,
+      "pct_unicas": 84.6,
+      "ultima": "2026-08-03"
+    },
+    {
+      "materia": "Direito Civil",
+      "assunto": "Bens Públicos (arts. 98 a 103)",
+      "grupo": "DCIV",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 12,
+      "acertos": 12,
+      "pct": 100.0,
+      "unicas": 12,
+      "acertos_unicas": 12,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-03"
     },
     {
       "materia": "Direito Civil",
@@ -3161,13 +3203,13 @@
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 27,
+      "tentativas": 28,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 27,
+      "unicas": 28,
       "acertos_unicas": 0,
       "pct_unicas": 0.0,
-      "ultima": "2026-07-31"
+      "ultima": "2026-08-03"
     },
     {
       "materia": "TI - Banco de Dados",

@@ -1,6 +1,6 @@
 // Gerado por 06_Scripts/gerar_sessoes_tec.py - NAO editar a mao.
 window.SESSOES_TEC = {
- "gerado_em": "2026-08-03T10:24:15",
+ "gerado_em": "2026-08-04T09:11:36",
  "fonte": "07_TEC/TEC_Captura/tec_registros_*.json (1 sessão por dia+assunto)",
  "sessoes": [
   {
@@ -4201,6 +4201,126 @@ window.SESSOES_TEC = {
    "minutos": 3,
    "qResolvidas": 2,
    "qAcertadas": 2,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-03~bens-publicos-arts-98-a-103-88e08d",
+   "origem": "tec",
+   "data": "2026-08-03",
+   "mat": "CIVIL",
+   "topicId": null,
+   "assuntoLivre": "Bens Públicos (arts. 98 a 103)",
+   "minutos": 11,
+   "qResolvidas": 12,
+   "qAcertadas": 12,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-03~criterios-de-avaliacao-do-estoque-peps-ueps-media-ponderada-1433f5",
+   "origem": "tec",
+   "data": "2026-08-03",
+   "mat": "CG",
+   "topicId": null,
+   "assuntoLivre": "Critérios de Avaliação do Estoque (PEPS, UEPS, Média Ponderada)",
+   "minutos": 8,
+   "qResolvidas": 3,
+   "qAcertadas": 2,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-03~da-personalidade-e-da-capacidade-arts-1-a-10-9a6ae6",
+   "origem": "tec",
+   "data": "2026-08-03",
+   "mat": "CIVIL",
+   "topicId": null,
+   "assuntoLivre": "Da Personalidade e da Capacidade (arts. 1º a 10)",
+   "minutos": 11,
+   "qResolvidas": 13,
+   "qAcertadas": 11,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-03~sem-assunto-177bb3",
+   "origem": "tec",
+   "data": "2026-08-03",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "(sem assunto no TEC)",
+   "minutos": 1,
+   "qResolvidas": 1,
+   "qAcertadas": 0,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-03~17",
+   "origem": "tec",
+   "data": "2026-08-03",
+   "mat": "DFin",
+   "topicId": "17",
+   "assuntoLivre": "",
+   "minutos": 3,
+   "qResolvidas": 4,
+   "qAcertadas": 4,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-03~33",
+   "origem": "tec",
+   "data": "2026-08-03",
+   "mat": "CG",
+   "topicId": "33",
+   "assuntoLivre": "",
+   "minutos": 10,
+   "qResolvidas": 8,
+   "qAcertadas": 6,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-03~37",
+   "origem": "tec",
+   "data": "2026-08-03",
+   "mat": "CG",
+   "topicId": "37",
+   "assuntoLivre": "",
+   "minutos": 46,
+   "qResolvidas": 22,
+   "qAcertadas": 16,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-03~46",
+   "origem": "tec",
+   "data": "2026-08-03",
+   "mat": "DAD",
+   "topicId": "46",
+   "assuntoLivre": "",
+   "minutos": 24,
+   "qResolvidas": 19,
+   "qAcertadas": 12,
+   "obs": "reconstruída do TEC (4 assuntos)"
+  },
+  {
+   "uid": "TEC~2026-08-03~50",
+   "origem": "tec",
+   "data": "2026-08-03",
+   "mat": "DAD",
+   "topicId": "50",
+   "assuntoLivre": "",
+   "minutos": 8,
+   "qResolvidas": 8,
+   "qAcertadas": 5,
+   "obs": "reconstruída do TEC (4 assuntos)"
+  },
+  {
+   "uid": "TEC~2026-08-03~53",
+   "origem": "tec",
+   "data": "2026-08-03",
+   "mat": "DAD",
+   "topicId": "53",
+   "assuntoLivre": "",
+   "minutos": 5,
+   "qResolvidas": 4,
+   "qAcertadas": 4,
    "obs": "reconstruída do TEC"
   }
  ]
