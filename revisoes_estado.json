@@ -34,7 +34,8 @@
     "tec_registros_2026-08-03.json",
     "tec_registros_2026-08-02.json",
     "tec_registros_2026-08-04 (1).json",
-    "tec_registros_2026-08-04.json"
+    "tec_registros_2026-08-04.json",
+    "tec_registros_2026-08-05.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -157,10 +158,16 @@
         "d6": {
           "prevista": "2026-08-04",
           "emitida": "2026-08-04",
-          "resultado": null
+          "resultado": {
+            "pct": 83,
+            "questoes": 6,
+            "limiar": 60,
+            "aprovada": true,
+            "data": "2026-08-05"
+          }
         },
         "d14": {
-          "prevista": "2026-08-12",
+          "prevista": "2026-08-13",
           "emitida": null
         },
         "d28": {
@@ -212,7 +219,7 @@
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-07",
+          "prevista": "2026-08-10",
           "emitida": null
         },
         "d28": {
@@ -914,31 +921,30 @@
     "Auditoria Governamental e Controle||Controle de Qualidade da Auditoria Governamental": {
       "materia": "Auditoria Governamental e Controle",
       "assunto": "Controle de Qualidade da Auditoria Governamental",
-      "data_base": "2026-07-08",
+      "data_base": "2026-08-05",
       "cadeia_completa": true,
       "alvos_origem": [
-        "3257336",
-        "3601507"
+        "3257336"
       ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-08",
-          "emitida": "2026-07-08"
+          "prevista": "2026-08-05",
+          "emitida": "2026-08-05"
         },
         "d6": {
-          "prevista": "2026-07-14",
-          "emitida": "2026-07-14",
+          "prevista": "2026-08-11",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-22",
-          "emitida": "2026-07-22"
+          "prevista": "2026-08-19",
+          "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-05",
-          "emitida": "2026-08-03"
+          "prevista": "2026-08-28",
+          "emitida": null
         }
       }
     },
@@ -1037,34 +1043,32 @@
     "Auditoria Governamental e Controle||Risco de Auditoria. Confiança e Asseguração em Auditoria": {
       "materia": "Auditoria Governamental e Controle",
       "assunto": "Risco de Auditoria. Confiança e Asseguração em Auditoria",
-      "data_base": "2026-07-08",
+      "data_base": "2026-08-05",
       "cadeia_completa": true,
       "alvos_origem": [
-        "3231616",
-        "3258504",
-        "2887869",
-        "2709687",
-        "2709693"
+        "2876948",
+        "2544325",
+        "2049958"
       ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-08",
-          "emitida": "2026-07-08"
+          "prevista": "2026-08-05",
+          "emitida": "2026-08-05"
         },
         "d6": {
-          "prevista": "2026-07-14",
-          "emitida": "2026-07-14",
+          "prevista": "2026-08-11",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-22",
-          "emitida": "2026-07-22"
+          "prevista": "2026-08-19",
+          "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-05",
-          "emitida": "2026-08-03"
+          "prevista": "2026-08-28",
+          "emitida": null
         }
       }
     },
@@ -1156,7 +1160,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-07",
+          "prevista": "2026-08-10",
           "emitida": null
         }
       }
@@ -1377,7 +1381,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-18",
+          "prevista": "2026-08-19",
           "emitida": null
         }
       }
@@ -1753,7 +1757,7 @@
         },
         "d14": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-05"
         },
         "d28": {
           "prevista": "2026-08-19",
@@ -1897,7 +1901,7 @@
           "emitida": "2026-07-29"
         },
         "d28": {
-          "prevista": "2026-08-12",
+          "prevista": "2026-08-13",
           "emitida": null
         }
       }
@@ -2782,11 +2786,11 @@
         "1924580"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-05"
         }
       }
     },
@@ -2799,11 +2803,11 @@
         "2768932"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-05"
         }
       }
     },
@@ -2818,11 +2822,11 @@
         "2695270"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-05"
         }
       }
     },
@@ -2848,7 +2852,7 @@
         },
         "d14": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-05"
         },
         "d28": {
           "prevista": "2026-08-19",
@@ -2881,7 +2885,7 @@
         },
         "d14": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-05"
         },
         "d28": {
           "prevista": "2026-08-19",
@@ -2913,7 +2917,7 @@
         },
         "d14": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-05"
         },
         "d28": {
           "prevista": "2026-08-19",
@@ -2942,7 +2946,7 @@
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-05",
+          "prevista": "2026-08-06",
           "emitida": null
         },
         "d28": {
@@ -2980,11 +2984,11 @@
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-05",
+          "prevista": "2026-08-06",
           "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-19",
+          "prevista": "2026-08-20",
           "emitida": null
         }
       }
@@ -3002,7 +3006,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-05",
+          "prevista": "2026-08-06",
           "emitida": null
         }
       }
@@ -3019,7 +3023,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-05",
+          "prevista": "2026-08-06",
           "emitida": null
         }
       }
@@ -3037,7 +3041,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-05",
+          "prevista": "2026-08-06",
           "emitida": null
         }
       }
@@ -3067,7 +3071,7 @@
           "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-19",
+          "prevista": "2026-08-20",
           "emitida": null
         }
       }
@@ -3239,7 +3243,7 @@
           }
         },
         "d14": {
-          "prevista": "2026-08-06",
+          "prevista": "2026-08-07",
           "emitida": null
         },
         "d28": {
@@ -3261,7 +3265,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-06",
+          "prevista": "2026-08-07",
           "emitida": null
         }
       }
@@ -3282,7 +3286,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-06",
+          "prevista": "2026-08-07",
           "emitida": null
         }
       }
@@ -3360,7 +3364,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-07",
+          "prevista": "2026-08-10",
           "emitida": null
         }
       }
@@ -3375,7 +3379,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-07",
+          "prevista": "2026-08-10",
           "emitida": null
         }
       }
@@ -3392,7 +3396,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-07",
+          "prevista": "2026-08-10",
           "emitida": null
         }
       }
@@ -3412,7 +3416,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-07",
+          "prevista": "2026-08-10",
           "emitida": null
         }
       }
@@ -3612,7 +3616,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-11",
+          "prevista": "2026-08-12",
           "emitida": null
         }
       }
@@ -3630,7 +3634,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-11",
+          "prevista": "2026-08-12",
           "emitida": null
         }
       }
@@ -3647,7 +3651,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-11",
+          "prevista": "2026-08-12",
           "emitida": null
         }
       }
@@ -3662,7 +3666,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-11",
+          "prevista": "2026-08-12",
           "emitida": null
         }
       }
@@ -3677,7 +3681,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-11",
+          "prevista": "2026-08-12",
           "emitida": null
         }
       }
@@ -3692,7 +3696,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-11",
+          "prevista": "2026-08-12",
           "emitida": null
         }
       }
@@ -3859,7 +3863,7 @@
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-12",
+          "prevista": "2026-08-13",
           "emitida": null
         },
         "d28": {
@@ -3890,7 +3894,7 @@
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-12",
+          "prevista": "2026-08-13",
           "emitida": null
         },
         "d28": {
@@ -3918,7 +3922,7 @@
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-12",
+          "prevista": "2026-08-13",
           "emitida": null
         },
         "d28": {
@@ -3946,10 +3950,16 @@
         "d6": {
           "prevista": "2026-08-04",
           "emitida": "2026-08-04",
-          "resultado": null
+          "resultado": {
+            "pct": 100,
+            "questoes": 5,
+            "limiar": 60,
+            "aprovada": true,
+            "data": "2026-08-05"
+          }
         },
         "d14": {
-          "prevista": "2026-08-12",
+          "prevista": "2026-08-13",
           "emitida": null
         },
         "d28": {
@@ -3976,11 +3986,11 @@
         },
         "d6": {
           "prevista": "2026-08-05",
-          "emitida": null,
+          "emitida": "2026-08-05",
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-12",
+          "prevista": "2026-08-13",
           "emitida": null
         },
         "d28": {
@@ -4106,7 +4116,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-13",
+          "prevista": "2026-08-14",
           "emitida": null
         }
       }
@@ -4125,7 +4135,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-13",
+          "prevista": "2026-08-14",
           "emitida": null
         }
       }
@@ -4145,7 +4155,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-13",
+          "prevista": "2026-08-14",
           "emitida": null
         }
       }
@@ -4252,7 +4262,7 @@
           "emitida": "2026-07-31"
         },
         "d6": {
-          "prevista": "2026-08-06",
+          "prevista": "2026-08-07",
           "emitida": null,
           "resultado": null
         },
@@ -4280,7 +4290,7 @@
           "emitida": "2026-07-31"
         },
         "d6": {
-          "prevista": "2026-08-06",
+          "prevista": "2026-08-07",
           "emitida": null,
           "resultado": null
         },
@@ -4342,7 +4352,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-14",
+          "prevista": "2026-08-17",
           "emitida": null
         }
       }
@@ -4359,7 +4369,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-14",
+          "prevista": "2026-08-17",
           "emitida": null
         }
       }
@@ -4376,7 +4386,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-14",
+          "prevista": "2026-08-17",
           "emitida": null
         }
       }
@@ -4414,7 +4424,7 @@
           "emitida": "2026-07-31"
         },
         "d6": {
-          "prevista": "2026-08-06",
+          "prevista": "2026-08-07",
           "emitida": null,
           "resultado": null
         },
@@ -4509,7 +4519,7 @@
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-17",
+          "prevista": "2026-08-18",
           "emitida": null
         },
         "d28": {
@@ -4566,10 +4576,10 @@
       "etapas": {
         "d1": {
           "prevista": "2026-08-05",
-          "emitida": null
+          "emitida": "2026-08-05"
         },
         "d6": {
-          "prevista": "2026-08-10",
+          "prevista": "2026-08-11",
           "emitida": null,
           "resultado": null
         },
@@ -4615,68 +4625,250 @@
           "emitida": null
         }
       }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Bases de Mensuração de Ativos e Passivos (MCASP e NBC TSP EC)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Bases de Mensuração de Ativos e Passivos (MCASP e NBC TSP EC)",
+      "data_base": "2026-08-05",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "2791899",
+        "2687902"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-08-05",
+          "emitida": "2026-08-05"
+        },
+        "d6": {
+          "prevista": "2026-08-11",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-19",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-28",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Receita de Transação sem Contraprestação (MCASP e NBC TSP 01)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Receita de Transação sem Contraprestação (MCASP e NBC TSP 01)",
+      "data_base": "2026-08-05",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3994402",
+        "2709645"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-08-05",
+          "emitida": "2026-08-05"
+        },
+        "d6": {
+          "prevista": "2026-08-11",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-19",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-28",
+          "emitida": null
+        }
+      }
+    },
+    "AFO, Direito Financeiro e Contabilidade Pública||Redução ao Valor Recuperável (MCASP, NBC TSP 09 e 10)": {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Redução ao Valor Recuperável (MCASP, NBC TSP 09 e 10)",
+      "data_base": "2026-08-05",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3870639",
+        "2292849",
+        "2687912"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-08-05",
+          "emitida": "2026-08-05"
+        },
+        "d6": {
+          "prevista": "2026-08-11",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-19",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-28",
+          "emitida": null
+        }
+      }
+    },
+    "Contabilidade Geral||Demonstração de Fluxo de Caixa (DFC - CPC 03, Lei 6.404, art. 188, I)": {
+      "materia": "Contabilidade Geral",
+      "assunto": "Demonstração de Fluxo de Caixa (DFC - CPC 03, Lei 6.404, art. 188, I)",
+      "data_base": "2026-08-05",
+      "cadeia_completa": true,
+      "alvos_origem": [
+        "3823673",
+        "3869426",
+        "3737514",
+        "3093568"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-08-06",
+          "emitida": null
+        },
+        "d6": {
+          "prevista": "2026-08-12",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-19",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-28",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Processual Civil||Da Ação (arts. 17 a 20)": {
+      "materia": "Direito Processual Civil",
+      "assunto": "Da Ação (arts. 17 a 20)",
+      "data_base": "2026-08-05",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3824523",
+        "3399948",
+        "3442898",
+        "2943391"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-20",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Processual Civil||Da Forma dos Atos Processuais (arts. 188 a 211)": {
+      "materia": "Direito Processual Civil",
+      "assunto": "Da Forma dos Atos Processuais (arts. 188 a 211)",
+      "data_base": "2026-08-05",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3822168",
+        "2215412"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-20",
+          "emitida": null
+        }
+      }
+    },
+    "Direito Processual Civil||Da Prova Pericial (arts. 464 a 480)": {
+      "materia": "Direito Processual Civil",
+      "assunto": "Da Prova Pericial (arts. 464 a 480)",
+      "data_base": "2026-08-05",
+      "cadeia_completa": false,
+      "alvos_origem": [
+        "3443129"
+      ],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-20",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-08-04",
+    "data": "2026-08-05",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Financeiro",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Ciclo Orçamentário",
+        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Imobilizado (MCASP e NBC TSP 07)",
         "d14"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Fonte / Destinação de Recursos",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Estágios da Receita Pública",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Introdução às DCASP (Parte V, Capítulo 1 do MCASP e NBC TSP 11)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||LDO - Lei de Diretrizes Orçamentárias (CF/1988 e Lei nº 4.320/1964)",
-        "d14"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Patrimônio Público",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Regimes Orçamentário e Patrimonial e Exercício Financeiro",
-        "d6"
-      ],
-      [
-        "Auditoria Governamental e Controle||Entidades de Fiscalização Superior",
-        "d6"
-      ],
-      [
-        "Auditoria Governamental e Controle||Princípios, Propósitos e Abrangência da Auditoria Governamental",
-        "d6"
-      ],
-      [
-        "Auditoria Governamental e Controle||Ética e Sigilo Profissional",
-        "d6"
-      ],
-      [
-        "Auditoria Privada||Fraude e Erro (Auditoria)",
-        "d6"
-      ],
-      [
-        "Contabilidade Geral||Ativos Intangíveis (CPC 04, Lei 6.404)",
-        "d14"
-      ],
-      [
-        "Contabilidade Geral||CPC 16 - Tratamento Contábil para os Estoques",
+        "AFO, Direito Financeiro e Contabilidade Pública||Bases de Mensuração de Ativos e Passivos (MCASP e NBC TSP EC)",
         "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Escrituração Contábil Pública",
+        "d14"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Receita de Transação sem Contraprestação (MCASP e NBC TSP 01)",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Redução ao Valor Recuperável (MCASP, NBC TSP 09 e 10)",
+        "d1"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Técnicas/Espécies Orçamentárias (Orçamento Programa, Tradicional, Participativo, Base Zero, etc)",
+        "d14"
+      ],
+      [
+        "Auditoria Governamental e Controle||Controle de Qualidade da Auditoria Governamental",
+        "d1"
+      ],
+      [
+        "Auditoria Governamental e Controle||Risco de Auditoria. Confiança e Asseguração em Auditoria",
+        "d1"
+      ],
+      [
+        "Auditoria Privada||Amostragem em Auditoria",
+        "d14"
+      ],
+      [
+        "Contabilidade Geral||Critérios de Avaliação do Estoque (PEPS, UEPS, Média Ponderada)",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||Demonstração do Resultado do Exercício (DRE) e Destinação do Resultado",
+        "d6"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Jurisprudência dos Tribunais Superiores sobre Agente Públicos",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Poder de Polícia",
+        "d14"
+      ],
+      [
+        "Direito Administrativo (Doutrina e Leis Federais)||Terceiro Setor (OSs, OSCIPs, Sistema S e Fundações de Apoio)",
+        "d14"
       ]
     ],
-    "confirmada": "2026-08-04"
+    "confirmada": "2026-08-05"
   }
 }
