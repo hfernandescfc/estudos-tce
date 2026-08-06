@@ -1,13 +1,13 @@
 {
-  "gerado_em": "2026-08-05T08:06:35",
+  "gerado_em": "2026-08-06T07:53:02",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 2598,
-    "acertos": 1999,
-    "pct": 76.9,
-    "unicas": 2324,
-    "acertos_unicas": 1891,
-    "pct_unicas": 81.4
+    "tentativas": 2715,
+    "acertos": 2090,
+    "pct": 77.0,
+    "unicas": 2440,
+    "acertos_unicas": 1981,
+    "pct_unicas": 81.2
   },
   "materias": [
     {
@@ -20,15 +20,6 @@
       "pct_unicas": 0.0
     },
     {
-      "materia": "Direito Tributário",
-      "tentativas": 2,
-      "acertos": 1,
-      "pct": 50.0,
-      "unicas": 2,
-      "acertos_unicas": 1,
-      "pct_unicas": 50.0
-    },
-    {
       "materia": "TI - Banco de Dados",
       "tentativas": 23,
       "acertos": 12,
@@ -39,12 +30,12 @@
     },
     {
       "materia": "Direito Processual Civil",
-      "tentativas": 95,
-      "acertos": 67,
-      "pct": 70.5,
-      "unicas": 92,
-      "acertos_unicas": 67,
-      "pct_unicas": 72.8
+      "tentativas": 110,
+      "acertos": 75,
+      "pct": 68.2,
+      "unicas": 107,
+      "acertos_unicas": 75,
+      "pct_unicas": 70.1
     },
     {
       "materia": "Análise das Demonstrações Contábeis",
@@ -57,12 +48,12 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "tentativas": 300,
-      "acertos": 219,
-      "pct": 73.0,
-      "unicas": 272,
-      "acertos_unicas": 208,
-      "pct_unicas": 76.5
+      "tentativas": 320,
+      "acertos": 234,
+      "pct": 73.1,
+      "unicas": 291,
+      "acertos_unicas": 222,
+      "pct_unicas": 76.3
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -101,6 +92,15 @@
       "pct_unicas": 83.3
     },
     {
+      "materia": "Estatística",
+      "tentativas": 66,
+      "acertos": 53,
+      "pct": 80.3,
+      "unicas": 61,
+      "acertos_unicas": 51,
+      "pct_unicas": 83.6
+    },
+    {
       "materia": "Direito Civil",
       "tentativas": 59,
       "acertos": 48,
@@ -110,22 +110,22 @@
       "pct_unicas": 83.9
     },
     {
-      "materia": "Estatística",
-      "tentativas": 56,
-      "acertos": 45,
-      "pct": 80.4,
-      "unicas": 51,
-      "acertos_unicas": 43,
-      "pct_unicas": 84.3
+      "materia": "Direito Tributário",
+      "tentativas": 13,
+      "acertos": 11,
+      "pct": 84.6,
+      "unicas": 13,
+      "acertos_unicas": 11,
+      "pct_unicas": 84.6
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "tentativas": 906,
-      "acertos": 728,
-      "pct": 80.4,
-      "unicas": 825,
-      "acertos_unicas": 706,
-      "pct_unicas": 85.6
+      "tentativas": 967,
+      "acertos": 778,
+      "pct": 80.5,
+      "unicas": 886,
+      "acertos_unicas": 756,
+      "pct_unicas": 85.3
     },
     {
       "materia": "Legislação Penal e Processual Penal Especial",
@@ -469,6 +469,20 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Sem assunto",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 76,
+      "acertos": 63,
+      "pct": 82.9,
+      "unicas": 76,
+      "acertos_unicas": 63,
+      "pct_unicas": 82.9,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "LOA - Lei Orçamentária Anual (CF/1988 e Lei nº 4.320/1964)",
       "grupo": "DFin",
       "prio": 1,
@@ -620,20 +634,6 @@
       "acertos_unicas": 8,
       "pct_unicas": 88.9,
       "ultima": "2026-07-28"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Sem assunto",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 20,
-      "acertos": 18,
-      "pct": 90.0,
-      "unicas": 20,
-      "acertos_unicas": 18,
-      "pct_unicas": 90.0,
-      "ultima": "2026-07-24"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -816,6 +816,20 @@
       "acertos_unicas": 5,
       "pct_unicas": 100.0,
       "ultima": "2026-07-17"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Tópicos Mesclados de PPA, LDO e LOA",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 5,
+      "acertos": 5,
+      "pct": 100.0,
+      "unicas": 5,
+      "acertos_unicas": 5,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-05"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -1467,13 +1481,27 @@
       "grupo": "CG",
       "prio": null,
       "c25": 0,
-      "tentativas": 20,
-      "acertos": 14,
-      "pct": 70.0,
-      "unicas": 20,
-      "acertos_unicas": 14,
-      "pct_unicas": 70.0,
-      "ultima": "2026-07-29"
+      "tentativas": 25,
+      "acertos": 17,
+      "pct": 68.0,
+      "unicas": 25,
+      "acertos_unicas": 17,
+      "pct_unicas": 68.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 16 - Tratamento Contábil para os Estoques",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 25,
+      "acertos": 18,
+      "pct": 72.0,
+      "unicas": 24,
+      "acertos_unicas": 17,
+      "pct_unicas": 70.8,
+      "ultima": "2026-08-05"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1502,20 +1530,6 @@
       "acertos_unicas": 11,
       "pct_unicas": 73.3,
       "ultima": "2026-08-02"
-    },
-    {
-      "materia": "Contabilidade Geral",
-      "assunto": "CPC 16 - Tratamento Contábil para os Estoques",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 24,
-      "acertos": 18,
-      "pct": 75.0,
-      "unicas": 23,
-      "acertos_unicas": 17,
-      "pct_unicas": 73.9,
-      "ultima": "2026-08-03"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1586,6 +1600,20 @@
       "acertos_unicas": 22,
       "pct_unicas": 84.6,
       "ultima": "2026-08-04"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 23: Políticas Contábeis, Mudanças de Estimativa e Retificação de Erro",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 15,
+      "acertos": 13,
+      "pct": 86.7,
+      "unicas": 14,
+      "acertos_unicas": 12,
+      "pct_unicas": 85.7,
+      "ultima": "2026-08-05"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1702,20 +1730,6 @@
     {
       "materia": "Contabilidade Geral",
       "assunto": "Provisões, Passivos e Ativos Contingentes (CPC 25, Lei 6.404)",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 1,
-      "acertos": 1,
-      "pct": 100.0,
-      "unicas": 1,
-      "acertos_unicas": 1,
-      "pct_unicas": 100.0,
-      "ultima": "2026-07-23"
-    },
-    {
-      "materia": "Contabilidade Geral",
-      "assunto": "CPC 23: Políticas Contábeis, Mudanças de Estimativa e Retificação de Erro",
       "grupo": "CG",
       "prio": null,
       "c25": 0,
@@ -3031,6 +3045,34 @@
     },
     {
       "materia": "Direito Processual Civil",
+      "assunto": "Do Depoimento Pessoal (arts. 385 a 388)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 0,
+      "pct": 0.0,
+      "unicas": 1,
+      "acertos_unicas": 0,
+      "pct_unicas": 0.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Processual Civil",
+      "assunto": "Dos Prazos (arts. 218 a 235)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 2,
+      "pct": 33.3,
+      "unicas": 6,
+      "acertos_unicas": 2,
+      "pct_unicas": 33.3,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Processual Civil",
       "assunto": "Da Ação (arts. 17 a 20)",
       "grupo": "",
       "prio": null,
@@ -3045,6 +3087,20 @@
     },
     {
       "materia": "Direito Processual Civil",
+      "assunto": "Da Prova Testemunhal (arts. 442 a 463)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 1,
+      "pct": 50.0,
+      "unicas": 2,
+      "acertos_unicas": 1,
+      "pct_unicas": 50.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Processual Civil",
       "assunto": "Tópicos Mesclados do Capítulo \"das Provas\"",
       "grupo": "",
       "prio": null,
@@ -3056,6 +3112,20 @@
       "acertos_unicas": 4,
       "pct_unicas": 66.7,
       "ultima": "2026-08-02"
+    },
+    {
+      "materia": "Direito Processual Civil",
+      "assunto": "Da Jurisdição (art. 16)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 3,
+      "acertos": 2,
+      "pct": 66.7,
+      "unicas": 3,
+      "acertos_unicas": 2,
+      "pct_unicas": 66.7,
+      "ultima": "2026-08-05"
     },
     {
       "materia": "Direito Processual Civil",
@@ -3129,7 +3199,21 @@
     },
     {
       "materia": "Direito Processual Civil",
-      "assunto": "Dos Prazos (arts. 218 a 235)",
+      "assunto": "Da Produção Antecipada da Prova (arts. 381 a 383)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 2,
+      "pct": 100.0,
+      "unicas": 2,
+      "acertos_unicas": 2,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Processual Civil",
+      "assunto": "Da Confissão (arts. 389 a 395)",
       "grupo": "",
       "prio": null,
       "c25": 0,
@@ -3139,7 +3223,21 @@
       "unicas": 1,
       "acertos_unicas": 1,
       "pct_unicas": 100.0,
-      "ultima": "2026-08-04"
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Processual Civil",
+      "assunto": "Da Prova Documental (arts. 405 a 438)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-05"
     },
     {
       "materia": "Direito Tributário",
@@ -3157,6 +3255,48 @@
     },
     {
       "materia": "Direito Tributário",
+      "assunto": "Repartição Constitucional de Receitas Tributárias (arts. 157 a 162 da CF/1988)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 0,
+      "pct": 0.0,
+      "unicas": 1,
+      "acertos_unicas": 0,
+      "pct_unicas": 0.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Tributário",
+      "assunto": "Fiscalização Tributária (arts. 194 a 200 do CTN)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 2,
+      "pct": 100.0,
+      "unicas": 2,
+      "acertos_unicas": 2,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Tributário",
+      "assunto": "Impostos (Conceito e Classificações)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 2,
+      "pct": 100.0,
+      "unicas": 2,
+      "acertos_unicas": 2,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Tributário",
       "assunto": "Jurisprudência dos Tribunais Superiores sobre Tópicos Mesclados e/ou Outros Assuntos Tributários",
       "grupo": "",
       "prio": null,
@@ -3168,6 +3308,90 @@
       "acertos_unicas": 1,
       "pct_unicas": 100.0,
       "ultima": "2026-07-24"
+    },
+    {
+      "materia": "Direito Tributário",
+      "assunto": "Princípios Tributários",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Tributário",
+      "assunto": "Suspensão da Exigibilidade do Crédito Tributário (arts. 151 a 155-A do CTN)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Tributário",
+      "assunto": "Solidariedade (arts. 124 e 125 do CTN)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Tributário",
+      "assunto": "Garantias e Privilégios do Crédito Tributário (arts. 183 a 193 do CTN)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Tributário",
+      "assunto": "Jurisprudência dos Tribunais Superiores sobre a Lei nº 6.830/1980 (Lei de Execução Fiscal)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Direito Tributário",
+      "assunto": "Contribuições de Melhoria (CF/1988 e CTN)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-05"
     },
     {
       "materia": "Estatística",
@@ -3196,6 +3420,34 @@
       "acertos_unicas": 8,
       "pct_unicas": 80.0,
       "ultima": "2026-08-02"
+    },
+    {
+      "materia": "Estatística",
+      "assunto": "Intervalo de Confiança para a Proporção",
+      "grupo": "Estat",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 5,
+      "acertos": 4,
+      "pct": 80.0,
+      "unicas": 5,
+      "acertos_unicas": 4,
+      "pct_unicas": 80.0,
+      "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Estatística",
+      "assunto": "Teste de Qui-quadrado",
+      "grupo": "Estat",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 5,
+      "acertos": 4,
+      "pct": 80.0,
+      "unicas": 5,
+      "acertos_unicas": 4,
+      "pct_unicas": 80.0,
+      "ultima": "2026-08-05"
     },
     {
       "materia": "Estatística",
