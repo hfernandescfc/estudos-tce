@@ -1,18 +1,18 @@
 {
-  "gerado_em": "2026-08-06T07:53:02",
+  "gerado_em": "2026-08-07T08:23:05",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 2715,
-    "acertos": 2090,
-    "pct": 77.0,
-    "unicas": 2440,
-    "acertos_unicas": 1981,
-    "pct_unicas": 81.2
+    "tentativas": 2805,
+    "acertos": 2163,
+    "pct": 77.1,
+    "unicas": 2526,
+    "acertos_unicas": 2054,
+    "pct_unicas": 81.3
   },
   "materias": [
     {
       "materia": "Sem materia",
-      "tentativas": 30,
+      "tentativas": 31,
       "acertos": 0,
       "pct": 0.0,
       "unicas": 30,
@@ -48,21 +48,21 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "tentativas": 320,
-      "acertos": 234,
-      "pct": 73.1,
-      "unicas": 291,
-      "acertos_unicas": 222,
-      "pct_unicas": 76.3
+      "tentativas": 337,
+      "acertos": 248,
+      "pct": 73.6,
+      "unicas": 305,
+      "acertos_unicas": 236,
+      "pct_unicas": 77.4
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "tentativas": 267,
-      "acertos": 192,
-      "pct": 71.9,
-      "unicas": 236,
-      "acertos_unicas": 184,
-      "pct_unicas": 78.0
+      "tentativas": 312,
+      "acertos": 228,
+      "pct": 73.1,
+      "unicas": 281,
+      "acertos_unicas": 220,
+      "pct_unicas": 78.3
     },
     {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
@@ -93,21 +93,12 @@
     },
     {
       "materia": "Estatística",
-      "tentativas": 66,
-      "acertos": 53,
-      "pct": 80.3,
-      "unicas": 61,
-      "acertos_unicas": 51,
-      "pct_unicas": 83.6
-    },
-    {
-      "materia": "Direito Civil",
-      "tentativas": 59,
-      "acertos": 48,
-      "pct": 81.4,
-      "unicas": 56,
-      "acertos_unicas": 47,
-      "pct_unicas": 83.9
+      "tentativas": 73,
+      "acertos": 59,
+      "pct": 80.8,
+      "unicas": 68,
+      "acertos_unicas": 57,
+      "pct_unicas": 83.8
     },
     {
       "materia": "Direito Tributário",
@@ -137,13 +128,22 @@
       "pct_unicas": 85.7
     },
     {
+      "materia": "Direito Civil",
+      "tentativas": 74,
+      "acertos": 62,
+      "pct": 83.8,
+      "unicas": 71,
+      "acertos_unicas": 61,
+      "pct_unicas": 85.9
+    },
+    {
       "materia": "Auditoria Privada",
-      "tentativas": 119,
-      "acertos": 98,
-      "pct": 82.4,
-      "unicas": 111,
-      "acertos_unicas": 97,
-      "pct_unicas": 87.4
+      "tentativas": 124,
+      "acertos": 101,
+      "pct": 81.5,
+      "unicas": 116,
+      "acertos_unicas": 100,
+      "pct_unicas": 86.2
     },
     {
       "materia": "Auditoria Governamental e Controle",
@@ -1169,6 +1169,20 @@
     },
     {
       "materia": "Auditoria Privada",
+      "assunto": "Documentação de Auditoria/Papéis de Trabalho",
+      "grupo": "AUD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 18,
+      "acertos": 15,
+      "pct": 83.3,
+      "unicas": 18,
+      "acertos_unicas": 15,
+      "pct_unicas": 83.3,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Auditoria Privada",
       "assunto": "Amostragem em Auditoria",
       "grupo": "AUD",
       "prio": null,
@@ -1208,20 +1222,6 @@
       "acertos_unicas": 12,
       "pct_unicas": 92.3,
       "ultima": "2026-08-04"
-    },
-    {
-      "materia": "Auditoria Privada",
-      "assunto": "Documentação de Auditoria/Papéis de Trabalho",
-      "grupo": "AUD",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 13,
-      "acertos": 12,
-      "pct": 92.3,
-      "unicas": 13,
-      "acertos_unicas": 12,
-      "pct_unicas": 92.3,
-      "ultima": "2026-07-30"
     },
     {
       "materia": "Auditoria Privada",
@@ -1407,20 +1407,6 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "assunto": "Demonstração do Valor Adicionado (DVA - CPC 09, Lei 6.404, art. 188, II)",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 18,
-      "acertos": 7,
-      "pct": 38.9,
-      "unicas": 15,
-      "acertos_unicas": 7,
-      "pct_unicas": 46.7,
-      "ultima": "2026-07-24"
-    },
-    {
-      "materia": "Contabilidade Geral",
       "assunto": "Propriedades para Investimento (CPC 28)",
       "grupo": "CG",
       "prio": null,
@@ -1435,17 +1421,31 @@
     },
     {
       "materia": "Contabilidade Geral",
+      "assunto": "Demonstração do Valor Adicionado (DVA - CPC 09, Lei 6.404, art. 188, II)",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 19,
+      "acertos": 8,
+      "pct": 42.1,
+      "unicas": 15,
+      "acertos_unicas": 8,
+      "pct_unicas": 53.3,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Contabilidade Geral",
       "assunto": "Sem assunto",
       "grupo": "CG",
       "prio": null,
       "c25": 0,
-      "tentativas": 17,
-      "acertos": 11,
-      "pct": 64.7,
-      "unicas": 17,
-      "acertos_unicas": 11,
-      "pct_unicas": 64.7,
-      "ultima": "2026-07-24"
+      "tentativas": 23,
+      "acertos": 14,
+      "pct": 60.9,
+      "unicas": 23,
+      "acertos_unicas": 14,
+      "pct_unicas": 60.9,
+      "ultima": "2026-08-06"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1487,20 +1487,6 @@
       "unicas": 25,
       "acertos_unicas": 17,
       "pct_unicas": 68.0,
-      "ultima": "2026-08-05"
-    },
-    {
-      "materia": "Contabilidade Geral",
-      "assunto": "CPC 16 - Tratamento Contábil para os Estoques",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 25,
-      "acertos": 18,
-      "pct": 72.0,
-      "unicas": 24,
-      "acertos_unicas": 17,
-      "pct_unicas": 70.8,
       "ultima": "2026-08-05"
     },
     {
@@ -1575,6 +1561,20 @@
     },
     {
       "materia": "Contabilidade Geral",
+      "assunto": "CPC 16 - Tratamento Contábil para os Estoques",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 27,
+      "acertos": 20,
+      "pct": 74.1,
+      "unicas": 24,
+      "acertos_unicas": 19,
+      "pct_unicas": 79.2,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Contabilidade Geral",
       "assunto": "Estrutura Conceitual Básica da Contabilidade (CPC 00)",
       "grupo": "CG",
       "prio": null,
@@ -1645,6 +1645,20 @@
     },
     {
       "materia": "Contabilidade Geral",
+      "assunto": "CPC 07: Subvenção e Assistência Governamentais",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 7,
+      "acertos": 7,
+      "pct": 100.0,
+      "unicas": 7,
+      "acertos_unicas": 7,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Contabilidade Geral",
       "assunto": "CPC 12: Ajuste a Valor Presente",
       "grupo": "CG",
       "prio": null,
@@ -1659,6 +1673,20 @@
     },
     {
       "materia": "Contabilidade Geral",
+      "assunto": "Provisões, Passivos e Ativos Contingentes (CPC 25, Lei 6.404)",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 3,
+      "acertos": 3,
+      "pct": 100.0,
+      "unicas": 3,
+      "acertos_unicas": 3,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Contabilidade Geral",
       "assunto": "Investimentos Avaliados pelo Custo ou MEP (CPC 18, Lei 6.404, art. 248)",
       "grupo": "CG",
       "prio": null,
@@ -1666,20 +1694,6 @@
       "tentativas": 3,
       "acertos": 2,
       "pct": 66.7,
-      "unicas": 2,
-      "acertos_unicas": 2,
-      "pct_unicas": 100.0,
-      "ultima": "2026-07-30"
-    },
-    {
-      "materia": "Contabilidade Geral",
-      "assunto": "CPC 07: Subvenção e Assistência Governamentais",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 2,
-      "acertos": 2,
-      "pct": 100.0,
       "unicas": 2,
       "acertos_unicas": 2,
       "pct_unicas": 100.0,
@@ -1729,7 +1743,7 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "assunto": "Provisões, Passivos e Ativos Contingentes (CPC 25, Lei 6.404)",
+      "assunto": "CPC 06: Arrendamento Mercantil (Financeiro e Operacional)",
       "grupo": "CG",
       "prio": null,
       "c25": 0,
@@ -1743,7 +1757,7 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "assunto": "CPC 06: Arrendamento Mercantil (Financeiro e Operacional)",
+      "assunto": "Disponibilidades: Equivalentes de Caixa, Conciliação, Cheques, Numerários em Trânsito, etc",
       "grupo": "CG",
       "prio": null,
       "c25": 0,
@@ -1753,7 +1767,7 @@
       "unicas": 1,
       "acertos_unicas": 1,
       "pct_unicas": 100.0,
-      "ultima": "2026-07-23"
+      "ultima": "2026-08-06"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -1869,6 +1883,20 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Objetivos, Fases e Formalidades (arts. 11 a 17 da Lei nº 14.133/2021)",
+      "grupo": "DAD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 1,
+      "pct": 50.0,
+      "unicas": 2,
+      "acertos_unicas": 1,
+      "pct_unicas": 50.0,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Lei nº 13.303/2016 - Estatuto Jurídico da EP e SEM (arts. 1º a 27)",
       "grupo": "DAD",
       "prio": 1,
@@ -1911,6 +1939,20 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Princípios (art. 5º da Lei nº 14.133/2021)",
+      "grupo": "DAD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 5,
+      "acertos": 3,
+      "pct": 60.0,
+      "unicas": 5,
+      "acertos_unicas": 3,
+      "pct_unicas": 60.0,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Do Procedimento Administrativo e do Processo Judicial (arts. 14 a 18-A da Lei nº 8.429/1992)",
       "grupo": "DAD",
       "prio": 1,
@@ -1925,6 +1967,20 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Fases da Licitação - Julgamento, Habilitação e Encerramento (arts. 55 a 71 da Lei nº 14.133/2021)",
+      "grupo": "DAD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 4,
+      "pct": 66.7,
+      "unicas": 6,
+      "acertos_unicas": 4,
+      "pct_unicas": 66.7,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Das Restrições de Acesso à Informação (arts. 21 a 31 da Lei nº 12.527/2011)",
       "grupo": "DAD",
       "prio": 2,
@@ -1936,6 +1992,20 @@
       "acertos_unicas": 4,
       "pct_unicas": 66.7,
       "ultima": "2026-07-17"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Critérios de Julgamento (arts. 33 a 39 da Lei nº 14.133/2021)",
+      "grupo": "DAD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 4,
+      "pct": 66.7,
+      "unicas": 6,
+      "acertos_unicas": 4,
+      "pct_unicas": 66.7,
+      "ultima": "2026-08-06"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -2079,20 +2149,6 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "assunto": "Contratação Direta, Inexigibilidade e Dispensa (arts. 72 a 75 da Lei nº 14.133/2021)",
-      "grupo": "DAD",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 7,
-      "acertos": 4,
-      "pct": 57.1,
-      "unicas": 5,
-      "acertos_unicas": 4,
-      "pct_unicas": 80.0,
-      "ultima": "2026-08-02"
-    },
-    {
-      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Das Disposições Gerais (arts. 1º a 8º-A da Lei nº 8.429/1992)",
       "grupo": "DAD",
       "prio": 1,
@@ -2118,6 +2174,20 @@
       "acertos_unicas": 11,
       "pct_unicas": 84.6,
       "ultima": "2026-08-03"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Do Âmbito de Aplicação, Definições e Agentes Públicos (arts. 1º a 4º, 6º a 10 da Lei nº 14.133/2021)",
+      "grupo": "DAD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 14,
+      "acertos": 12,
+      "pct": 85.7,
+      "unicas": 14,
+      "acertos_unicas": 12,
+      "pct_unicas": 85.7,
+      "ultima": "2026-08-06"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -2191,6 +2261,20 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Contratação Direta, Inexigibilidade e Dispensa (arts. 72 a 75 da Lei nº 14.133/2021)",
+      "grupo": "DAD",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 16,
+      "acertos": 13,
+      "pct": 81.2,
+      "unicas": 14,
+      "acertos_unicas": 13,
+      "pct_unicas": 92.9,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Do Procedimento de Acesso à Informação (arts. 10 a 20 da Lei nº 12.527/2011)",
       "grupo": "DAD",
       "prio": 2,
@@ -2258,6 +2342,20 @@
       "acertos_unicas": 3,
       "pct_unicas": 100.0,
       "ultima": "2026-07-27"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Modalidades de Licitação (arts. 28 a 32 da Lei nº 14.133/2021)",
+      "grupo": "DAD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 3,
+      "acertos": 3,
+      "pct": 100.0,
+      "unicas": 3,
+      "acertos_unicas": 3,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-06"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -2373,20 +2471,6 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "assunto": "Fases da Licitação - Julgamento, Habilitação e Encerramento (arts. 55 a 71 da Lei nº 14.133/2021)",
-      "grupo": "DAD",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 1,
-      "acertos": 1,
-      "pct": 100.0,
-      "unicas": 1,
-      "acertos_unicas": 1,
-      "pct_unicas": 100.0,
-      "ultima": "2026-07-02"
-    },
-    {
-      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Subconcessão (Serviços Públicos - Lei nº 8.987/1995)",
       "grupo": "DAD",
       "prio": null,
@@ -2468,6 +2552,20 @@
       "acertos_unicas": 1,
       "pct_unicas": 100.0,
       "ultima": "2026-07-30"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Instrução do Processo Licitatório (arts. 18 a 27 da Lei nº 14.133/2021)",
+      "grupo": "DAD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-06"
     },
     {
       "materia": "Direito Administrativo Estadual e do DF",
@@ -2569,6 +2667,20 @@
     },
     {
       "materia": "Direito Civil",
+      "assunto": "Desconsideração da Personalidade Jurídica",
+      "grupo": "DCIV",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 8,
+      "acertos": 7,
+      "pct": 87.5,
+      "unicas": 8,
+      "acertos_unicas": 7,
+      "pct_unicas": 87.5,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Direito Civil",
       "assunto": "Bens Públicos (arts. 98 a 103)",
       "grupo": "DCIV",
       "prio": null,
@@ -2580,6 +2692,20 @@
       "acertos_unicas": 12,
       "pct_unicas": 100.0,
       "ultima": "2026-08-03"
+    },
+    {
+      "materia": "Direito Civil",
+      "assunto": "Princípios Contratuais no Código Civil",
+      "grupo": "DCIV",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 6,
+      "pct": 100.0,
+      "unicas": 6,
+      "acertos_unicas": 6,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-06"
     },
     {
       "materia": "Direito Civil",
@@ -2608,6 +2734,20 @@
       "acertos_unicas": 1,
       "pct_unicas": 100.0,
       "ultima": "2026-08-02"
+    },
+    {
+      "materia": "Direito Civil",
+      "assunto": "Questões Mescladas de Pessoas Jurídicas (arts. 40 a 69)",
+      "grupo": "DCIV",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-06"
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -3451,6 +3591,20 @@
     },
     {
       "materia": "Estatística",
+      "assunto": "Conceitos Iniciais e Cálculo das Estimativas dos Parâmetros (Regressão Linear Simples)",
+      "grupo": "Estat",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 5,
+      "acertos": 4,
+      "pct": 80.0,
+      "unicas": 5,
+      "acertos_unicas": 4,
+      "pct_unicas": 80.0,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Estatística",
       "assunto": "Teste de Hipóteses: Introdução (Nível de Significância, Erros Tipo I e II, Poder do Teste)",
       "grupo": "Estat",
       "prio": 1,
@@ -3534,6 +3688,34 @@
       "ultima": "2026-07-15"
     },
     {
+      "materia": "Estatística",
+      "assunto": "Outros Modelos Estacionários de Séries Temporais",
+      "grupo": "Estat",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Estatística",
+      "assunto": "Conceitos Básicos, Componentes das Séries Temporais e Suavização Exponencial",
+      "grupo": "Estat",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-06"
+    },
+    {
       "materia": "Legislação Penal e Processual Penal Especial",
       "assunto": "Lei nº 13.869/2019 - Lei de Abuso de Autoridade (antiga Lei nº 4.898/1965)",
       "grupo": "",
@@ -3567,13 +3749,13 @@
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 30,
+      "tentativas": 31,
       "acertos": 0,
       "pct": 0.0,
       "unicas": 30,
       "acertos_unicas": 0,
       "pct_unicas": 0.0,
-      "ultima": "2026-08-04"
+      "ultima": "2026-08-06"
     },
     {
       "materia": "TI - Banco de Dados",
