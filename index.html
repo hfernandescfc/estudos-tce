@@ -483,8 +483,8 @@ const SEMANAS = [
   {n:4, per:"20 – 24/jul",     fase:"Construção"},
   {n:5, per:"27 – 31/jul",     fase:"Virada → simulados por bloco nas rápidas"},
   {n:6, per:"03 – 07/ago",     fase:"Virada → simulados por bloco nas rápidas"},
-  {n:7, per:"10 – 14/ago",     fase:"Reta final — simulados completos (80 q)"},
-  {n:8, per:"17 – 21/ago",     fase:"Reta final — simulados completos (80 q)"},
+  {n:7, per:"10 – 14/ago",     fase:"Reta final — consolidar alvos + Simulado 3 (40 q)"},
+  {n:8, per:"17 – 21/ago",     fase:"Reta final — só revisão + Simulados 4 e 5 (40 q)"},
 ];
 const S1_SEGUNDA = "2026-06-29"; // 2ª-feira da Semana 1
 // Em qual semana do ciclo cai uma data: <1 = arranque (25-26/jun); >8 = período de provas.
@@ -1583,11 +1583,21 @@ function renderCronograma(){
   </div>`;
 
   if(cw>=7){
-    // Reta final: a grade dá lugar a simulados completos
+    /* Reta final — PLANO v4 (Plano_Reta_Final_Ago.md). Substitui o v3, que previa
+       "1 simulado de 80 q./dia" em S7–S8. Três motivos para o corte:
+       (a) supply — o pool inédito (889 q.) é 591 AFO/DFin/CASP + 122 AUD + 96 TI + 78 AUD Priv.
+           e ZERO em DAdm/DCon/CG/LP/DCivil/DPC/Estat: cobre ~28 dos 80 slots da prova;
+       (b) tempo — 80 q. levaram 2h13 medidos (com 78/80 já vistas) e a carga real é ~2,6 h/dia,
+           o que não deixa espaço para a correção, que é onde está o aprendizado;
+       (c) a fila está no TETO de 14 etapas/dia em todos os 10 dias úteis de S7–S8. */
     html += `<div class="card"><b>Reta final (S7–S8) — sem conteúdo novo</b>
-      <div class="sched-item"><span class="min">~2h12</span><span class="mt">Simulado completo</span><span class="ds">1 simulado de 80 questões/dia + correção por matéria</span></div>
-      <div class="sched-item"><span class="min">resto</span><span class="mt">Reforço cirúrgico</span><span class="ds">Só P1 das piores (DFin, Cont.Geral, DCon) + caderno de erros · releitura de 1 página-resumo/matéria</span></div>
+      <div class="sched-item"><span class="min">~1h10</span><span class="mt">Simulado de 40 q. inéditas</span><span class="ds">${cw===7?"Sexta 14/08 — Simulado 3":"Terça 18/08 — Simulado 4 · Quinta 20/08 — Simulado 5"} + correção por bloco no mesmo dia. 40 q. espelham o bloco objetivo de cada domingo e cabem no dia útil; ≥70% de questões nunca vistas (o Simulado 1 tinha só 2 em 80 e por isso mediu memória de gabarito)</span></div>
+      <div class="sched-item"><span class="min">~1h</span><span class="mt">Fila de revisão</span><span class="ds">14 etapas/dia (teto) todos os dias da semana — ${cw===7?"D+6/D+14/D+28 misturados":"quase toda D+28, cujo escopo declarado é <b>entrar no simulado</b>: a fila <b>é</b> a lista dos Simulados 4 e 5, não tarefa paralela"}</span></div>
+      <div class="sched-item"><span class="min">~40min</span><span class="mt">${cw===7?"Alvos do Simulado 2":"Refazer as erradas"}</span><span class="ds">${cw===7?"AUD Opinião do Auditor (69,6%) e Fraude/Erro (70%) · DPC Sentença e Coisa Julgada (68,8%) · DAdm LAI e Terceiro Setor · CASP Estoques/Depreciação/BP (~70%)":"Segunda 17/08: <b>todas</b> as erradas dos Simulados 1–3, com fundamento · Quarta 19/08: releitura das folhas de revisão, só os P1 · Sexta 21/08: 1 página-resumo por matéria + matriz das 4 opiniões do auditor"}</span></div>
+      <div class="sched-item"><span class="min">50min</span><span class="mt">Discursiva ${cw===7?"2":"3"} — manuscrita e cronometrada</span><span class="ds">Segunda ${cw===7?"10":"17"}/08. Vale 20 pts (20% da nota), <b>eliminatória abaixo de 12</b> e 2º critério de desempate — só 1 escrita até hoje (30/07). É o maior risco aberto do ciclo</span></div>
       <div class="sched-item"><span class="min">Anki</span><span class="mt">Só revisão</span><span class="ds">Pare de introduzir cards novos a partir de 14/08</span></div>
+      ${cw===8?`<div class="sched-item"><span class="min">Sáb 22</span><span class="mt">Véspera leve</span><span class="ds">Releitura passiva dos P1, dormir cedo. <b>Sem simulado.</b></span></div>`:``}
+      <div class="muted" style="margin-top:10px;font-size:.85em">A escolha de 40 q. pressupõe bloco objetivo de ~40 questões em cada domingo. Se cada dia de prova for de 80 q., manter <b>um</b> simulado no comprimento real como ensaio geral (18/08) e os outros dois a 40.</div>
     </div>`;
     // Backlog que o replanejamento empurrou p/ dentro da reta final
     const backlog=Object.values(plano.info).filter(i=>!i.ok&&i.semEff===cw).sort((a,b)=>prioSort(a.t,b.t));
