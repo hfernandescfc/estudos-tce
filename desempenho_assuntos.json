@@ -1,12 +1,12 @@
 {
-  "gerado_em": "2026-08-07T08:23:05",
+  "gerado_em": "2026-08-10T08:32:36",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 2805,
-    "acertos": 2163,
-    "pct": 77.1,
-    "unicas": 2526,
-    "acertos_unicas": 2054,
+    "tentativas": 2862,
+    "acertos": 2209,
+    "pct": 77.2,
+    "unicas": 2583,
+    "acertos_unicas": 2100,
     "pct_unicas": 81.3
   },
   "materias": [
@@ -48,12 +48,12 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "tentativas": 337,
-      "acertos": 248,
+      "tentativas": 348,
+      "acertos": 256,
       "pct": 73.6,
-      "unicas": 305,
-      "acertos_unicas": 236,
-      "pct_unicas": 77.4
+      "unicas": 316,
+      "acertos_unicas": 244,
+      "pct_unicas": 77.2
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -74,13 +74,22 @@
       "pct_unicas": 80.0
     },
     {
-      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
-      "tentativas": 236,
-      "acertos": 188,
-      "pct": 79.7,
-      "unicas": 214,
-      "acertos_unicas": 175,
+      "materia": "Legislação Civil e Processual Civil Especial",
+      "tentativas": 11,
+      "acertos": 9,
+      "pct": 81.8,
+      "unicas": 11,
+      "acertos_unicas": 9,
       "pct_unicas": 81.8
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "tentativas": 259,
+      "acertos": 208,
+      "pct": 80.3,
+      "unicas": 237,
+      "acertos_unicas": 195,
+      "pct_unicas": 82.3
     },
     {
       "materia": "Direito Administrativo Estadual e do DF",
@@ -111,12 +120,12 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "tentativas": 967,
-      "acertos": 778,
-      "pct": 80.5,
-      "unicas": 886,
-      "acertos_unicas": 756,
-      "pct_unicas": 85.3
+      "tentativas": 979,
+      "acertos": 787,
+      "pct": 80.4,
+      "unicas": 898,
+      "acertos_unicas": 765,
+      "pct_unicas": 85.2
     },
     {
       "materia": "Legislação Penal e Processual Penal Especial",
@@ -228,6 +237,20 @@
       "acertos_unicas": 5,
       "pct_unicas": 62.5,
       "ultima": "2026-08-04"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Propriedade para Investimento (MCASP e NBC TSP 06)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 4,
+      "pct": 66.7,
+      "unicas": 6,
+      "acertos_unicas": 4,
+      "pct_unicas": 66.7,
+      "ultima": "2026-08-07"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -536,6 +559,20 @@
       "acertos_unicas": 5,
       "pct_unicas": 83.3,
       "ultima": "2026-07-17"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Notas Explicativas (AFO e CPU)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 5,
+      "pct": 83.3,
+      "unicas": 6,
+      "acertos_unicas": 5,
+      "pct_unicas": 83.3,
+      "ultima": "2026-08-07"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -1449,20 +1486,6 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "assunto": "CPC 15: Combinação de Negócios, Fusão, Incorporação e Cisão",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 3,
-      "acertos": 2,
-      "pct": 66.7,
-      "unicas": 3,
-      "acertos_unicas": 2,
-      "pct_unicas": 66.7,
-      "ultima": "2026-07-30"
-    },
-    {
-      "materia": "Contabilidade Geral",
       "assunto": "Critérios de Avaliação do Estoque (PEPS, UEPS, Média Ponderada)",
       "grupo": "CG",
       "prio": null,
@@ -1491,6 +1514,20 @@
     },
     {
       "materia": "Contabilidade Geral",
+      "assunto": "Investimentos Avaliados pelo Custo ou MEP (CPC 18, Lei 6.404, art. 248)",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 8,
+      "acertos": 5,
+      "pct": 62.5,
+      "unicas": 7,
+      "acertos_unicas": 5,
+      "pct_unicas": 71.4,
+      "ultima": "2026-08-07"
+    },
+    {
+      "materia": "Contabilidade Geral",
       "assunto": "Balanço Patrimonial",
       "grupo": "CASP",
       "prio": 1,
@@ -1516,6 +1553,20 @@
       "acertos_unicas": 11,
       "pct_unicas": 73.3,
       "ultima": "2026-08-02"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 15: Combinação de Negócios, Fusão, Incorporação e Cisão",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 8,
+      "acertos": 6,
+      "pct": 75.0,
+      "unicas": 8,
+      "acertos_unicas": 6,
+      "pct_unicas": 75.0,
+      "ultima": "2026-08-07"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1663,13 +1714,13 @@
       "grupo": "CG",
       "prio": null,
       "c25": 0,
-      "tentativas": 3,
-      "acertos": 3,
+      "tentativas": 4,
+      "acertos": 4,
       "pct": 100.0,
-      "unicas": 3,
-      "acertos_unicas": 3,
+      "unicas": 4,
+      "acertos_unicas": 4,
       "pct_unicas": 100.0,
-      "ultima": "2026-07-30"
+      "ultima": "2026-08-07"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1684,20 +1735,6 @@
       "acertos_unicas": 3,
       "pct_unicas": 100.0,
       "ultima": "2026-08-06"
-    },
-    {
-      "materia": "Contabilidade Geral",
-      "assunto": "Investimentos Avaliados pelo Custo ou MEP (CPC 18, Lei 6.404, art. 248)",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 3,
-      "acertos": 2,
-      "pct": 66.7,
-      "unicas": 2,
-      "acertos_unicas": 2,
-      "pct_unicas": 100.0,
-      "ultima": "2026-07-30"
     },
     {
       "materia": "Contabilidade Geral",
@@ -2765,6 +2802,20 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Distinções Constitucionais entre Brasileiros Natos e Naturalizados",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 0,
+      "pct": 0.0,
+      "unicas": 1,
+      "acertos_unicas": 0,
+      "pct_unicas": 0.0,
+      "ultima": "2026-08-07"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "assunto": "Jurisprudência dos Tribunais Superiores sobre Comissões Parlamentares",
       "grupo": "DCON",
       "prio": null,
@@ -2804,20 +2855,6 @@
       "acertos_unicas": 1,
       "pct_unicas": 50.0,
       "ultima": "2026-07-23"
-    },
-    {
-      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
-      "assunto": "Espécies de Nacionalidade (Brasileiros Natos e Naturalizados)",
-      "grupo": "DCON",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 7,
-      "acertos": 4,
-      "pct": 57.1,
-      "unicas": 7,
-      "acertos_unicas": 4,
-      "pct_unicas": 57.1,
-      "ultima": "2026-08-04"
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -2863,6 +2900,20 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Limitações do Poder de Tributar (arts. 150 a 152 da CF/1988)",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 7,
+      "acertos": 4,
+      "pct": 57.1,
+      "unicas": 6,
+      "acertos_unicas": 4,
+      "pct_unicas": 66.7,
+      "ultima": "2026-08-07"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "assunto": "Tribunais de Contas Estaduais, Distrital e Municipais",
       "grupo": "DCON",
       "prio": 1,
@@ -2891,20 +2942,6 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
-      "assunto": "Métodos e Princípios de Interpretação das Normas Constitucionais",
-      "grupo": "DCON",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 17,
-      "acertos": 11,
-      "pct": 64.7,
-      "unicas": 15,
-      "acertos_unicas": 11,
-      "pct_unicas": 73.3,
-      "ultima": "2026-08-02"
-    },
-    {
-      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "assunto": "Jurisprudência dos Tribunais Superiores sobre Fiscalização Contábil, Financeira e Orçamentária",
       "grupo": "DCON",
       "prio": 1,
@@ -2919,17 +2956,17 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
-      "assunto": "Limitações do Poder de Tributar (arts. 150 a 152 da CF/1988)",
+      "assunto": "Espécies de Nacionalidade (Brasileiros Natos e Naturalizados)",
       "grupo": "DCON",
       "prio": null,
       "c25": 0,
-      "tentativas": 6,
-      "acertos": 4,
-      "pct": 66.7,
-      "unicas": 5,
-      "acertos_unicas": 4,
-      "pct_unicas": 80.0,
-      "ultima": "2026-07-24"
+      "tentativas": 14,
+      "acertos": 11,
+      "pct": 78.6,
+      "unicas": 14,
+      "acertos_unicas": 11,
+      "pct_unicas": 78.6,
+      "ultima": "2026-08-07"
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -2958,6 +2995,20 @@
       "acertos_unicas": 4,
       "pct_unicas": 80.0,
       "ultima": "2026-08-04"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Métodos e Princípios de Interpretação das Normas Constitucionais",
+      "grupo": "DCON",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 28,
+      "acertos": 21,
+      "pct": 75.0,
+      "unicas": 26,
+      "acertos_unicas": 21,
+      "pct_unicas": 80.8,
+      "ultima": "2026-08-07"
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -3129,6 +3180,20 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Perda da Nacionalidade",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 3,
+      "acertos": 3,
+      "pct": 100.0,
+      "unicas": 3,
+      "acertos_unicas": 3,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-07"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "assunto": "Aplicação das Normas Constitucionais no Tempo (Recepção, Repristinação, Desconstitucionalização)",
       "grupo": "DCON",
       "prio": 1,
@@ -3143,7 +3208,7 @@
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
-      "assunto": "Perda da Nacionalidade",
+      "assunto": "Extradição, Deportação, Expulsão e Banimento (da Nacionalidade)",
       "grupo": "DCON",
       "prio": null,
       "c25": 0,
@@ -3153,7 +3218,7 @@
       "unicas": 1,
       "acertos_unicas": 1,
       "pct_unicas": 100.0,
-      "ultima": "2026-07-30"
+      "ultima": "2026-08-07"
     },
     {
       "materia": "Direito Previdenciário",
@@ -3714,6 +3779,48 @@
       "acertos_unicas": 1,
       "pct_unicas": 100.0,
       "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Legislação Civil e Processual Civil Especial",
+      "assunto": "Lei nº 9.307/1996 - Arbitragem",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 4,
+      "pct": 66.7,
+      "unicas": 6,
+      "acertos_unicas": 4,
+      "pct_unicas": 66.7,
+      "ultima": "2026-08-07"
+    },
+    {
+      "materia": "Legislação Civil e Processual Civil Especial",
+      "assunto": "Lei nº 13.140/2015 - Mediação",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 3,
+      "acertos": 3,
+      "pct": 100.0,
+      "unicas": 3,
+      "acertos_unicas": 3,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-07"
+    },
+    {
+      "materia": "Legislação Civil e Processual Civil Especial",
+      "assunto": "Conceitos sobre Mediação, Conciliação e Arbitragem",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 2,
+      "pct": 100.0,
+      "unicas": 2,
+      "acertos_unicas": 2,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-07"
     },
     {
       "materia": "Legislação Penal e Processual Penal Especial",

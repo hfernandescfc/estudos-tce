@@ -1,6 +1,6 @@
 // Gerado por 06_Scripts/gerar_sessoes_tec.py - NAO editar a mao.
 window.SESSOES_TEC = {
- "gerado_em": "2026-08-07T08:23:06",
+ "gerado_em": "2026-08-10T08:32:36",
  "fonte": "07_TEC/TEC_Captura/tec_registros_*.json (1 sessão por dia+assunto)",
  "sessoes": [
   {
@@ -5066,6 +5066,174 @@ window.SESSOES_TEC = {
    "qResolvidas": 14,
    "qAcertadas": 12,
    "obs": "reconstruída do TEC (2 assuntos)"
+  },
+  {
+   "uid": "TEC~2026-08-07~cpc-15-combinacao-de-negocios-fusao-incorporacao-e-cisao-1a73c6",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "CG",
+   "topicId": null,
+   "assuntoLivre": "CPC 15: Combinação de Negócios, Fusão, Incorporação e Cisão",
+   "minutos": 5,
+   "qResolvidas": 5,
+   "qAcertadas": 4,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~conceitos-sobre-mediacao-conciliacao-e-arbitragem-7bed32",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "Conceitos sobre Mediação, Conciliação e Arbitragem",
+   "minutos": 2,
+   "qResolvidas": 2,
+   "qAcertadas": 2,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~distincoes-constitucionais-entre-brasileiros-natos-e-natural-740ee0",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "DCON",
+   "topicId": null,
+   "assuntoLivre": "Distinções Constitucionais entre Brasileiros Natos e Naturalizados",
+   "minutos": 1,
+   "qResolvidas": 1,
+   "qAcertadas": 0,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~especies-de-nacionalidade-brasileiros-natos-e-naturalizados-20fccb",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "DCON",
+   "topicId": null,
+   "assuntoLivre": "Espécies de Nacionalidade (Brasileiros Natos e Naturalizados)",
+   "minutos": 7,
+   "qResolvidas": 7,
+   "qAcertadas": 7,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~extradicao-deportacao-expulsao-e-banimento-da-nacionalidade-4edf48",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "DCON",
+   "topicId": null,
+   "assuntoLivre": "Extradição, Deportação, Expulsão e Banimento (da Nacionalidade)",
+   "minutos": 1,
+   "qResolvidas": 1,
+   "qAcertadas": 1,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~lei-n-13-140-2015-mediacao-69cfcd",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "Lei nº 13.140/2015 - Mediação",
+   "minutos": 3,
+   "qResolvidas": 3,
+   "qAcertadas": 3,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~lei-n-9-307-1996-arbitragem-484631",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "Lei nº 9.307/1996 - Arbitragem",
+   "minutos": 5,
+   "qResolvidas": 6,
+   "qAcertadas": 4,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~notas-explicativas-afo-e-cpu-c2b415",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "Notas Explicativas (AFO e CPU)",
+   "minutos": 5,
+   "qResolvidas": 6,
+   "qAcertadas": 5,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~perda-da-nacionalidade-093a7b",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "DCON",
+   "topicId": null,
+   "assuntoLivre": "Perda da Nacionalidade",
+   "minutos": 1,
+   "qResolvidas": 2,
+   "qAcertadas": 2,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~propriedade-para-investimento-mcasp-e-nbc-tsp-06-6a684a",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "Propriedade para Investimento (MCASP e NBC TSP 06)",
+   "minutos": 7,
+   "qResolvidas": 6,
+   "qAcertadas": 4,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~101",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "DCON",
+   "topicId": "101",
+   "assuntoLivre": "",
+   "minutos": 19,
+   "qResolvidas": 11,
+   "qAcertadas": 10,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~137",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "DCON",
+   "topicId": "137",
+   "assuntoLivre": "",
+   "minutos": 1,
+   "qResolvidas": 1,
+   "qAcertadas": 0,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~39",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "CG",
+   "topicId": "39",
+   "assuntoLivre": "",
+   "minutos": 53,
+   "qResolvidas": 5,
+   "qAcertadas": 3,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-07~41",
+   "origem": "tec",
+   "data": "2026-08-07",
+   "mat": "CG",
+   "topicId": "41",
+   "assuntoLivre": "",
+   "minutos": 2,
+   "qResolvidas": 1,
+   "qAcertadas": 1,
+   "obs": "reconstruída do TEC"
   }
  ]
 };
