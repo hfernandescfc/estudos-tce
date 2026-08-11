@@ -1,6 +1,6 @@
 // Gerado por 06_Scripts/gerar_sessoes_tec.py - NAO editar a mao.
 window.SESSOES_TEC = {
- "gerado_em": "2026-08-10T16:38:51",
+ "gerado_em": "2026-08-11T08:16:43",
  "fonte": "07_TEC/TEC_Captura/tec_registros_*.json (1 sessão por dia+assunto) + resultado_simulado_*.json (1 sessão por simulado+dia+matéria)",
  "sessoes": [
   {
@@ -5414,6 +5414,42 @@ window.SESSOES_TEC = {
    "qResolvidas": 2,
    "qAcertadas": 2,
    "obs": "Simulado 02 (Q41-80) cronometrado"
+  },
+  {
+   "uid": "TEC~2026-08-10~6",
+   "origem": "tec",
+   "data": "2026-08-10",
+   "mat": "DFin",
+   "topicId": "6",
+   "assuntoLivre": "",
+   "minutos": 7,
+   "qResolvidas": 7,
+   "qAcertadas": 6,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-10~cpc-15-combinacao-de-negocios-fusao-incorporacao-e-cisao-1a73c6",
+   "origem": "tec",
+   "data": "2026-08-10",
+   "mat": "CG",
+   "topicId": null,
+   "assuntoLivre": "CPC 15: Combinação de Negócios, Fusão, Incorporação e Cisão",
+   "minutos": 2,
+   "qResolvidas": 1,
+   "qAcertadas": 1,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-10~sem-assunto-177bb3",
+   "origem": "tec",
+   "data": "2026-08-10",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "(sem assunto no TEC)",
+   "minutos": 1,
+   "qResolvidas": 4,
+   "qAcertadas": 0,
+   "obs": "reconstruída do TEC"
   }
  ]
 };

@@ -1,21 +1,21 @@
 {
-  "gerado_em": "2026-08-10T08:32:36",
+  "gerado_em": "2026-08-11T08:16:43",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 2862,
-    "acertos": 2209,
-    "pct": 77.2,
-    "unicas": 2583,
-    "acertos_unicas": 2100,
-    "pct_unicas": 81.3
+    "tentativas": 2874,
+    "acertos": 2216,
+    "pct": 77.1,
+    "unicas": 2594,
+    "acertos_unicas": 2107,
+    "pct_unicas": 81.2
   },
   "materias": [
     {
       "materia": "Sem materia",
-      "tentativas": 31,
+      "tentativas": 35,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 30,
+      "unicas": 34,
       "acertos_unicas": 0,
       "pct_unicas": 0.0
     },
@@ -48,12 +48,12 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "tentativas": 348,
-      "acertos": 256,
+      "tentativas": 349,
+      "acertos": 257,
       "pct": 73.6,
       "unicas": 316,
-      "acertos_unicas": 244,
-      "pct_unicas": 77.2
+      "acertos_unicas": 245,
+      "pct_unicas": 77.5
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -120,11 +120,11 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "tentativas": 979,
-      "acertos": 787,
+      "tentativas": 986,
+      "acertos": 793,
       "pct": 80.4,
-      "unicas": 898,
-      "acertos_unicas": 765,
+      "unicas": 905,
+      "acertos_unicas": 771,
       "pct_unicas": 85.2
     },
     {
@@ -594,13 +594,13 @@
       "grupo": "DFin",
       "prio": 1,
       "c25": 1,
-      "tentativas": 81,
-      "acertos": 59,
-      "pct": 72.8,
-      "unicas": 68,
-      "acertos_unicas": 58,
+      "tentativas": 88,
+      "acertos": 65,
+      "pct": 73.9,
+      "unicas": 75,
+      "acertos_unicas": 64,
       "pct_unicas": 85.3,
-      "ultima": "2026-08-02"
+      "ultima": "2026-08-10"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -1556,20 +1556,6 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "assunto": "CPC 15: Combinação de Negócios, Fusão, Incorporação e Cisão",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 8,
-      "acertos": 6,
-      "pct": 75.0,
-      "unicas": 8,
-      "acertos_unicas": 6,
-      "pct_unicas": 75.0,
-      "ultima": "2026-08-07"
-    },
-    {
-      "materia": "Contabilidade Geral",
       "assunto": "Conceito, Objeto, Finalidade, Técnicas Contábeis, Equação Patrimonial",
       "grupo": "CG",
       "prio": 3,
@@ -1665,6 +1651,20 @@
       "acertos_unicas": 12,
       "pct_unicas": 85.7,
       "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "CPC 15: Combinação de Negócios, Fusão, Incorporação e Cisão",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 9,
+      "acertos": 7,
+      "pct": 77.8,
+      "unicas": 8,
+      "acertos_unicas": 7,
+      "pct_unicas": 87.5,
+      "ultima": "2026-08-10"
     },
     {
       "materia": "Contabilidade Geral",
@@ -3856,13 +3856,13 @@
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 31,
+      "tentativas": 35,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 30,
+      "unicas": 34,
       "acertos_unicas": 0,
       "pct_unicas": 0.0,
-      "ultima": "2026-08-06"
+      "ultima": "2026-08-10"
     },
     {
       "materia": "TI - Banco de Dados",

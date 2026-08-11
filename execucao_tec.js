@@ -1,6 +1,6 @@
 // Gerado por 06_Scripts/desempenho_assuntos.py - NAO editar a mao.
 window.EXEC_TEC = {
-  "gerado_em": "2026-08-10T08:32:36",
+  "gerado_em": "2026-08-11T08:16:43",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json (assunto -> topicId)",
   "por_topico": {
     "1": {
@@ -74,16 +74,17 @@ window.EXEC_TEC = {
       ]
     },
     "6": {
-      "qr": 68,
-      "qa": 58,
+      "qr": 75,
+      "qa": 64,
       "d0": "2026-07-01",
-      "d1": "2026-08-02",
+      "d1": "2026-08-10",
       "dias": [
         "2026-07-01",
         "2026-07-03",
         "2026-07-08",
         "2026-07-31",
-        "2026-08-02"
+        "2026-08-02",
+        "2026-08-10"
       ]
     },
     "116": {
@@ -2970,6 +2971,12 @@ window.EXEC_TEC = {
       "id": 137,
       "qr": 1,
       "qa": 0
+    },
+    {
+      "data": "2026-08-10",
+      "id": 6,
+      "qr": 7,
+      "qa": 6
     }
   ]
 };
