@@ -1,6 +1,6 @@
 // Gerado por 06_Scripts/gerar_sessoes_tec.py - NAO editar a mao.
 window.SESSOES_TEC = {
- "gerado_em": "2026-08-11T08:16:43",
+ "gerado_em": "2026-08-11T09:14:26",
  "fonte": "07_TEC/TEC_Captura/tec_registros_*.json (1 sessão por dia+assunto) + resultado_simulado_*.json (1 sessão por simulado+dia+matéria)",
  "sessoes": [
   {
@@ -5280,7 +5280,7 @@ window.SESSOES_TEC = {
    "assuntoLivre": "Simulado 02 — CG",
    "minutos": 13,
    "qResolvidas": 4,
-   "qAcertadas": 0,
+   "qAcertadas": 1,
    "obs": "Simulado 02 (Q41-80) cronometrado"
   },
   {
