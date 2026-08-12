@@ -1,21 +1,21 @@
 {
-  "gerado_em": "2026-08-11T08:16:43",
+  "gerado_em": "2026-08-12T07:58:27",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 2874,
-    "acertos": 2216,
+    "tentativas": 2937,
+    "acertos": 2264,
     "pct": 77.1,
-    "unicas": 2594,
-    "acertos_unicas": 2107,
+    "unicas": 2653,
+    "acertos_unicas": 2155,
     "pct_unicas": 81.2
   },
   "materias": [
     {
       "materia": "Sem materia",
-      "tentativas": 35,
+      "tentativas": 39,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 34,
+      "unicas": 37,
       "acertos_unicas": 0,
       "pct_unicas": 0.0
     },
@@ -48,21 +48,21 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "tentativas": 349,
-      "acertos": 257,
-      "pct": 73.6,
-      "unicas": 316,
-      "acertos_unicas": 245,
-      "pct_unicas": 77.5
+      "tentativas": 371,
+      "acertos": 275,
+      "pct": 74.1,
+      "unicas": 335,
+      "acertos_unicas": 263,
+      "pct_unicas": 78.5
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "tentativas": 312,
-      "acertos": 228,
-      "pct": 73.1,
-      "unicas": 281,
-      "acertos_unicas": 220,
-      "pct_unicas": 78.3
+      "tentativas": 317,
+      "acertos": 233,
+      "pct": 73.5,
+      "unicas": 286,
+      "acertos_unicas": 225,
+      "pct_unicas": 78.7
     },
     {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
@@ -74,6 +74,15 @@
       "pct_unicas": 80.0
     },
     {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "tentativas": 263,
+      "acertos": 209,
+      "pct": 79.5,
+      "unicas": 241,
+      "acertos_unicas": 196,
+      "pct_unicas": 81.3
+    },
+    {
       "materia": "Legislação Civil e Processual Civil Especial",
       "tentativas": 11,
       "acertos": 9,
@@ -81,15 +90,6 @@
       "unicas": 11,
       "acertos_unicas": 9,
       "pct_unicas": 81.8
-    },
-    {
-      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
-      "tentativas": 259,
-      "acertos": 208,
-      "pct": 80.3,
-      "unicas": 237,
-      "acertos_unicas": 195,
-      "pct_unicas": 82.3
     },
     {
       "materia": "Direito Administrativo Estadual e do DF",
@@ -120,12 +120,12 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "tentativas": 986,
-      "acertos": 793,
+      "tentativas": 1006,
+      "acertos": 809,
       "pct": 80.4,
-      "unicas": 905,
-      "acertos_unicas": 771,
-      "pct_unicas": 85.2
+      "unicas": 925,
+      "acertos_unicas": 787,
+      "pct_unicas": 85.1
     },
     {
       "materia": "Legislação Penal e Processual Penal Especial",
@@ -156,12 +156,12 @@
     },
     {
       "materia": "Auditoria Governamental e Controle",
-      "tentativas": 214,
-      "acertos": 167,
-      "pct": 78.0,
-      "unicas": 157,
-      "acertos_unicas": 138,
-      "pct_unicas": 87.9
+      "tentativas": 222,
+      "acertos": 175,
+      "pct": 78.8,
+      "unicas": 165,
+      "acertos_unicas": 146,
+      "pct_unicas": 88.5
     },
     {
       "materia": "Direito Previdenciário",
@@ -226,20 +226,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Redução ao Valor Recuperável (MCASP, NBC TSP 09 e 10)",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 8,
-      "acertos": 5,
-      "pct": 62.5,
-      "unicas": 8,
-      "acertos_unicas": 5,
-      "pct_unicas": 62.5,
-      "ultima": "2026-08-04"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Propriedade para Investimento (MCASP e NBC TSP 06)",
       "grupo": "",
       "prio": null,
@@ -251,6 +237,34 @@
       "acertos_unicas": 4,
       "pct_unicas": 66.7,
       "ultima": "2026-08-07"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Redução ao Valor Recuperável (MCASP, NBC TSP 09 e 10)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 13,
+      "acertos": 9,
+      "pct": 69.2,
+      "unicas": 13,
+      "acertos_unicas": 9,
+      "pct_unicas": 69.2,
+      "ultima": "2026-08-11"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Receita de Transação sem Contraprestação (MCASP e NBC TSP 01)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 13,
+      "acertos": 9,
+      "pct": 69.2,
+      "unicas": 13,
+      "acertos_unicas": 9,
+      "pct_unicas": 69.2,
+      "ultima": "2026-08-11"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -282,34 +296,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Bases de Mensuração de Ativos e Passivos (MCASP e NBC TSP EC)",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 7,
-      "acertos": 5,
-      "pct": 71.4,
-      "unicas": 7,
-      "acertos_unicas": 5,
-      "pct_unicas": 71.4,
-      "ultima": "2026-08-04"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Receita de Transação sem Contraprestação (MCASP e NBC TSP 01)",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 7,
-      "acertos": 5,
-      "pct": 71.4,
-      "unicas": 7,
-      "acertos_unicas": 5,
-      "pct_unicas": 71.4,
-      "ultima": "2026-08-04"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Ativo Intangível (MCASP e NBC TSP 08)",
       "grupo": "CASP",
       "prio": 1,
@@ -321,6 +307,20 @@
       "acertos_unicas": 13,
       "pct_unicas": 72.2,
       "ultima": "2026-08-02"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Bases de Mensuração de Ativos e Passivos (MCASP e NBC TSP EC)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 13,
+      "acertos": 10,
+      "pct": 76.9,
+      "unicas": 13,
+      "acertos_unicas": 10,
+      "pct_unicas": 76.9,
+      "ultima": "2026-08-11"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -492,20 +492,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Sem assunto",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 76,
-      "acertos": 63,
-      "pct": 82.9,
-      "unicas": 76,
-      "acertos_unicas": 63,
-      "pct_unicas": 82.9,
-      "ultima": "2026-08-05"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "LOA - Lei Orçamentária Anual (CF/1988 e Lei nº 4.320/1964)",
       "grupo": "DFin",
       "prio": 1,
@@ -573,6 +559,20 @@
       "acertos_unicas": 5,
       "pct_unicas": 83.3,
       "ultima": "2026-08-07"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Sem assunto",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 79,
+      "acertos": 66,
+      "pct": 83.5,
+      "unicas": 79,
+      "acertos_unicas": 66,
+      "pct_unicas": 83.5,
+      "ultima": "2026-08-11"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -996,20 +996,6 @@
     },
     {
       "materia": "Auditoria Governamental e Controle",
-      "assunto": "Sem assunto",
-      "grupo": "AUD",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 6,
-      "acertos": 4,
-      "pct": 66.7,
-      "unicas": 6,
-      "acertos_unicas": 4,
-      "pct_unicas": 66.7,
-      "ultima": "2026-07-16"
-    },
-    {
-      "materia": "Auditoria Governamental e Controle",
       "assunto": "Controle de Qualidade da Auditoria Governamental",
       "grupo": "AUD",
       "prio": 1,
@@ -1024,6 +1010,20 @@
     },
     {
       "materia": "Auditoria Governamental e Controle",
+      "assunto": "Sem assunto",
+      "grupo": "AUD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 8,
+      "acertos": 6,
+      "pct": 75.0,
+      "unicas": 8,
+      "acertos_unicas": 6,
+      "pct_unicas": 75.0,
+      "ultima": "2026-08-11"
+    },
+    {
+      "materia": "Auditoria Governamental e Controle",
       "assunto": "Outras Questões e Tópicos Mesclados de Auditoria Governamental",
       "grupo": "AUD",
       "prio": 2,
@@ -1035,20 +1035,6 @@
       "acertos_unicas": 20,
       "pct_unicas": 76.9,
       "ultima": "2026-07-14"
-    },
-    {
-      "materia": "Auditoria Governamental e Controle",
-      "assunto": "Risco de Auditoria. Confiança e Asseguração em Auditoria",
-      "grupo": "AUD",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 33,
-      "acertos": 23,
-      "pct": 69.7,
-      "unicas": 18,
-      "acertos_unicas": 15,
-      "pct_unicas": 83.3,
-      "ultima": "2026-08-04"
     },
     {
       "materia": "Auditoria Governamental e Controle",
@@ -1077,6 +1063,20 @@
       "acertos_unicas": 6,
       "pct_unicas": 85.7,
       "ultima": "2026-08-04"
+    },
+    {
+      "materia": "Auditoria Governamental e Controle",
+      "assunto": "Risco de Auditoria. Confiança e Asseguração em Auditoria",
+      "grupo": "AUD",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 39,
+      "acertos": 29,
+      "pct": 74.4,
+      "unicas": 24,
+      "acertos_unicas": 21,
+      "pct_unicas": 87.5,
+      "ultima": "2026-08-11"
     },
     {
       "materia": "Auditoria Governamental e Controle",
@@ -1458,20 +1458,6 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "assunto": "Demonstração do Valor Adicionado (DVA - CPC 09, Lei 6.404, art. 188, II)",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 19,
-      "acertos": 8,
-      "pct": 42.1,
-      "unicas": 15,
-      "acertos_unicas": 8,
-      "pct_unicas": 53.3,
-      "ultima": "2026-08-06"
-    },
-    {
-      "materia": "Contabilidade Geral",
       "assunto": "Sem assunto",
       "grupo": "CG",
       "prio": null,
@@ -1483,6 +1469,20 @@
       "acertos_unicas": 14,
       "pct_unicas": 60.9,
       "ultima": "2026-08-06"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "Ativo Não Circulante Mantido p/ Venda e Operação Descontinuada (CPC 31)",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 6,
+      "acertos": 4,
+      "pct": 66.7,
+      "unicas": 6,
+      "acertos_unicas": 4,
+      "pct_unicas": 66.7,
+      "ultima": "2026-08-11"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1511,6 +1511,20 @@
       "acertos_unicas": 17,
       "pct_unicas": 68.0,
       "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "Demonstração do Valor Adicionado (DVA - CPC 09, Lei 6.404, art. 188, II)",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 25,
+      "acertos": 13,
+      "pct": 52.0,
+      "unicas": 19,
+      "acertos_unicas": 13,
+      "pct_unicas": 68.4,
+      "ultima": "2026-08-11"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1602,13 +1616,13 @@
       "grupo": "CG",
       "prio": null,
       "c25": 0,
-      "tentativas": 27,
-      "acertos": 20,
-      "pct": 74.1,
-      "unicas": 24,
-      "acertos_unicas": 19,
-      "pct_unicas": 79.2,
-      "ultima": "2026-08-06"
+      "tentativas": 31,
+      "acertos": 23,
+      "pct": 74.2,
+      "unicas": 27,
+      "acertos_unicas": 22,
+      "pct_unicas": 81.5,
+      "ultima": "2026-08-11"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1626,20 +1640,6 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "assunto": "Demonstração de Fluxo de Caixa (DFC - CPC 03, Lei 6.404, art. 188, I)",
-      "grupo": "CASP",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 26,
-      "acertos": 22,
-      "pct": 84.6,
-      "unicas": 26,
-      "acertos_unicas": 22,
-      "pct_unicas": 84.6,
-      "ultima": "2026-08-04"
-    },
-    {
-      "materia": "Contabilidade Geral",
       "assunto": "CPC 23: Políticas Contábeis, Mudanças de Estimativa e Retificação de Erro",
       "grupo": "CG",
       "prio": null,
@@ -1651,6 +1651,20 @@
       "acertos_unicas": 12,
       "pct_unicas": 85.7,
       "ultima": "2026-08-05"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "Demonstração de Fluxo de Caixa (DFC - CPC 03, Lei 6.404, art. 188, I)",
+      "grupo": "CASP",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 32,
+      "acertos": 28,
+      "pct": 87.5,
+      "unicas": 32,
+      "acertos_unicas": 28,
+      "pct_unicas": 87.5,
+      "ultima": "2026-08-11"
     },
     {
       "materia": "Contabilidade Geral",
@@ -2242,20 +2256,6 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "assunto": "Sem assunto",
-      "grupo": "DAD",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 7,
-      "acertos": 6,
-      "pct": 85.7,
-      "unicas": 7,
-      "acertos_unicas": 6,
-      "pct_unicas": 85.7,
-      "ultima": "2026-07-10"
-    },
-    {
-      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Princípios Expressos, Explícitos ou Constitucionais",
       "grupo": "DAD",
       "prio": null,
@@ -2295,6 +2295,20 @@
       "acertos_unicas": 19,
       "pct_unicas": 90.5,
       "ultima": "2026-08-03"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Sem assunto",
+      "grupo": "DAD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 12,
+      "acertos": 11,
+      "pct": 91.7,
+      "unicas": 12,
+      "acertos_unicas": 11,
+      "pct_unicas": 91.7,
+      "ultima": "2026-08-11"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -2813,6 +2827,20 @@
       "acertos_unicas": 0,
       "pct_unicas": 0.0,
       "ultima": "2026-08-07"
+    },
+    {
+      "materia": "Direito Constitucional (CF/1988 e Doutrina)",
+      "assunto": "Sem assunto",
+      "grupo": "DCON",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 4,
+      "acertos": 1,
+      "pct": 25.0,
+      "unicas": 4,
+      "acertos_unicas": 1,
+      "pct_unicas": 25.0,
+      "ultima": "2026-08-11"
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -3856,13 +3884,13 @@
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 35,
+      "tentativas": 39,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 34,
+      "unicas": 37,
       "acertos_unicas": 0,
       "pct_unicas": 0.0,
-      "ultima": "2026-08-10"
+      "ultima": "2026-08-11"
     },
     {
       "materia": "TI - Banco de Dados",

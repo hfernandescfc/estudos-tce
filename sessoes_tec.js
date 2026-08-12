@@ -1,6 +1,6 @@
 // Gerado por 06_Scripts/gerar_sessoes_tec.py - NAO editar a mao.
 window.SESSOES_TEC = {
- "gerado_em": "2026-08-11T09:14:26",
+ "gerado_em": "2026-08-12T08:01:58",
  "fonte": "07_TEC/TEC_Captura/tec_registros_*.json (1 sessão por dia+assunto) + resultado_simulado_*.json (1 sessão por simulado+dia+matéria)",
  "sessoes": [
   {
@@ -5449,6 +5449,174 @@ window.SESSOES_TEC = {
    "minutos": 1,
    "qResolvidas": 4,
    "qAcertadas": 0,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "SIM~NBASP140~2026-08-11~AUD",
+   "origem": "simulado",
+   "data": "2026-08-11",
+   "mat": "AUD",
+   "topicId": null,
+   "assuntoLivre": "Simulado NBASP140 — AUD",
+   "minutos": 3,
+   "qResolvidas": 4,
+   "qAcertadas": 4,
+   "obs": "Simulado NBASP140 (Q1-4) cronometrado"
+  },
+  {
+   "uid": "TEC~2026-08-11~31",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "CG",
+   "topicId": "31",
+   "assuntoLivre": "",
+   "minutos": 10,
+   "qResolvidas": 6,
+   "qAcertadas": 5,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~37",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "CG",
+   "topicId": "37",
+   "assuntoLivre": "",
+   "minutos": 18,
+   "qResolvidas": 4,
+   "qAcertadas": 3,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~69",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "AUD",
+   "topicId": "69",
+   "assuntoLivre": "",
+   "minutos": 6,
+   "qResolvidas": 6,
+   "qAcertadas": 6,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~ativo-nao-circulante-mantido-p-venda-e-operacao-descontinuad-3990ac",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "CG",
+   "topicId": null,
+   "assuntoLivre": "Ativo Não Circulante Mantido p/ Venda e Operação Descontinuada (CPC 31)",
+   "minutos": 11,
+   "qResolvidas": 6,
+   "qAcertadas": 4,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~bases-de-mensuracao-de-ativos-e-passivos-mcasp-e-nbc-tsp-ec-4b31ca",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "Bases de Mensuração de Ativos e Passivos (MCASP e NBC TSP EC)",
+   "minutos": 7,
+   "qResolvidas": 6,
+   "qAcertadas": 5,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~demonstracao-de-fluxo-de-caixa-dfc-cpc-03-lei-6-404-art-188--e81e8e",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "CG",
+   "topicId": null,
+   "assuntoLivre": "Demonstração de Fluxo de Caixa (DFC - CPC 03, Lei 6.404, art. 188, I)",
+   "minutos": 5,
+   "qResolvidas": 6,
+   "qAcertadas": 6,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~receita-de-transacao-sem-contraprestacao-mcasp-e-nbc-tsp-01-1cfbdd",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "Receita de Transação sem Contraprestação (MCASP e NBC TSP 01)",
+   "minutos": 4,
+   "qResolvidas": 6,
+   "qAcertadas": 4,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~reducao-ao-valor-recuperavel-mcasp-nbc-tsp-09-e-10-39e804",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "Redução ao Valor Recuperável (MCASP, NBC TSP 09 e 10)",
+   "minutos": 3,
+   "qResolvidas": 5,
+   "qAcertadas": 4,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~sem-assunto-177bb3",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "(sem assunto no TEC)",
+   "minutos": 1,
+   "qResolvidas": 4,
+   "qAcertadas": 0,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~sem-assunto-660b27",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "AUD",
+   "topicId": null,
+   "assuntoLivre": "Auditoria Governamental e Controle — geral",
+   "minutos": 3,
+   "qResolvidas": 2,
+   "qAcertadas": 2,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~sem-assunto-dfc620",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "AFO, Direito Financeiro e Contabilidade Pública — geral",
+   "minutos": 5,
+   "qResolvidas": 3,
+   "qAcertadas": 3,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~sem-assunto-e4a453",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "DAD",
+   "topicId": null,
+   "assuntoLivre": "Direito Administrativo (Doutrina e Leis Federais) — geral",
+   "minutos": 59,
+   "qResolvidas": 5,
+   "qAcertadas": 5,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-11~sem-assunto-f7b1bc",
+   "origem": "tec",
+   "data": "2026-08-11",
+   "mat": "DCON",
+   "topicId": null,
+   "assuntoLivre": "Direito Constitucional (CF/1988 e Doutrina) — geral",
+   "minutos": 6,
+   "qResolvidas": 4,
+   "qAcertadas": 1,
    "obs": "reconstruída do TEC"
   }
  ]
