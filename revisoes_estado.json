@@ -5558,7 +5558,7 @@
           "emitida": "2026-08-13"
         },
         "d6": {
-          "prevista": "2026-08-20",
+          "prevista": "2026-08-19",
           "emitida": null,
           "resultado": null
         },
@@ -5570,7 +5570,8 @@
           "prevista": "2026-08-28",
           "emitida": null
         }
-      }
+      },
+      "origem": "enriquecida a mao em 13/08 — correcao da Discursiva VIII (item b): art. 63-A (so debito remanescente + sem gravidade; Relator COM ANUENCIA DA CAMARA; 15 dias, NAO uteis; VALOR ATUALIZADO; contas PODERAO ser Regulares OU Regulares com Ressalvas; nao cabe em grau recursal nem com irregularidade grave, §4º). Quitacao plena = so contas regulares (art. 60); com ressalvas = certificado de quitacao (61 §1º) ou quitacao condicionada ao recolhimento (61 §2º). 'Aprovacao com ressalvas' e vocabulario de contas de GOVERNO, nao de gestao."
     },
     "Contabilidade Geral||Demonstração Contábil Consolidada (CPC 36, Lei 6.404, art. 249 e 250)": {
       "materia": "Contabilidade Geral",
@@ -5701,6 +5702,35 @@
       "status": "ativa",
       "etapas": {
         "d14": {
+          "prevista": "2026-08-28",
+          "emitida": null
+        }
+      }
+    },
+    "Auditoria Governamental e Controle||Sanções (TCEs e TCMs)": {
+      "materia": "Auditoria Governamental e Controle",
+      "assunto": "Sanções (TCEs e TCMs)",
+      "data_base": "2026-08-13",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "origem": "aberta a mao — correcao da Discursiva VIII (item c): multa de processo MUNICIPAL vai ao FAPRT do Tribunal (LO 73 §9º), nao ao Estado nem ao Municipio; execucao pela PGE via Gestor do FAPRT -> MPC (LO 66 §5º c/c 114, V). Debito = ente lesado (autarquia Beta), certidao -> divida ativa -> execucao (LO 66 §2º).",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-08-13",
+          "emitida": "2026-08-13"
+        },
+        "d6": {
+          "prevista": "2026-08-19",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-27",
+          "emitida": null
+        },
+        "d28": {
           "prevista": "2026-08-28",
           "emitida": null
         }
