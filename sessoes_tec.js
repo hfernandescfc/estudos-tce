@@ -1,6 +1,6 @@
 // Gerado por 06_Scripts/gerar_sessoes_tec.py - NAO editar a mao.
 window.SESSOES_TEC = {
- "gerado_em": "2026-08-14T07:54:53",
+ "gerado_em": "2026-08-17T08:13:05",
  "fonte": "07_TEC/TEC_Captura/tec_registros_*.json (1 sessão por dia+assunto) + resultado_simulado_*.json (1 sessão por simulado+dia+matéria)",
  "sessoes": [
   {
@@ -6360,6 +6360,102 @@ window.SESSOES_TEC = {
    "assuntoLivre": "Tópicos Mesclados de Extinção, Exclusão e Suspensão do Crédito Tributário",
    "minutos": 2,
    "qResolvidas": 1,
+   "qAcertadas": 1,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-14~sem-assunto-036ef6",
+   "origem": "tec",
+   "data": "2026-08-14",
+   "mat": "TI",
+   "topicId": null,
+   "assuntoLivre": "TI - Ciência de Dados e Inteligência Artificial — geral",
+   "minutos": 2,
+   "qResolvidas": 3,
+   "qAcertadas": 3,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-14~sem-assunto-177bb3",
+   "origem": "tec",
+   "data": "2026-08-14",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "(sem assunto no TEC)",
+   "minutos": 1,
+   "qResolvidas": 5,
+   "qAcertadas": 0,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-14~sem-assunto-2c6431",
+   "origem": "tec",
+   "data": "2026-08-14",
+   "mat": "CG",
+   "topicId": null,
+   "assuntoLivre": "Contabilidade Geral — geral",
+   "minutos": 8,
+   "qResolvidas": 4,
+   "qAcertadas": 4,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-14~sem-assunto-3c157b",
+   "origem": "tec",
+   "data": "2026-08-14",
+   "mat": "PORT",
+   "topicId": null,
+   "assuntoLivre": "Língua Portuguesa (Português) — geral",
+   "minutos": 3,
+   "qResolvidas": 4,
+   "qAcertadas": 3,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-14~sem-assunto-660b27",
+   "origem": "tec",
+   "data": "2026-08-14",
+   "mat": "AUD",
+   "topicId": null,
+   "assuntoLivre": "Auditoria Governamental e Controle — geral",
+   "minutos": 1,
+   "qResolvidas": 6,
+   "qAcertadas": 6,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-14~sem-assunto-dfc620",
+   "origem": "tec",
+   "data": "2026-08-14",
+   "mat": "DFin",
+   "topicId": null,
+   "assuntoLivre": "AFO, Direito Financeiro e Contabilidade Pública — geral",
+   "minutos": 2,
+   "qResolvidas": 21,
+   "qAcertadas": 20,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-14~sem-assunto-e4a453",
+   "origem": "tec",
+   "data": "2026-08-14",
+   "mat": "DAD",
+   "topicId": null,
+   "assuntoLivre": "Direito Administrativo (Doutrina e Leis Federais) — geral",
+   "minutos": 1,
+   "qResolvidas": 8,
+   "qAcertadas": 4,
+   "obs": "reconstruída do TEC"
+  },
+  {
+   "uid": "TEC~2026-08-14~sem-assunto-f7b1bc",
+   "origem": "tec",
+   "data": "2026-08-14",
+   "mat": "DCON",
+   "topicId": null,
+   "assuntoLivre": "Direito Constitucional (CF/1988 e Doutrina) — geral",
+   "minutos": 5,
+   "qResolvidas": 5,
    "qAcertadas": 1,
    "obs": "reconstruída do TEC"
   }

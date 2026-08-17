@@ -1,21 +1,21 @@
 {
-  "gerado_em": "2026-08-14T07:48:04",
+  "gerado_em": "2026-08-17T08:13:04",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 3088,
-    "acertos": 2373,
+    "tentativas": 3144,
+    "acertos": 2414,
     "pct": 76.8,
-    "unicas": 2775,
-    "acertos_unicas": 2264,
-    "pct_unicas": 81.6
+    "unicas": 2831,
+    "acertos_unicas": 2305,
+    "pct_unicas": 81.4
   },
   "materias": [
     {
       "materia": "Sem materia",
-      "tentativas": 48,
+      "tentativas": 53,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 46,
+      "unicas": 51,
       "acertos_unicas": 0,
       "pct_unicas": 0.0
     },
@@ -57,39 +57,30 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "tentativas": 407,
-      "acertos": 302,
-      "pct": 74.2,
-      "unicas": 369,
-      "acertos_unicas": 290,
-      "pct_unicas": 78.6
+      "tentativas": 411,
+      "acertos": 306,
+      "pct": 74.5,
+      "unicas": 373,
+      "acertos_unicas": 294,
+      "pct_unicas": 78.8
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "tentativas": 322,
-      "acertos": 236,
-      "pct": 73.3,
-      "unicas": 286,
-      "acertos_unicas": 228,
-      "pct_unicas": 79.7
-    },
-    {
-      "materia": "TI - Ciência de Dados e Inteligência Artificial",
-      "tentativas": 161,
-      "acertos": 128,
-      "pct": 79.5,
-      "unicas": 145,
-      "acertos_unicas": 118,
-      "pct_unicas": 81.4
+      "tentativas": 330,
+      "acertos": 240,
+      "pct": 72.7,
+      "unicas": 294,
+      "acertos_unicas": 232,
+      "pct_unicas": 78.9
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
-      "tentativas": 274,
-      "acertos": 218,
-      "pct": 79.6,
-      "unicas": 251,
-      "acertos_unicas": 205,
-      "pct_unicas": 81.7
+      "tentativas": 279,
+      "acertos": 219,
+      "pct": 78.5,
+      "unicas": 256,
+      "acertos_unicas": 206,
+      "pct_unicas": 80.5
     },
     {
       "materia": "Legislação Civil e Processual Civil Especial",
@@ -98,6 +89,15 @@
       "pct": 81.8,
       "unicas": 11,
       "acertos_unicas": 9,
+      "pct_unicas": 81.8
+    },
+    {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "tentativas": 164,
+      "acertos": 131,
+      "pct": 79.9,
+      "unicas": 148,
+      "acertos_unicas": 121,
       "pct_unicas": 81.8
     },
     {
@@ -129,12 +129,12 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "tentativas": 1016,
-      "acertos": 818,
-      "pct": 80.5,
-      "unicas": 926,
-      "acertos_unicas": 796,
-      "pct_unicas": 86.0
+      "tentativas": 1037,
+      "acertos": 838,
+      "pct": 80.8,
+      "unicas": 947,
+      "acertos_unicas": 816,
+      "pct_unicas": 86.2
     },
     {
       "materia": "Auditoria Privada",
@@ -183,21 +183,21 @@
     },
     {
       "materia": "Auditoria Governamental e Controle",
-      "tentativas": 249,
-      "acertos": 195,
-      "pct": 78.3,
-      "unicas": 183,
-      "acertos_unicas": 166,
-      "pct_unicas": 90.7
+      "tentativas": 255,
+      "acertos": 201,
+      "pct": 78.8,
+      "unicas": 189,
+      "acertos_unicas": 172,
+      "pct_unicas": 91.0
     },
     {
       "materia": "Língua Portuguesa (Português)",
-      "tentativas": 27,
-      "acertos": 24,
-      "pct": 88.9,
-      "unicas": 21,
-      "acertos_unicas": 20,
-      "pct_unicas": 95.2
+      "tentativas": 31,
+      "acertos": 27,
+      "pct": 87.1,
+      "unicas": 25,
+      "acertos_unicas": 23,
+      "pct_unicas": 92.0
     },
     {
       "materia": "Administração Geral e Pública",
@@ -571,20 +571,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Sem assunto",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 79,
-      "acertos": 66,
-      "pct": 83.5,
-      "unicas": 79,
-      "acertos_unicas": 66,
-      "pct_unicas": 83.5,
-      "ultima": "2026-08-11"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Classificação por Natureza da Receita",
       "grupo": "DFin",
       "prio": 1,
@@ -596,6 +582,20 @@
       "acertos_unicas": 16,
       "pct_unicas": 84.2,
       "ultima": "2026-08-02"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Sem assunto",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 100,
+      "acertos": 86,
+      "pct": 86.0,
+      "unicas": 100,
+      "acertos_unicas": 86,
+      "pct_unicas": 86.0,
+      "ultima": "2026-08-14"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -1047,20 +1047,6 @@
     },
     {
       "materia": "Auditoria Governamental e Controle",
-      "assunto": "Sem assunto",
-      "grupo": "AUD",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 8,
-      "acertos": 6,
-      "pct": 75.0,
-      "unicas": 8,
-      "acertos_unicas": 6,
-      "pct_unicas": 75.0,
-      "ultima": "2026-08-11"
-    },
-    {
-      "materia": "Auditoria Governamental e Controle",
       "assunto": "Relatório, Certificado, Parecer e Nota (Auditoria Governamental)",
       "grupo": "AUD",
       "prio": 2,
@@ -1072,6 +1058,20 @@
       "acertos_unicas": 5,
       "pct_unicas": 83.3,
       "ultima": "2026-07-23"
+    },
+    {
+      "materia": "Auditoria Governamental e Controle",
+      "assunto": "Sem assunto",
+      "grupo": "AUD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 14,
+      "acertos": 12,
+      "pct": 85.7,
+      "unicas": 14,
+      "acertos_unicas": 12,
+      "pct_unicas": 85.7,
+      "ultima": "2026-08-14"
     },
     {
       "materia": "Auditoria Governamental e Controle",
@@ -1611,13 +1611,13 @@
       "grupo": "CG",
       "prio": null,
       "c25": 0,
-      "tentativas": 23,
-      "acertos": 14,
-      "pct": 60.9,
-      "unicas": 23,
-      "acertos_unicas": 14,
-      "pct_unicas": 60.9,
-      "ultima": "2026-08-06"
+      "tentativas": 27,
+      "acertos": 18,
+      "pct": 66.7,
+      "unicas": 27,
+      "acertos_unicas": 18,
+      "pct_unicas": 66.7,
+      "ultima": "2026-08-14"
     },
     {
       "materia": "Contabilidade Geral",
@@ -2293,6 +2293,20 @@
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
+      "assunto": "Sem assunto",
+      "grupo": "DAD",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 20,
+      "acertos": 15,
+      "pct": 75.0,
+      "unicas": 20,
+      "acertos_unicas": 15,
+      "pct_unicas": 75.0,
+      "ultima": "2026-08-14"
+    },
+    {
+      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
       "assunto": "Agências Reguladoras e Executivas",
       "grupo": "DAD",
       "prio": 3,
@@ -2430,20 +2444,6 @@
       "acertos_unicas": 19,
       "pct_unicas": 90.5,
       "ultima": "2026-08-03"
-    },
-    {
-      "materia": "Direito Administrativo (Doutrina e Leis Federais)",
-      "assunto": "Sem assunto",
-      "grupo": "DAD",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 12,
-      "acertos": 11,
-      "pct": 91.7,
-      "unicas": 12,
-      "acertos_unicas": 11,
-      "pct_unicas": 91.7,
-      "ultima": "2026-08-11"
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -2997,13 +2997,13 @@
       "grupo": "DCON",
       "prio": null,
       "c25": 0,
-      "tentativas": 4,
-      "acertos": 1,
-      "pct": 25.0,
-      "unicas": 4,
-      "acertos_unicas": 1,
-      "pct_unicas": 25.0,
-      "ultima": "2026-08-11"
+      "tentativas": 9,
+      "acertos": 2,
+      "pct": 22.2,
+      "unicas": 9,
+      "acertos_unicas": 2,
+      "pct_unicas": 22.2,
+      "ultima": "2026-08-14"
     },
     {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
@@ -4285,13 +4285,13 @@
       "grupo": "LP",
       "prio": null,
       "c25": 0,
-      "tentativas": 27,
-      "acertos": 24,
-      "pct": 88.9,
-      "unicas": 21,
-      "acertos_unicas": 20,
-      "pct_unicas": 95.2,
-      "ultima": "2026-08-02"
+      "tentativas": 31,
+      "acertos": 27,
+      "pct": 87.1,
+      "unicas": 25,
+      "acertos_unicas": 23,
+      "pct_unicas": 92.0,
+      "ultima": "2026-08-14"
     },
     {
       "materia": "Sem materia",
@@ -4299,13 +4299,13 @@
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 48,
+      "tentativas": 53,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 46,
+      "unicas": 51,
       "acertos_unicas": 0,
       "pct_unicas": 0.0,
-      "ultima": "2026-08-13"
+      "ultima": "2026-08-14"
     },
     {
       "materia": "TI - Banco de Dados",
@@ -4393,20 +4393,6 @@
     },
     {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
-      "assunto": "Sem assunto",
-      "grupo": "TI",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 2,
-      "acertos": 1,
-      "pct": 50.0,
-      "unicas": 2,
-      "acertos_unicas": 1,
-      "pct_unicas": 50.0,
-      "ultima": "2026-07-10"
-    },
-    {
-      "materia": "TI - Ciência de Dados e Inteligência Artificial",
       "assunto": "Algoritmos de Machine Learning (Classificação, Regressão e Clusterização)",
       "grupo": "TI",
       "prio": 3,
@@ -4460,6 +4446,20 @@
       "acertos_unicas": 16,
       "pct_unicas": 80.0,
       "ultima": "2026-08-12"
+    },
+    {
+      "materia": "TI - Ciência de Dados e Inteligência Artificial",
+      "assunto": "Sem assunto",
+      "grupo": "TI",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 5,
+      "acertos": 4,
+      "pct": 80.0,
+      "unicas": 5,
+      "acertos_unicas": 4,
+      "pct_unicas": 80.0,
+      "ultima": "2026-08-14"
     },
     {
       "materia": "TI - Ciência de Dados e Inteligência Artificial",
