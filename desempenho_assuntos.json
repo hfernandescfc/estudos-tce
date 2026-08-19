@@ -1,21 +1,21 @@
 {
-  "gerado_em": "2026-08-18T08:10:37",
+  "gerado_em": "2026-08-19T08:16:19",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json",
   "resumo": {
-    "tentativas": 3202,
-    "acertos": 2468,
+    "tentativas": 3263,
+    "acertos": 2517,
     "pct": 77.1,
-    "unicas": 2870,
-    "acertos_unicas": 2352,
-    "pct_unicas": 82.0
+    "unicas": 2911,
+    "acertos_unicas": 2400,
+    "pct_unicas": 82.4
   },
   "materias": [
     {
       "materia": "Sem materia",
-      "tentativas": 54,
+      "tentativas": 56,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 52,
+      "unicas": 54,
       "acertos_unicas": 0,
       "pct_unicas": 0.0
     },
@@ -47,22 +47,13 @@
       "pct_unicas": 74.2
     },
     {
-      "materia": "Análise das Demonstrações Contábeis",
-      "tentativas": 46,
-      "acertos": 33,
-      "pct": 71.7,
-      "unicas": 40,
-      "acertos_unicas": 30,
-      "pct_unicas": 75.0
-    },
-    {
       "materia": "Contabilidade Geral",
-      "tentativas": 418,
-      "acertos": 312,
-      "pct": 74.6,
-      "unicas": 379,
-      "acertos_unicas": 300,
-      "pct_unicas": 79.2
+      "tentativas": 429,
+      "acertos": 322,
+      "pct": 75.1,
+      "unicas": 390,
+      "acertos_unicas": 310,
+      "pct_unicas": 79.5
     },
     {
       "materia": "Direito Administrativo (Doutrina e Leis Federais)",
@@ -137,24 +128,6 @@
       "pct_unicas": 86.4
     },
     {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "tentativas": 1057,
-      "acertos": 856,
-      "pct": 81.0,
-      "unicas": 961,
-      "acertos_unicas": 831,
-      "pct_unicas": 86.5
-    },
-    {
-      "materia": "Direito Tributário",
-      "tentativas": 23,
-      "acertos": 20,
-      "pct": 87.0,
-      "unicas": 23,
-      "acertos_unicas": 20,
-      "pct_unicas": 87.0
-    },
-    {
       "materia": "Direito Civil",
       "tentativas": 75,
       "acertos": 63,
@@ -162,6 +135,42 @@
       "unicas": 71,
       "acertos_unicas": 62,
       "pct_unicas": 87.3
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "tentativas": 1075,
+      "acertos": 870,
+      "pct": 80.9,
+      "unicas": 967,
+      "acertos_unicas": 845,
+      "pct_unicas": 87.4
+    },
+    {
+      "materia": "Análise das Demonstrações Contábeis",
+      "tentativas": 53,
+      "acertos": 38,
+      "pct": 71.7,
+      "unicas": 40,
+      "acertos_unicas": 35,
+      "pct_unicas": 87.5
+    },
+    {
+      "materia": "Direito Tributário",
+      "tentativas": 34,
+      "acertos": 30,
+      "pct": 88.2,
+      "unicas": 33,
+      "acertos_unicas": 29,
+      "pct_unicas": 87.9
+    },
+    {
+      "materia": "Língua Portuguesa (Português)",
+      "tentativas": 44,
+      "acertos": 38,
+      "pct": 86.4,
+      "unicas": 38,
+      "acertos_unicas": 34,
+      "pct_unicas": 89.5
     },
     {
       "materia": "Ciências Atuariais (Atuária)",
@@ -180,15 +189,6 @@
       "unicas": 190,
       "acertos_unicas": 173,
       "pct_unicas": 91.1
-    },
-    {
-      "materia": "Língua Portuguesa (Português)",
-      "tentativas": 32,
-      "acertos": 28,
-      "pct": 87.5,
-      "unicas": 26,
-      "acertos_unicas": 24,
-      "pct_unicas": 92.3
     },
     {
       "materia": "Administração Geral e Pública",
@@ -249,20 +249,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Receita de Transação sem Contraprestação (MCASP e NBC TSP 01)",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 14,
-      "acertos": 10,
-      "pct": 71.4,
-      "unicas": 13,
-      "acertos_unicas": 9,
-      "pct_unicas": 69.2,
-      "ultima": "2026-08-17"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Estágios da Receita Pública",
       "grupo": "DFin",
       "prio": 3,
@@ -302,6 +288,20 @@
       "acertos_unicas": 13,
       "pct_unicas": 72.2,
       "ultima": "2026-08-17"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Receita de Transação sem Contraprestação (MCASP e NBC TSP 01)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 20,
+      "acertos": 15,
+      "pct": 75.0,
+      "unicas": 19,
+      "acertos_unicas": 14,
+      "pct_unicas": 73.7,
+      "ultima": "2026-08-18"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -487,20 +487,6 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Conceitos, Objeto, Objetivos e Campo de Aplicação (Estrutura Conceitual - Prefácio e caps. 1 a 4)",
-      "grupo": "CASP",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 64,
-      "acertos": 52,
-      "pct": 81.2,
-      "unicas": 62,
-      "acertos_unicas": 51,
-      "pct_unicas": 82.3,
-      "ultima": "2026-08-02"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Balanço Patrimonial (AFO e CPU)",
       "grupo": "CASP",
       "prio": 1,
@@ -596,20 +582,6 @@
       "acertos_unicas": 7,
       "pct_unicas": 87.5,
       "ultima": "2026-07-28"
-    },
-    {
-      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
-      "assunto": "Investimentos Permanentes, em Coligada e Empreendimento Controlado em Conjunto (MCASP e NBC TSP 18)",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 9,
-      "acertos": 7,
-      "pct": 77.8,
-      "unicas": 8,
-      "acertos_unicas": 7,
-      "pct_unicas": 87.5,
-      "ultima": "2026-08-17"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -795,6 +767,20 @@
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Conceitos, Objeto, Objetivos e Campo de Aplicação (Estrutura Conceitual - Prefácio e caps. 1 a 4)",
+      "grupo": "CASP",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 75,
+      "acertos": 60,
+      "pct": 80.0,
+      "unicas": 62,
+      "acertos_unicas": 59,
+      "pct_unicas": 95.2,
+      "ultima": "2026-08-18"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Balanço Orçamentário (MCASP e NBC TSP 13)",
       "grupo": "CASP",
       "prio": 2,
@@ -834,6 +820,20 @@
       "acertos_unicas": 8,
       "pct_unicas": 100.0,
       "ultima": "2026-07-28"
+    },
+    {
+      "materia": "AFO, Direito Financeiro e Contabilidade Pública",
+      "assunto": "Investimentos Permanentes, em Coligada e Empreendimento Controlado em Conjunto (MCASP e NBC TSP 18)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 10,
+      "acertos": 8,
+      "pct": 80.0,
+      "unicas": 8,
+      "acertos_unicas": 8,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-18"
     },
     {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
@@ -991,20 +991,6 @@
     },
     {
       "materia": "Análise das Demonstrações Contábeis",
-      "assunto": "Índices de Liquidez. Capital Circulante Líquido",
-      "grupo": "CG",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 30,
-      "acertos": 22,
-      "pct": 73.3,
-      "unicas": 27,
-      "acertos_unicas": 20,
-      "pct_unicas": 74.1,
-      "ultima": "2026-07-09"
-    },
-    {
-      "materia": "Análise das Demonstrações Contábeis",
       "assunto": "Análise Vertical e Horizontal das Demonstrações Contábeis",
       "grupo": "CG",
       "prio": 1,
@@ -1016,6 +1002,20 @@
       "acertos_unicas": 10,
       "pct_unicas": 76.9,
       "ultima": "2026-08-02"
+    },
+    {
+      "materia": "Análise das Demonstrações Contábeis",
+      "assunto": "Índices de Liquidez. Capital Circulante Líquido",
+      "grupo": "CG",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 37,
+      "acertos": 27,
+      "pct": 73.0,
+      "unicas": 27,
+      "acertos_unicas": 25,
+      "pct_unicas": 92.6,
+      "ultima": "2026-08-18"
     },
     {
       "materia": "Auditoria Governamental e Controle",
@@ -1649,20 +1649,6 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "assunto": "Ativo Não Circulante Mantido p/ Venda e Operação Descontinuada (CPC 31)",
-      "grupo": "CG",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 6,
-      "acertos": 4,
-      "pct": 66.7,
-      "unicas": 6,
-      "acertos_unicas": 4,
-      "pct_unicas": 66.7,
-      "ultima": "2026-08-11"
-    },
-    {
-      "materia": "Contabilidade Geral",
       "assunto": "Critérios de Avaliação do Estoque (PEPS, UEPS, Média Ponderada)",
       "grupo": "CG",
       "prio": null,
@@ -1716,6 +1702,20 @@
       "acertos_unicas": 23,
       "pct_unicas": 71.9,
       "ultima": "2026-08-03"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "Ativo Não Circulante Mantido p/ Venda e Operação Descontinuada (CPC 31)",
+      "grupo": "CG",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 11,
+      "acertos": 8,
+      "pct": 72.7,
+      "unicas": 11,
+      "acertos_unicas": 8,
+      "pct_unicas": 72.7,
+      "ultima": "2026-08-18"
     },
     {
       "materia": "Contabilidade Geral",
@@ -1845,20 +1845,6 @@
     },
     {
       "materia": "Contabilidade Geral",
-      "assunto": "Demonstração de Fluxo de Caixa (DFC - CPC 03, Lei 6.404, art. 188, I)",
-      "grupo": "CASP",
-      "prio": 1,
-      "c25": 1,
-      "tentativas": 32,
-      "acertos": 28,
-      "pct": 87.5,
-      "unicas": 32,
-      "acertos_unicas": 28,
-      "pct_unicas": 87.5,
-      "ultima": "2026-08-11"
-    },
-    {
-      "materia": "Contabilidade Geral",
       "assunto": "CPC 15: Combinação de Negócios, Fusão, Incorporação e Cisão",
       "grupo": "CG",
       "prio": null,
@@ -1870,6 +1856,20 @@
       "acertos_unicas": 7,
       "pct_unicas": 87.5,
       "ultima": "2026-08-10"
+    },
+    {
+      "materia": "Contabilidade Geral",
+      "assunto": "Demonstração de Fluxo de Caixa (DFC - CPC 03, Lei 6.404, art. 188, I)",
+      "grupo": "CASP",
+      "prio": 1,
+      "c25": 1,
+      "tentativas": 38,
+      "acertos": 34,
+      "pct": 89.5,
+      "unicas": 38,
+      "acertos_unicas": 34,
+      "pct_unicas": 89.5,
+      "ultima": "2026-08-18"
     },
     {
       "materia": "Contabilidade Geral",
@@ -3917,17 +3917,31 @@
     },
     {
       "materia": "Direito Tributário",
+      "assunto": "Extinção do Crédito Tributário (arts. 156 a 174 do CTN)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 1,
+      "pct": 50.0,
+      "unicas": 2,
+      "acertos_unicas": 1,
+      "pct_unicas": 50.0,
+      "ultima": "2026-08-18"
+    },
+    {
+      "materia": "Direito Tributário",
       "assunto": "Fiscalização Tributária (arts. 194 a 200 do CTN)",
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 3,
-      "acertos": 3,
+      "tentativas": 5,
+      "acertos": 5,
       "pct": 100.0,
-      "unicas": 3,
-      "acertos_unicas": 3,
+      "unicas": 5,
+      "acertos_unicas": 5,
       "pct_unicas": 100.0,
-      "ultima": "2026-08-13"
+      "ultima": "2026-08-18"
     },
     {
       "materia": "Direito Tributário",
@@ -3935,13 +3949,41 @@
       "grupo": "",
       "prio": null,
       "c25": 0,
+      "tentativas": 5,
+      "acertos": 5,
+      "pct": 100.0,
+      "unicas": 5,
+      "acertos_unicas": 5,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-18"
+    },
+    {
+      "materia": "Direito Tributário",
+      "assunto": "Responsabilidade Tributária (arts. 128 a 138 do CTN)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
       "tentativas": 3,
       "acertos": 3,
       "pct": 100.0,
       "unicas": 3,
       "acertos_unicas": 3,
       "pct_unicas": 100.0,
-      "ultima": "2026-08-13"
+      "ultima": "2026-08-18"
+    },
+    {
+      "materia": "Direito Tributário",
+      "assunto": "Suspensão da Exigibilidade do Crédito Tributário (arts. 151 a 155-A do CTN)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 2,
+      "acertos": 2,
+      "pct": 100.0,
+      "unicas": 2,
+      "acertos_unicas": 2,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-18"
     },
     {
       "materia": "Direito Tributário",
@@ -3973,6 +4015,20 @@
     },
     {
       "materia": "Direito Tributário",
+      "assunto": "Repartição da Competência Tributária (Privativa, Comum, Cumulativa, Residual, Extraordinária e Compartilhada)",
+      "grupo": "",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 3,
+      "acertos": 3,
+      "pct": 100.0,
+      "unicas": 2,
+      "acertos_unicas": 2,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-18"
+    },
+    {
+      "materia": "Direito Tributário",
       "assunto": "Jurisprudência dos Tribunais Superiores sobre Tópicos Mesclados e/ou Outros Assuntos Tributários",
       "grupo": "",
       "prio": null,
@@ -3984,20 +4040,6 @@
       "acertos_unicas": 1,
       "pct_unicas": 100.0,
       "ultima": "2026-07-24"
-    },
-    {
-      "materia": "Direito Tributário",
-      "assunto": "Suspensão da Exigibilidade do Crédito Tributário (arts. 151 a 155-A do CTN)",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 1,
-      "acertos": 1,
-      "pct": 100.0,
-      "unicas": 1,
-      "acertos_unicas": 1,
-      "pct_unicas": 100.0,
-      "ultima": "2026-08-05"
     },
     {
       "materia": "Direito Tributário",
@@ -4068,34 +4110,6 @@
       "acertos_unicas": 1,
       "pct_unicas": 100.0,
       "ultima": "2026-08-13"
-    },
-    {
-      "materia": "Direito Tributário",
-      "assunto": "Responsabilidade Tributária (arts. 128 a 138 do CTN)",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 1,
-      "acertos": 1,
-      "pct": 100.0,
-      "unicas": 1,
-      "acertos_unicas": 1,
-      "pct_unicas": 100.0,
-      "ultima": "2026-08-13"
-    },
-    {
-      "materia": "Direito Tributário",
-      "assunto": "Repartição da Competência Tributária (Privativa, Comum, Cumulativa, Residual, Extraordinária e Compartilhada)",
-      "grupo": "",
-      "prio": null,
-      "c25": 0,
-      "tentativas": 1,
-      "acertos": 1,
-      "pct": 100.0,
-      "unicas": 1,
-      "acertos_unicas": 1,
-      "pct_unicas": 100.0,
-      "ultima": "2026-08-17"
     },
     {
       "materia": "Estatística",
@@ -4369,13 +4383,13 @@
       "grupo": "LP",
       "prio": null,
       "c25": 0,
-      "tentativas": 31,
-      "acertos": 27,
-      "pct": 87.1,
-      "unicas": 25,
-      "acertos_unicas": 23,
-      "pct_unicas": 92.0,
-      "ultima": "2026-08-14"
+      "tentativas": 42,
+      "acertos": 36,
+      "pct": 85.7,
+      "unicas": 36,
+      "acertos_unicas": 32,
+      "pct_unicas": 88.9,
+      "ultima": "2026-08-18"
     },
     {
       "materia": "Língua Portuguesa (Português)",
@@ -4392,18 +4406,32 @@
       "ultima": "2026-08-17"
     },
     {
+      "materia": "Língua Portuguesa (Português)",
+      "assunto": "Outras Questões de Português e Questões Mescladas (Interpretação de Textos ou Gramática)",
+      "grupo": "LP",
+      "prio": null,
+      "c25": 0,
+      "tentativas": 1,
+      "acertos": 1,
+      "pct": 100.0,
+      "unicas": 1,
+      "acertos_unicas": 1,
+      "pct_unicas": 100.0,
+      "ultima": "2026-08-18"
+    },
+    {
       "materia": "Sem materia",
       "assunto": "Sem assunto",
       "grupo": "",
       "prio": null,
       "c25": 0,
-      "tentativas": 54,
+      "tentativas": 56,
       "acertos": 0,
       "pct": 0.0,
-      "unicas": 52,
+      "unicas": 54,
       "acertos_unicas": 0,
       "pct_unicas": 0.0,
-      "ultima": "2026-08-17"
+      "ultima": "2026-08-18"
     },
     {
       "materia": "TI - Banco de Dados",

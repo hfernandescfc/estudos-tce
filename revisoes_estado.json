@@ -197,7 +197,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-25",
+          "prevista": "2026-08-24",
           "emitida": null
         }
       }
@@ -438,7 +438,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-24",
+          "prevista": "2026-08-21",
           "emitida": null
         }
       }
@@ -503,11 +503,11 @@
         "3610242"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-19",
-          "emitida": null
+          "emitida": "2026-08-19"
         }
       }
     },
@@ -521,11 +521,11 @@
         "2558339"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-19",
-          "emitida": null
+          "emitida": "2026-08-19"
         }
       }
     },
@@ -946,7 +946,7 @@
         },
         "d14": {
           "prevista": "2026-08-19",
-          "emitida": null
+          "emitida": "2026-08-19"
         },
         "d28": {
           "prevista": "2026-08-28",
@@ -1076,7 +1076,7 @@
         },
         "d14": {
           "prevista": "2026-08-19",
-          "emitida": null
+          "emitida": "2026-08-19"
         },
         "d28": {
           "prevista": "2026-08-28",
@@ -1296,7 +1296,7 @@
         },
         "d6": {
           "prevista": "2026-08-19",
-          "emitida": null,
+          "emitida": "2026-08-19",
           "resultado": null
         },
         "d14": {
@@ -1386,11 +1386,11 @@
         "2774685"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-19",
-          "emitida": null
+          "emitida": "2026-08-19"
         }
       }
     },
@@ -4305,7 +4305,7 @@
           }
         },
         "d14": {
-          "prevista": "2026-08-25",
+          "prevista": "2026-08-24",
           "emitida": null
         },
         "d28": {
@@ -4616,11 +4616,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-19",
-          "emitida": null
+          "emitida": "2026-08-19"
         }
       }
     },
@@ -4634,11 +4634,11 @@
         "3610322"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-19",
-          "emitida": null
+          "emitida": "2026-08-19"
         }
       }
     },
@@ -4671,7 +4671,7 @@
         },
         "d14": {
           "prevista": "2026-08-19",
-          "emitida": null
+          "emitida": "2026-08-19"
         },
         "d28": {
           "prevista": "2026-08-28",
@@ -4740,7 +4740,7 @@
         },
         "d14": {
           "prevista": "2026-08-19",
-          "emitida": null
+          "emitida": "2026-08-19"
         },
         "d28": {
           "prevista": "2026-08-28",
@@ -5130,7 +5130,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-24",
+          "prevista": "2026-08-21",
           "emitida": null
         }
       }
@@ -5148,7 +5148,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-24",
+          "prevista": "2026-08-21",
           "emitida": null
         }
       }
@@ -5166,7 +5166,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-24",
+          "prevista": "2026-08-21",
           "emitida": null
         }
       }
@@ -5181,7 +5181,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-24",
+          "prevista": "2026-08-21",
           "emitida": null
         }
       }
@@ -5198,7 +5198,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-24",
+          "prevista": "2026-08-21",
           "emitida": null
         }
       }
@@ -5216,7 +5216,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-24",
+          "prevista": "2026-08-21",
           "emitida": null
         }
       }
@@ -5366,7 +5366,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-25",
+          "prevista": "2026-08-24",
           "emitida": null
         }
       }
@@ -5381,7 +5381,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-25",
+          "prevista": "2026-08-24",
           "emitida": null
         }
       }
@@ -5396,7 +5396,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-25",
+          "prevista": "2026-08-24",
           "emitida": null
         }
       }
@@ -5414,7 +5414,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-25",
+          "prevista": "2026-08-24",
           "emitida": null
         }
       }
@@ -5484,7 +5484,7 @@
         },
         "d6": {
           "prevista": "2026-08-19",
-          "emitida": null,
+          "emitida": "2026-08-19",
           "resultado": null
         },
         "d14": {
@@ -5514,7 +5514,7 @@
         },
         "d6": {
           "prevista": "2026-08-19",
-          "emitida": null,
+          "emitida": "2026-08-19",
           "resultado": null
         },
         "d14": {
@@ -5545,7 +5545,7 @@
         },
         "d6": {
           "prevista": "2026-08-19",
-          "emitida": null,
+          "emitida": "2026-08-19",
           "resultado": null
         },
         "d14": {
@@ -5573,7 +5573,7 @@
         },
         "d6": {
           "prevista": "2026-08-19",
-          "emitida": null,
+          "emitida": "2026-08-19",
           "resultado": null
         },
         "d14": {
@@ -5846,93 +5846,65 @@
     }
   },
   "ultima_fila": {
-    "data": "2026-08-18",
+    "data": "2026-08-19",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||(sem assunto)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Bases de Mensuração de Ativos e Passivos (MCASP e NBC TSP EC)",
+        "d14"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Redução ao Valor Recuperável (MCASP, NBC TSP 09 e 10)",
+        "d14"
+      ],
+      [
+        "Auditoria Governamental e Controle||Auditoria e Fiscalização (TCEs e TCMs)",
         "d6"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Fundos Especiais",
-        "d28"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Garantia, Contragarantia e Restos a Pagar (arts. 40 a 42 da LRF)",
-        "d28"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||LOA - Lei Orçamentária Anual (CF/1988 e Lei nº 4.320/1964)",
-        "d1"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Operações de Crédito (arts. 32 a 39 da LRF)",
-        "d28"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Plano de Contas (PCASP)",
-        "d28"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários",
-        "d28"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Provisões, Passivos e Ativos Contingentes (MCASP e NBC TSP 03)",
-        "d28"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Receita de Transação sem Contraprestação (MCASP e NBC TSP 01)",
+        "Auditoria Governamental e Controle||Competência e Atribuições (TCEs e TCMs)",
         "d6"
       ],
       [
-        "Auditoria Governamental e Controle||(sem assunto)",
+        "Auditoria Governamental e Controle||Controle de Qualidade da Auditoria Governamental",
+        "d14"
+      ],
+      [
+        "Auditoria Governamental e Controle||Ministério Público de Contas",
         "d6"
       ],
       [
-        "Auditoria Privada||Evidência em Auditoria",
-        "d1"
-      ],
-      [
-        "Auditoria Privada||Opinião do Auditor Independente/Relatórios e Pareceres de Auditoria",
-        "d28"
-      ],
-      [
-        "Contabilidade Geral||Ativo Não Circulante Mantido p/ Venda e Operação Descontinuada (CPC 31)",
+        "Auditoria Governamental e Controle||Outras Questões e Tópicos Mesclados de Auditoria Governamental",
         "d6"
       ],
       [
-        "Contabilidade Geral||CPC 16 - Tratamento Contábil para os Estoques",
-        "d14"
-      ],
-      [
-        "Contabilidade Geral||Critérios de Avaliação do Estoque (PEPS, UEPS, Média Ponderada)",
-        "d14"
-      ],
-      [
-        "Contabilidade Geral||Demonstração de Fluxo de Caixa (DFC - CPC 03, Lei 6.404, art. 188, I)",
+        "Auditoria Governamental e Controle||Processos de Contas (TCEs e TCMs)",
         "d6"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Autorização, Permissão e Concessão (Serviços Públicos - Lei nº 8.987/1995)",
+        "Auditoria Governamental e Controle||Risco de Auditoria. Confiança e Asseguração em Auditoria",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Das Disposições Gerais (arts. 1º a 8º-A da Lei nº 8.429/1992)",
+        "Direito Administrativo (Doutrina e Leis Federais)||Do Procedimento Administrativo e do Processo Judicial (arts. 14 a 18-A da Lei nº 8.429/1992)",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Das Penas (art. 12 da Lei nº 8.429/1992)",
+        "Direito Administrativo (Doutrina e Leis Federais)||Dos Atos de Improbidade (arts. 9º a 11 da Lei nº 8.429/1992)",
         "d14"
       ],
       [
-        "Direito Administrativo (Doutrina e Leis Federais)||Deveres e Direitos (Usuários, Concedente, Concessionária, Licitações - Lei nº 8.987/1995)",
+        "Direito Administrativo (Doutrina e Leis Federais)||Formas de Extinção (Serviços Públicos - Lei nº 8.987/1995)",
         "d14"
       ],
       [
-        "Estatística||Probabilidade Condicional",
+        "Direito Civil||Bens Públicos (arts. 98 a 103)",
+        "d14"
+      ],
+      [
+        "Direito Civil||Da Personalidade e da Capacidade (arts. 1º a 10)",
         "d14"
       ]
     ],
-    "confirmada": "2026-08-18"
+    "confirmada": "2026-08-19"
   }
 }
