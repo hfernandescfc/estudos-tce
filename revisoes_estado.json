@@ -45,7 +45,8 @@
     "tec_registros_2026-08-14.json",
     "tec_registros_2026-08-17.json",
     "tec_registros_2026-08-18.json",
-    "tec_registros_2026-08-19.json"
+    "tec_registros_2026-08-19.json",
+    "tec_registros_2026-08-20.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
@@ -784,38 +785,30 @@
     "AFO, Direito Financeiro e Contabilidade Pública||Ativo Intangível (MCASP e NBC TSP 08)": {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Ativo Intangível (MCASP e NBC TSP 08)",
-      "data_base": "2026-07-15",
+      "data_base": "2026-08-20",
       "cadeia_completa": true,
       "alvos_origem": [
-        "3026008",
-        "2794072",
-        "3094029"
+        "2887858"
       ],
-      "reinicios": 1,
-      "status": "concluida",
+      "reinicios": 0,
+      "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-15",
-          "emitida": "2026-07-15"
+          "prevista": "2026-08-20",
+          "emitida": "2026-08-20"
         },
         "d6": {
-          "prevista": "2026-07-21",
-          "emitida": "2026-07-21",
-          "resultado": {
-            "pct": 100,
-            "questoes": 8,
-            "limiar": 70,
-            "aprovada": true,
-            "data": "2026-07-22"
-          }
+          "prevista": "2026-08-26",
+          "emitida": null,
+          "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-29",
-          "emitida": "2026-07-29"
+          "prevista": "2026-08-28",
+          "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-13",
-          "emitida": "2026-08-10"
+          "prevista": "2026-08-28",
+          "emitida": null
         }
       }
     },
@@ -856,34 +849,28 @@
     "AFO, Direito Financeiro e Contabilidade Pública||Depreciação, Amortização e Exaustão (NBC TSP 07, MCASP, etc.)": {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Depreciação, Amortização e Exaustão (NBC TSP 07, MCASP, etc.)",
-      "data_base": "2026-07-08",
+      "data_base": "2026-08-20",
       "cadeia_completa": true,
-      "alvos_origem": [
-        "3870643",
-        "2292846",
-        "2620401",
-        "2687910",
-        "2215176"
-      ],
+      "alvos_origem": [],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-08",
-          "emitida": "2026-07-08"
+          "prevista": "2026-08-20",
+          "emitida": "2026-08-20"
         },
         "d6": {
-          "prevista": "2026-07-14",
-          "emitida": "2026-07-14",
+          "prevista": "2026-08-26",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-22",
-          "emitida": "2026-07-22"
+          "prevista": "2026-08-28",
+          "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-05",
-          "emitida": "2026-08-03"
+          "prevista": "2026-08-28",
+          "emitida": null
         }
       }
     },
@@ -1567,7 +1554,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-26",
+          "prevista": "2026-08-27",
           "emitida": null
         }
       }
@@ -1837,7 +1824,7 @@
         },
         "d6": {
           "prevista": "2026-08-20",
-          "emitida": null,
+          "emitida": "2026-08-20",
           "resultado": null
         },
         "d14": {
@@ -3967,7 +3954,7 @@
         },
         "d14": {
           "prevista": "2026-08-20",
-          "emitida": null
+          "emitida": "2026-08-20"
         },
         "d28": {
           "prevista": "2026-08-28",
@@ -4775,7 +4762,7 @@
           }
         },
         "d14": {
-          "prevista": "2026-08-26",
+          "prevista": "2026-08-27",
           "emitida": null
         },
         "d28": {
@@ -4890,7 +4877,7 @@
         },
         "d14": {
           "prevista": "2026-08-20",
-          "emitida": null
+          "emitida": "2026-08-20"
         },
         "d28": {
           "prevista": "2026-08-28",
@@ -4921,7 +4908,7 @@
         },
         "d14": {
           "prevista": "2026-08-20",
-          "emitida": null
+          "emitida": "2026-08-20"
         },
         "d28": {
           "prevista": "2026-08-28",
@@ -4938,11 +4925,11 @@
         "2943394"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-20",
-          "emitida": null
+          "emitida": "2026-08-20"
         }
       }
     },
@@ -4953,11 +4940,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-20",
-          "emitida": null
+          "emitida": "2026-08-20"
         }
       }
     },
@@ -4970,11 +4957,11 @@
         "3747727"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-20",
-          "emitida": null
+          "emitida": "2026-08-20"
         }
       }
     },
@@ -4990,11 +4977,11 @@
         "2215406"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-20",
-          "emitida": null
+          "emitida": "2026-08-20"
         }
       }
     },
@@ -5005,11 +4992,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-20",
-          "emitida": null
+          "emitida": "2026-08-20"
         }
       }
     },
@@ -5020,11 +5007,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-20",
-          "emitida": null
+          "emitida": "2026-08-20"
         }
       }
     },
@@ -5050,7 +5037,7 @@
         },
         "d14": {
           "prevista": "2026-08-20",
-          "emitida": null
+          "emitida": "2026-08-20"
         },
         "d28": {
           "prevista": "2026-08-28",
@@ -5080,7 +5067,7 @@
         },
         "d14": {
           "prevista": "2026-08-20",
-          "emitida": null
+          "emitida": "2026-08-20"
         },
         "d28": {
           "prevista": "2026-08-28",
@@ -5620,7 +5607,13 @@
         "d6": {
           "prevista": "2026-08-19",
           "emitida": "2026-08-19",
-          "resultado": null
+          "resultado": {
+            "pct": 100,
+            "questoes": 5,
+            "limiar": 70,
+            "aprovada": true,
+            "data": "2026-08-20"
+          }
         },
         "d14": {
           "prevista": "2026-08-27",
@@ -5710,7 +5703,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-27",
+          "prevista": "2026-08-28",
           "emitida": null
         }
       }
@@ -5727,7 +5720,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-27",
+          "prevista": "2026-08-28",
           "emitida": null
         }
       }
@@ -5901,48 +5894,83 @@
           "emitida": null
         }
       }
+    },
+    "Ciências Políticas||Avaliação das Políticas Públicas (Inclui Teorias Contemporâneas e Modelos de Análise)": {
+      "materia": "Ciências Políticas",
+      "assunto": "Avaliação das Políticas Públicas (Inclui Teorias Contemporâneas e Modelos de Análise)",
+      "data_base": "2026-08-20",
+      "cadeia_completa": false,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d14": {
+          "prevista": "2026-08-28",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-08-19",
+    "data": "2026-08-20",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Conceitos, Objeto, Objetivos e Campo de Aplicação (Estrutura Conceitual - Prefácio e caps. 1 a 4)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Intangível (MCASP e NBC TSP 08)",
         "d1"
       ],
       [
-        "Análise das Demonstrações Contábeis||Índices de Liquidez. Capital Circulante Líquido",
+        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Orçamentário (MCASP e NBC TSP 13)",
+        "d6"
+      ],
+      [
+        "AFO, Direito Financeiro e Contabilidade Pública||Depreciação, Amortização e Exaustão (NBC TSP 07, MCASP, etc.)",
         "d1"
       ],
       [
-        "Auditoria Governamental e Controle||Sanções (TCEs e TCMs)",
-        "d6"
-      ],
-      [
-        "Contabilidade Geral||Demonstração Contábil Consolidada (CPC 36, Lei 6.404, art. 249 e 250)",
-        "d6"
-      ],
-      [
-        "Contabilidade Geral||Elaboração e Apresentação das Demonstrações Contábeis (CPC 26, Lei 6.404, arts. 176 e 177)",
-        "d6"
-      ],
-      [
-        "Contabilidade Geral||Reservas de Lucros",
-        "d6"
-      ],
-      [
-        "Direito Processual Civil||Da Ação (arts. 17 a 20)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Tópicos Mesclados de PPA, LDO e LOA",
         "d14"
       ],
       [
-        "Direito Processual Civil||Da Forma dos Atos Processuais (arts. 188 a 211)",
+        "Contabilidade Geral||CPC 23: Políticas Contábeis, Mudanças de Estimativa e Retificação de Erro",
         "d14"
       ],
       [
-        "Direito Processual Civil||Da Prova Pericial (arts. 464 a 480)",
+        "Contabilidade Geral||Demonstração do Resultado do Exercício (DRE) e Destinação do Resultado",
+        "d14"
+      ],
+      [
+        "Direito Processual Civil||Da Jurisdição (art. 16)",
+        "d14"
+      ],
+      [
+        "Direito Processual Civil||Da Produção Antecipada da Prova (arts. 381 a 383)",
+        "d14"
+      ],
+      [
+        "Direito Processual Civil||Da Prova Testemunhal (arts. 442 a 463)",
+        "d14"
+      ],
+      [
+        "Direito Processual Civil||Dos Prazos (arts. 218 a 235)",
+        "d14"
+      ],
+      [
+        "Direito Tributário||Fiscalização Tributária (arts. 194 a 200 do CTN)",
+        "d14"
+      ],
+      [
+        "Direito Tributário||Impostos (Conceito e Classificações)",
+        "d14"
+      ],
+      [
+        "Estatística||Intervalo de Confiança para a Proporção",
+        "d14"
+      ],
+      [
+        "Estatística||Teste de Qui-quadrado",
         "d14"
       ]
     ],
-    "confirmada": "2026-08-19"
+    "confirmada": "2026-08-20"
   }
 }
