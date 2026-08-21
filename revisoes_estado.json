@@ -46,69 +46,63 @@
     "tec_registros_2026-08-17.json",
     "tec_registros_2026-08-18.json",
     "tec_registros_2026-08-19.json",
-    "tec_registros_2026-08-20.json"
+    "tec_registros_2026-08-20.json",
+    "tec_registros_2026-08-21.json"
   ],
   "cadeias": {
     "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários": {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Princípios Orçamentários",
-      "data_base": "2026-07-24",
+      "data_base": "2026-08-21",
       "cadeia_completa": true,
-      "alvos_origem": [
-        "2915862",
-        "3026469"
-      ],
+      "alvos_origem": [],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-24",
-          "emitida": "2026-07-24b"
+          "prevista": "2026-08-21",
+          "emitida": "2026-08-21"
         },
         "d6": {
-          "prevista": "2026-07-30",
-          "emitida": "2026-07-30",
+          "prevista": "2026-08-27",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-10",
-          "emitida": "2026-08-10"
+          "prevista": "2026-08-28",
+          "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-21",
-          "emitida": "2026-08-18"
+          "prevista": "2026-08-28",
+          "emitida": null
         }
       }
     },
     "Contabilidade Geral||Depreciação, Amortização e Exaustão": {
       "materia": "Contabilidade Geral",
       "assunto": "Depreciação, Amortização e Exaustão",
-      "data_base": "2026-06-29",
+      "data_base": "2026-08-21",
       "cadeia_completa": true,
-      "alvos_origem": [
-        "2890221",
-        "2620938",
-        "2336665"
-      ],
+      "alvos_origem": [],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-06-30",
-          "emitida": "expirada"
+          "prevista": "2026-08-21",
+          "emitida": "2026-08-21"
         },
         "d6": {
-          "prevista": "2026-07-04",
-          "emitida": "2026-07-07",
+          "prevista": "2026-08-28",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-13",
-          "emitida": "2026-07-13"
+          "prevista": "2026-08-28",
+          "emitida": null
         },
         "d28": {
-          "prevista": "2026-07-27",
-          "emitida": "2026-07-28"
+          "prevista": "2026-08-28",
+          "emitida": null
         }
       }
     },
@@ -225,7 +219,7 @@
         },
         "d14": {
           "prevista": "2026-08-21",
-          "emitida": null
+          "emitida": "2026-08-21"
         },
         "d28": {
           "prevista": "2026-08-28",
@@ -428,11 +422,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-21",
-          "emitida": null
+          "emitida": "2026-08-21"
         }
       }
     },
@@ -815,34 +809,30 @@
     "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Natureza da Receita": {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Classificação por Natureza da Receita",
-      "data_base": "2026-07-08",
+      "data_base": "2026-08-21",
       "cadeia_completa": true,
-      "alvos_origem": [],
+      "alvos_origem": [
+        "2965558"
+      ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-08",
-          "emitida": "2026-07-08"
+          "prevista": "2026-08-21",
+          "emitida": "2026-08-21"
         },
         "d6": {
-          "prevista": "2026-07-14",
-          "emitida": "2026-07-14",
-          "resultado": {
-            "pct": 85,
-            "questoes": 13,
-            "limiar": 70,
-            "aprovada": true,
-            "data": "2026-07-24"
-          }
+          "prevista": "2026-08-27",
+          "emitida": null,
+          "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-22",
-          "emitida": "2026-07-22"
+          "prevista": "2026-08-28",
+          "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-05",
-          "emitida": "2026-08-03"
+          "prevista": "2026-08-28",
+          "emitida": null
         }
       }
     },
@@ -1106,18 +1096,15 @@
     "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Fiscalização Contábil, Financeira e Orçamentária": {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "assunto": "Jurisprudência dos Tribunais Superiores sobre Fiscalização Contábil, Financeira e Orçamentária",
-      "data_base": "2026-07-09",
+      "data_base": "2026-08-21",
       "cadeia_completa": false,
-      "alvos_origem": [
-        "3257565",
-        "3156582"
-      ],
+      "alvos_origem": [],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-07-23",
-          "emitida": "2026-07-23"
+          "prevista": "2026-08-28",
+          "emitida": null
         }
       }
     },
@@ -1142,18 +1129,15 @@
     "Direito Constitucional (CF/1988 e Doutrina)||Jurisprudência dos Tribunais Superiores sobre Sistema Tributário Nacional": {
       "materia": "Direito Constitucional (CF/1988 e Doutrina)",
       "assunto": "Jurisprudência dos Tribunais Superiores sobre Sistema Tributário Nacional",
-      "data_base": "2026-07-24",
+      "data_base": "2026-08-21",
       "cadeia_completa": false,
-      "alvos_origem": [
-        "3610211",
-        "1888633"
-      ],
+      "alvos_origem": [],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-10",
-          "emitida": "2026-08-10"
+          "prevista": "2026-08-28",
+          "emitida": null
         }
       }
     },
@@ -1455,31 +1439,30 @@
     "AFO, Direito Financeiro e Contabilidade Pública||Demonstração das Variações Patrimoniais (DVP)": {
       "materia": "AFO, Direito Financeiro e Contabilidade Pública",
       "assunto": "Demonstração das Variações Patrimoniais (DVP)",
-      "data_base": "2026-07-13",
+      "data_base": "2026-08-21",
       "cadeia_completa": true,
       "alvos_origem": [
-        "2369046",
         "1924667"
       ],
       "reinicios": 0,
-      "status": "concluida",
+      "status": "ativa",
       "etapas": {
         "d1": {
-          "prevista": "2026-07-13",
-          "emitida": "2026-07-13"
+          "prevista": "2026-08-21",
+          "emitida": "2026-08-21"
         },
         "d6": {
-          "prevista": "2026-07-18",
-          "emitida": "2026-07-20",
+          "prevista": "2026-08-27",
+          "emitida": null,
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-07-27",
-          "emitida": "2026-07-28"
+          "prevista": "2026-08-28",
+          "emitida": null
         },
         "d28": {
-          "prevista": "2026-08-11",
-          "emitida": "2026-08-10"
+          "prevista": "2026-08-28",
+          "emitida": null
         }
       }
     },
@@ -1856,7 +1839,7 @@
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-27",
+          "prevista": "2026-08-28",
           "emitida": null
         },
         "d28": {
@@ -5101,7 +5084,7 @@
         },
         "d14": {
           "prevista": "2026-08-21",
-          "emitida": null
+          "emitida": "2026-08-21"
         },
         "d28": {
           "prevista": "2026-08-28",
@@ -5119,11 +5102,11 @@
         "2774578"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-21",
-          "emitida": null
+          "emitida": "2026-08-21"
         }
       }
     },
@@ -5137,11 +5120,11 @@
         "3734594"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-21",
-          "emitida": null
+          "emitida": "2026-08-21"
         }
       }
     },
@@ -5155,11 +5138,11 @@
         "2942768"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-21",
-          "emitida": null
+          "emitida": "2026-08-21"
         }
       }
     },
@@ -5170,11 +5153,11 @@
       "cadeia_completa": false,
       "alvos_origem": [],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-21",
-          "emitida": null
+          "emitida": "2026-08-21"
         }
       }
     },
@@ -5187,11 +5170,11 @@
         "2775361"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-21",
-          "emitida": null
+          "emitida": "2026-08-21"
         }
       }
     },
@@ -5205,11 +5188,11 @@
         "2916468"
       ],
       "reinicios": 0,
-      "status": "ativa",
+      "status": "concluida",
       "etapas": {
         "d14": {
           "prevista": "2026-08-21",
-          "emitida": null
+          "emitida": "2026-08-21"
         }
       }
     },
@@ -5225,7 +5208,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-21",
+          "prevista": "2026-08-24",
           "emitida": null
         }
       }
@@ -5240,7 +5223,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-21",
+          "prevista": "2026-08-24",
           "emitida": null
         }
       }
@@ -5266,7 +5249,7 @@
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-21",
+          "prevista": "2026-08-24",
           "emitida": null
         },
         "d28": {
@@ -5544,7 +5527,13 @@
         "d6": {
           "prevista": "2026-08-19",
           "emitida": "2026-08-19",
-          "resultado": null
+          "resultado": {
+            "pct": 80,
+            "questoes": 5,
+            "limiar": 60,
+            "aprovada": true,
+            "data": "2026-08-21"
+          }
         },
         "d14": {
           "prevista": "2026-08-27",
@@ -5646,7 +5635,7 @@
           "resultado": null
         },
         "d14": {
-          "prevista": "2026-08-27",
+          "prevista": "2026-08-28",
           "emitida": null
         },
         "d28": {
@@ -5667,7 +5656,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-27",
+          "prevista": "2026-08-28",
           "emitida": null
         }
       }
@@ -5684,7 +5673,7 @@
       "status": "ativa",
       "etapas": {
         "d14": {
-          "prevista": "2026-08-27",
+          "prevista": "2026-08-28",
           "emitida": null
         }
       }
@@ -5909,68 +5898,96 @@
           "emitida": null
         }
       }
+    },
+    "Auditoria Governamental e Controle||Eficácia e Execução das Decisões (TCEs e TCMs)": {
+      "materia": "Auditoria Governamental e Controle",
+      "assunto": "Eficácia e Execução das Decisões (TCEs e TCMs)",
+      "data_base": "2026-08-21",
+      "cadeia_completa": true,
+      "alvos_origem": [],
+      "reinicios": 0,
+      "status": "ativa",
+      "etapas": {
+        "d1": {
+          "prevista": "2026-08-21",
+          "emitida": "2026-08-21"
+        },
+        "d6": {
+          "prevista": "2026-08-27",
+          "emitida": null,
+          "resultado": null
+        },
+        "d14": {
+          "prevista": "2026-08-28",
+          "emitida": null
+        },
+        "d28": {
+          "prevista": "2026-08-28",
+          "emitida": null
+        }
+      }
     }
   },
   "ultima_fila": {
-    "data": "2026-08-20",
+    "data": "2026-08-21",
     "itens": [
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Ativo Intangível (MCASP e NBC TSP 08)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Classificação por Natureza da Receita",
         "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Balanço Orçamentário (MCASP e NBC TSP 13)",
-        "d6"
-      ],
-      [
-        "AFO, Direito Financeiro e Contabilidade Pública||Depreciação, Amortização e Exaustão (NBC TSP 07, MCASP, etc.)",
+        "AFO, Direito Financeiro e Contabilidade Pública||Demonstração das Variações Patrimoniais (DVP)",
         "d1"
       ],
       [
-        "AFO, Direito Financeiro e Contabilidade Pública||Tópicos Mesclados de PPA, LDO e LOA",
+        "AFO, Direito Financeiro e Contabilidade Pública||Princípios Orçamentários",
+        "d1"
+      ],
+      [
+        "Auditoria Governamental e Controle||Eficácia e Execução das Decisões (TCEs e TCMs)",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||(sem assunto)",
         "d14"
       ],
       [
-        "Contabilidade Geral||CPC 23: Políticas Contábeis, Mudanças de Estimativa e Retificação de Erro",
+        "Contabilidade Geral||Depreciação, Amortização e Exaustão",
+        "d1"
+      ],
+      [
+        "Contabilidade Geral||Provisões, Passivos e Ativos Contingentes (CPC 25, Lei 6.404)",
         "d14"
       ],
       [
-        "Contabilidade Geral||Demonstração do Resultado do Exercício (DRE) e Destinação do Resultado",
+        "Direito Administrativo (Doutrina e Leis Federais)||Contratação Direta, Inexigibilidade e Dispensa (arts. 72 a 75 da Lei nº 14.133/2021)",
         "d14"
       ],
       [
-        "Direito Processual Civil||Da Jurisdição (art. 16)",
+        "Direito Administrativo (Doutrina e Leis Federais)||Critérios de Julgamento (arts. 33 a 39 da Lei nº 14.133/2021)",
         "d14"
       ],
       [
-        "Direito Processual Civil||Da Produção Antecipada da Prova (arts. 381 a 383)",
+        "Direito Administrativo (Doutrina e Leis Federais)||Do Âmbito de Aplicação, Definições e Agentes Públicos (arts. 1º a 4º, 6º a 10 da Lei nº 14.133/2021)",
         "d14"
       ],
       [
-        "Direito Processual Civil||Da Prova Testemunhal (arts. 442 a 463)",
+        "Direito Administrativo (Doutrina e Leis Federais)||Fases da Licitação - Julgamento, Habilitação e Encerramento (arts. 55 a 71 da Lei nº 14.133/2021)",
         "d14"
       ],
       [
-        "Direito Processual Civil||Dos Prazos (arts. 218 a 235)",
+        "Direito Administrativo (Doutrina e Leis Federais)||Modalidades de Licitação (arts. 28 a 32 da Lei nº 14.133/2021)",
         "d14"
       ],
       [
-        "Direito Tributário||Fiscalização Tributária (arts. 194 a 200 do CTN)",
+        "Direito Administrativo (Doutrina e Leis Federais)||Objetivos, Fases e Formalidades (arts. 11 a 17 da Lei nº 14.133/2021)",
         "d14"
       ],
       [
-        "Direito Tributário||Impostos (Conceito e Classificações)",
-        "d14"
-      ],
-      [
-        "Estatística||Intervalo de Confiança para a Proporção",
-        "d14"
-      ],
-      [
-        "Estatística||Teste de Qui-quadrado",
+        "Direito Administrativo (Doutrina e Leis Federais)||Princípios (art. 5º da Lei nº 14.133/2021)",
         "d14"
       ]
     ],
-    "confirmada": "2026-08-20"
+    "confirmada": "2026-08-21"
   }
 }
