@@ -1,6 +1,6 @@
 // Gerado por 06_Scripts/desempenho_assuntos.py - NAO editar a mao.
 window.EXEC_TEC = {
-  "gerado_em": "2026-08-26T09:41:37",
+  "gerado_em": "2026-08-27T14:17:34",
   "fonte": "07_TEC/TEC_Captura/tec_registros_*.json (assunto -> topicId)",
   "por_topico": {
     "1": {
